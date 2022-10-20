@@ -1,0 +1,42 @@
+.form-search {
+	background-color: $light;
+	position: relative;
+	border: rem(1) solid #E6E6E6;
+	border-radius: rem(5);
+	padding: rem(13) rem(13) rem(13) rem(26);
+
+	margin-left: rem(80);
+
+	@include r(1200) {}
+
+	&__input {
+		color: $dark;
+		font-size: rem(14);
+		line-height: rem(17);
+
+		&::placeholder {
+			color: $dark;
+		}
+	}
+
+	&__btn {
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		left: 90%;
+		width: 100%;
+		height: 100%;
+
+
+	}
+
+	&__icon {
+		width: rem(20);
+		height: rem(20);
+
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+.article-order-img {
+	img {
+		width: 100%;
+		max-width: rem(360);
+		max-height: rem(315);
+		object-fit: cover;
+		object-position: top;
+	}
+}
+
+.article-order {
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: rem(21.5);
+		height: rem(21.5);
+		top: rem(50);
+		left: 0;
+		background-image: url("../assets/sprite/sprite.svg#icon-plus");
+		background-repeat: no-repeat;
+	}
+}

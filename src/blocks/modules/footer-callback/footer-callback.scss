@@ -1,0 +1,28 @@
+.footer-callback {
+text-align: end;
+	&__tel {
+		font-size: rem(24);
+		line-height: rem(30);
+		font-weight: 600;
+		margin-bottom: rem(18);
+	}
+
+	&__social {
+		display: flex;
+		align-items: center;
+		justify-content: end;
+		gap: rem(15);
+		margin-top: rem(50);
+	}
+
+	&__social-text {
+		font-size: rem(14);
+		line-height: rem(17);
+		margin-right: rem(15);
+	}
+
+	&__social-icon {
+		width: rem(30);
+		max-height: rem(30);
+	}
+}

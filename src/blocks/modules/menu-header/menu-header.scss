@@ -1,0 +1,31 @@
+.menu-header{
+  display: flex;
+  gap: rem(35);
+  font-size: rem(18);
+  line-height: rem(22);
+  white-space: nowrap;
+
+  &__link {
+    position: relative;
+    padding: rem(15) 0;
+  }
+
+  &__dropdown {
+    display: none;
+
+    flex-direction: column;
+    gap: rem(20);
+    padding: rem(35) rem(260) rem(35) rem(40);
+    position: absolute;
+    top: rem(35);
+    left: rem(-40);
+    width: 100%;
+    z-index: 10;
+
+    background-color: $light;
+  }
+}
+
+.menu-header__link:hover > ul {
+  display: flex;
+}

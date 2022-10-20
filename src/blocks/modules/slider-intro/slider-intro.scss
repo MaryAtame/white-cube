@@ -1,0 +1,28 @@
+.slider-intro {
+
+  &__wrapper{
+    position: relative;
+  }
+  &__slide{
+    padding: rem(85) 0 rem(58);
+
+    background-image: url("../assets/images/intro-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  &__img{
+    max-width: rem(610);
+    margin-left: rem(120);
+  }
+
+  &__nav {
+    position: absolute;
+    width: 72%;
+    display: flex;
+    justify-content: space-between;
+    bottom: rem(75);
+    left: 15%;
+    z-index: 10;
+     }
+}

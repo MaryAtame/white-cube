@@ -1,0 +1,16 @@
+.address {
+	font-size: rem(14);
+	font-weight: 500;
+	line-height: rem(17);
+
+	margin-left: rem(80);
+	white-space: nowrap;
+
+	&__link {
+		color: $gray;
+
+		strong {
+			color: $dark;
+		}
+	}
+}

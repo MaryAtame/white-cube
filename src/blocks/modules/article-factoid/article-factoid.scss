@@ -1,0 +1,13 @@
+.article-factoid {
+  display: flex;
+  flex-direction: column;
+  gap: rem(15);
+  strong{
+    font-size: rem(30);
+    line-height: rem(24);
+    font-weight: 700;
+    color: $orange;
+  }
+  p{color: #FFFFFF;
+  }
+}

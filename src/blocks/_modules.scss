@@ -1,0 +1,37 @@
+@import "modules/body/body";
+@import "modules/breadcrumbs/breadcrumbs";
+@import "modules/button/button";
+@import "modules/columns/columns";
+@import "modules/container/container";
+@import "modules/editor/editor";
+@import "modules/search-form/search-form";
+@import "modules/input/input";
+@import "modules/main/main";
+@import "modules/section/section";
+@import "modules/title/title";
+
+@import "modules/address/address";
+@import "modules/link-mail/link-mail";
+@import "modules/link-callback/link-callback";
+@import "modules/menu-header/menu-header";
+@import "modules/slider/slider";
+@import "modules/button-slider/button-slider";
+@import "modules/slider-intro/slider-intro";
+@import "modules/article-category/article-category";
+@import "modules/article-factoid/article-factoid";
+@import "modules/article-product/article-product";
+@import "modules/toolbar/toolbar";
+@import "modules/article-post/article-post";
+@import "modules/article-benefits/article-benefits";
+@import "modules/decor/decor";
+@import "modules/slider-garanty/slider-garanty";
+@import "modules/article-review/article-review";
+@import "modules/article-order/article-order";
+@import "modules/article-social/article-social";
+@import "modules/footer/footer";
+@import "modules/menu-footer/menu-footer";
+@import "modules/footer-contact/footer-contact";
+@import "modules/diez-sign/diez-sign";
+@import "modules/footer-callback/footer-callback";
+
+@include r(1200) {}

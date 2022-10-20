@@ -1,0 +1,25 @@
+.button-slider {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: rem(40);
+  height: rem(40);
+  border-radius: 50%;
+
+  position: relative;
+  &--next{}
+  &--prev{}
+  &__icon{
+    width: rem(8);
+    height: rem(16);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__icon--next{}
+  &__icon--prev{
+    rotate: 180deg;
+    transform: translate(60%, 60%);
+  }
+
+}

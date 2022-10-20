@@ -1,0 +1,18 @@
+.link-callback {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: rem(3);
+	white-space: nowrap;
+	margin-left: rem(120);
+
+	font-size: rem(18);
+	line-height: rem(22);
+
+	span {
+		font-size: rem(14);
+		line-height: rem(17);
+		font-weight: 500;
+		color: $orange;
+	}
+}

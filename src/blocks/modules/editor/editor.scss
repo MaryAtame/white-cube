@@ -1,0 +1,94 @@
+.editor {
+
+    & > :last-child {
+        margin-bottom: 0;
+    }
+    &--14 {
+        font-size: rem(14);
+        line-height: rem(22);
+    }
+    &--16 {
+        font-size: rem(16);
+        line-height: rem(24);
+    }
+
+    &--center {
+        text-align: center;
+        @include r(1200) {
+            text-align: left;
+        }
+    }
+
+    &--right {
+        text-align: end;
+    }
+
+    &--white{
+        color: #FFFFFF;
+    }
+
+    p{
+        margin-bottom: rem(20);
+    }
+       blockquote {
+        font-weight: 300;
+        position: relative;
+        font-size: rem(24);
+        margin-bottom: 2rem;
+        padding: rem(33) rem(72);
+        @include r(1200) {
+            font-weight: 400;
+            font-size: rem(20);
+            margin-left: rem(-15);
+            margin-right: rem(-15);
+            margin-bottom: rem(30);
+            padding: rem(30) rem(30) rem(30) rem(42);
+        }
+
+        &:before {
+            content: "";
+            top: rem(33);
+            left: rem(50);
+            width: rem(2);
+            display: block;
+            bottom: rem(33);
+            position: absolute;
+            @include r(1200) {
+                left: rem(30);
+                top: rem(30);
+                bottom: rem(30);
+            }
+        }
+    }
+
+    figure {
+        display: block;
+        margin-bottom: 2rem;
+        @include r(1200) {
+            margin-bottom: rem(30);
+        }
+    }
+
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        border-radius: rem(10);
+
+        margin-bottom: rem(35);
+    }
+
+    figcaption {
+        display: block;
+        font-weight: 400;
+    }
+
+
+    i {
+        font-style: italic;
+    }
+}

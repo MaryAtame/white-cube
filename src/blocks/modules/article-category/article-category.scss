@@ -1,0 +1,26 @@
+.article-category{
+  display: flex;
+  align-items: center;
+  gap: rem(34);
+  border-radius: rem(5);
+  box-shadow: 5px 10px 40px rgba(43, 70, 82, 0.15);
+
+  padding: rem(54) rem(60) rem(60) rem(34);
+  &__img {
+    max-width: rem(100);
+  }
+  &__info{
+
+  }
+  &__title{ font-size: rem(16);
+    line-height: rem(20);
+    font-weight: 600;
+    color: $dark;}
+  &__text{
+    font-size: rem(14);
+    line-height: rem(17);
+    font-weight: 400;
+    color: #B1B1B1;
+  }
+
+}

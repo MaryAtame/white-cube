@@ -1,0 +1,30 @@
+.decor {
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    top: calc(50% + 50px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    max-height: rem(426);
+    max-width: rem(426);
+    background-color: #F3F6FD;
+    border-radius: 50%;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    top: calc(50% + 50px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    max-height: rem(616);
+    max-width: rem(616);
+    background-color: #F9FBFF;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}

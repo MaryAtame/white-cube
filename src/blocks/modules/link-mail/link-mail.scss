@@ -1,0 +1,14 @@
+.link-mail {
+	display: block;
+	font-size: rem(14);
+	font-weight: 500;
+	line-height: rem(17);
+	white-space: nowrap;
+	color: $gray;
+
+	margin-left: rem(60);
+
+	strong {
+		color: $dark;
+	}
+}

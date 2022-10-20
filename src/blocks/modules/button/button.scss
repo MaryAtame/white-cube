@@ -1,0 +1,41 @@
+.button {
+    padding: rem(14) rem(25);
+    border-radius: rem(5);
+    cursor: pointer;
+    @include r(1200) {
+       
+    }
+    &--disabled {
+        background-color: $gray;
+    }
+    &__text {
+        color: $light;
+    }
+
+    &__icon {
+        position: relative;
+        top: rem(3);
+        margin-right: rem(10);
+        width: rem(19);
+        height: rem(19);
+    }
+}
+
+.button--blue {
+    background-color: $blue;
+    padding: rem(14) rem(32);
+}
+
+.button--orange {
+    background-color: $orange;
+    padding: rem(14) rem(28);
+}
+
+.button--gradient {
+    background: linear-gradient(90deg, rgba(49,110,232,1) 9%, rgba(54,145,251,1) 108%);
+}
+
+.button--transparent {
+background-color: transparent;
+    border: rem(1) solid $light;
+    }

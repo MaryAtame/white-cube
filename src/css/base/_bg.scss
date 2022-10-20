@@ -1,0 +1,48 @@
+.bg-dark-blue {
+	background-color: $darkBlue;
+}
+
+.bg-gray {
+	position: relative;
+	transform: translate(0, rem(-240));
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+
+		background-color: #F3F6FD;
+		border-top-left-radius: rem(30);
+		border-bottom-left-radius: rem(30);
+		width: calc(1380px + (100% - 1380px) / 2 - 20px);
+	}
+
+
+}
+
+.bg-blue {
+	position: relative;
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		background-color: $blue;
+		border-top-right-radius: rem(30);
+		border-bottom-right-radius: rem(30);
+		width: calc(1380px + (100% - 1380px) / 2 + 100px);
+	}
+}
+
+.bg-fullscreen {
+	background-image: url("../assets/images/order-bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}

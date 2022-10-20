@@ -1,0 +1,40 @@
+.article-social {
+	display: flex;
+	gap: rem(16);
+
+	cursor: pointer;
+
+	&__icon {
+		width: rem(30);
+		height: rem(30);
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	&__social-name {
+		margin-bottom: rem(5);
+		font-size: rem(16);
+		line-height: rem(24);
+		font-weight: 700;
+		color: $darkBlue;
+		text-transform: uppercase;
+	}
+
+	&__count {
+		margin-bottom: rem(14);
+		font-size: rem(14);
+		line-height: rem(20);
+		color: $gray;
+	}
+
+	&__link {
+		font-size: rem(14);
+		line-height: rem(20);
+		color: $darkBlue;
+		text-decoration: none;
+	}
+}

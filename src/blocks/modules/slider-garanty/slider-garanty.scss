@@ -1,0 +1,29 @@
+.slider-garanty{
+  &__wrapper{  }
+
+  &__slide{
+    width: rem(330);
+
+&:hover{
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/sprite/sprite.svg#icon-zoom");
+    background-size: rem(26) rem(26);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(74, 106, 169, 0.5);
+  }
+}
+  }
+  &__slide-img{
+img {
+  border: 8px solid $light;
+}
+  }
+
+}

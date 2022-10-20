@@ -1,0 +1,37 @@
+.slider {
+
+	&__main {
+		overflow: visible;
+
+		&--overflow {
+			overflow: visible;
+
+			.slider__slide {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__slide {
+		opacity: 0;
+		transition: 0.3s opacity;
+
+		&--visible {
+			opacity: 1;
+			visibility: visible;
+		}
+
+
+		&--mob-width-190 {
+			@media(max-width:1200px) {
+				width: rem(190);
+			}
+		}
+
+		&--mob-width-240 {
+			@media(max-width:1200px) {
+				width: rem(240);
+			}
+		}
+	}
+}

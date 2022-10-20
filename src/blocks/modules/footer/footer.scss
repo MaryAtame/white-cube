@@ -1,0 +1,16 @@
+.footer {
+	background-color: $darkBlue;
+	padding: rem(60) 0;
+
+	font-size: rem(14);
+	line-height: rem(17);
+
+	&__privacy {
+		margin-top: rem(35);
+	}
+
+
+	&__sign {
+		margin-top: rem(25);
+	}
+}

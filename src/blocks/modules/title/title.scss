@@ -1,0 +1,44 @@
+.title {
+	font-size: rem(30);
+	line-height: rem(37);
+	color: #000;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	strong {
+		color: $blue;
+	}
+
+	&--large {
+		font-size: rem(40);
+		line-height: rem(52);
+		color: $darkBlue;
+	}
+
+	&--md {
+		font-size: rem(30);
+		line-height: rem(37);
+		font-weight: 700;
+		color: $light;
+	}
+
+	&--small {
+		font-size: rem(20);
+		line-height: rem(24);
+		font-weight: 600;
+		letter-spacing: .1em;
+		color: #4D6B90;
+	}
+
+	&--blue {
+		color: #8CAEF3;
+	}
+
+	&--gray {
+		color: $gray;
+	}
+
+	&--black{
+		color: #000000;
+	}
+}
