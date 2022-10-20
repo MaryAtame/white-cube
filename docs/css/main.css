@@ -2112,7 +2112,7 @@ button {
   position: absolute;
   top: 0;
   left: 90%;
-  width: 100%;
+  width: 1.5rem;
   height: 100%;
 }
 .form-search__icon {
@@ -2199,7 +2199,6 @@ button {
   align-items: flex-end;
   gap: 0.1875rem;
   white-space: nowrap;
-  margin-left: 7.5rem;
   font-size: 1.125rem;
   line-height: 1.375rem;
 }
@@ -2302,10 +2301,10 @@ button {
 }
 .slider-intro__nav {
   position: absolute;
-  width: 72%;
+  width: 74%;
   display: flex;
   justify-content: space-between;
-  bottom: 4.6875rem;
+  bottom: 3.75rem;
   left: 15%;
   z-index: 10;
 }
@@ -2505,6 +2504,8 @@ button {
   border: 1px solid #EEF2F2;
   border-radius: 0.625rem;
   padding: 1.875rem 2.8125rem 2.5rem 1.875rem;
+}
+.article-review--active {
   box-shadow: 5px 5px 70px rgba(43, 70, 82, 0.15);
 }
 .article-review__info {
