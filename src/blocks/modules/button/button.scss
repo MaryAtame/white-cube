@@ -1,5 +1,7 @@
 .button {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: rem(10);
     padding: rem(14) rem(25);
     border-radius: rem(5);
     cursor: pointer;
@@ -21,8 +23,6 @@
 
     &__icon {
         position: relative;
-        top: rem(3);
-        margin-right: rem(10);
         width: rem(19);
         height: rem(19);
     }
