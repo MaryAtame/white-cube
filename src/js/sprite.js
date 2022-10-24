@@ -19,6 +19,7 @@ import itemCatalog3 from '../assets/sprite/item-catalog-3.svg';
 import itemCatalog4 from '../assets/sprite/item-catalog-4.svg';
 import itemCatalog5 from '../assets/sprite/item-catalog-5.svg';
 import itemCatalog6 from '../assets/sprite/item-catalog-6.svg';
+import iconReload from '../assets/sprite/icon-reload.svg';
 
 export default {
     iconCatalog,
@@ -41,5 +42,6 @@ export default {
     itemCatalog3,
     itemCatalog4,
     itemCatalog5,
-    itemCatalog6
+    itemCatalog6,
+    iconReload
 };

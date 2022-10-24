@@ -16,7 +16,7 @@ const sectionBenefits = fs.readFileSync('src/includes/section-benefits.html');
 const sectionOrder = fs.readFileSync('src/includes/section-order.html');
 const sectionSocial = fs.readFileSync('src/includes/section-social.html');
 const sectionFooter = fs.readFileSync('src/includes/section-footer.html');
-const temp = fs.readFileSync('src/includes/temp.html');
+// const temp = fs.readFileSync('src/includes/temp.html');
 
 // Pages
 module.exports = [
@@ -48,6 +48,15 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
-        temp
+    }),
+
+    new HtmlWebpackPlugin({
+        template: "./src/pages/vacancy.html",
+        filename: "vacancy.html",
+        inject: "body",
+        title: "Вакансии",
+        head,
+        sectionHeader,
+        sectionFooter,
     }),
 ];

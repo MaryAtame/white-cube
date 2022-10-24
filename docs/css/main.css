@@ -1877,6 +1877,22 @@ img {
   font-family: "Montserrat", sans-serif;
   justify-content: space-between;
 }
+.breadcrumbs {
+  display: flex;
+  gap: 0.625rem;
+  color: #000000;
+  font-size: 0.875rem;
+  line-height: 1.2;
+}
+.breadcrumbs__icon {
+  width: 0.5625rem;
+  height: 0.3125rem;
+  fill: #000000;
+}
+.breadcrumbs span {
+  color: #717171;
+}
+
 .button {
   display: block;
   padding: 0.875rem 1.5625rem;
@@ -2048,6 +2064,18 @@ img {
 .editor--white {
   color: #FFFFFF;
 }
+.editor--float-left {
+  float: left;
+  width: 35.625rem;
+  height: 27.625rem;
+  margin: 1.875rem 1.875rem 3.125rem 1.875rem;
+}
+.editor--float-right {
+  float: right;
+  width: 35.625rem;
+  height: 27.625rem;
+  margin: 1.875rem 1.875rem 3.125rem 1.875rem;
+}
 .editor p {
   margin-bottom: 1.25rem;
 }
@@ -2095,7 +2123,8 @@ img {
 }
 .editor img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -2194,6 +2223,14 @@ img {
   color: #000000;
 }
 
+.title-page {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 3.125rem;
+}
+
 .header-toolbar {
   display: flex;
   justify-content: space-between;
@@ -2212,6 +2249,7 @@ img {
 .header-row {
   display: flex;
   justify-content: space-between;
+  gap: 0.625rem;
   margin-top: 0.9375rem;
 }
 @media only screen and (max-width: 1300px) {
@@ -2303,7 +2341,7 @@ img {
 
 .menu-header__list {
   display: flex;
-  gap: 2.1875rem;
+  gap: 2rem;
   font-size: 1.125rem;
   line-height: 1.375rem;
   white-space: nowrap;
@@ -2554,6 +2592,44 @@ img {
 }
 .article-benefits__picture img {
   width: 100%;
+}
+
+.article-vacancy {
+  display: block;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  margin-bottom: 1.875rem;
+  padding: 2.5rem 3.4375rem 2.8125rem 2.5rem;
+  box-shadow: 5px 10px 40px rgba(43, 70, 82, 0.15);
+}
+.article-vacancy__title {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+.article-vacancy__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 500px) {
+  .article-vacancy__info {
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: start;
+  }
+}
+.article-vacancy__timetable {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #316EE8;
+  text-decoration: underline;
+}
+.article-vacancy__pay {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 600;
 }
 
 .decor {

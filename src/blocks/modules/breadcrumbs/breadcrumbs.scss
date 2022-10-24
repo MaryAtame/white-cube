@@ -1,3 +1,16 @@
 .breadcrumbs {
-    @include r(1200) {}
+    display: flex;
+    gap: rem(10);
+    color: #000000;
+    font-size: rem(14);
+    line-height: 1.2;
+    &__icon{
+        width: rem(9);
+        height: rem(5);
+        fill: #000000;
+    }
+
+    span {
+        color: #717171;
+    }
 }

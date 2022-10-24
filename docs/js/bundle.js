@@ -194,6 +194,27 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/assets/sprite/icon-reload.svg":
+/*!*******************************************!*\
+  !*** ./src/assets/sprite/icon-reload.svg ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "icon-reload-usage",
+      viewBox: "0 0 21 18",
+      url: "/assets/sprite/" + "sprite.svg#icon-reload-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./src/assets/sprite/icon-search.svg":
 /*!*******************************************!*\
   !*** ./src/assets/sprite/icon-search.svg ***!
@@ -630,6 +651,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_sprite_item_catalog_4_svg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../assets/sprite/item-catalog-4.svg */ "./src/assets/sprite/item-catalog-4.svg");
 /* harmony import */ var _assets_sprite_item_catalog_5_svg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../assets/sprite/item-catalog-5.svg */ "./src/assets/sprite/item-catalog-5.svg");
 /* harmony import */ var _assets_sprite_item_catalog_6_svg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../assets/sprite/item-catalog-6.svg */ "./src/assets/sprite/item-catalog-6.svg");
+/* harmony import */ var _assets_sprite_icon_reload_svg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../assets/sprite/icon-reload.svg */ "./src/assets/sprite/icon-reload.svg");
+
 
 
 
@@ -673,7 +696,8 @@ __webpack_require__.r(__webpack_exports__);
     itemCatalog3: _assets_sprite_item_catalog_3_svg__WEBPACK_IMPORTED_MODULE_17__["default"],
     itemCatalog4: _assets_sprite_item_catalog_4_svg__WEBPACK_IMPORTED_MODULE_18__["default"],
     itemCatalog5: _assets_sprite_item_catalog_5_svg__WEBPACK_IMPORTED_MODULE_19__["default"],
-    itemCatalog6: _assets_sprite_item_catalog_6_svg__WEBPACK_IMPORTED_MODULE_20__["default"]
+    itemCatalog6: _assets_sprite_item_catalog_6_svg__WEBPACK_IMPORTED_MODULE_20__["default"],
+    iconReload: _assets_sprite_icon_reload_svg__WEBPACK_IMPORTED_MODULE_21__["default"]
 });
 
 
