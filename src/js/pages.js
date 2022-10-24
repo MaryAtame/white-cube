@@ -41,10 +41,10 @@ module.exports = [
     }),
 
     new HtmlWebpackPlugin({
-        template: "./src/pages/page.html",
-        filename: "page.html",
+        template: "./src/pages/about.html",
+        filename: "about.html",
         inject: "body",
-        title: "Title child page | Dranik",
+        title: "О заводе",
         head,
         sectionHeader,
         sectionFooter,

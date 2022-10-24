@@ -1,8 +1,11 @@
 .article-social {
 	display: flex;
 	gap: rem(16);
-
 	cursor: pointer;
+	width: rem(360);
+	height: rem(163);
+
+	padding: rem(40) rem(30);
 
 	&__icon {
 		width: rem(30);
@@ -37,4 +40,34 @@
 		color: $darkBlue;
 		text-decoration: none;
 	}
+}
+
+.article-social:hover{
+	transition: all .3s linear;
+
+	.article-social__social-name{
+		color: $light;
+	}
+	.article-social__count{
+		color: $light;
+	}
+	.article-social__link{
+		color: $light;
+		font-weight: 700;
+	}
+}
+
+.article-social--red:hover{
+
+		background-color: #EA0C00;
+		background-image: url("../assets/sprite/sprite.svg#icon-yt-bg");
+		//background-repeat: no-repeat;
+		background-position: center;
+}
+
+.article-social--blue:hover {
+	background-color: #316EE8;
+	background-image: url("../assets/sprite/sprite.svg#icon-vk-bg");
+	//background-repeat: no-repeat;
+	background-position: center;
 }

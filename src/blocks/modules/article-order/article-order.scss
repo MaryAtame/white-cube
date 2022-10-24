@@ -1,9 +1,11 @@
-.article-order-img {
+.article-order-picture {
+	max-width: rem(360);
+	max-height: rem(315);
+
+	overflow: hidden;
 	img {
 		width: 100%;
-		max-width: rem(360);
-		max-height: rem(315);
-		object-fit: cover;
+		object-fit: contain;
 		object-position: top;
 	}
 }

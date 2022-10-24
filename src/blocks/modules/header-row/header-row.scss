@@ -1,0 +1,13 @@
+.header-row{
+  display: flex;
+  justify-content: space-between;
+  margin-top: rem(15);
+@include r(1300){
+  flex-wrap: wrap;
+}
+
+  &__buttons{
+    display: flex;
+    gap: rem(20);
+  }
+}

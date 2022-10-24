@@ -2,7 +2,6 @@
   &__wrapper{  }
 
   &__slide{
-    width: rem(330);
 
 &:hover{
   &::before{
@@ -12,7 +11,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("./assets/sprite/sprite.svg#icon-zoom");
+    background-image: url("../assets/sprite/sprite.svg#icon-zoom");
     background-size: rem(26) rem(26);
     background-position: center;
     background-repeat: no-repeat;

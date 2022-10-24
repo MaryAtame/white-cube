@@ -1,8 +1,5 @@
 .diez-sign {
-display: block;
-	&__name {
-		margin-right: rem(11);
-	}
+	display: flex;
+	gap: rem(11);
 
-	&__logo {}
 }

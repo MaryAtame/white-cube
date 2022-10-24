@@ -8,10 +8,18 @@ button {
     transition: 0.3s all;
 }
 
+picture {
+    display: block;
+}
+
 input,
 textarea,
 button {
     font-family: inherit;
+}
+
+img {
+    display: block;
 }
 
 .z-index {
@@ -102,4 +110,8 @@ button {
 .centered {
     margin-left: auto;
     margin-right: auto;
+}
+
+.relative {
+    position: relative;
 }

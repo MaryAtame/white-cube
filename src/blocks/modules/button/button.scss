@@ -1,7 +1,13 @@
 .button {
+    display: block;
     padding: rem(14) rem(25);
     border-radius: rem(5);
     cursor: pointer;
+    text-transform: uppercase;
+    font-size: rem(14);
+    line-height: 1.2;
+    font-weight: 600;
+    color: $light;
     @include r(1200) {
        
     }
@@ -10,6 +16,7 @@
     }
     &__text {
         color: $light;
+        white-space: nowrap;
     }
 
     &__icon {

@@ -4,12 +4,14 @@
 @import "modules/columns/columns";
 @import "modules/container/container";
 @import "modules/editor/editor";
-@import "modules/search-form/search-form";
+@import "modules/form-search/form-search";
 @import "modules/input/input";
 @import "modules/main/main";
-@import "modules/section/section";
 @import "modules/title/title";
 
+@import "modules/header-toolbar/header-toolbar";
+@import "modules/header-row/header-row";
+@import "modules/catalog/catalog";
 @import "modules/address/address";
 @import "modules/link-mail/link-mail";
 @import "modules/link-callback/link-callback";

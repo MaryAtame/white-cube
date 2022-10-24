@@ -2,15 +2,14 @@
   background-color: rgba(255, 255, 255, 0.5);
   width: rem(40);
   height: rem(40);
-  border-radius: 50%;
-
+  border-radius: rem(40);
   position: relative;
+
   &--next{}
   &--prev{}
   &__icon{
     width: rem(8);
     height: rem(16);
-
     position: absolute;
     top: 50%;
     left: 50%;

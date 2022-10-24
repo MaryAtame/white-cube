@@ -18,10 +18,11 @@
     text-transform: uppercase;
   }
 
-  &__img {
-    width: rem(380);
+  &__picture {
+    max-width: rem(380);
+    margin: rem(60) auto 0;
     img{
-      width: rem(380);
+      width: 100%;
     }
   }
 }

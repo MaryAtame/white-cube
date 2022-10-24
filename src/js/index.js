@@ -3,7 +3,7 @@ import './sprite';
 import '../css/main.scss';
 
 
-import { Fancybox } from "@fancyapps/ui";
+import { Fancybox, Panzoom } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox.css";
 import 'swiper/swiper-bundle.min.css';
 

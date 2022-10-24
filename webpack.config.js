@@ -32,7 +32,7 @@ module.exports = {
             progress: true,
         },
         open: true,
-        watchFiles: ["src/*.html", "src/pages/*.html", "src/css/*.css"],
+        watchFiles: ["src/includes/*.html", "src/*.html", "src/pages/*.html", "src/css/*.css"],
         hot: true,
         compress: false,
         port: 9000,

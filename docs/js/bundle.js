@@ -383,6 +383,132 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/assets/sprite/item-catalog-1.svg":
+/*!**********************************************!*\
+  !*** ./src/assets/sprite/item-catalog-1.svg ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "item-catalog-1-usage",
+      viewBox: "0 0 50 39",
+      url: "/assets/sprite/" + "sprite.svg#item-catalog-1-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./src/assets/sprite/item-catalog-2.svg":
+/*!**********************************************!*\
+  !*** ./src/assets/sprite/item-catalog-2.svg ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "item-catalog-2-usage",
+      viewBox: "0 0 50 41",
+      url: "/assets/sprite/" + "sprite.svg#item-catalog-2-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./src/assets/sprite/item-catalog-3.svg":
+/*!**********************************************!*\
+  !*** ./src/assets/sprite/item-catalog-3.svg ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "item-catalog-3-usage",
+      viewBox: "0 0 56 38",
+      url: "/assets/sprite/" + "sprite.svg#item-catalog-3-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./src/assets/sprite/item-catalog-4.svg":
+/*!**********************************************!*\
+  !*** ./src/assets/sprite/item-catalog-4.svg ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "item-catalog-4-usage",
+      viewBox: "0 0 50 39",
+      url: "/assets/sprite/" + "sprite.svg#item-catalog-4-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./src/assets/sprite/item-catalog-5.svg":
+/*!**********************************************!*\
+  !*** ./src/assets/sprite/item-catalog-5.svg ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "item-catalog-5-usage",
+      viewBox: "0 0 39 44",
+      url: "/assets/sprite/" + "sprite.svg#item-catalog-5-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./src/assets/sprite/item-catalog-6.svg":
+/*!**********************************************!*\
+  !*** ./src/assets/sprite/item-catalog-6.svg ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "item-catalog-6-usage",
+      viewBox: "0 0 43 47",
+      url: "/assets/sprite/" + "sprite.svg#item-catalog-6-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./src/blocks/modules/slider-garanty/slider-garanty.js":
 /*!*************************************************************!*\
   !*** ./src/blocks/modules/slider-garanty/slider-garanty.js ***!
@@ -498,6 +624,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_sprite_icon_yt_color_svg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../assets/sprite/icon-yt-color.svg */ "./src/assets/sprite/icon-yt-color.svg");
 /* harmony import */ var _assets_sprite_icon_zoom_svg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../assets/sprite/icon-zoom.svg */ "./src/assets/sprite/icon-zoom.svg");
 /* harmony import */ var _assets_sprite_icon_star_svg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../assets/sprite/icon-star.svg */ "./src/assets/sprite/icon-star.svg");
+/* harmony import */ var _assets_sprite_item_catalog_1_svg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../assets/sprite/item-catalog-1.svg */ "./src/assets/sprite/item-catalog-1.svg");
+/* harmony import */ var _assets_sprite_item_catalog_2_svg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../assets/sprite/item-catalog-2.svg */ "./src/assets/sprite/item-catalog-2.svg");
+/* harmony import */ var _assets_sprite_item_catalog_3_svg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../assets/sprite/item-catalog-3.svg */ "./src/assets/sprite/item-catalog-3.svg");
+/* harmony import */ var _assets_sprite_item_catalog_4_svg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../assets/sprite/item-catalog-4.svg */ "./src/assets/sprite/item-catalog-4.svg");
+/* harmony import */ var _assets_sprite_item_catalog_5_svg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../assets/sprite/item-catalog-5.svg */ "./src/assets/sprite/item-catalog-5.svg");
+/* harmony import */ var _assets_sprite_item_catalog_6_svg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../assets/sprite/item-catalog-6.svg */ "./src/assets/sprite/item-catalog-6.svg");
+
+
+
+
+
+
 
 
 
@@ -529,7 +667,13 @@ __webpack_require__.r(__webpack_exports__);
     iconZoom: _assets_sprite_icon_zoom_svg__WEBPACK_IMPORTED_MODULE_13__["default"],
     iconYtColor: _assets_sprite_icon_yt_color_svg__WEBPACK_IMPORTED_MODULE_12__["default"],
     iconVkColor: _assets_sprite_icon_vk_color_svg__WEBPACK_IMPORTED_MODULE_11__["default"],
-    iconStar: _assets_sprite_icon_star_svg__WEBPACK_IMPORTED_MODULE_14__["default"]
+    iconStar: _assets_sprite_icon_star_svg__WEBPACK_IMPORTED_MODULE_14__["default"],
+    itemCatalog1: _assets_sprite_item_catalog_1_svg__WEBPACK_IMPORTED_MODULE_15__["default"],
+    itemCatalog2: _assets_sprite_item_catalog_2_svg__WEBPACK_IMPORTED_MODULE_16__["default"],
+    itemCatalog3: _assets_sprite_item_catalog_3_svg__WEBPACK_IMPORTED_MODULE_17__["default"],
+    itemCatalog4: _assets_sprite_item_catalog_4_svg__WEBPACK_IMPORTED_MODULE_18__["default"],
+    itemCatalog5: _assets_sprite_item_catalog_5_svg__WEBPACK_IMPORTED_MODULE_19__["default"],
+    itemCatalog6: _assets_sprite_item_catalog_6_svg__WEBPACK_IMPORTED_MODULE_20__["default"]
 });
 
 

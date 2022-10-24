@@ -1,5 +1,7 @@
 .footer-callback {
-text-align: end;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
 	&__tel {
 		font-size: rem(24);
 		line-height: rem(30);
