@@ -1879,6 +1879,7 @@ img {
 }
 .breadcrumbs {
   display: flex;
+  align-items: center;
   gap: 0.625rem;
   color: #000000;
   font-size: 0.875rem;
