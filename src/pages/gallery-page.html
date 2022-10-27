@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main bg-page">
+    <section class="section pt-30">
+        <div class="container">
+            <div class="breadcrumbs mb-50">
+                <a class="breadcrumbs__link" href="./">Главная</a>
+                <svg class="breadcrumbs__icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                </svg>
+                <span>Галерея</span>
+            </div>
+        </div>
+    </section>
+    <section class="section mb-100">
+        <div class="container">
+            <h1 class="title-page">Галерея</h1>
+            <nav class="toolbar-page mb-70">
+                <label class="toolbar-page__item toolbar-page__item--active">
+                    <input class="toolbar-page__input" type="radio">
+                    <span class="toolbar-page__category">Все проекты</span>
+                </label>
+                <label class="toolbar-page__item">
+                    <input class="toolbar-page__input" type="radio">
+                    <span class="toolbar-page__category">Построенные объекты</span>
+                </label>
+                <label class="toolbar-page__item">
+                    <input class="toolbar-page__input" type="radio">
+                    <span class="toolbar-page__category">Силикатные блоки</span>
+                </label>
+                <label class="toolbar-page__item">
+                    <input class="toolbar-page__input" type="radio">
+                    <span class="toolbar-page__category">Силикатные кирпичи</span>
+                </label>
+                <label class="toolbar-page__item">
+                    <input class="toolbar-page__input" type="radio">
+                    <span class="toolbar-page__category">Силикатные плиты</span>
+                </label>
+            </nav>
+            <div class="columns mb-60">
+                <div class="columns__col columns__col--4">
+                    <a class="article-gallery" href="#">
+                        <picture class="article-gallery__picture">
+                            <img src="./assets/images/article-gallery-img-1.jpg" alt="">
+                            <div class="article-gallery__count">
+                                <span>10</span>
+                                <span>фото</span>
+                            </div>
+                        </picture>
+                        <div class="article-gallery__content">
+                            <div class="article-gallery__category">Силикатные блоки</div>
+                            <h4 class="article-gallery__title">Фото силикатных блоков производства</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="article-gallery" href="#">
+                        <picture class="article-gallery__picture">
+                            <img src="./assets/images/article-gallery-img-1.jpg" alt="">
+                            <div class="article-gallery__count">
+                                <span>10</span>
+                                <span>фото</span>
+                            </div>
+                        </picture>
+                        <div class="article-gallery__content">
+                            <div class="article-gallery__category">Силикатные блоки</div>
+                            <h4 class="article-gallery__title">Фото силикатных блоков производства</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="article-gallery" href="#">
+                        <picture class="article-gallery__picture">
+                            <img src="./assets/images/article-gallery-img-2.jpg" alt="">
+                            <div class="article-gallery__count">
+                                <span>10</span>
+                                <span>фото</span>
+                            </div>
+                        </picture>
+                        <div class="article-gallery__content">
+                            <div class="article-gallery__category">Силикатные блоки</div>
+                            <h4 class="article-gallery__title">Фото силикатных блоков производства</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="article-gallery" href="#">
+                        <picture class="article-gallery__picture">
+                            <img src="./assets/images/article-gallery-img-2.jpg" alt="">
+                            <div class="article-gallery__count">
+                                <span>10</span>
+                                <span>фото</span>
+                            </div>
+                        </picture>
+                        <div class="article-gallery__content">
+                            <div class="article-gallery__category">Силикатные блоки</div>
+                            <h4 class="article-gallery__title">Фото силикатных блоков производства</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="article-gallery" href="#">
+                        <picture class="article-gallery__picture">
+                            <img src="./assets/images/article-gallery-img-1.jpg" alt="">
+                            <div class="article-gallery__count">
+                                <span>10</span>
+                                <span>фото</span>
+                            </div>
+                        </picture>
+                        <div class="article-gallery__content">
+                            <div class="article-gallery__category">Силикатные блоки</div>
+                            <h4 class="article-gallery__title">Фото силикатных блоков производства</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="article-gallery" href="#">
+                        <picture class="article-gallery__picture">
+                            <img src="./assets/images/article-gallery-img-2.jpg" alt="">
+                            <div class="article-gallery__count">
+                                <span>10</span>
+                                <span>фото</span>
+                            </div>
+                        </picture>
+                        <div class="article-gallery__content">
+                            <div class="article-gallery__category">Силикатные блоки</div>
+                            <h4 class="article-gallery__title">Фото силикатных блоков производства</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <nav class="pagination-page">
+                <a class="pagination-page__link" href="#">1</a>
+                <a class="pagination-page__link" href="#">...</a>
+                <a class="pagination-page__link" href="#">11</a>
+                <a class="pagination-page__link" href="#">10</a>
+                <a class="pagination-page__link pagination-page__link--active" href="#">12</a>
+                <a class="pagination-page__link" href="#">13</a>
+                <a class="pagination-page__link" href="#">14</a>
+                <a class="pagination-page__link" href="#">...</a>
+                <a class="pagination-page__link" href="#">26</a>
+            </nav>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+</body>
+</html>

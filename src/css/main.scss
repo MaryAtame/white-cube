@@ -1,10 +1,14 @@
 @import "helpers/variables";
 @import "helpers/mixins";
 @import "helpers/functions";
+@import "helpers/revert";
+@import "base/picture-wrapper";
 @import "base/fonts";
 @import "base/general";
 @import "base/margins";
 @import "base/paddings";
 @import "base/gaps";
 @import "base/bg";
+@import "base/border";
+@import "base/svg-wrapper";
 @import "../blocks/modules";

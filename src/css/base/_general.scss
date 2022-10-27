@@ -22,6 +22,10 @@ img {
     display: block;
 }
 
+b {
+    font-weight: 500;
+}
+
 .z-index {
     &-1 {
         z-index: 1;
@@ -106,6 +110,27 @@ img {
 .align-center {
     align-items: center;
 }
+.left {
+    justify-items: start;
+}
+.content-left {
+    justify-content: flex-start !important;
+}
+.justify {
+    display: flex;
+    justify-content: space-between;
+    span {
+        display: block;
+        color: $blue;
+        font-size: rem(20);
+        line-height: 1.2;
+        font-weight: 600;
+    }
+}
+
+.right-self {
+    justify-self: end;
+}
 
 .centered {
     margin-left: auto;
@@ -114,4 +139,8 @@ img {
 
 .relative {
     position: relative;
+}
+
+.translateZ-10 {
+    transform: translateZ(10px);
 }

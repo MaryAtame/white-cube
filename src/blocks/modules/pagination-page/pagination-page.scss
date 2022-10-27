@@ -1,0 +1,25 @@
+.pagination-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(12);
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: rem(12);
+    line-height: 2;
+    color: #0B1F33;
+    min-width: rem(35);
+    min-height: rem(35);
+    background-color: transparent;
+    border-radius: 35px;
+    transition: all .3s linear;
+  }
+}
+
+.pagination-page__link--active {
+  background-color: $blue;
+  color: $light;
+}

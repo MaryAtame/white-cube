@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <%= htmlWebpackPlugin.options.head %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main bg-page">
+  <section class="section pt-30">
+    <div class="container">
+      <div class="breadcrumbs mb-50">
+        <a class="breadcrumbs__link" href="./">Главная</a>
+        <svg class="breadcrumbs__icon">
+          <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+        </svg>
+        <a class="breadcrumbs__link" href="about.html">О заводе</a>
+        <svg class="breadcrumbs__icon">
+          <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+        </svg>
+        <span>Новости</span>
+      </div>
+    </div>
+  </section>
+  <section class="section mb-100">
+    <div class="container">
+      <h1 class="title-page">Новости</h1>
+      <nav class="toolbar-page mb-70">
+        <label class="toolbar-page__item toolbar-page__item--active">
+          <input class="toolbar-page__input" type="radio">
+          <span class="toolbar-page__category">За все время</span>
+        </label>
+        <label class="toolbar-page__item">
+          <input class="toolbar-page__input" type="radio">
+          <span class="toolbar-page__category">2022</span>
+        </label>
+        <label class="toolbar-page__item">
+          <input class="toolbar-page__input" type="radio">
+          <span class="toolbar-page__category">2021</span>
+        </label>
+        <label class="toolbar-page__item">
+          <input class="toolbar-page__input" type="radio">
+          <span class="toolbar-page__category">2020</span>
+        </label>
+      </nav>
+      <div class="columns mb-60">
+        <div class="columns__col columns__col--6">
+          <a class="article-post" href="#">
+            <picture class="article-post__picture article-post__picture--large">
+              <img src="./assets/images/news-img--large.jpg" alt="">
+            </picture>
+            <div class="article-post__content article-post__content--large">
+              <time class="article-post__date">14 октября</time>
+              <h4 class="article-post__title">Технические работы на сайте</h4>
+              <div class="article-post__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus. Pretium.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus. Pretium.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="columns__col columns__col--3">
+          <a class="article-post" href="#">
+            <picture class="article-post__picture">
+              <img src="./assets/images/news-img-1.jpg" alt="">
+            </picture>
+            <div class="article-post__content article-post__content--regular">
+              <time class="article-post__date">14 октября</time>
+              <h4 class="article-post__title">Изменение стоимости смеси для укладки блоков и плит</h4>
+              <span class="article-post__link" href="#">читать далее</span>
+            </div>
+          </a>
+        </div>
+        <div class="columns__col columns__col--3">
+          <a class="article-post" href="#">
+            <picture class="article-post__picture">
+              <img src="./assets/images/news-img-1.jpg" alt="">
+            </picture>
+            <div class="article-post__content article-post__content--regular">
+              <time class="article-post__date">14 октября</time>
+              <h4 class="article-post__title">Изменение стоимости смеси для укладки блоков и плит</h4>
+              <span class="article-post__link" href="#">читать далее</span>
+            </div>
+          </a>
+        </div>
+        <div class="columns__col columns__col--3">
+          <a class="article-post" href="#">
+            <picture class="article-post__picture">
+              <img src="./assets/images/news-img-1.jpg" alt="">
+            </picture>
+            <div class="article-post__content article-post__content--regular">
+              <time class="article-post__date">14 октября</time>
+              <h4 class="article-post__title">Изменение стоимости смеси для укладки блоков и плит</h4>
+              <span class="article-post__link" href="#">читать далее</span>
+            </div>
+          </a>
+        </div>
+        <div class="columns__col columns__col--3">
+          <a class="article-post" href="#">
+            <picture class="article-post__picture">
+              <img src="./assets/images/news-img-1.jpg" alt="">
+            </picture>
+            <div class="article-post__content article-post__content--regular">
+              <time class="article-post__date">14 октября</time>
+              <h4 class="article-post__title">Изменение стоимости смеси для укладки блоков и плит</h4>
+              <span class="article-post__link" href="#">читать далее</span>
+            </div>
+          </a>
+        </div>
+        <div class="columns__col columns__col--6">
+          <a class="article-post article-post" href="#">
+            <picture class="article-post__picture article-post__picture--large">
+              <img src="./assets/images/news-img--large.jpg" alt="">
+            </picture>
+            <div class="article-post__content article-post__content--large">
+              <time class="article-post__date">14 октября</time>
+              <h4 class="article-post__title">Технические работы на сайте</h4>
+              <div class="article-post__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus. Pretium.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus. Pretium.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="columns__col columns__col--6">
+          <a class="article-post article-post" href="#">
+            <picture class="article-post__picture article-post__picture--large">
+              <img src="./assets/images/news-img--large.jpg" alt="">
+            </picture>
+            <div class="article-post__content article-post__content--large">
+              <time class="article-post__date">14 октября</time>
+              <h4 class="article-post__title">Технические работы на сайте</h4>
+              <div class="article-post__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus. Pretium.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus. Pretium.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="columns__col columns__col--3">
+          <a class="article-post" href="#">
+            <picture class="article-post__picture">
+              <img src="./assets/images/news-img-1.jpg" alt="">
+            </picture>
+            <div class="article-post__content article-post__content--regular">
+              <time class="article-post__date">14 октября</time>
+              <h4 class="article-post__title">Изменение стоимости смеси для укладки блоков и плит</h4>
+              <span class="article-post__link" href="#">читать далее</span>
+            </div>
+          </a>
+        </div>
+        <div class="columns__col columns__col--3">
+          <a class="article-post" href="#">
+            <picture class="article-post__picture">
+              <img src="./assets/images/news-img-1.jpg" alt="">
+            </picture>
+            <div class="article-post__content article-post__content--regular">
+              <time class="article-post__date">14 октября</time>
+              <h4 class="article-post__title">Изменение стоимости смеси для укладки блоков и плит</h4>
+              <span class="article-post__link" href="#">читать далее</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <nav class="pagination-page">
+        <a class="pagination-page__link" href="#">1</a>
+        <a class="pagination-page__link" href="#">...</a>
+        <a class="pagination-page__link" href="#">11</a>
+        <a class="pagination-page__link" href="#">10</a>
+        <a class="pagination-page__link pagination-page__link--active" href="#">12</a>
+        <a class="pagination-page__link" href="#">13</a>
+        <a class="pagination-page__link" href="#">14</a>
+        <a class="pagination-page__link" href="#">...</a>
+        <a class="pagination-page__link" href="#">26</a>
+      </nav>
+    </div>
+  </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+</body>
+</html>

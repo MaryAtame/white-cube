@@ -1,0 +1,21 @@
+.news-detail{
+
+  &__date {
+    display: flex;
+    justify-content: flex-end;
+    gap: rem(20);
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: 1.2;
+    color: #8D9DBE;
+  }
+
+  &__picture {
+    width: 100%;
+    max-height: rem(360);
+  }
+
+  &__picture--lg {
+    max-height: rem(500);
+  }
+}

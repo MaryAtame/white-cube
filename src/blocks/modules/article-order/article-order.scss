@@ -11,16 +11,9 @@
 }
 
 .article-order {
-	position: relative;
-
-	&::before {
-		content: "";
-		position: absolute;
-		width: rem(21.5);
-		height: rem(21.5);
-		top: rem(50);
-		left: 0;
-		background-image: url("../assets/sprite/sprite.svg#icon-plus");
-		background-repeat: no-repeat;
-	}
+&__icon {
+	width: rem(21.5);
+	height: rem(21.5);
+	fill: #FFFFFF;
+}
 }

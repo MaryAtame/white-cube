@@ -20,6 +20,11 @@ import itemCatalog4 from '../assets/sprite/item-catalog-4.svg';
 import itemCatalog5 from '../assets/sprite/item-catalog-5.svg';
 import itemCatalog6 from '../assets/sprite/item-catalog-6.svg';
 import iconReload from '../assets/sprite/icon-reload.svg';
+import iconVideoPlay from '../assets/sprite/icon-video-play.svg';
+import iconDownload from '../assets/sprite/icon-download.svg';
+import iconFolder from '../assets/sprite/icon-folder.svg';
+import iconEmail from '../assets/sprite/icon-email.svg';
+import iconDirection from '../assets/sprite/icon-direction.svg';
 
 export default {
     iconCatalog,
@@ -43,5 +48,10 @@ export default {
     itemCatalog4,
     itemCatalog5,
     itemCatalog6,
-    iconReload
+    iconReload,
+    iconVideoPlay,
+    iconDownload,
+    iconFolder,
+    iconEmail,
+    iconDirection
 };

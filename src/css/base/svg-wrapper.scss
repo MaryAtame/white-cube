@@ -1,0 +1,20 @@
+.svg-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #E4F1FD;
+    width: rem(36);
+    height: rem(36);
+    border-radius: 36px;
+  }
+}

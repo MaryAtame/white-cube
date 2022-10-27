@@ -43,6 +43,20 @@
 }
 
 .button--transparent {
-background-color: transparent;
+    background-color: transparent;
     border: rem(1) solid $light;
+}
+
+.button--outline {
+    background-color: transparent;
+    border: rem(1) solid #0B1321;
+
+    span{
+        color: #0B1321;
     }
+
+    svg {
+        transform: rotate(180deg);
+        fill:#000000;
+    }
+}

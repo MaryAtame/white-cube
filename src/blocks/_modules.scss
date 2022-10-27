@@ -10,6 +10,7 @@
 @import "modules/title/title";
 @import "modules/title-page/title-page";
 
+@import "modules/header/header";
 @import "modules/header-toolbar/header-toolbar";
 @import "modules/header-row/header-row";
 @import "modules/catalog/catalog";
@@ -37,6 +38,20 @@
 @import "modules/footer-contact/footer-contact";
 @import "modules/diez-sign/diez-sign";
 @import "modules/footer-callback/footer-callback";
+@import "modules/vacancy-full/vacancy-full";
+@import "modules/article-garanty/article-garanty";
+@import "modules/article-video/article-video";
+@import "modules/pagination-page/pagination-page";
+@import "modules/toolbar-page/toolbar-page";
+@import "modules/news-detail/news-detail";
+@import "modules/sidebar-news/sidebar-news";
+@import "modules/table-delivery/table-delivery";
+@import "modules/article-gallery/article-gallery";
+@import "modules/gallery-detail/gallery-detail";
+@import "modules/article-doc/article-doc";
+@import "modules/article-contacts/article-contacts";
+@import "modules/article-shop/article-shop";
+
 
 
 @include r(1200) {}

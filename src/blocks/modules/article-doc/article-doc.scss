@@ -1,0 +1,20 @@
+.article-doc {
+  display: flex;
+  gap: rem(26);
+  border: 1px solid #C8D0E1;
+  border-radius: 5px;
+  padding: rem(30);
+
+  &__icon {
+    max-width: rem(18);
+    max-height: rem(18);
+    color: $blue;
+    z-index: 1;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: rem(24);
+    line-height: 1.25;
+  }
+}

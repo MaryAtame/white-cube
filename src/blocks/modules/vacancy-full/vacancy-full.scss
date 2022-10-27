@@ -1,0 +1,45 @@
+.vacancy-full {
+&__address {
+  display: flex;
+  gap: rem(98);
+}
+  &__timetable {
+    display: flex;
+    gap: rem(26);
+  }
+  &__nav{
+    display: flex;
+    gap: rem(20);
+  }
+  &__pay {
+    font-size: rem(36);
+    line-height: 1.2;
+    color: #000000;
+    font-weight: 600;
+    text-align: end;
+    margin-bottom: rem(60);
+  }
+
+  &__chapter {
+    color: $blue;
+    font-weight: 500;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: rem(35);
+    list-style: none;
+  }
+
+  &__item{
+    font-weight: 300;
+  &::before{
+    content: "\2022";
+    color: $orange;
+    font-weight: 800;
+    display: inline-block;
+    width: rem(15);
+    }
+  }
+}

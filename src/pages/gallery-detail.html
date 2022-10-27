@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <%= htmlWebpackPlugin.options.head %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main bg-page">
+  <section class="section pt-30">
+    <div class="container">
+      <div class="breadcrumbs mb-50">
+        <a class="breadcrumbs__link" href="./">Главная</a>
+        <svg class="breadcrumbs__icon">
+          <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+        </svg>
+        <a class="breadcrumbs__link" href="./">Галерея</a>
+        <svg class="breadcrumbs__icon">
+          <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+        </svg>
+        <a class="breadcrumbs__link" href="./">Построенные объекты</a>
+        <svg class="breadcrumbs__icon">
+          <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+        </svg>
+        <span>Фото силикатных блоков</span>
+      </div>
+    </div>
+  </section>
+  <section class="section mb-100">
+    <div class="container">
+      <div class="justify">
+        <h1 class="title-page">Фото силикатных блоков</h1>
+        <span>12 фото</span>
+      </div>
+      <div class="columns mb-60">
+        <div class="columns__col columns__col--4">
+          <a class="gallery-detail" href="#" >
+            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/article-gallery-img-1.jpg">
+              <img src="./assets/images/article-gallery-img-1.jpg" alt="">
+            </picture>
+          </a>
+        </div>
+        <div class="columns__col columns__col--4">
+          <a class="gallery-detail" href="#" >
+            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/gallery-detail-2.jpg">
+              <img src="./assets/images/gallery-detail-2.jpg" alt="">
+            </picture>
+          </a>
+        </div>
+        <div class="columns__col columns__col--4">
+          <a class="gallery-detail" href="#" >
+            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/gallery-detail-1.jpg">
+              <img src="./assets/images/gallery-detail-1.jpg" alt="">
+            </picture>
+          </a>
+        </div>
+        <div class="columns__col columns__col--4">
+          <a class="gallery-detail" href="#" >
+            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/gallery-detail-1.jpg">
+              <img src="./assets/images/gallery-detail-1.jpg" alt="">
+            </picture>
+          </a>
+        </div>
+        <div class="columns__col columns__col--4">
+          <a class="gallery-detail" href="#" >
+            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/article-gallery-img-1.jpg">
+              <img src="./assets/images/article-gallery-img-1.jpg" alt="">
+            </picture>
+          </a>
+        </div>
+        <div class="columns__col columns__col--4">
+          <a class="gallery-detail" href="#" >
+            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/gallery-detail-2.jpg">
+              <img src="./assets/images/gallery-detail-2.jpg" alt="">
+            </picture>
+          </a>
+        </div>
+      </div>
+      <nav class="pagination-page">
+        <a class="pagination-page__link" href="#">1</a>
+        <a class="pagination-page__link" href="#">...</a>
+        <a class="pagination-page__link" href="#">11</a>
+        <a class="pagination-page__link" href="#">10</a>
+        <a class="pagination-page__link pagination-page__link--active" href="#">12</a>
+        <a class="pagination-page__link" href="#">13</a>
+        <a class="pagination-page__link" href="#">14</a>
+        <a class="pagination-page__link" href="#">...</a>
+        <a class="pagination-page__link" href="#">26</a>
+      </nav>
+    </div>
+  </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+</body>
+</html>

@@ -18,6 +18,10 @@
         &--3 {
             grid-column: span 3;
             @include r(1200) {
+                grid-column: span 6;
+            }
+
+            @include r(768){
                 grid-column: span 12;
             }
         }

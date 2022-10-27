@@ -1,0 +1,40 @@
+.table-delivery {
+&__title {
+  font-weight: 600;
+  font-size: rem(24);
+  line-height: 1.25;
+}
+
+  &__table {
+    width: 100%;
+    margin-bottom: rem(50);
+    border: 1px solid #E6E6E6;
+    box-shadow: 5px 10px 40px rgba(43, 70, 82, 0.15);
+
+    th {
+      font-weight: 600;
+      font-size: rem(16);
+      line-height: 1.2;
+      padding: rem(20) rem(50) rem(20) rem(110);
+      border: 1px solid #E6E6E6;
+
+      span {
+        display: block;
+      }
+    }
+
+    td {
+      padding: rem(30) rem(110);
+      border: 1px solid #E6E6E6;
+    }
+
+    tr td:first-child,
+    tr th:first-child {
+      padding: rem(30) rem(40) rem(30) rem(70);
+    }
+  }
+
+  &__info {
+    margin-bottom: rem(50);
+  }
+}

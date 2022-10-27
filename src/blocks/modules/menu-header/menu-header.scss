@@ -10,6 +10,11 @@
   &__link {
     position: relative;
     padding: rem(15) 0;
+
+    &:hover,
+    &:active {
+      color: $blue;
+    }
   }
 
   &__dropdown {
@@ -25,6 +30,18 @@
     z-index: 10;
 
     background-color: $light;
+  }
+
+  &__dropdown__link {
+    a {
+      color: $dark;
+    }
+    &:hover,
+    &:active {
+      a {
+        color: $blue;
+      }
+    }
   }
 }
 

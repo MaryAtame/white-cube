@@ -1,0 +1,31 @@
+.gallery-detail {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+
+  transition: all .3s linear;
+
+  &:hover::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(64, 64, 64, 0.3);
+    width: rem(40);
+    height: rem(40);
+    border-radius: 40px;
+
+    background-image: url("../assets/sprite/sprite.svg#icon-zoom");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+  }
+
+  &__picture {
+    img {
+      width: 100%;
+    }
+  }
+}

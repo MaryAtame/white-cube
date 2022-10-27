@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <%= htmlWebpackPlugin.options.head %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main bg-page">
+  <section class="section pt-30">
+    <div class="container">
+      <div class="breadcrumbs mb-50">
+        <a class="breadcrumbs__link" href="./">Главная</a>
+        <svg class="breadcrumbs__icon">
+          <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+        </svg>
+        <span>Контакты</span>
+      </div>
+    </div>
+  </section>
+  <section class="section mb-80">
+    <div class="container">
+      <h1 class="title-page">Контакты</h1>
+     <div class="columns mb-60">
+        <div class="columns__col columns__col--4">
+          <div class="article-contacts">
+            <h2 class="article-contacts__title">ООО “Белый куб”</h2>
+            <address class="article-contacts__address">
+              <span>Калининградская область, Гурьевский район, Приморское кольцо, д 6. </span>
+            </address>
+            <div class="article-contacts__timetable">
+              <span>Пн-Пт - <time><b>9:00 - 19:00</b></time></span>
+              <span>Сб,Вс - <time><b>10:00 - 17:00</b></time></span>
+            </div>
+          </div>
+        </div>
+        <div class="columns__col columns__col--2">
+          <div class="article-contacts mt-50">
+            <a class="article-contacts__link" href="tel:+79990000">
+              <svg class="article-contacts__icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-tel"></use>
+              </svg>
+              <span>+7-999-00-00</span>
+            </a>
+            <a class="article-contacts__link" href="tel:+74012304175">
+              <svg class="article-contacts__icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-tel"></use>
+              </svg>
+              <span>8 (4012) 30-41-75</span>
+            </a>
+            <a class="article-contacts__link" href="mailto:email@mail.ru">
+              <svg class="article-contacts__icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-email"></use>
+              </svg>
+              <span>email@mail.ru</span>
+            </a>
+          </div>
+        </div>
+        <div class="columns__col columns__col--1 mob-hidden"></div>
+        <div class="columns__col columns__col--5">
+          <a class="article-contacts__callback revert" href="#" >
+              <svg class="article-contacts__callback-icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+              </svg>
+            <h2 class="article-contacts__callback-title">Заказать звонок</h2>
+            <div class="editor editor--16">
+              <p><b>Перезвоним в течение 15 минут.</b> Обсудим задачи, найдем оптимальное решение и запланируем работы. <b>Ответим на вопросы</b> и расскажем подробнее о действующих акциях. Будем на связи!</p>
+            </div>
+          </a>
+        </div>
+     </div>
+    </div>
+  </section>
+  <map class="article-contacts__map">
+   <iframe src="https://yandex.ru/map-widget/v1/-/CCUZbErUGD" allowfullscreen="true">
+    </iframe>
+  </map>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+</body>
+</html>
