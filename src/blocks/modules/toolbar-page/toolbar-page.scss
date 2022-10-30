@@ -1,14 +1,16 @@
 .toolbar-page {
   display: flex;
   gap: rem(100);
-  padding: rem(25) rem(30);
+  padding: 0 rem(30);
   border: 1px solid #C8D0E1;
   border-radius: 5px;
 
   &__item {
     font-weight: 500;
-    display: block;
     cursor: pointer;
+    min-height: 74px;
+    display: flex;
+    align-items: center;
   }
 
   &__item--active {
@@ -20,7 +22,7 @@
       content: "";
       display: block;
       position: absolute;
-      top: rem(50);
+      bottom: 0;
       left: 0;
       width: 102%;
       height: 1px;

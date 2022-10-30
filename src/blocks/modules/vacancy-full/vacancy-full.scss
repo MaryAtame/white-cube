@@ -1,16 +1,19 @@
 .vacancy-full {
-&__address {
-  display: flex;
-  gap: rem(98);
-}
+  &__address {
+    display: flex;
+    gap: rem(98);
+  }
+
   &__timetable {
     display: flex;
     gap: rem(26);
   }
-  &__nav{
+
+  &__nav {
     display: flex;
     gap: rem(20);
   }
+
   &__pay {
     font-size: rem(36);
     line-height: 1.2;
@@ -29,17 +32,22 @@
     display: flex;
     flex-direction: column;
     gap: rem(35);
-    list-style: none;
+    list-style: disc;
+
   }
 
-  &__item{
+  &__item {
     font-weight: 300;
-  &::before{
-    content: "\2022";
-    color: $orange;
-    font-weight: 800;
-    display: inline-block;
-    width: rem(15);
+
+    &::marker {
+      color: red;
     }
+    //&::before {
+    //  content: "\2022";
+    //  color: $orange;
+    //  font-weight: 800;
+    //  display: inline-block;
+    //  width: rem(15);
+    //}
   }
 }

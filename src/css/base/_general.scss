@@ -144,3 +144,20 @@ b {
 .translateZ-10 {
     transform: translateZ(10px);
 }
+
+.gray {
+    color: #686C73;
+}
+
+.cover {
+    &::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        content: "";
+        height: 400px;
+        display: block;
+        position: absolute;
+        background-color: $blue;
+    }
+}
