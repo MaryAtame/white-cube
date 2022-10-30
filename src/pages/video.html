@@ -1,199 +1,205 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <%= htmlWebpackPlugin.options.head %>
-  <title><%= htmlWebpackPlugin.options.title %></title>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="body">
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main bg-page">
-  <div class="bg-page--blue-line"></div>
-  <section class="section pt-30 translateZ-10">
-    <div class="container">
-      <div class="breadcrumbs revert mb-50">
-        <a class="breadcrumbs__link" href="./">Главная</a>
-        <svg class="breadcrumbs__icon revert">
-          <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
-        </svg>
-        <a class="breadcrumbs__link" href="about.html">О заводе</a>
-        <svg class="breadcrumbs__icon revert">
-          <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
-        </svg>
-        <span class="revert">Видео</span>
-      </div>
-    </div>
-  </section>
-  <section class="section mt-50 mb-100  translateZ-10">
-    <div class="container">
-      <h1 class="title-page revert">Видео</h1>
-      <div class="columns mb-60">
-        <div class="columns__col columns__col--6">
-          <a class="article-video" data-fancybox data-type="iframe"
-             href="https://www.youtube.com/watch?v=Na6imlcnBmc">
-            <button class="article-video__btn">
-              <svg class="article-video__icon">
-                <use xlink:href="./assets/sprite/sprite.svg#icon-video-play"></use>
-              </svg>
-            </button>
-            <video class="article-video__video article-video__video--lg" poster="./assets/images/poster-video.jpg">
-              <source src="#" type='video/ogg; codecs="theora, vorbis"'>
-              <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-              <source src="#" type='video/webm; codecs="vp8, vorbis"'>
-            </video>
-            <div class="article-video__info">
-              <h2 class="article-video__title">Съемки телепередачи “Все включено”</h2>
-              <time class="article-video__date" datetime="2022-02-14">14.02.22 г.</time>
+    <section class="section relative cover pt-30 pb-100">
+<!--      translateZ-10-->
+        <div class="container relative z-index-1">
+            <div class="revert mb-50">
+              <nav class="breadcrumbs">
+                <a class="breadcrumbs__link" href="./">Главная</a>
+                <svg class="breadcrumbs__icon revert">
+                  <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                </svg>
+                <a class="breadcrumbs__link" href="about.html">О заводе</a>
+                <svg class="breadcrumbs__icon revert">
+                  <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                </svg>
+                <span class="revert">Видео</span>
+              </nav>
             </div>
-          </a>
-        </div>
-        <div class="columns__col columns__col--6">
-          <a class="article-video" data-fancybox data-type="iframe"
-             href="https://www.youtube.com/watch?v=Na6imlcnBmc">
-            <button class="article-video__btn">
-              <svg class="article-video__icon">
-                <use xlink:href="./assets/sprite/sprite.svg#icon-video-play"></use>
-              </svg>
-            </button>
-            <video class="article-video__video article-video__video--lg" poster="./assets/images/poster-video.jpg">
-              <source src="#" type='video/ogg; codecs="theora, vorbis"'>
-              <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-              <source src="#" type='video/webm; codecs="vp8, vorbis"'>
-            </video>
-            <div class="article-video__info">
-              <h2 class="article-video__title">Съемки телепередачи “Все включено”</h2>
-              <time class="article-video__date" datetime="2022-02-14">14.02.22 г.</time>
+            <h1 class="title-page revert">Видео</h1>
+            <div class="columns mb-60">
+                <div class="columns__col columns__col--6">
+                    <a class="article-video" data-fancybox data-type="iframe"
+                       href="https://www.youtube.com/watch?v=Na6imlcnBmc">
+                        <button class="article-video__btn">
+                            <svg class="article-video__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-video-play"></use>
+                            </svg>
+                        </button>
+                        <video class="article-video__video article-video__video--lg"
+                               poster="./assets/images/poster-video.jpg">
+                            <source src="#" type='video/ogg; codecs="theora, vorbis"'>
+                            <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            <source src="#" type='video/webm; codecs="vp8, vorbis"'>
+                        </video>
+                        <div class="article-video__info">
+                            <h2 class="article-video__title">Съемки телепередачи “Все включено”</h2>
+                            <time class="article-video__date" datetime="2022-02-14">14.02.22 г.</time>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--6">
+                    <a class="article-video" data-fancybox data-type="iframe"
+                       href="https://www.youtube.com/watch?v=Na6imlcnBmc">
+                        <button class="article-video__btn">
+                            <svg class="article-video__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-video-play"></use>
+                            </svg>
+                        </button>
+                        <video class="article-video__video article-video__video--lg"
+                               poster="./assets/images/poster-video.jpg">
+                            <source src="#" type='video/ogg; codecs="theora, vorbis"'>
+                            <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            <source src="#" type='video/webm; codecs="vp8, vorbis"'>
+                        </video>
+                        <div class="article-video__info">
+                            <h2 class="article-video__title">Съемки телепередачи “Все включено”</h2>
+                            <time class="article-video__date" datetime="2022-02-14">14.02.22 г.</time>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="article-video" data-fancybox data-type="iframe"
+                       href="https://www.youtube.com/watch?v=Na6imlcnBmc">
+                        <button class="article-video__btn">
+                            <svg class="article-video__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-video-play"></use>
+                            </svg>
+                        </button>
+                        <video class="article-video__video article-video__video--md"
+                               poster="./assets/images/poster-video.jpg">
+                            <source src="#" type='video/ogg; codecs="theora, vorbis"'>
+                            <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            <source src="#" type='video/webm; codecs="vp8, vorbis"'>
+                        </video>
+                        <div class="article-video__info">
+                            <h2 class="article-video__title">Съемки телепередачи “Все включено”</h2>
+                            <time class="article-video__date" datetime="2022-02-14">14.02.22 г.</time>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="article-video" data-fancybox data-type="iframe"
+                       href="https://www.youtube.com/watch?v=Na6imlcnBmc">
+                        <button class="article-video__btn">
+                            <svg class="article-video__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-video-play"></use>
+                            </svg>
+                        </button>
+                        <video class="article-video__video article-video__video--md"
+                               poster="./assets/images/poster-video.jpg">
+                            <source src="#" type='video/ogg; codecs="theora, vorbis"'>
+                            <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            <source src="#" type='video/webm; codecs="vp8, vorbis"'>
+                        </video>
+                        <div class="article-video__info">
+                            <h2 class="article-video__title">Съемки телепередачи “Все включено”</h2>
+                            <time class="article-video__date" datetime="2022-02-14">14.02.22 г.</time>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="article-video" data-fancybox data-type="iframe"
+                       href="https://www.youtube.com/watch?v=Na6imlcnBmc">
+                        <button class="article-video__btn">
+                            <svg class="article-video__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-video-play"></use>
+                            </svg>
+                        </button>
+                        <video class="article-video__video article-video__video--md"
+                               poster="./assets/images/poster-video.jpg">
+                            <source src="#" type='video/ogg; codecs="theora, vorbis"'>
+                            <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            <source src="#" type='video/webm; codecs="vp8, vorbis"'>
+                        </video>
+                        <div class="article-video__info">
+                            <h2 class="article-video__title">Съемки телепередачи “Все включено”</h2>
+                            <time class="article-video__date" datetime="2022-02-14">14.02.22 г.</time>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="article-video" data-fancybox data-type="iframe"
+                       href="https://www.youtube.com/watch?v=Na6imlcnBmc">
+                        <button class="article-video__btn">
+                            <svg class="article-video__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-video-play"></use>
+                            </svg>
+                        </button>
+                        <video class="article-video__video article-video__video--md"
+                               poster="./assets/images/poster-video.jpg">
+                            <source src="#" type='video/ogg; codecs="theora, vorbis"'>
+                            <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            <source src="#" type='video/webm; codecs="vp8, vorbis"'>
+                        </video>
+                        <div class="article-video__info">
+                            <h2 class="article-video__title">Съемки телепередачи “Все включено”</h2>
+                            <time class="article-video__date" datetime="2022-02-14">14.02.22 г.</time>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="article-video" data-fancybox data-type="iframe"
+                       href="https://www.youtube.com/watch?v=Na6imlcnBmc">
+                        <button class="article-video__btn">
+                            <svg class="article-video__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-video-play"></use>
+                            </svg>
+                        </button>
+                        <video class="article-video__video article-video__video--md"
+                               poster="./assets/images/poster-video.jpg">
+                            <source src="#" type='video/ogg; codecs="theora, vorbis"'>
+                            <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            <source src="#" type='video/webm; codecs="vp8, vorbis"'>
+                        </video>
+                        <div class="article-video__info">
+                            <h2 class="article-video__title">Съемки телепередачи “Все включено”</h2>
+                            <time class="article-video__date" datetime="2022-02-14">14.02.22 г.</time>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="article-video" data-fancybox data-type="iframe"
+                       href="https://www.youtube.com/watch?v=Na6imlcnBmc">
+                        <button class="article-video__btn">
+                            <svg class="article-video__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-video-play"></use>
+                            </svg>
+                        </button>
+                        <video class="article-video__video article-video__video--md"
+                               poster="./assets/images/poster-video.jpg">
+                            <source src="#" type='video/ogg; codecs="theora, vorbis"'>
+                            <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            <source src="#" type='video/webm; codecs="vp8, vorbis"'>
+                        </video>
+                        <div class="article-video__info">
+                            <h2 class="article-video__title">Съемки телепередачи “Все включено”</h2>
+                            <time class="article-video__date" datetime="2022-02-14">14.02.22 г.</time>
+                        </div>
+                    </a>
+                </div>
             </div>
-          </a>
-        </div>
-        <div class="columns__col columns__col--4">
-          <a class="article-video" data-fancybox data-type="iframe"
-             href="https://www.youtube.com/watch?v=Na6imlcnBmc">
-            <button class="article-video__btn">
-              <svg class="article-video__icon">
-                <use xlink:href="./assets/sprite/sprite.svg#icon-video-play"></use>
-              </svg>
-            </button>
-            <video class="article-video__video article-video__video--md" poster="./assets/images/poster-video.jpg">
-              <source src="#" type='video/ogg; codecs="theora, vorbis"'>
-              <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-              <source src="#" type='video/webm; codecs="vp8, vorbis"'>
-            </video>
-            <div class="article-video__info">
-              <h2 class="article-video__title">Съемки телепередачи “Все включено”</h2>
-              <time class="article-video__date" datetime="2022-02-14">14.02.22 г.</time>
-            </div>
-          </a>
-        </div>
-        <div class="columns__col columns__col--4">
-          <a class="article-video" data-fancybox data-type="iframe"
-             href="https://www.youtube.com/watch?v=Na6imlcnBmc">
-            <button class="article-video__btn">
-              <svg class="article-video__icon">
-                <use xlink:href="./assets/sprite/sprite.svg#icon-video-play"></use>
-              </svg>
-            </button>
-            <video class="article-video__video article-video__video--md" poster="./assets/images/poster-video.jpg">
-              <source src="#" type='video/ogg; codecs="theora, vorbis"'>
-              <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-              <source src="#" type='video/webm; codecs="vp8, vorbis"'>
-            </video>
-            <div class="article-video__info">
-              <h2 class="article-video__title">Съемки телепередачи “Все включено”</h2>
-              <time class="article-video__date" datetime="2022-02-14">14.02.22 г.</time>
-            </div>
-          </a>
-        </div>
-        <div class="columns__col columns__col--4">
-          <a class="article-video" data-fancybox data-type="iframe"
-             href="https://www.youtube.com/watch?v=Na6imlcnBmc">
-            <button class="article-video__btn">
-              <svg class="article-video__icon">
-                <use xlink:href="./assets/sprite/sprite.svg#icon-video-play"></use>
-              </svg>
-            </button>
-            <video class="article-video__video article-video__video--md" poster="./assets/images/poster-video.jpg">
-              <source src="#" type='video/ogg; codecs="theora, vorbis"'>
-              <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-              <source src="#" type='video/webm; codecs="vp8, vorbis"'>
-            </video>
-            <div class="article-video__info">
-              <h2 class="article-video__title">Съемки телепередачи “Все включено”</h2>
-              <time class="article-video__date" datetime="2022-02-14">14.02.22 г.</time>
-            </div>
-          </a>
-        </div>
-        <div class="columns__col columns__col--4">
-          <a class="article-video" data-fancybox data-type="iframe"
-             href="https://www.youtube.com/watch?v=Na6imlcnBmc">
-            <button class="article-video__btn">
-              <svg class="article-video__icon">
-                <use xlink:href="./assets/sprite/sprite.svg#icon-video-play"></use>
-              </svg>
-            </button>
-            <video class="article-video__video article-video__video--md" poster="./assets/images/poster-video.jpg">
-              <source src="#" type='video/ogg; codecs="theora, vorbis"'>
-              <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-              <source src="#" type='video/webm; codecs="vp8, vorbis"'>
-            </video>
-            <div class="article-video__info">
-              <h2 class="article-video__title">Съемки телепередачи “Все включено”</h2>
-              <time class="article-video__date" datetime="2022-02-14">14.02.22 г.</time>
-            </div>
-          </a>
-        </div>
-        <div class="columns__col columns__col--4">
-          <a class="article-video" data-fancybox data-type="iframe"
-             href="https://www.youtube.com/watch?v=Na6imlcnBmc">
-            <button class="article-video__btn">
-              <svg class="article-video__icon">
-                <use xlink:href="./assets/sprite/sprite.svg#icon-video-play"></use>
-              </svg>
-            </button>
-            <video class="article-video__video article-video__video--md" poster="./assets/images/poster-video.jpg">
-              <source src="#" type='video/ogg; codecs="theora, vorbis"'>
-              <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-              <source src="#" type='video/webm; codecs="vp8, vorbis"'>
-            </video>
-            <div class="article-video__info">
-              <h2 class="article-video__title">Съемки телепередачи “Все включено”</h2>
-              <time class="article-video__date" datetime="2022-02-14">14.02.22 г.</time>
-            </div>
-          </a>
-        </div>
-        <div class="columns__col columns__col--4">
-          <a class="article-video" data-fancybox data-type="iframe"
-             href="https://www.youtube.com/watch?v=Na6imlcnBmc">
-            <button class="article-video__btn">
-              <svg class="article-video__icon">
-                <use xlink:href="./assets/sprite/sprite.svg#icon-video-play"></use>
-              </svg>
-            </button>
-            <video class="article-video__video article-video__video--md" poster="./assets/images/poster-video.jpg">
-              <source src="#" type='video/ogg; codecs="theora, vorbis"'>
-              <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-              <source src="#" type='video/webm; codecs="vp8, vorbis"'>
-            </video>
-            <div class="article-video__info">
-              <h2 class="article-video__title">Съемки телепередачи “Все включено”</h2>
-              <time class="article-video__date" datetime="2022-02-14">14.02.22 г.</time>
-            </div>
-          </a>
-        </div>
-      </div>
-      <nav class="pagination-page">
-        <a class="pagination-page__link" href="#">1</a>
-        <a class="pagination-page__link" href="#">...</a>
-        <a class="pagination-page__link" href="#">11</a>
-        <a class="pagination-page__link" href="#">10</a>
-        <a class="pagination-page__link pagination-page__link--active" href="#">12</a>
-        <a class="pagination-page__link" href="#">13</a>
-        <a class="pagination-page__link" href="#">14</a>
-        <a class="pagination-page__link" href="#">...</a>
-        <a class="pagination-page__link" href="#">26</a>
-      </nav>
+            <nav class="pagination-page">
+                <a class="pagination-page__link" href="#">1</a>
+                <a class="pagination-page__link" href="#">...</a>
+                <a class="pagination-page__link" href="#">11</a>
+                <a class="pagination-page__link" href="#">10</a>
+                <a class="pagination-page__link pagination-page__link--active" href="#">12</a>
+                <a class="pagination-page__link" href="#">13</a>
+                <a class="pagination-page__link" href="#">14</a>
+                <a class="pagination-page__link" href="#">...</a>
+                <a class="pagination-page__link" href="#">26</a>
+            </nav>
 
-    </div>
-  </section>
+        </div>
+    </section>
 </main>
 <%= htmlWebpackPlugin.options.sectionFooter %>
 </body>
