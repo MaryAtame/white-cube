@@ -1,0 +1,55 @@
+.tabs {
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+    margin-top: rem(20);
+    margin-bottom: rem(10);
+  }
+  &__body {
+    background-color: $light;
+    padding: rem(50);
+    border-radius: rem(5);
+    margin-bottom: rem(100);
+  }
+
+  &__btn {
+    padding: rem(18) rem(37);
+    background-color: $light;
+    position: relative;
+
+    text-transform: uppercase;
+    font-size: rem(14);
+    color: #000000;
+  }
+  &__btn.active {
+    border-top: 1px solid $blue;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 70%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $light;
+    }
+  }
+  &__article {
+    display: none;
+  }
+  &__article.active {
+    display: flex;
+  }
+
+  &__article-option {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(40);
+  }
+
+  &__article-type {
+    }
+
+
+}

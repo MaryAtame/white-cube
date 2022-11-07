@@ -1,0 +1,57 @@
+.article-catalog {
+  display: flex;
+  flex-direction: column;
+  background-color: $light;
+  border-radius: 5px;
+  padding: rem(20) rem(30) rem(30);
+
+  &__articul {
+    font-weight: 500;
+    font-size: rem(16);
+    line-height: 1.5;
+    color: #B1AFAF;
+  }
+
+  &__picture {
+    max-width: rem(230);
+    max-height: rem(230);
+    align-self: center;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: rem(30);
+  }
+
+  &__price {
+    font-weight: 600;
+    font-size: rem(32);
+    line-height: .7;
+    color: #000000;
+    margin-bottom: rem(22);
+  }
+
+
+  &__size {
+    margin-bottom: rem(10);
+  }
+
+  &__count {
+    margin-bottom: rem(30);
+  }
+}

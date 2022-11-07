@@ -1,62 +1,140 @@
 .button {
-    display: flex;
-    align-items: center;
-    gap: rem(10);
-    padding: rem(14) rem(25);
-    border-radius: rem(5);
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: rem(14);
-    line-height: 1.2;
-    font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(10);
+  padding: rem(14) rem(25);
+  border-radius: rem(5);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: rem(14);
+  line-height: 1.2;
+  font-weight: 600;
+  color: $light;
+
+  transition: all .3s ease-in-out;
+
+  @include r(1200) {
+    font-size: rem(12);
+    width: rem(290);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  &--disabled {
+    background-color: $gray;
+  }
+
+  &__text {
     color: $light;
-    @include r(1200) {
-       
-    }
-    &--disabled {
-        background-color: $gray;
-    }
-    &__text {
-        color: $light;
-        white-space: nowrap;
-    }
+    white-space: nowrap;
+  }
 
-    &__icon {
-        position: relative;
-        width: rem(19);
-        height: rem(19);
-    }
-}
+  &__icon {
+    position: relative;
+    width: rem(19);
+    height: rem(19);
+  }
 
-.button--blue {
+  &--blue {
     background-color: $blue;
     padding: rem(14) rem(32);
-}
 
-.button--orange {
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: darken($blue, 5%);
+    }
+  }
+
+  &--orange {
     background-color: $orange;
     padding: rem(14) rem(28);
-}
 
-.button--gradient {
-    background: linear-gradient(90deg, rgba(49,110,232,1) 9%, rgba(54,145,251,1) 108%);
-}
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: darken($orange, 5%);
+    }
+  }
 
-.button--transparent {
+  &--white {
+    background-color: $light;
+    color: $blue;
+  }
+
+  &--gradient {
+    background: linear-gradient(90deg, rgba(49, 110, 232, 1) 9%, rgba(54, 145, 251, 1) 108%);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: linear-gradient(90deg, rgba(42, 98, 210, 1) 0%, rgba(46, 126, 221, 1) 97%);
+    }
+  }
+
+  &--transparent {
     background-color: transparent;
     border: rem(1) solid $light;
-}
 
-.button--outline {
+    &:hover,
+    &:active,
+    &:focus {
+      outline: rem(2) solid $light;
+    }
+
+    @include r(1200) {
+      width: 100%;
+    }
+  }
+
+  &--outline {
     background-color: transparent;
     border: rem(1) solid #0B1321;
 
-    span{
-        color: #0B1321;
+    span {
+      color: #0B1321;
     }
 
     svg {
-        transform: rotate(180deg);
-        fill:#000000;
+      transform: rotate(180deg);
+      fill: #000000;
     }
+  }
+
+  &--orange-outline {
+    background-color: transparent;
+    border: rem(1) solid $orange;
+    color: $orange;
+
+    &:hover,
+    &:active,
+    &:focus {
+      outline: rem(2) solid $orange;
+    }
+  }
+
+  &--dashed {
+    gap: 0.625rem;
+    border: 1px dashed $blue;
+    padding: 0.875rem;
+    text-transform: uppercase;
+    transition: all .3s linear;
+
+    &:hover {
+      border: 1px solid $blue;
+    }
+
+    span {
+      color: $blue;
+      font-size: rem(14);
+      font-weight: 600;
+    }
+
+    svg {
+      color: $blue;
+      fill: $blue;
+    }
+  }
 }

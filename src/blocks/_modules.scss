@@ -9,11 +9,12 @@
 @import "modules/main/main";
 @import "modules/title/title";
 @import "modules/title-page/title-page";
+@import "modules/section-page/section-page";
 
 @import "modules/header/header";
 @import "modules/header-toolbar/header-toolbar";
 @import "modules/header-row/header-row";
-@import "modules/catalog/catalog";
+@import "modules/dropdown-catalog/dropdown-catalog";
 @import "modules/address/address";
 @import "modules/link-mail/link-mail";
 @import "modules/link-callback/link-callback";
@@ -51,7 +52,21 @@
 @import "modules/article-doc/article-doc";
 @import "modules/article-contacts/article-contacts";
 @import "modules/article-shop/article-shop";
-
+@import "modules/article-review-detail/article-review-detail";
+@import "modules/review-range/review-range";
+@import "modules/article-catalog/article-catalog";
+@import "modules/article-radio/article-radio";
+@import "modules/catalog-item/catalog-item";
+@import "modules/tabs/tabs";
+@import "modules/select-sort/select-sort";
+@import "modules/sidebar-catalog/sidebar-catalog";
+@import "modules/article/article";
+@import "modules/modal/modal";
+@import "modules/range/range";
+@import "modules/menu-icon/menu-icon";
+@import "modules/menu-mobile/menu-mobile";
+@import "modules/table-mobile/table-mobile";
+@import "modules/not-found/not-found";
 
 
 @include r(1200) {}

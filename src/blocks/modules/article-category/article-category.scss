@@ -5,9 +5,18 @@
   border-radius: rem(5);
   box-shadow: 5px 10px 40px rgba(43, 70, 82, 0.15);
 
-  padding: rem(54) rem(60) rem(60) rem(34);
+  padding: rem(54) rem(60);
+
+  @include r(1200) {
+    padding: rem(26) rem(22);
+  }
+
   &__img {
     max-width: rem(100);
+
+    @include r(1200) {
+      max-width: rem(64);
+    }
   }
   &__info{
 

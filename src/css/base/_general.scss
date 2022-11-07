@@ -22,6 +22,15 @@ img {
     display: block;
 }
 
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5em;
+}
+
+
 b {
     font-weight: 500;
 }
@@ -107,6 +116,10 @@ b {
     text-align: center;
 }
 
+.text-left {
+    text-align: start;
+}
+
 .align-center {
     align-items: center;
 }
@@ -116,9 +129,15 @@ b {
 .content-left {
     justify-content: flex-start !important;
 }
+
+.content-center {
+    justify-content: center;
+}
+
 .justify {
     display: flex;
     justify-content: space-between;
+
     span {
         display: block;
         color: $blue;
@@ -126,11 +145,20 @@ b {
         line-height: 1.2;
         font-weight: 600;
     }
+
+    @include r(867){
+        flex-direction: column;
+    }
 }
 
 .right-self {
     justify-self: end;
 }
+
+.self-end {
+    align-self: end;
+}
+
 
 .centered {
     margin-left: auto;
@@ -143,4 +171,9 @@ b {
 
 .translateZ-10 {
     transform: translateZ(10px);
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-weight: 600;
 }

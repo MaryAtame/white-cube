@@ -2,12 +2,22 @@
   display: flex;
   flex-direction: column;
   gap: rem(15);
-  strong{
+
+  strong {
     font-size: rem(30);
-    line-height: rem(24);
+    line-height: .8;
     font-weight: 700;
     color: $orange;
   }
-  p{color: #FFFFFF;
+  p {
+    color: #FFFFFF;
   }
+  @include r(1200) {
+    gap: rem(5);
+    strong {
+      font-size: rem(18);
+      line-height: 1.3;
+    }
+  }
+
 }

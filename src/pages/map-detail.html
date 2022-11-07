@@ -7,19 +7,17 @@
 <body class="body">
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main bg-page">
-    <section class="section pt-30">
+    <section class="section-page">
         <div class="container">
-            <div class="breadcrumbs mb-50">
-                <a class="breadcrumbs__link" href="./">Главная</a>
-                <svg class="breadcrumbs__icon">
-                    <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
-                </svg>
-                <span>Где купить</span>
+            <div class="mb-50">
+                <div class="breadcrumbs">
+                    <a class="breadcrumbs__link" href="./">Главная</a>
+                    <svg class="breadcrumbs__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                    </svg>
+                    <span>Где купить</span>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
             <h1 class="title-page">Где купить</h1>
         </div>
         <picture class="map-detail">
@@ -38,12 +36,12 @@
                         <address class="editor editor--16">
                             <span>Калининградская область, Гурьевский район, Приморское кольцо, д 6. </span>
                         </address>
-                        <button class="article-shop__btn">
+                        <a class="button button--dashed" href="#">
                             <svg class="article-shop__icon">
                                 <use xlink:href="./assets/sprite/sprite.svg#icon-direction"></use>
                             </svg>
                             <span>На карте</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="columns__col columns__col--3">
@@ -57,12 +55,12 @@
                         <address class="editor editor--16">
                             <span>Калининградская область, Гурьевский район, Приморское кольцо, д 6. </span>
                         </address>
-                        <button class="article-shop__btn">
+                        <a class="button button--dashed" href="#">
                             <svg class="article-shop__icon">
                                 <use xlink:href="./assets/sprite/sprite.svg#icon-direction"></use>
                             </svg>
                             <span>На карте</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="columns__col columns__col--3">
@@ -76,12 +74,12 @@
                         <address class="editor editor--16">
                             <span>Калининградская область, Гурьевский район, Приморское кольцо, д 6. </span>
                         </address>
-                        <button class="article-shop__btn">
+                        <a class="button button--dashed" href="#">
                             <svg class="article-shop__icon">
                                 <use xlink:href="./assets/sprite/sprite.svg#icon-direction"></use>
                             </svg>
                             <span>На карте</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="columns__col columns__col--3">
@@ -95,12 +93,12 @@
                         <address class="editor editor--16">
                             <span>Калининградская область, Гурьевский район, Приморское кольцо, д 6. </span>
                         </address>
-                        <button class="article-shop__btn">
+                        <a class="button button--dashed" href="#">
                             <svg class="article-shop__icon">
                                 <use xlink:href="./assets/sprite/sprite.svg#icon-direction"></use>
                             </svg>
                             <span>На карте</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -108,5 +106,6 @@
     </section>
 </main>
 <%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
 </body>
 </html>

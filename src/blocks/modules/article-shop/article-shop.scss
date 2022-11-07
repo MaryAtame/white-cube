@@ -28,20 +28,6 @@
     gap: rem(7);
   }
 
-  &__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: rem(10);
-    border: 1px dashed $blue;
-    border-radius: 5px;
-    padding: rem(14);
-    text-transform: uppercase;
-    color: $blue;
-    font-size: rem(14);
-    font-weight: 500;
-  }
-
   &__icon {
     color: $blue;
     width: rem(14.25);

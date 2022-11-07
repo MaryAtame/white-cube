@@ -1,36 +1,62 @@
-.table-delivery {
+.table {
+
 &__title {
   font-weight: 600;
   font-size: rem(24);
   line-height: 1.25;
-}
 
-  &__table {
+  @include r(1200) {
+    font-size: rem(20);
+  }
+}
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     width: 100%;
     margin-bottom: rem(50);
     border: 1px solid #E6E6E6;
+    color: #000000;
     box-shadow: 5px 10px 40px rgba(43, 70, 82, 0.15);
+
+    thead,
+    tbody {
+      display: contents;
+    }
 
     th {
       font-weight: 600;
       font-size: rem(16);
       line-height: 1.2;
-      padding: rem(20) rem(50) rem(20) rem(110);
-      border: 1px solid #E6E6E6;
+      padding: rem(20) rem(50) rem(20) 7%;
+
+      @include r(768) {
+        padding: rem(20) rem(20) rem(20) 5%;
+      }
 
       span {
         display: block;
       }
     }
 
-    td {
-      padding: rem(30) rem(110);
+    tr {
+      display: flex;
+      align-items: center;
       border: 1px solid #E6E6E6;
+      align-content: center;
+
+      @include r(768) {
+        padding: rem(20) rem(20) rem(20) 5%;
+      }
     }
 
     tr td:first-child,
     tr th:first-child {
       padding: rem(30) rem(40) rem(30) rem(70);
+
+      @include r(768) {
+        padding: rem(20) rem(20) rem(20) 5%;
+      }
     }
   }
 

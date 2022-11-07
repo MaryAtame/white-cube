@@ -1,0 +1,43 @@
+.menu-mobile {
+  padding: rem(30) rem(15);
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  &__list {
+    margin-bottom: rem(30);
+  }
+
+  &__item,
+  &__subitem {
+    border-bottom: 1px solid #E6E6E6;
+    width: 100%;
+    padding: rem(15) 0;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+
+    font-size: rem(16);
+    color: #000000;
+  }
+
+  &__link:active,
+  &__link:hover {
+    color: $blue;
+    font-weight: 500;
+  }
+
+  &__icon {
+    rotate: 180deg;
+    max-width: rem(9);
+    height: rem(14);
+    position: relative;
+    margin-right: auto;
+  }
+}

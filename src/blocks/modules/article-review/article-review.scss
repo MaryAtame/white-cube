@@ -1,10 +1,12 @@
 .article-review {
+  cursor: pointer;
   border: 1px solid #EEF2F2;
   border-radius: rem(10);
   padding: rem(30) rem(45) rem(40) rem(30);
 
   display: flex;
   gap: rem(20);
+
 &--active {
   box-shadow: 5px 5px 70px rgba(43, 70, 82, 0.15);
 }

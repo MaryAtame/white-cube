@@ -7,19 +7,17 @@
 <body class="body">
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main bg-page">
-  <section class="section pt-30">
+  <section class="section-page">
     <div class="container">
-      <div class="breadcrumbs mb-50">
-        <a class="breadcrumbs__link" href="./">Главная</a>
-        <svg class="breadcrumbs__icon">
-          <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
-        </svg>
-        <span>Контакты</span>
+      <div class="mb-50">
+        <div class="breadcrumbs">
+          <a class="breadcrumbs__link" href="./">Главная</a>
+          <svg class="breadcrumbs__icon">
+            <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+          </svg>
+          <span>Контакты</span>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="section mb-80">
-    <div class="container">
       <h1 class="title-page">Контакты</h1>
      <div class="columns mb-60">
         <div class="columns__col columns__col--4">
@@ -77,5 +75,6 @@
   </map>
 </main>
 <%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
 </body>
 </html>

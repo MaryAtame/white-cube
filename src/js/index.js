@@ -11,3 +11,6 @@ import 'swiper/swiper-bundle.min.css';
 import '../blocks/modules/slider-intro/slider-intro';
 import '../blocks/modules/slider-garanty/slider-garanty';
 import '../blocks/modules/slider-review/slider-review';
+import '../blocks/modules/tabs/tabs';
+import '../blocks/modules/dropdown/dropdown';
+import '../blocks/modules/menu-mobile/menu-mobile';

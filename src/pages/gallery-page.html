@@ -7,19 +7,17 @@
 <body class="body">
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main bg-page">
-    <section class="section pt-30">
+    <section class="section-page">
         <div class="container">
-            <div class="breadcrumbs mb-50">
-                <a class="breadcrumbs__link" href="./">Главная</a>
-                <svg class="breadcrumbs__icon">
-                    <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
-                </svg>
-                <span>Галерея</span>
+            <div class="mb-50">
+                <div class="breadcrumbs">
+                    <a class="breadcrumbs__link" href="./">Главная</a>
+                    <svg class="breadcrumbs__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                    </svg>
+                    <span>Галерея</span>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="section mb-100">
-        <div class="container">
             <h1 class="title-page">Галерея</h1>
             <nav class="toolbar-page mb-70">
                 <label class="toolbar-page__item toolbar-page__item--active">
@@ -135,20 +133,11 @@
                     </a>
                 </div>
             </div>
-            <nav class="pagination-page">
-                <a class="pagination-page__link" href="#">1</a>
-                <a class="pagination-page__link" href="#">...</a>
-                <a class="pagination-page__link" href="#">11</a>
-                <a class="pagination-page__link" href="#">10</a>
-                <a class="pagination-page__link pagination-page__link--active" href="#">12</a>
-                <a class="pagination-page__link" href="#">13</a>
-                <a class="pagination-page__link" href="#">14</a>
-                <a class="pagination-page__link" href="#">...</a>
-                <a class="pagination-page__link" href="#">26</a>
-            </nav>
+            <%= htmlWebpackPlugin.options.paginationPage %>
         </div>
     </section>
 </main>
 <%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
 </body>
 </html>

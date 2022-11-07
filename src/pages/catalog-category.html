@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main bg-page">
+    <section class="section-page">
+        <div class="container">
+            <div class="mb-50">
+                <div class="breadcrumbs">
+                    <a class="breadcrumbs__link" href="./">Главная</a>
+                    <svg class="breadcrumbs__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                    </svg>
+                    <span>Каталог</span>
+                </div>
+            </div>
+            <div class="justify mb-50">
+                <h1 class="title-page">Каталог</h1>
+                <div class="select-sort">
+                    <p>Сортировать по:</p>
+                    <ul class="select-sort__list">
+                        <li class="select-sort__item">
+                            <p>Наименованию</p>
+                            <svg class="select-sort__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-small-arrow"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="columns mb-60">
+                <div class="columns__col columns__col--3">
+                    <%= htmlWebpackPlugin.options.sidebarCatalog %>
+                </div>
+                <div class="columns__col columns__col--9">
+                    <div class="columns">
+                        <div class="columns__col columns__col--4">
+                            <%= htmlWebpackPlugin.options.articleCatalog %>
+                        </div>
+                        <div class="columns__col columns__col--4">
+                            <%= htmlWebpackPlugin.options.articleCatalog %>
+                        </div>
+                        <div class="columns__col columns__col--4">
+                            <%= htmlWebpackPlugin.options.articleCatalog %>
+                        </div>
+                        <div class="columns__col columns__col--4">
+                            <%= htmlWebpackPlugin.options.articleCatalog %>
+                        </div>
+                        <div class="columns__col columns__col--4">
+                            <%= htmlWebpackPlugin.options.articleCatalog %>
+                        </div>
+                        <div class="columns__col columns__col--4">
+                            <%= htmlWebpackPlugin.options.articleCatalog %>
+                        </div>
+                        <div class="columns__col columns__col--4">
+                            <%= htmlWebpackPlugin.options.articleCatalog %>
+                        </div>
+                        <div class="columns__col columns__col--4">
+                            <%= htmlWebpackPlugin.options.articleCatalog %>
+                        </div>
+                        <div class="columns__col columns__col--4">
+                            <%= htmlWebpackPlugin.options.articleCatalog %>
+                        </div>
+                        <div class="columns__col columns__col--4">
+                            <%= htmlWebpackPlugin.options.articleCatalog %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%= htmlWebpackPlugin.options.paginationPage %>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

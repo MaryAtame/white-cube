@@ -1,25 +1,35 @@
 <section class="section bg-fullscreen mb-120">
-	<div class="container">
-		<div class="columns">
-			<div class="columns__col columns__col--4">
-				<picture class="article-order-picture">
-					<img src="./assets/images/order-img.jpg" alt="">
-				</picture>
-			</div>
-			<div class="columns__col columns__col--6 editor editor--white">
-				<div class="article-order pt-120">
-					<svg class="article-order__icon mb-50">
-						<use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
-					</svg>
-					<h2 class="title title--md mb-25">Оставьте заявку</h2>
-					<div class="editor">
-						<p>Оставьте заявку
-							<b>Перезвоним в течение 15 минут.</b> Обсудим задачи, найдем оптимальное решение и запланируем
-							работы. <b>Ответим на вопросы</b> и расскажем подробнее о действующих акциях. Будем на связи!
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="columns">
+            <div class="columns__col columns__col--4 mob-hidden">
+                <picture class="article-order-picture">
+                    <img src="./assets/images/order-img.jpg" alt="">
+                </picture>
+            </div>
+            <div class="columns__col columns__col--6 self-end">
+                <div class="article-order revert mb-60 mbm-0">
+                    <svg class="article-order__icon mb-50 mob-hidden">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                    </svg>
+                    <h2 class="title title--md mb-25">Оставьте заявку</h2>
+                    <div class="editor mob-hidden">
+                        <p><b>Перезвоним в течение 15 минут.</b> Обсудим задачи, найдем оптимальное решение и
+                            запланируем
+                            работы. <b>Ответим на вопросы</b> и расскажем подробнее о действующих акциях. Будем на
+                            связи!
+                        </p>
+                    </div>
+                    <div class="editor desktop-hidden mb-30">
+                        <p><b>Перезвоним в течение 15 минут.</b> Обсудим задачи, найдем оптимальное решение и
+                            запланируем
+                            работы. </p>
+
+                        <p><b>Ответим на вопросы</b> и расскажем подробнее о действующих акциях. Будем на связи!
+                        </p>
+                    </div>
+                    <button class="button button--white desktop-hidden">оставить заявку</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>

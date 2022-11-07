@@ -17,6 +17,12 @@ const sectionOrder = fs.readFileSync('src/includes/index/section-order.html');
 const sectionSocial = fs.readFileSync('src/includes/index/section-social.html');
 const sectionFooter = fs.readFileSync('src/includes/section-footer.html');
 const temp = fs.readFileSync('src/includes/temp.html');
+const paginationPage = fs.readFileSync('src/includes/pagination-page.html');
+const articleCatalog = fs.readFileSync('src/includes/article-catalog.html');
+const sidebarCatalog = fs.readFileSync('src/includes/sidebar-catalog.html');
+const tabs = fs.readFileSync('src/includes/tabs.html');
+const tableDelivery = fs.readFileSync('src/includes/table-delivery.html');
+const article = fs.readFileSync('src/includes/article.html');
 
 // Pages
 module.exports = [
@@ -49,6 +55,8 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
+
+        temp
     }),
 
     new HtmlWebpackPlugin({
@@ -59,6 +67,8 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
+
+        temp
     }),
 
     new HtmlWebpackPlugin({
@@ -69,6 +79,8 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
+
+        temp
     }),
 
     new HtmlWebpackPlugin({
@@ -79,6 +91,8 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
+
+        temp
     }),
 
     new HtmlWebpackPlugin({
@@ -89,6 +103,8 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
+
+        temp
     }),
 
     new HtmlWebpackPlugin({
@@ -99,6 +115,8 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
+
+        temp
     }),
 
     new HtmlWebpackPlugin({
@@ -109,6 +127,8 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
+
+        temp
     }),
 
     new HtmlWebpackPlugin({
@@ -118,7 +138,10 @@ module.exports = [
         title: "Доставка",
         head,
         sectionHeader,
+        tableDelivery,
         sectionFooter,
+
+        temp
     }),
 
     new HtmlWebpackPlugin({
@@ -129,6 +152,8 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
+
+        temp
     }),
 
     new HtmlWebpackPlugin({
@@ -139,6 +164,8 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
+
+        temp
     }),
 
     new HtmlWebpackPlugin({
@@ -149,6 +176,8 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
+
+        temp
     }),
 
     new HtmlWebpackPlugin({
@@ -159,6 +188,8 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
+
+        temp
     }),
 
     new HtmlWebpackPlugin({
@@ -169,5 +200,75 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
+
+        temp
+    }),
+
+    new HtmlWebpackPlugin({
+        template: "./src/pages/review-detail.html",
+        filename: "review-detail.html",
+        inject: "body",
+        title: "Отзывы",
+        head,
+        sectionHeader,
+        sectionFooter,
+
+        temp
+    }),
+
+    new HtmlWebpackPlugin({
+        template: "./src/pages/catalog.html",
+        filename: "catalog.html",
+        inject: "body",
+        title: "Каталог",
+        head,
+        sectionHeader,
+        sidebarCatalog,
+        article,
+        sectionFooter,
+
+        temp
+    }),
+
+    new HtmlWebpackPlugin({
+        template: "./src/pages/catalog-category.html",
+        filename: "catalog-category.html",
+        inject: "body",
+        title: "Каталог. Выбор категории",
+        head,
+        sectionHeader,
+        sidebarCatalog,
+        articleCatalog,
+        paginationPage,
+        sectionFooter,
+
+        temp
+    }),
+
+    new HtmlWebpackPlugin({
+        template: "./src/pages/catalog-item.html",
+        filename: "catalog-item.html",
+        inject: "body",
+        title: "Плита перегородочная СППу М125-М150/1,6 498х115х249",
+        head,
+        sectionHeader,
+        tabs,
+        tableDelivery,
+        articleCatalog,
+        sectionFooter,
+
+        temp
+    }),
+
+    new HtmlWebpackPlugin({
+        template: "./src/pages/404.html",
+        filename: "404.html",
+        inject: "body",
+        title: "404",
+        head,
+        sectionHeader,
+        sectionFooter,
+
+        temp
     }),
 ];

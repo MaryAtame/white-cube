@@ -1,0 +1,36 @@
+.table-mobile {
+
+  &__wrapper {
+    border-radius: 5px;
+    box-shadow:  5px 10px 40px rgba(43, 70, 82, 0.15);
+  }
+   &__body {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    border: 1px solid #E6E6E6;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    padding: rem(15) rem(15) rem(10);
+    font-size: rem(16);
+    font-weight: 600;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #E6E6E6;
+  }
+
+  &__cell {
+    padding: rem(15);
+    width: 50%;
+  }
+}
+
+.table-mobile__cell + .table-mobile__cell {
+  border-left: 1px solid #E6E6E6;
+}

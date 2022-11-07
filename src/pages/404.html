@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main bg-page">
+    <section class="section-page">
+        <div class="container">
+            <div class="mb-50">
+                <div class="breadcrumbs">
+                    <a class="breadcrumbs__link" href="./">Главная</a>
+                    <svg class="breadcrumbs__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                    </svg>
+                    <span>404</span>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="columns__col columns__col--1 mob-hidden"></div>
+                <div class="columns__col columns__col--12 desktop-hidden">
+                  <h1 class="not-found__title">404</h1>
+                  <p class="not-found__text">К сожалению, страница которую вы ищите не существует.</p>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <picture class="not-found__picture mbm-40">
+                        <img src="./assets/images/404.png" alt="404">
+                    </picture>
+                </div>
+                <div class="columns__col columns__col--1 mob-hidden"></div>
+                <div class="columns__col columns__col--6">
+                    <div class="not-found">
+                        <h1 class="not-found__title mob-hidden">404</h1>
+                        <p class="not-found__text mob-hidden">К сожалению, страница которую вы ищите не существует.</p>
+                        <a class="not-found__link not-found__link--blue mb-25" href="catalog.html">Перейти в каталог</a>
+                        <a class="not-found__link" href="./">На главную</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

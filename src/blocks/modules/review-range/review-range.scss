@@ -1,0 +1,10 @@
+.review-range {
+  display: flex;
+  gap: rem(5);
+
+  &__icon {
+    max-width: rem(20);
+    max-height: rem(20);
+    color: #FFDD2C;
+  }
+}

@@ -1,0 +1,22 @@
+.select-sort {
+  display: flex;
+  align-items: center;
+  gap: rem(25);
+
+  &__list {}
+
+  &__item{
+    display: flex;
+    gap: rem(10);
+    align-items: baseline;
+    cursor: pointer;
+    padding: rem(10) rem(13.5);
+    background-color: $light;
+    border-radius: rem(5);
+  }
+  &__icon{
+    width: rem(15);
+    height: rem(10);
+    rotate: 90deg;
+  }
+}

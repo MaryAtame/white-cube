@@ -25,6 +25,8 @@ import iconDownload from '../assets/sprite/icon-download.svg';
 import iconFolder from '../assets/sprite/icon-folder.svg';
 import iconEmail from '../assets/sprite/icon-email.svg';
 import iconDirection from '../assets/sprite/icon-direction.svg';
+import iconDialogPlate from '../assets/sprite/icon-dialog-plate.svg';
+import iconUser from '../assets/sprite/icon-user.svg';
 
 export default {
     iconCatalog,
@@ -53,5 +55,7 @@ export default {
     iconDownload,
     iconFolder,
     iconEmail,
-    iconDirection
+    iconDirection,
+    iconDialogPlate,
+    iconUser
 };

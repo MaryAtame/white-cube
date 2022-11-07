@@ -45,6 +45,11 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+
+	@include r(1200) {
+		background-image: none;
+		background-color: $blue;
+	}
 }
 
 .bg-gray-fullscreen {

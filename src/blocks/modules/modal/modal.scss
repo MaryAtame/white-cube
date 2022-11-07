@@ -1,0 +1,35 @@
+.modal {
+  display: none;
+  border-radius: rem(10);
+  background-color: $light;
+  padding: rem(50);
+  height: fit-content;
+  max-height: 100%;
+  &__user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(20);
+    margin-bottom: rem(30);
+  }
+
+  &__picture {
+    border-radius: rem(100);
+    width: rem(100);
+    height: rem(100);
+    overflow: hidden;
+  }
+
+  &__user-info {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+  }
+
+}
+
+.carousel__button.is-close {
+  top: rem(40) !important;
+  right: rem(40) !important;
+  color: #000000  !important;
+}

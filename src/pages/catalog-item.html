@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main bg-page">
+    <section class="section-page">
+        <div class="container">
+            <div class="mb-50">
+                <div class="breadcrumbs">
+                    <a class="breadcrumbs__link" href="./">Главная</a>
+                    <svg class="breadcrumbs__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                    </svg>
+                    <a class="breadcrumbs__link" href="catalog-category.html">Каталог</a>
+                    <svg class="breadcrumbs__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                    </svg>
+                    <span>Плита перегородочная СППу М125-М150/1,6 498х115х249</span>
+                </div>
+            </div>
+            <div class="catalog-item">
+                <h1 class="title-page mb-50">Плита перегородочная СППу М125-М150/1,6 498х115х249</h1>
+                <div class="columns">
+                    <div class="columns__col columns__col--4">
+                        <picture class="catalog-item__picture">
+                            <img class="centered" src="./assets/images/catalog-item.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="columns__col columns__col--8">
+                        <div class="catalog-item__article">
+                            <div class="catalog-item__specs">
+                                <span class="catalog-item__articul">Код: 15361</span>
+                                <div class="catalog-item__info">
+                                    <div class="catalog-item__option">
+                                        <p class="catalog-item__option-type">Размер, мм:</p>
+                                        <p class="catalog-item__set">250х120х88</p>
+                                    </div>
+                                    <div class="catalog-item__option">
+                                        <p class="catalog-item__option-type">На поддоне:</p>
+                                        <p class="catalog-item__set">48 шт</p>
+                                    </div>
+                                    <div class="catalog-item__option">
+                                        <p class="catalog-item__option-type">Вес:</p>
+                                        <p class="catalog-item__set">20 кг</p>
+                                    </div>
+                                    <div class="catalog-item__option">
+                                        <p class="catalog-item__option-type">Область применения:</p>
+                                        <p class="catalog-item__set">возведение межкомнатных перегородок</p>
+                                    </div>
+                                </div>
+                                <a class="catalog-item__link" href="#">Все характеристики</a>
+                            </div>
+                            <div class="catalog-item__order">
+                                <p class="catalog-item__price">87.17 &#8381;</p>
+                                <form class="article-radio justify align-center mb-25 gap-20">
+                                    <p class="article-radio__title editor--gray-14">Цена за:</p>
+                                    <div class="article-radio__inputs justify editor--gray-14">
+
+                                        <input class="article-radio__input" type="radio" name="catalog-cat" value="pcs"
+                                               id="cat-1" checked>
+                                        <label class="article-radio__cat" for="cat-1">шт</label>
+
+                                        <input class="article-radio__input" type="radio" name="catalog-cat" value="m2"
+                                               id="cat-2">
+                                        <label class="article-radio__cat" for="cat-2">м<sup>2</sup></label>
+
+                                        <input class="article-radio__input" type="radio" name="catalog-cat" value="m3"
+                                               id="cat-3">
+                                        <label class="article-radio__cat" for="cat-3">м<sup>3</sup></label>
+                                    </div>
+                                </form>
+                                <a class="button button--dashed mb-20" href="tel:+74012304175">
+                                    <svg class="catalog-item__btn-icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-tel"></use>
+                                    </svg>
+                                    <span>8 (4012) 30-41-75</span>
+                                </a>
+                                <button class="button button--orange">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <%= htmlWebpackPlugin.options.tabs %>
+                <div class="catalog-footer">
+                    <h1 class="editor editor--24 mb-50">Другие товары в этой категории</h1>
+                    <div class="columns">
+                        <div class="columns__col columns__col--3">
+                            <%= htmlWebpackPlugin.options.articleCatalog %>
+                        </div>
+                        <div class="columns__col columns__col--3">
+                            <%= htmlWebpackPlugin.options.articleCatalog %>
+                        </div>
+                        <div class="columns__col columns__col--3">
+                            <%= htmlWebpackPlugin.options.articleCatalog %>
+                        </div>
+                        <div class="columns__col columns__col--3">
+                            <%= htmlWebpackPlugin.options.articleCatalog %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

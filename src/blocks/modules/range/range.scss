@@ -1,0 +1,14 @@
+.range{
+  display: flex;
+  gap: rem(5);
+
+  &--mb-14{
+    margin-bottom: rem(14);
+  }
+
+  &__icon {
+    width: rem(20);
+    max-height: rem(20);
+    color: #FFDD2C;
+  }
+}

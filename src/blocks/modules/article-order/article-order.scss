@@ -11,6 +11,13 @@
 }
 
 .article-order {
+	display: flex;
+	flex-direction: column;
+
+	@include r(1200) {
+		padding: rem(30) rem(15) rem(20);
+	}
+
 &__icon {
 	width: rem(21.5);
 	height: rem(21.5);
