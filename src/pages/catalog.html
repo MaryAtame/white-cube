@@ -5,11 +5,19 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="body">
+<div class="modals" hidden>
+  <%= htmlWebpackPlugin.options.success %>
+  <%= htmlWebpackPlugin.options.calculation %>
+  <%= htmlWebpackPlugin.options.callback %>
+  <%= htmlWebpackPlugin.options.feedback %>
+  <%= htmlWebpackPlugin.options.order %>
+  <%= htmlWebpackPlugin.options.vacancyReply %>
+</div>
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main bg-page">
   <section class="section-page">
     <div class="container">
-      <div class="mb-50">
+      <div class="mb-50 hidden-980">
         <div class="breadcrumbs">
           <a class="breadcrumbs__link" href="./">Главная</a>
           <svg class="breadcrumbs__icon">
@@ -31,105 +39,6 @@
             <%= htmlWebpackPlugin.options.article %>
             <%= htmlWebpackPlugin.options.article %>
             <%= htmlWebpackPlugin.options.article %>
-<!--            <a class="article article&#45;&#45;catalog" href="#">-->
-<!--              <svg class="article__icon">-->
-<!--                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-2"></use>-->
-<!--              </svg>-->
-<!--              <div class="article__info">-->
-<!--                <h2 class="editor editor&#45;&#45;24">Плиты силикатные</h2>-->
-<!--                <div class="editor editor&#45;&#45;16">-->
-<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus orci sit sed aenean mauris risus, sed diam. Aliquet ornare consectetur mollis congue morbi commodo purus massa. Velit vitae, habitant eu justo nulla ut convallis erat ornare. Urna aliquam adipiscing nibh hac quam feugiat. Quisque imperdiet ipsum viverra blandit enim. Pulvinar nibh lorem nulla mi. Et, fames id gravida aliquam turpis non pellentesque pellentesque.</p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </a>-->
-<!--            <a class="article article&#45;&#45;catalog" href="#">-->
-<!--              <svg class="article__icon">-->
-<!--                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-3"></use>-->
-<!--              </svg>-->
-<!--              <div class="article__info">-->
-<!--                <h2 class="editor editor&#45;&#45;24">ЕВРО-кирпич</h2>-->
-<!--                <div class="editor editor&#45;&#45;16">-->
-<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus orci sit sed aenean mauris risus, sed diam. Aliquet ornare consectetur mollis congue morbi commodo purus massa. Velit vitae, habitant eu justo nulla ut convallis erat ornare. Urna aliquam adipiscing nibh hac quam feugiat. Quisque imperdiet ipsum viverra blandit enim. Pulvinar nibh lorem nulla mi. Et, fames id gravida aliquam turpis non pellentesque pellentesque.</p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </a>-->
-<!--            <a class="article article&#45;&#45;catalog" href="#">-->
-<!--              <svg class="article__icon">-->
-<!--                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-4"></use>-->
-<!--              </svg>-->
-<!--              <div class="article__info">-->
-<!--                <h2 class="editor editor&#45;&#45;24">Рустированный кирпич</h2>-->
-<!--                <div class="editor editor&#45;&#45;16">-->
-<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus orci sit sed aenean mauris risus, sed diam. Aliquet ornare consectetur mollis congue morbi commodo purus massa. Velit vitae, habitant eu justo nulla ut convallis erat ornare. Urna aliquam adipiscing nibh hac quam feugiat. Quisque imperdiet ipsum viverra blandit enim. Pulvinar nibh lorem nulla mi. Et, fames id gravida aliquam turpis non pellentesque pellentesque.</p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </a>-->
-<!--            <a class="article article&#45;&#45;catalog" href="#">-->
-<!--              <svg class="article__icon">-->
-<!--                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>-->
-<!--              </svg>-->
-<!--              <div class="article__info">-->
-<!--                <h2 class="editor editor&#45;&#45;24">Силикатные блоки</h2>-->
-<!--                <div class="editor editor&#45;&#45;16">-->
-<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus orci sit sed aenean mauris risus, sed diam. Aliquet ornare consectetur mollis congue morbi commodo purus massa. Velit vitae, habitant eu justo nulla ut convallis erat ornare. Urna aliquam adipiscing nibh hac quam feugiat. Quisque imperdiet ipsum viverra blandit enim. Pulvinar nibh lorem nulla mi. Et, fames id gravida aliquam turpis non pellentesque pellentesque.</p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </a>-->
-<!--            <a class="article article&#45;&#45;catalog" href="#">-->
-<!--              <svg class="article__icon">-->
-<!--                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-6"></use>-->
-<!--              </svg>-->
-<!--              <div class="article__info">-->
-<!--                <h2 class="editor editor&#45;&#45;24">Кладочные смеси</h2>-->
-<!--                <div class="editor editor&#45;&#45;16">-->
-<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus orci sit sed aenean mauris risus, sed diam. Aliquet ornare consectetur mollis congue morbi commodo purus massa. Velit vitae, habitant eu justo nulla ut convallis erat ornare. Urna aliquam adipiscing nibh hac quam feugiat. Quisque imperdiet ipsum viverra blandit enim. Pulvinar nibh lorem nulla mi. Et, fames id gravida aliquam turpis non pellentesque pellentesque.</p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </a>-->
-<!--            <a class="article article&#45;&#45;catalog" href="#">-->
-<!--              <svg class="article__icon">-->
-<!--                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-5"></use>-->
-<!--              </svg>-->
-<!--              <div class="article__info">-->
-<!--                <h2 class="editor editor&#45;&#45;24">Клей</h2>-->
-<!--                <div class="editor editor&#45;&#45;16">-->
-<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus orci sit sed aenean mauris risus, sed diam. Aliquet ornare consectetur mollis congue morbi commodo purus massa. Velit vitae, habitant eu justo nulla ut convallis erat ornare. Urna aliquam adipiscing nibh hac quam feugiat. Quisque imperdiet ipsum viverra blandit enim. Pulvinar nibh lorem nulla mi. Et, fames id gravida aliquam turpis non pellentesque pellentesque.</p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </a>-->
-<!--            <a class="article article&#45;&#45;catalog" href="#">-->
-<!--              <svg class="article__icon">-->
-<!--                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-3"></use>-->
-<!--              </svg>-->
-<!--              <div class="article__info">-->
-<!--                <h2 class="editor editor&#45;&#45;24">Газоблоки</h2>-->
-<!--                <div class="editor editor&#45;&#45;16">-->
-<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus orci sit sed aenean mauris risus, sed diam. Aliquet ornare consectetur mollis congue morbi commodo purus massa. Velit vitae, habitant eu justo nulla ut convallis erat ornare. Urna aliquam adipiscing nibh hac quam feugiat. Quisque imperdiet ipsum viverra blandit enim. Pulvinar nibh lorem nulla mi. Et, fames id gravida aliquam turpis non pellentesque pellentesque.</p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </a>-->
-<!--            <a class="article article&#45;&#45;catalog" href="#">-->
-<!--              <svg class="article__icon">-->
-<!--                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-2"></use>-->
-<!--              </svg>-->
-<!--              <div class="article__info">-->
-<!--                <h2 class="editor editor&#45;&#45;24">Твинблоки</h2>-->
-<!--                <div class="editor editor&#45;&#45;16">-->
-<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus orci sit sed aenean mauris risus, sed diam. Aliquet ornare consectetur mollis congue morbi commodo purus massa. Velit vitae, habitant eu justo nulla ut convallis erat ornare. Urna aliquam adipiscing nibh hac quam feugiat. Quisque imperdiet ipsum viverra blandit enim. Pulvinar nibh lorem nulla mi. Et, fames id gravida aliquam turpis non pellentesque pellentesque.</p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </a>-->
-<!--            <a class="article article&#45;&#45;catalog" href="#">-->
-<!--              <svg class="article__icon">-->
-<!--                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-4"></use>-->
-<!--              </svg>-->
-<!--              <div class="article__info">-->
-<!--                <h2 class="editor editor&#45;&#45;24">Керамические блоки </h2>-->
-<!--                <div class="editor editor&#45;&#45;16">-->
-<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus orci sit sed aenean mauris risus, sed diam. Aliquet ornare consectetur mollis congue morbi commodo purus massa. Velit vitae, habitant eu justo nulla ut convallis erat ornare. Urna aliquam adipiscing nibh hac quam feugiat. Quisque imperdiet ipsum viverra blandit enim. Pulvinar nibh lorem nulla mi. Et, fames id gravida aliquam turpis non pellentesque pellentesque.</p>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </a>-->
           </div>
         </div>
       </div>

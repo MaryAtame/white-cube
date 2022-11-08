@@ -1,82 +1,104 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <%= htmlWebpackPlugin.options.head %>
-  <title><%= htmlWebpackPlugin.options.title %></title>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="body">
+<div class="modals" hidden>
+    <%= htmlWebpackPlugin.options.success %>
+    <%= htmlWebpackPlugin.options.calculation %>
+    <%= htmlWebpackPlugin.options.callback %>
+    <%= htmlWebpackPlugin.options.feedback %>
+    <%= htmlWebpackPlugin.options.order %>
+    <%= htmlWebpackPlugin.options.vacancyReply %>
+</div>
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main bg-page">
-  <section class="section-page">
-    <div class="container">
-      <div class="mb-50">
-        <div class="breadcrumbs">
-          <a class="breadcrumbs__link" href="./">Главная</a>
-          <svg class="breadcrumbs__icon">
-            <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
-          </svg>
-          <a class="breadcrumbs__link" href="./">Галерея</a>
-          <svg class="breadcrumbs__icon">
-            <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
-          </svg>
-          <a class="breadcrumbs__link" href="./">Построенные объекты</a>
-          <svg class="breadcrumbs__icon">
-            <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
-          </svg>
-          <span>Фото силикатных блоков</span>
+    <section class="section-page">
+        <div class="container">
+            <div class="mb-50 hidden-980">
+                <div class="breadcrumbs">
+                    <a class="breadcrumbs__link" href="./">Главная</a>
+                    <svg class="breadcrumbs__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                    </svg>
+                    <a class="breadcrumbs__link" href="./">Галерея</a>
+                    <svg class="breadcrumbs__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                    </svg>
+                    <a class="breadcrumbs__link" href="./">Построенные объекты</a>
+                    <svg class="breadcrumbs__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                    </svg>
+                    <span>Фото силикатных блоков</span>
+                </div>
+            </div>
+            <div class="justify mb-50 mbm-20">
+                <h1 class="title-page">Фото силикатных блоков</h1>
+                <span>12 фото</span>
+            </div>
+            <div class="columns mb-60 mbm-20">
+                <div class="columns__col columns__col--4">
+                    <a class="gallery-detail" href="#">
+                        <picture class="gallery-detail__picture" data-fancybox
+                                 data-src="./assets/images/article-gallery-img-1.jpg">
+                            <img src="./assets/images/article-gallery-img-1.jpg" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="gallery-detail" href="#">
+                        <picture class="gallery-detail__picture" data-fancybox
+                                 data-src="./assets/images/gallery-detail-2.jpg">
+                            <img src="./assets/images/gallery-detail-2.jpg" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="gallery-detail" href="#">
+                        <picture class="gallery-detail__picture" data-fancybox
+                                 data-src="./assets/images/gallery-detail-1.jpg">
+                            <img src="./assets/images/gallery-detail-1.jpg" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="gallery-detail" href="#">
+                        <picture class="gallery-detail__picture" data-fancybox
+                                 data-src="./assets/images/gallery-detail-1.jpg">
+                            <img src="./assets/images/gallery-detail-1.jpg" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="gallery-detail" href="#">
+                        <picture class="gallery-detail__picture" data-fancybox
+                                 data-src="./assets/images/article-gallery-img-1.jpg">
+                            <img src="./assets/images/article-gallery-img-1.jpg" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="gallery-detail" href="#">
+                        <picture class="gallery-detail__picture" data-fancybox
+                                 data-src="./assets/images/gallery-detail-2.jpg">
+                            <img src="./assets/images/gallery-detail-2.jpg" alt="">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <button class="button button--orange centered desktop-hidden">
+                <span class="button__text">Загрузить еще </span>
+                <svg class="button__icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-reload"></use>
+                </svg>
+            </button>
+            <div class="mob-hidden">
+                <%= htmlWebpackPlugin.options.paginationPage %>
+            </div>
         </div>
-      </div>
-      <div class="justify">
-        <h1 class="title-page">Фото силикатных блоков</h1>
-        <span>12 фото</span>
-      </div>
-      <div class="columns mb-60">
-        <div class="columns__col columns__col--4">
-          <a class="gallery-detail" href="#" >
-            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/article-gallery-img-1.jpg">
-              <img src="./assets/images/article-gallery-img-1.jpg" alt="">
-            </picture>
-          </a>
-        </div>
-        <div class="columns__col columns__col--4">
-          <a class="gallery-detail" href="#" >
-            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/gallery-detail-2.jpg">
-              <img src="./assets/images/gallery-detail-2.jpg" alt="">
-            </picture>
-          </a>
-        </div>
-        <div class="columns__col columns__col--4">
-          <a class="gallery-detail" href="#" >
-            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/gallery-detail-1.jpg">
-              <img src="./assets/images/gallery-detail-1.jpg" alt="">
-            </picture>
-          </a>
-        </div>
-        <div class="columns__col columns__col--4">
-          <a class="gallery-detail" href="#" >
-            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/gallery-detail-1.jpg">
-              <img src="./assets/images/gallery-detail-1.jpg" alt="">
-            </picture>
-          </a>
-        </div>
-        <div class="columns__col columns__col--4">
-          <a class="gallery-detail" href="#" >
-            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/article-gallery-img-1.jpg">
-              <img src="./assets/images/article-gallery-img-1.jpg" alt="">
-            </picture>
-          </a>
-        </div>
-        <div class="columns__col columns__col--4">
-          <a class="gallery-detail" href="#" >
-            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/gallery-detail-2.jpg">
-              <img src="./assets/images/gallery-detail-2.jpg" alt="">
-            </picture>
-          </a>
-        </div>
-      </div>
-      <%= htmlWebpackPlugin.options.paginationPage %>
-    </div>
-  </section>
+    </section>
 </main>
 <%= htmlWebpackPlugin.options.sectionFooter %>
 <%= htmlWebpackPlugin.options.temp %>

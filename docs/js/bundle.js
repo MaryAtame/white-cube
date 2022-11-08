@@ -72,6 +72,28 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/assets/sprite/icon-calendar.svg":
+/*!*********************************************!*\
+  !*** ./src/assets/sprite/icon-calendar.svg ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "icon-calendar-usage",
+      viewBox: "0 0 14 15",
+      url: "/assets/sprite/" + "sprite.svg#icon-calendar-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./src/assets/sprite/icon-catalog.svg":
 /*!********************************************!*\
   !*** ./src/assets/sprite/icon-catalog.svg ***!
@@ -87,6 +109,28 @@ __webpack_require__.r(__webpack_exports__);
       id: "icon-catalog-usage",
       viewBox: "0 0 19 20",
       url: "/assets/sprite/" + "sprite.svg#icon-catalog-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./src/assets/sprite/icon-clip.svg":
+/*!*****************************************!*\
+  !*** ./src/assets/sprite/icon-clip.svg ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "icon-clip-usage",
+      viewBox: "0 0 13 14",
+      url: "/assets/sprite/" + "sprite.svg#icon-clip-usage",
       toString: function () {
         return this.url;
       }
@@ -153,6 +197,28 @@ __webpack_require__.r(__webpack_exports__);
       id: "icon-direction-usage",
       viewBox: "0 0 16 16",
       url: "/assets/sprite/" + "sprite.svg#icon-direction-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./src/assets/sprite/icon-done.svg":
+/*!*****************************************!*\
+  !*** ./src/assets/sprite/icon-done.svg ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "icon-done-usage",
+      viewBox: "0 0 13 10",
+      url: "/assets/sprite/" + "sprite.svg#icon-done-usage",
       toString: function () {
         return this.url;
       }
@@ -395,6 +461,28 @@ __webpack_require__.r(__webpack_exports__);
       id: "icon-star-usage",
       viewBox: "0 0 20 20",
       url: "/assets/sprite/" + "sprite.svg#icon-star-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./src/assets/sprite/icon-success.svg":
+/*!********************************************!*\
+  !*** ./src/assets/sprite/icon-success.svg ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+      id: "icon-success-usage",
+      viewBox: "0 0 32 32",
+      url: "/assets/sprite/" + "sprite.svg#icon-success-usage",
       toString: function () {
         return this.url;
       }
@@ -786,6 +874,51 @@ function burgerhandler(e) {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/modal/form-tel.js":
+/*!**********************************************!*\
+  !*** ./src/blocks/modules/modal/form-tel.js ***!
+  \**********************************************/
+/***/ (() => {
+
+window.addEventListener("DOMContentLoaded", function () {
+    [].forEach.call(document.querySelectorAll('[data-tel]'), function (input) {
+        let keyCode;
+        function mask(event) {
+            event.keyCode && (keyCode = event.keyCode);
+            let pos = this.selectionStart;
+            if (pos < 3) event.preventDefault();
+            let matrix = "+7 (___) ___ ____",
+                i = 0,
+                def = matrix.replace(/\D/g, ""),
+                val = this.value.replace(/\D/g, ""),
+                new_value = matrix.replace(/[_\d]/g, function (a) {
+                    return i < val.length ? val.charAt(i++) || def.charAt(i) : a
+                });
+            i = new_value.indexOf("_");
+            if (i != -1) {
+                i < 5 && (i = 3);
+                new_value = new_value.slice(0, i)
+            }
+            let reg = matrix.substr(0, this.value.length).replace(/_+/g,
+                function (a) {
+                    return "\\d{1," + a.length + "}"
+                }).replace(/[+()]/g, "\\$&");
+            reg = new RegExp("^" + reg + "$");
+            if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
+            if (event.type == "blur" && this.value.length < 5) this.value = ""
+        }
+
+        input.addEventListener("input", mask, false);
+        input.addEventListener("focus", mask, false);
+        input.addEventListener("blur", mask, false);
+        input.addEventListener("keydown", mask, false)
+
+    });
+
+});
+
+/***/ }),
+
 /***/ "./src/blocks/modules/slider-garanty/slider-garanty.js":
 /*!*************************************************************!*\
   !*** ./src/blocks/modules/slider-garanty/slider-garanty.js ***!
@@ -803,11 +936,23 @@ document.addEventListener('DOMContentLoaded', () => {
         modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
         direction: 'horizontal',
         loop: true,
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 1.5,
+        spaceBetween: 20,
         pagination: {
             el: '.swiper-pagination',
         },
+        breakpoints: {
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 30
+            },
+        }
     });
 });
 
@@ -864,7 +1009,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const swiperReview = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.slider-review', {
         modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation],
-        slidesPerView: 1.5,
+        slidesPerView: 1.2,
         spaceBetween: 20,
         direction: 'horizontal',
         loop: true,
@@ -966,6 +1111,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_sprite_icon_direction_svg__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../assets/sprite/icon-direction.svg */ "./src/assets/sprite/icon-direction.svg");
 /* harmony import */ var _assets_sprite_icon_dialog_plate_svg__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../assets/sprite/icon-dialog-plate.svg */ "./src/assets/sprite/icon-dialog-plate.svg");
 /* harmony import */ var _assets_sprite_icon_user_svg__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../assets/sprite/icon-user.svg */ "./src/assets/sprite/icon-user.svg");
+/* harmony import */ var _assets_sprite_icon_success_svg__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../assets/sprite/icon-success.svg */ "./src/assets/sprite/icon-success.svg");
+/* harmony import */ var _assets_sprite_icon_done_svg__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../assets/sprite/icon-done.svg */ "./src/assets/sprite/icon-done.svg");
+/* harmony import */ var _assets_sprite_icon_clip_svg__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../assets/sprite/icon-clip.svg */ "./src/assets/sprite/icon-clip.svg");
+/* harmony import */ var _assets_sprite_icon_calendar_svg__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../assets/sprite/icon-calendar.svg */ "./src/assets/sprite/icon-calendar.svg");
+
+
+
+
 
 
 
@@ -1025,7 +1178,11 @@ __webpack_require__.r(__webpack_exports__);
     iconEmail: _assets_sprite_icon_email_svg__WEBPACK_IMPORTED_MODULE_25__["default"],
     iconDirection: _assets_sprite_icon_direction_svg__WEBPACK_IMPORTED_MODULE_26__["default"],
     iconDialogPlate: _assets_sprite_icon_dialog_plate_svg__WEBPACK_IMPORTED_MODULE_27__["default"],
-    iconUser: _assets_sprite_icon_user_svg__WEBPACK_IMPORTED_MODULE_28__["default"]
+    iconUser: _assets_sprite_icon_user_svg__WEBPACK_IMPORTED_MODULE_28__["default"],
+    iconSuccess: _assets_sprite_icon_success_svg__WEBPACK_IMPORTED_MODULE_29__["default"],
+    iconDone: _assets_sprite_icon_done_svg__WEBPACK_IMPORTED_MODULE_30__["default"],
+    iconClip: _assets_sprite_icon_clip_svg__WEBPACK_IMPORTED_MODULE_31__["default"],
+    iconCalendar: _assets_sprite_icon_calendar_svg__WEBPACK_IMPORTED_MODULE_32__["default"]
 });
 
 
@@ -14073,6 +14230,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_modules_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_blocks_modules_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var _blocks_modules_menu_mobile_menu_mobile__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../blocks/modules/menu-mobile/menu-mobile */ "./src/blocks/modules/menu-mobile/menu-mobile.js");
 /* harmony import */ var _blocks_modules_menu_mobile_menu_mobile__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_blocks_modules_menu_mobile_menu_mobile__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _blocks_modules_modal_form_tel__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../blocks/modules/modal/form-tel */ "./src/blocks/modules/modal/form-tel.js");
+/* harmony import */ var _blocks_modules_modal_form_tel__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_blocks_modules_modal_form_tel__WEBPACK_IMPORTED_MODULE_12__);
+
 
 
 

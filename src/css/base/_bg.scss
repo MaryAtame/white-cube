@@ -59,12 +59,4 @@
 
 .bg-page {
 	background-color: #F8F8F8;
-
-	&--blue-line {
-			display: block;
-			position: absolute;
-			width: 100%;
-			height: rem(350);
-			background-color: $blue;
-	}
 }

@@ -1,49 +1,34 @@
 .footer-contact {
 
-	&__title {
-		font-size: rem(14);
-		line-height: rem(19);
-		text-transform: uppercase;
-		font-weight: 600;
+  &__title {
+    font-size: rem(14);
+    line-height: rem(19);
+    text-transform: uppercase;
+    font-weight: 600;
 
-		margin-bottom: rem(20);
-	}
+    margin-bottom: rem(20);
+  }
 
-	&__info {
-		display: flex;
-		flex-direction: column;
-		gap: rem(20);
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
 
-		margin-bottom: rem(45);
-	}
+    @include r(1200) {
+      font-size: rem(13);
+    }
+  }
 
-	&__address {
-		position: relative;
+  &__link {
+    display: flex;
+    gap: rem(10);
+    align-items: center;
+  }
 
-		&::before {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			background-image: url("../assets/sprite/sprite.svg#iconLocation");
-		}
-	}
 
-	&__address-link {}
-
-	&__mail {
-		position: relative;
-
-		&::before {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			background-image: url("../assets/sprite/sprite.svg#iconMail");
-		}
-	}
+  &__icon {
+    max-width: rem(15);
+    max-height: rem(15);
+    color: $blue;
+  }
 }

@@ -5,11 +5,19 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="body">
+<div class="modals" hidden>
+    <%= htmlWebpackPlugin.options.success %>
+    <%= htmlWebpackPlugin.options.calculation %>
+    <%= htmlWebpackPlugin.options.callback %>
+    <%= htmlWebpackPlugin.options.feedback %>
+    <%= htmlWebpackPlugin.options.order %>
+    <%= htmlWebpackPlugin.options.vacancyReply %>
+</div>
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main bg-page">
     <section class="section pt-30">
         <div class="container">
-            <div class="mb-50">
+            <div class="mb-50 hidden-980">
                 <div class="breadcrumbs">
                     <a class="breadcrumbs__link" href="./">Главная</a>
                     <svg class="breadcrumbs__icon">
@@ -22,32 +30,35 @@
                     <span>Вакансии</span>
                 </div>
             </div>
-            <div class="columns mb-100">
+            <div class="columns mb-100 mbm-20">
                 <div class="columns__col columns__col--6">
-                    <h1 class="title-page">Слесарь сборщик МК</h1>
+                    <h1 class="title-page mb-50 mbm-20">Слесарь сборщик МК</h1>
                     <div class="vacancy-full">
-                        <address class="vacancy-full__address mb-45">
-                            <span>Адрес:</span>
-                            <span>238345 | Россия, Калининградская область, ул...</span>
+                        <address class="vacancy-full__address mb-45 mbm-25">
+                            <span class="text-gray">Адрес:</span>
+                            <span class="text-black">238345 | Россия, Калининградская область, ул...</span>
                         </address>
                         <div class="vacancy-full__timetable">
-                            <span>График работы:</span>
-                            <span>Сменный, 2/2</span>
+                            <span class="text-gray">График работы:</span>
+                            <span class="text-black">Сменный, 2/2</span>
                         </div>
                     </div>
                 </div>
-                <div class="columns__col columns__col--6 right-self">
+                <div class="columns__col columns__col--3 mob-hidden"></div>
+                <div class="columns__col columns__col--3">
                     <div class="vacancy-full__pay">от 50 000 ₽</div>
-                    <button class="button button--orange">Откликнуться</button>
+                    <button class="button button--orange marg-left margm-0">Откликнуться</button>
                 </div>
             </div>
         </div>
-        <div class="bg-gray-fullscreen mb-60">
-            <div class="container pb-50 pt-50">
-                <h2 class="subtitle-page mb-50">Описание вакансии:</h2>
-                <div class="columns mb-30 border-bottom pb-30">
+        <div class="bg-gray-fullscreen mb-60 mbm-10">
+            <div class="container pb-50 pt-50 pbm-20 ptm-20">
+                <h2 class="subtitle-page mb-50 mbm-20">Описание вакансии:</h2>
+                <div class="columns mb-30 mbm-20 border-bottom pb-30 pbm-20">
                     <div class="columns__col columns__col--3">
-                        <div class="vacancy-full__chapter">Обязанности:</div>
+                        <div class="editor editor--16 text-blue">
+                            <strong>Обязанности:</strong>
+                        </div>
                     </div>
                     <div class="columns__col columns__col--9">
                         <ul class="vacancy-full__list">
@@ -61,9 +72,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="columns mb-30 border-bottom pb-30">
+                <div class="columns mb-30 mbm-20 border-bottom pb-30 pbm-20">
                     <div class="columns__col columns__col--3">
-                        <div class="vacancy-full__chapter">Требования:</div>
+                        <div class="editor editor--16 text-blue">
+                            <strong>Требования:</strong>
+                        </div>
                     </div>
                     <div class="columns__col columns__col--9">
                         <ul class="vacancy-full__list">
@@ -77,9 +90,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="columns mb-30">
+                <div class="columns mb-30 mbm-20">
                     <div class="columns__col columns__col--3">
-                        <div class="vacancy-full__chapter">Условия:</div>
+                        <div class="editor editor--16 text-blue">
+                            <strong>Условия:</strong>
+                        </div>
                     </div>
                     <div class="columns__col columns__col--9">
                         <ul class="vacancy-full__list">
@@ -96,7 +111,7 @@
             </div>
         </div>
         <div class="container">
-            <nav class="vacancy-full__nav mb-100">
+            <nav class="vacancy-full__nav mb-100 mbm-30">
                 <button class="button button--outline">
                     <svg class="button__icon">
                         <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>

@@ -1,0 +1,75 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: rem(25);
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+  }
+
+  &__item-link {
+    color: $blue;
+    font-size: rem(16);
+    font-weight: 600;
+  }
+  &__checkbox-btn-label{
+    font-size: rem(14);
+    color: #000000;
+    span,
+    a {
+      color: $orange;
+    }
+  }
+  &__input{
+    padding: rem(18) rem(20);
+    border-radius: 5px;
+    border: 1px solid #D9E1F3;
+
+    &::placeholder {
+      color: #B1AFAF;
+      font-size: rem(14);
+      font-weight: 500;
+    }
+  }
+  &__input-bd{
+    background-image: url("../assets/sprite/sprite.svg#icon-calendar");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+&__label {
+  span {
+    color: $orange;
+  }
+}
+
+  &__radio {
+    display: flex;
+    gap: rem(15);
+  }
+
+  &__checkbox-btn {
+    display: none;
+    visibility: hidden;
+  }
+
+  &__checkbox-btn + label {
+      width: rem(20);
+      height: rem(20);
+      border-radius: rem(3);
+      border: 1px solid #D9E1F3;
+      background-color: $light;
+      position: relative;
+      transition: all .3s linear;
+    }
+  }
+
+.form__checkbox-btn:checked + label {
+  background-image: url("../assets/sprite/sprite.svg#icon-done");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: $orange;
+}

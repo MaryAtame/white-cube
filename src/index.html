@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+<body class="body">
+<div class="modals" hidden>
+    <%= htmlWebpackPlugin.options.success %>
+    <%= htmlWebpackPlugin.options.calculation %>
+    <%= htmlWebpackPlugin.options.callback %>
+    <%= htmlWebpackPlugin.options.feedback %>
+    <%= htmlWebpackPlugin.options.order %>
+    <%= htmlWebpackPlugin.options.vacancyReply %>
+</div>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.sectionIntro %>
+    <%= htmlWebpackPlugin.options.sectionCategory %>
+    <%= htmlWebpackPlugin.options.sectionAbout %>
+    <%= htmlWebpackPlugin.options.sectionProduct %>
+    <%= htmlWebpackPlugin.options.sectionNews %>
+    <%= htmlWebpackPlugin.options.sectionGaranty %>
+    <%= htmlWebpackPlugin.options.sectionReview %>
+    <%= htmlWebpackPlugin.options.sectionBenefits %>
+    <%= htmlWebpackPlugin.options.sectionOrder %>
+    <%= htmlWebpackPlugin.options.sectionSocial %>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+
 <head>
     <%= htmlWebpackPlugin.options.head %>
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
-
-<body class="body">
-    <%= htmlWebpackPlugin.options.sectionHeader %>
-    <main class="main">
-        <%= htmlWebpackPlugin.options.sectionIntro %>
-        <%= htmlWebpackPlugin.options.sectionCategory %>
-        <%= htmlWebpackPlugin.options.sectionAbout %>
-        <%= htmlWebpackPlugin.options.sectionProduct %>
-        <%= htmlWebpackPlugin.options.sectionNews %>
-        <%= htmlWebpackPlugin.options.sectionGaranty %>
-        <%= htmlWebpackPlugin.options.sectionReview %>
-        <%= htmlWebpackPlugin.options.sectionBenefits %>
-        <%= htmlWebpackPlugin.options.sectionOrder %>
-        <%= htmlWebpackPlugin.options.sectionSocial %>
-        </main>
-    <%= htmlWebpackPlugin.options.sectionFooter %>
-    <%= htmlWebpackPlugin.options.temp %>
-</body>
 
 </html>

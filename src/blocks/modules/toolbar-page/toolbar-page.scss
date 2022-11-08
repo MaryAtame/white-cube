@@ -1,17 +1,20 @@
 .toolbar-page {
   display: flex;
   gap: rem(100);
-  padding: rem(25) rem(30);
+  padding: 0 rem(30);
+
   border: 1px solid #C8D0E1;
   border-radius: 5px;
 
   &__item {
     font-weight: 500;
-    display: block;
+    display: flex;
+    align-items: center;
+    height: rem(75);
     cursor: pointer;
   }
 
-  &__item--active {
+  &__item.active {
     font-weight: 700;
     color: $orange;
     position: relative;
@@ -20,8 +23,8 @@
       content: "";
       display: block;
       position: absolute;
-      top: rem(50);
       left: 0;
+      bottom: 0;
       width: 102%;
       height: 1px;
       background-color: $orange;

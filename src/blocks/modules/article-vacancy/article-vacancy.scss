@@ -2,39 +2,44 @@
   display: block;
   background-color: $light;
   border-radius: 5px;
-  margin-bottom: rem(30);
-  padding: rem(40) rem(55) rem(45) rem(40);
+  padding: rem(40);
   box-shadow: 5px 10px 40px rgba(43, 70, 82, 0.15);
+
+  @include r(678){
+   padding: rem(20);
+  }
 
   &__title {
     font-size: rem(24);
     line-height: 1;
     font-weight: 600;
     margin-bottom: rem(20);
+    @include r(678){
+      font-size: rem(14);
+    }
   }
 
   &__info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    @include r(500) {
-      flex-direction: column;
-      gap: rem(20);
-      align-items: start;
-    }
   }
 
   &__timetable {
     font-size: rem(16);
     line-height: 1.5;
     color: #316EE8;
-    text-decoration: underline;
+    @include r(678){
+      font-size: rem(12);
+    }
   }
 
   &__pay {
     font-size: rem(24);
     line-height: 1;
     font-weight: 600;
+    @include r(678){
+      font-size: rem(14);
+    }
   }
 }

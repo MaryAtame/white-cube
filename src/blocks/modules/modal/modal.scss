@@ -3,33 +3,49 @@
   border-radius: rem(10);
   background-color: $light;
   padding: rem(50);
+  max-width: rem(800);
+  width: 95%;
   height: fit-content;
-  max-height: 100%;
-  &__user {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: rem(20);
-    margin-bottom: rem(30);
-  }
 
-  &__picture {
-    border-radius: rem(100);
-    width: rem(100);
-    height: rem(100);
-    overflow: hidden;
-  }
+  cursor: auto !important;
 
-  &__user-info {
+  &__wrapper {
     display: flex;
     flex-direction: column;
-    gap: rem(10);
+    align-items: center;
   }
 
+  &__icon-round {
+    width: rem(70);
+    height: rem(70);
+    border-radius: rem(70);
+    background-color: #F8F8F8;
+    position: relative;
+    margin-bottom: rem(20);
+  }
+
+  &__icon {
+    max-width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    font-size: rem(36);
+    color: #000000;
+    font-weight: 700;
+
+    @include r(1200) {
+      font-size: rem(20);
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: rem(60);
+  }
 }
 
-.carousel__button.is-close {
-  top: rem(40) !important;
-  right: rem(40) !important;
-  color: #000000  !important;
-}

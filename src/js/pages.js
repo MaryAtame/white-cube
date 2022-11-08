@@ -23,6 +23,15 @@ const sidebarCatalog = fs.readFileSync('src/includes/sidebar-catalog.html');
 const tabs = fs.readFileSync('src/includes/tabs.html');
 const tableDelivery = fs.readFileSync('src/includes/table-delivery.html');
 const article = fs.readFileSync('src/includes/article.html');
+const articleDoc = fs.readFileSync('src/includes/article-doc.html');
+const articleVacancy = fs.readFileSync('src/includes/article-vacancy.html');
+
+const calculation = fs.readFileSync('src/includes/modals/calculation.html');
+const callback = fs.readFileSync('src/includes/modals/callback.html');
+const feedback = fs.readFileSync('src/includes/modals/feedback.html');
+const order = fs.readFileSync('src/includes/modals/order.html');
+const success = fs.readFileSync('src/includes/modals/success.html');
+const vacancyReply = fs.readFileSync('src/includes/modals/vacancy-reply.html');
 
 // Pages
 module.exports = [
@@ -44,6 +53,12 @@ module.exports = [
         sectionOrder,
         sectionSocial,
         sectionFooter,
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -55,7 +70,12 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
-
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -66,8 +86,14 @@ module.exports = [
         title: "Вакансии",
         head,
         sectionHeader,
+        articleVacancy,
         sectionFooter,
-
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -79,7 +105,12 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
-
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -91,7 +122,12 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
-
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -103,7 +139,13 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
-
+        paginationPage,
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -115,7 +157,12 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
-
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -127,7 +174,12 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
-
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -140,7 +192,12 @@ module.exports = [
         sectionHeader,
         tableDelivery,
         sectionFooter,
-
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -151,8 +208,14 @@ module.exports = [
         title: "Галерея",
         head,
         sectionHeader,
+        paginationPage,
         sectionFooter,
-
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -164,7 +227,13 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
-
+        paginationPage,
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -176,7 +245,13 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
-
+        articleDoc,
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -188,7 +263,12 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
-
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -200,7 +280,12 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
-
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -212,7 +297,12 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
-
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -226,7 +316,12 @@ module.exports = [
         sidebarCatalog,
         article,
         sectionFooter,
-
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -241,7 +336,12 @@ module.exports = [
         articleCatalog,
         paginationPage,
         sectionFooter,
-
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -256,7 +356,12 @@ module.exports = [
         tableDelivery,
         articleCatalog,
         sectionFooter,
-
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 
@@ -268,7 +373,12 @@ module.exports = [
         head,
         sectionHeader,
         sectionFooter,
-
+        success,
+        calculation,
+        callback,
+        feedback,
+        order,
+        vacancyReply,
         temp
     }),
 ];

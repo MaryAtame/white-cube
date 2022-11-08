@@ -5,11 +5,19 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="body">
+<div class="modals" hidden>
+    <%= htmlWebpackPlugin.options.success %>
+    <%= htmlWebpackPlugin.options.calculation %>
+    <%= htmlWebpackPlugin.options.callback %>
+    <%= htmlWebpackPlugin.options.feedback %>
+    <%= htmlWebpackPlugin.options.order %>
+    <%= htmlWebpackPlugin.options.vacancyReply %>
+</div>
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main bg-page">
     <section class="section pt-30">
         <div class="container">
-            <div class="mb-50">
+            <div class="mb-50 hidden-980">
                 <div class="breadcrumbs">
                     <a class="breadcrumbs__link" href="./">Главная</a>
                     <svg class="breadcrumbs__icon">
@@ -23,7 +31,7 @@
                 </div>
             </div>
             <h1 class="title-page">Вакансии</h1>
-            <div class="editor mb-60">
+            <div class="editor editor--16 mb-60">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus orci sit sed aenean mauris risus,
                     sed diam. Aliquet ornare consectetur mollis congue morbi commodo purus massa. Velit vitae, habitant
                     eu justo nulla ut convallis erat ornare. Urna aliquam adipiscing nibh hac quam feugiat. Quisque
@@ -45,69 +53,45 @@
                     dictum et tempor nunc. Dui varius massa consectetur enim risus faucibus.
                 </p>
             </div>
-            <div class="columns mb-60">
+            <div class="columns mb-60 mbm-20">
                 <div class="columns__col columns__col--6">
-                    <a class="article-vacancy" href="#">
-                        <h2 class="article-vacancy__title">Комплектовщик</h2>
-                        <div class="article-vacancy__info">
-                            <div class="article-vacancy__timetable">График работы 2/2</div>
-                            <div class="article-vacancy__pay">от 25 000 ₽</div>
-                        </div>
-                    </a>
-                    <a class="article-vacancy" href="./vacancy-full.html">
-                        <h2 class="article-vacancy__title">Слесарь сборщик МК</h2>
-                        <div class="article-vacancy__info">
-                            <div class="article-vacancy__timetable">График работы 2/2</div>
-                            <div class="article-vacancy__pay">от 70 000 ₽</div>
-                        </div>
-                    </a>
-                    <a class="article-vacancy" href="#">
-                        <h2 class="article-vacancy__title">Комплектовщик</h2>
-                        <div class="article-vacancy__info">
-                            <div class="article-vacancy__timetable">График работы 2/2</div>
-                            <div class="article-vacancy__pay">от 25 000 ₽</div>
-                        </div>
-                    </a>
-                    <a class="article-vacancy" href="#">
-                        <h2 class="article-vacancy__title">Комплектовщик</h2>
-                        <div class="article-vacancy__info">
-                            <div class="article-vacancy__timetable">График работы 2/2</div>
-                            <div class="article-vacancy__pay">от 25 000 ₽</div>
-                        </div>
-                    </a>
+                    <%= htmlWebpackPlugin.options.articleVacancy %>
                 </div>
                 <div class="columns__col columns__col--6">
-                    <a class="article-vacancy" href="#">
-                        <h2 class="article-vacancy__title">Комплектовщик</h2>
-                        <div class="article-vacancy__info">
-                            <div class="article-vacancy__timetable">График работы 2/2</div>
-                            <div class="article-vacancy__pay">от 25 000 ₽</div>
-                        </div>
-                    </a>
-                    <a class="article-vacancy" href="#">
-                        <h2 class="article-vacancy__title">Комплектовщик</h2>
-                        <div class="article-vacancy__info">
-                            <div class="article-vacancy__timetable">График работы 2/2</div>
-                            <div class="article-vacancy__pay">от 25 000 ₽</div>
-                        </div>
-                    </a>
-                    <a class="article-vacancy" href="#">
-                        <h2 class="article-vacancy__title">Комплектовщик</h2>
-                        <div class="article-vacancy__info">
-                            <div class="article-vacancy__timetable">График работы 2/2</div>
-                            <div class="article-vacancy__pay">от 25 000 ₽</div>
-                        </div>
-                    </a>
-                    <a class="article-vacancy" href="#">
-                        <h2 class="article-vacancy__title">Комплектовщик</h2>
-                        <div class="article-vacancy__info">
-                            <div class="article-vacancy__timetable">График работы 2/2</div>
-                            <div class="article-vacancy__pay">от 25 000 ₽</div>
-                        </div>
-                    </a>
+                    <%= htmlWebpackPlugin.options.articleVacancy %>
+                </div>
+                <div class="columns__col columns__col--6">
+                    <%= htmlWebpackPlugin.options.articleVacancy %>
+                </div>
+                <div class="columns__col columns__col--6">
+                    <%= htmlWebpackPlugin.options.articleVacancy %>
+                </div>
+                <div class="columns__col columns__col--6">
+                    <%= htmlWebpackPlugin.options.articleVacancy %>
+                </div>
+                <div class="columns__col columns__col--6">
+                    <%= htmlWebpackPlugin.options.articleVacancy %>
+                </div>
+                <div class="columns__col columns__col--6">
+                    <%= htmlWebpackPlugin.options.articleVacancy %>
+                </div>
+                <div class="columns__col columns__col--6">
+                    <%= htmlWebpackPlugin.options.articleVacancy %>
+                </div>
+                <div class="columns__col columns__col--6">
+                    <%= htmlWebpackPlugin.options.articleVacancy %>
+                </div>
+                <div class="columns__col columns__col--6">
+                    <%= htmlWebpackPlugin.options.articleVacancy %>
+                </div>
+                <div class="columns__col columns__col--6">
+                    <%= htmlWebpackPlugin.options.articleVacancy %>
+                </div>
+                <div class="columns__col columns__col--6">
+                    <%= htmlWebpackPlugin.options.articleVacancy %>
                 </div>
             </div>
-            <button class="button button--orange mb-100 centered">
+            <button class="button button--orange mb-100 mbm-20 centered">
                 <span class="button__text">Загрузить еще </span>
                 <svg class="button__icon">
                     <use xlink:href="./assets/sprite/sprite.svg#icon-reload"></use>

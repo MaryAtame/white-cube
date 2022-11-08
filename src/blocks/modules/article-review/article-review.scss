@@ -5,40 +5,83 @@
   padding: rem(30) rem(45) rem(40) rem(30);
 
   display: flex;
+  flex-direction: column;
   gap: rem(20);
 
-&--active {
-  box-shadow: 5px 5px 70px rgba(43, 70, 82, 0.15);
-}
+  &--active {
+    box-shadow: 5px 5px 70px rgba(43, 70, 82, 0.15);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: rem(45);
+      height: rem(41);
+      border-bottom-left-radius: rem(200);
+      border-bottom-right-radius: rem(10);
+      border-top-left-radius: rem(10);
+      border-top-right-radius: rem(10);
+      background-color: $blue;
+      background-image: url("./assets/sprite/sprite.svg#icon-dialog");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: flex-start;
+    gap: rem(20);
+
+    @include r(1200) {
+      gap: rem(15);
+    }
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
   }
 
-  &__picture{
+  &__picture {
     width: rem(60);
     height: rem(60);
     border-radius: 50%;
     overflow: hidden;
 
-    img{
+    @include r(580) {
+      display: none;
+      visibility: hidden;
+    }
+
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
-  &__link{
+
+  &__link {
     display: block;
     color: $blue;
     text-decoration: underline;
   }
-  &__date{
+
+  &__date {
     font-size: rem(14);
     line-height: rem(24);
     color: $gray;
     margin-bottom: rem(20);
+    @include r(1200) {
+      margin-bottom: rem(10);
+    }
   }
-  &__name{
+
+  &__name {
     font-size: rem(20);
     line-height: rem(24);
     font-weight: 600;

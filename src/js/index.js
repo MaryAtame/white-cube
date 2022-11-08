@@ -14,3 +14,4 @@ import '../blocks/modules/slider-review/slider-review';
 import '../blocks/modules/tabs/tabs';
 import '../blocks/modules/dropdown/dropdown';
 import '../blocks/modules/menu-mobile/menu-mobile';
+import '../blocks/modules/modal/form-tel';

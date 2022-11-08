@@ -5,11 +5,19 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="body">
+<div class="modals" hidden>
+    <%= htmlWebpackPlugin.options.success %>
+    <%= htmlWebpackPlugin.options.calculation %>
+    <%= htmlWebpackPlugin.options.callback %>
+    <%= htmlWebpackPlugin.options.feedback %>
+    <%= htmlWebpackPlugin.options.order %>
+    <%= htmlWebpackPlugin.options.vacancyReply %>
+</div>
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main bg-page">
     <section class="section pt-30">
         <div class="container">
-            <div class="mb-50">
+            <div class="mb-50 hidden-980">
                 <div class="breadcrumbs">
                     <a class="breadcrumbs__link" href="./">Главная</a>
                     <svg class="breadcrumbs__icon">
@@ -40,7 +48,7 @@
                             </div>
                         </div>
                         <div class="columns__col columns__col--3 right-self">
-                            <button class="button button--orange">Оставить отзыв</button>
+                            <button class="button button--orange" data-fancybox data-src="#modal-feedback">Оставить отзыв</button>
                         </div>
                     </div>
                 </div>

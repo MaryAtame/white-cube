@@ -13,13 +13,19 @@
     color: #0B1F33;
     min-width: rem(35);
     min-height: rem(35);
+    padding: rem(5);
     background-color: transparent;
     border-radius: 35px;
     transition: all .3s linear;
+
+    &:hover {
+      opacity: .8;
+      background-color: rgba(49, 110, 232, 0.15);
+    }
   }
 }
 
-.pagination-page__link--active {
+.pagination-page__link.active {
   background-color: $blue;
   color: $light;
 }

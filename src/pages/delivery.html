@@ -5,11 +5,19 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="body">
+<div class="modals" hidden>
+    <%= htmlWebpackPlugin.options.success %>
+    <%= htmlWebpackPlugin.options.calculation %>
+    <%= htmlWebpackPlugin.options.callback %>
+    <%= htmlWebpackPlugin.options.feedback %>
+    <%= htmlWebpackPlugin.options.order %>
+    <%= htmlWebpackPlugin.options.vacancyReply %>
+</div>
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main bg-page">
     <section class="section pt-30 pb-50">
         <div class="container">
-            <div class="mb-50">
+            <div class="mb-50 hidden-980">
                 <div class="breadcrumbs">
                     <a class="breadcrumbs__link" href="./">Главная</a>
                     <svg class="breadcrumbs__icon">
@@ -18,7 +26,7 @@
                     <span>Доставка</span>
                 </div>
             </div>
-            <h1 class="title-page">Доставка</h1>
+            <h1 class="title-page mb-50 mbm-20">Доставка</h1>
             <div class="editor editor--16 mb-50">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus orci sit sed aenean mauris risus,
                     sed diam. Aliquet ornare consectetur mollis congue morbi commodo purus massa. Velit vitae, habitant

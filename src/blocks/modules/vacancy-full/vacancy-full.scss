@@ -1,45 +1,66 @@
 .vacancy-full {
-&__address {
-  display: flex;
-  gap: rem(98);
-}
+  &__address {
+    display: flex;
+    gap: rem(98);
+    @include r(980) {
+      flex-direction: column;
+      gap: rem(10);
+    }
+  }
+
   &__timetable {
     display: flex;
     gap: rem(26);
+
+    @include r(980) {
+      flex-direction: column;
+      gap: rem(10);
+    }
   }
-  &__nav{
+
+  &__nav {
     display: flex;
     gap: rem(20);
+
+    @include r(768) {
+      flex-direction: column;
+    }
   }
+
   &__pay {
     font-size: rem(36);
     line-height: 1.2;
     color: #000000;
     font-weight: 600;
     text-align: end;
-    margin-bottom: rem(60);
-  }
+    margin-bottom: rem(50);
 
-  &__chapter {
-    color: $blue;
-    font-weight: 500;
+    @include r(1200) {
+      font-size: rem(18);
+      margin-bottom: rem(20);
+      text-align: start;
+    }
   }
 
   &__list {
     display: flex;
     flex-direction: column;
     gap: rem(35);
-    list-style: none;
+    width: 90%;
+
+    list-style: disc;
+    list-style-position: inside;
   }
 
-  &__item{
+  &__item {
     font-weight: 300;
-  &::before{
-    content: "\2022";
-    color: $orange;
-    font-weight: 800;
-    display: inline-block;
-    width: rem(15);
+
+&::marker {
+  color: $orange;
+  font-size: 1.2em;
+}
+    @include r(980) {
+      font-size: rem(14);
     }
   }
 }

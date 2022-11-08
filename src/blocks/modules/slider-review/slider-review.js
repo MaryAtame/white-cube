@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const swiperReview = new Swiper('.slider-review', {
         modules: [Navigation],
-        slidesPerView: 1.5,
+        slidesPerView: 1.2,
         spaceBetween: 20,
         direction: 'horizontal',
         loop: true,

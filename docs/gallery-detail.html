@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicons/apple-touch-icon.png">
@@ -14,9 +14,125 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <title>Фото силикатных блоков</title>
+    <title>Фото силикатных блоков</title>
 <link href="./css/main.css" rel="stylesheet"></head>
 <body class="body">
+<div class="modals" hidden>
+    <section class="modal align-center" id="modal-success">
+    <div class="modal__wrapper">
+        <div class="modal__icon-round">
+            <svg class="modal__icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-success"></use>
+            </svg>
+        </div>
+        <h1 class="modal__title mb-30">Заявка отправлена!</h1>
+        <a class="button button--blue mb-25" href="catalog.html">Перейти в каталог</a>
+        <a class="button button--white" href="./">На главную</a>
+    </div>
+</section>
+    <section class="modal content-left" id="modal-calculation">
+    <h1 class="modal__title mb-15">Заказать расчет</h1>
+    <div class="editor editor--16">
+        <p>В компании “Белый Куб”</p>
+    </div>
+
+    <form class="modal__form" action="/#" method="post" role="form">
+
+    </form>
+
+</section>
+    <section class="modal content-left" id="modal-callback">
+    <h1 class="modal__title mb-20">Заказать звонок</h1>
+    <div class="editor editor--16  mb-20">
+        <p>Есть вопросы? Закажите звонок! Мы Вам перезвоним в ближайшее время</p>
+    </div>
+    <form class="form  mb-40" action="/#" method="post" role="form">
+        <div class="form__item">
+            <label class="form__label" for="name">Ваше полное имя<span>&#42;</span></label>
+            <input class="form__input" id="name" placeholder="Введите ваше имя"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="userPhone">Телефон<span>&#42;</span></label>
+            <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
+                   placeholder="+7 (___) ___-___-__-__"/>
+        </div>
+        <div class="form__radio mt-25">
+            <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree"/>
+            <label for="setAgree"></label>
+            <p class="form__checkbox-btn-label">Я согласен на
+                <span>обработку персональных данных</span></p>
+        </div>
+    </form>
+    <button class="button button--orange">Отправить</button>
+</section>
+    <section class="modal content-left" id="modal-feedback">
+    <h1 class="modal__title">Оставить отзыв</h1>
+    <form class="form  mb-40" action="/#" method="post" role="form">
+        <div class="form__item">
+            <label class="form__label" for="name"></label>
+            <input class="form__input" id="name" placeholder="Ваше имя"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="date"></label>
+            <input class="form__input" inputmode="numeric" id="date" placeholder="Дата покупки"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="content"></label>
+            <input class="form__input" id="content" placeholder="Ваши впечатления"/>
+        </div>
+        <a class="form__item-link" href="">Прикрепить вашу фотографию </a>
+        <div class="form__radio">
+            <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree-feedback"/>
+            <label for="setAgree-feedback"></label>
+            <p class="form__checkbox-btn-label">Я согласен с
+                <span>политикой конфидециальности</span></p>
+        </div>
+    </form>
+    <button class="button button--orange">Отправить</button>
+</section>
+    <section class="modal content-left" id="modal-order">
+    <h1 class="modal__title">Заказать рассчет</h1>
+</section>
+    <section class="modal content-left" id="modal-vacancy-reply">
+    <h1 class="modal__title">Откликнуться</h1>
+    <div class="editor editor--16 mb-20">
+        <p>Заполните свои данные и прикрепите резюме</p>
+    </div>
+    <form class="form  mb-40" action="/#" method="post" role="form">
+        <div class="form__item">
+            <label class="form__label" for="name">Ваше полное имя<span>&#42;</span></label>
+            <input class="form__input" id="name" placeholder="Введите ваше имя"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="userPhone">Телефон<span>&#42;</span></label>
+            <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
+                   placeholder="+7 (___) ___-___-__-__"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="userEmail">Email<span>&#42;</span></label>
+            <input class="form__input" inputmode="email" id="userEmail" placeholder="info@mail.ru"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="userBD">Дата рождения<span>&#42;</span></label>
+            <input class="form__input form__input-bd" inputmode="email" id="userBD"
+                   placeholder="Выберите дату рождения"/>
+        </div>
+        <div class="form__radio mt-25">
+            <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree"/>
+            <label for="setAgree"></label>
+            <p class="form__checkbox-btn-label">Нажимая кнопку, я даю свое согласие на обработку моих персональных
+                данных в соответствии с законом № 152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия <a href="#">Пользовательского соглашения.</a>
+            </p>
+        </div>
+    </form>
+    <div class="modal__nav">
+        <input id="file" type="file">
+        <label class="form__label" for="file"></label>
+        <p>Прикрепить резюме</p>
+        <button class="button button--orange">Отправить</button>
+    </div>
+</section>
+</div>
 <header class="header pt-20 pb-15">
     <div class="container">
         <div class="header-toolbar">
@@ -68,112 +184,16 @@
         </div>
         <div class="header-row mob-hidden">
             <div class="header-row__buttons">
-                <button class="button button--orange">
+                <button class="button button--orange" data-fancybox data-src="#modal-calculation">
                     <span class="button__text">Заказать расчет</span>
                 </button>
-                <a class="button button--blue catalog-btn" href="catalog.html">
+                <a class="button button--blue" href="catalog.html">
                     <svg class="button__icon">
                         <use xlink:href="./assets/sprite/sprite.svg#icon-catalog"></use>
                     </svg>
                     <span class="button__text">каталог</span>
                 </a>
-
-                <div class="dropdown-catalog">
-                    <div class="container">
-                        <ul class="dropdown-catalog__list">
-                            <li class="dropdown-catalog__item">
-                                <a class="dropdown-catalog__link" href="#">
-                                    <svg class="dropdown-catalog__icon">
-                                        <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                                    </svg>
-                                    <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                                </a>
-                            </li>
-                            <li class="dropdown-catalog__item">
-                                <a href="#">
-                                    <svg class="dropdown-catalog__icon">
-                                        <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                                    </svg>
-                                    <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                                </a>
-                            </li>
-                            <li class="dropdown-catalog__item">
-                                <a href="#">
-                                    <svg class="dropdown-catalog__icon">
-                                        <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                                    </svg>
-                                    <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                                </a>
-                            </li>
-                            <li class="dropdown-catalog__item">
-                                <a href="#">
-                                    <svg class="dropdown-catalog__icon">
-                                        <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                                    </svg>
-                                    <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                                </a>
-                            </li>
-                            <li class="dropdown-catalog__item">
-                                <a href="#">
-                                    <svg class="dropdown-catalog__icon">
-                                        <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                                    </svg>
-                                    <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                                </a>
-                            </li>
-                            <li class="dropdown-catalog__item">
-                                <a href="#">
-                                    <svg class="dropdown-catalog__icon">
-                                        <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                                    </svg>
-                                    <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                                </a>
-                            </li>
-                            <li class="dropdown-catalog__item">
-                                <a href="#">
-                                    <svg class="dropdown-catalog__icon">
-                                        <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                                    </svg>
-                                    <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                                </a>
-                            </li>
-                            <li class="dropdown-catalog__item">
-                                <a href="#">
-                                    <svg class="dropdown-catalog__icon">
-                                        <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                                    </svg>
-                                    <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                                </a>
-                            </li>
-                            <li class="dropdown-catalog__item">
-                                <a href="#">
-                                    <svg class="dropdown-catalog__icon">
-                                        <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                                    </svg>
-                                    <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                                </a>
-                            </li>
-                            <li class="dropdown-catalog__item">
-                                <a href="#">
-                                    <svg class="dropdown-catalog__icon">
-                                        <use xlink:href="./assets/spite/sprite.svg#item-catalog-1"></use>
-                                    </svg>
-                                    <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                                </a>
-                            </li>
-                            <li class="dropdown-catalog__item">
-                                <a href="#">
-                                    <svg class="dropdown-catalog__icon">
-                                        <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                                    </svg>
-                                    <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
-
             <div class="menu-header">
                 <ul class="menu-header__list">
                     <li class="menu-header__link">
@@ -183,33 +203,120 @@
                                 <a href="vacancy.html">Вакансии</a>
                             </li>
                             <li class="menu-header__dropdown-link">
-                                <a href="#">Сертификаты</a>
+                                <a href="garanty.html">Сертификаты</a>
                             </li>
                             <li class="menu-header__dropdown-link">
-                                <a href="#">Новости</a>
+                                <a href="news.html">Новости</a>
                             </li>
                             <li class="menu-header__dropdown-link">
-                                <a href="#">Видео</a>
+                                <a href="video.html">Видео</a>
                             </li>
                         </ul>
                     </li>
                     <li class="menu-header__link">
-                        <a href="#">Доставка</a>
+                        <a href="delivery.html">Доставка</a>
                     </li>
                     <li class="menu-header__link">
-                        <a href="#">Галерея</a>
+                        <a href="gallery-page.html">Галерея</a>
                     </li>
                     <li class="menu-header__link">
-                        <a href="#">Отзывы</a>
+                        <a href="review-detail.html">Отзывы</a>
                     </li>
                     <li class="menu-header__link">
-                        <a href="#">Контакты</a>
+                        <a href="contacts.html">Контакты</a>
                     </li>
                     <li class="menu-header__link">
-                        <a href="#">Где купить</a>
+                        <a href="map-detail.html">Где купить</a>
                     </li>
                     <li class="menu-header__link">
-                        <a href="#">Техническая информация</a>
+                        <a href="documentation.html">Техническая информация</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dropdown-catalog">
+            <div class="container">
+                <ul class="dropdown-catalog__list">
+                    <li class="dropdown-catalog__item">
+                        <a class="dropdown-catalog__link" href="#">
+                            <svg class="dropdown-catalog__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
+                            </svg>
+                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
+                        </a>
+                    </li>
+                    <li class="dropdown-catalog__item">
+                        <a class="dropdown-catalog__link" href="#">
+                            <svg class="dropdown-catalog__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
+                            </svg>
+                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
+                        </a>
+                    </li>
+                    <li class="dropdown-catalog__item">
+                        <a class="dropdown-catalog__link" href="#">
+                            <svg class="dropdown-catalog__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
+                            </svg>
+                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
+                        </a>
+                    </li>
+                    <li class="dropdown-catalog__item">
+                        <a class="dropdown-catalog__link" href="#">
+                            <svg class="dropdown-catalog__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
+                            </svg>
+                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
+                        </a>
+                    </li>
+                    <li class="dropdown-catalog__item">
+                        <a class="dropdown-catalog__link" href="#">
+                            <svg class="dropdown-catalog__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
+                            </svg>
+                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
+                        </a>
+                    </li>
+                    <li class="dropdown-catalog__item">
+                        <a class="dropdown-catalog__link" href="#">
+                            <svg class="dropdown-catalog__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
+                            </svg>
+                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
+                        </a>
+                    </li>
+                    <li class="dropdown-catalog__item">
+                        <a class="dropdown-catalog__link" href="#">
+                            <svg class="dropdown-catalog__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
+                            </svg>
+                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
+                        </a>
+                    </li>
+                    <li class="dropdown-catalog__item">
+                        <a class="dropdown-catalog__link" href="#">
+                            <svg class="dropdown-catalog__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
+                            </svg>
+                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
+                        </a>
+                    </li>
+                    <li class="dropdown-catalog__item">
+                        <a class="dropdown-catalog__link" href="#">
+                            <svg class="dropdown-catalog__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
+                            </svg>
+                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
+                        </a>
+                    </li>
+                    >
+                    <li class="dropdown-catalog__item">
+                        <a class="dropdown-catalog__link" href="#">
+                            <svg class="dropdown-catalog__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
+                            </svg>
+                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -266,10 +373,10 @@
                     <a class="menu-mobile__link" href="#">Плиты силикатные</a>
                 </li>
                 <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="#">Главная</a>
+                    <a class="menu-mobile__link" href="./">Главная</a>
                 </li>
                 <li class="menu-mobile__item" data-dropdown>
-                    <a class="menu-mobile__link" href="#">
+                    <a class="menu-mobile__link" href="about.html">
                         <svg class="menu-mobile__icon">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-small-arrow"></use>
                         </svg>
@@ -277,206 +384,260 @@
                     </a>
                     <ul class="menu-mobile__sublist" data-content hidden>
                         <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Вакансии</a>
+                            <a class="menu-mobile__link" href="vacancy.html">Вакансии</a>
                         </li>
                         <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Сертификаты</a>
+                            <a class="menu-mobile__link" href="garanty.html">Сертификаты</a>
                         </li>
                         <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Новости</a>
+                            <a class="menu-mobile__link" href="news.html">Новости</a>
                         </li>
                         <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Видео</a>
+                            <a class="menu-mobile__link" href="video.html">Видео</a>
                         </li>
                     </ul>
                 </li>
                 <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="#">Доставка</a>
+                    <a class="menu-mobile__link" href="delivery.html">Доставка</a>
                 </li>
                 <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="#">Галерея</a>
+                    <a class="menu-mobile__link" href="gallery-page.html">Галерея</a>
                 </li>
                 <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="#">Отзывы</a>
+                    <a class="menu-mobile__link" href="review-detail.html">Отзывы</a>
                 </li>
                 <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="#">Контакты</a>
+                    <a class="menu-mobile__link" href="contacts.html">Контакты</a>
                 </li>
                 <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="#">Где купить</a>
+                    <a class="menu-mobile__link" href="map-detail.html">Где купить</a>
                 </li>
                 <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="#">Техническая информация</a>
+                    <a class="menu-mobile__link" href="documentation.html">Техническая информация</a>
                 </li>
             </ul>
-            <button class="button button--orange centered">Заказать расчет</button>
+            <button class="button button--orange centered" data-fancybox data-src="#modal-calculation">Заказать расчет
+            </button>
         </nav>
     </div>
 </header>
 <main class="main bg-page">
-  <section class="section-page">
-    <div class="container">
-      <div class="mb-50">
-        <div class="breadcrumbs">
-          <a class="breadcrumbs__link" href="./">Главная</a>
-          <svg class="breadcrumbs__icon">
-            <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
-          </svg>
-          <a class="breadcrumbs__link" href="./">Галерея</a>
-          <svg class="breadcrumbs__icon">
-            <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
-          </svg>
-          <a class="breadcrumbs__link" href="./">Построенные объекты</a>
-          <svg class="breadcrumbs__icon">
-            <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
-          </svg>
-          <span>Фото силикатных блоков</span>
+    <section class="section-page">
+        <div class="container">
+            <div class="mb-50 hidden-980">
+                <div class="breadcrumbs">
+                    <a class="breadcrumbs__link" href="./">Главная</a>
+                    <svg class="breadcrumbs__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                    </svg>
+                    <a class="breadcrumbs__link" href="./">Галерея</a>
+                    <svg class="breadcrumbs__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                    </svg>
+                    <a class="breadcrumbs__link" href="./">Построенные объекты</a>
+                    <svg class="breadcrumbs__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                    </svg>
+                    <span>Фото силикатных блоков</span>
+                </div>
+            </div>
+            <div class="justify mb-50 mbm-20">
+                <h1 class="title-page">Фото силикатных блоков</h1>
+                <span>12 фото</span>
+            </div>
+            <div class="columns mb-60 mbm-20">
+                <div class="columns__col columns__col--4">
+                    <a class="gallery-detail" href="#">
+                        <picture class="gallery-detail__picture" data-fancybox
+                                 data-src="./assets/images/article-gallery-img-1.jpg">
+                            <img src="./assets/images/article-gallery-img-1.jpg" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="gallery-detail" href="#">
+                        <picture class="gallery-detail__picture" data-fancybox
+                                 data-src="./assets/images/gallery-detail-2.jpg">
+                            <img src="./assets/images/gallery-detail-2.jpg" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="gallery-detail" href="#">
+                        <picture class="gallery-detail__picture" data-fancybox
+                                 data-src="./assets/images/gallery-detail-1.jpg">
+                            <img src="./assets/images/gallery-detail-1.jpg" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="gallery-detail" href="#">
+                        <picture class="gallery-detail__picture" data-fancybox
+                                 data-src="./assets/images/gallery-detail-1.jpg">
+                            <img src="./assets/images/gallery-detail-1.jpg" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="gallery-detail" href="#">
+                        <picture class="gallery-detail__picture" data-fancybox
+                                 data-src="./assets/images/article-gallery-img-1.jpg">
+                            <img src="./assets/images/article-gallery-img-1.jpg" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="gallery-detail" href="#">
+                        <picture class="gallery-detail__picture" data-fancybox
+                                 data-src="./assets/images/gallery-detail-2.jpg">
+                            <img src="./assets/images/gallery-detail-2.jpg" alt="">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <button class="button button--orange centered desktop-hidden">
+                <span class="button__text">Загрузить еще </span>
+                <svg class="button__icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-reload"></use>
+                </svg>
+            </button>
+            <div class="mob-hidden">
+                <nav class="pagination-page">
+    <a class="pagination-page__link" href="#">1</a>
+    <span class="pagination-page__link">...</span>
+    <a class="pagination-page__link" href="#">11</a>
+    <a class="pagination-page__link" href="#">10</a>
+    <a class="pagination-page__link active" href="#">12</a>
+    <a class="pagination-page__link" href="#">13</a>
+    <a class="pagination-page__link" href="#">14</a>
+    <span class="pagination-page__link">...</span>
+    <a class="pagination-page__link" href="#">26</a>
+</nav>
+            </div>
         </div>
-      </div>
-      <div class="justify">
-        <h1 class="title-page">Фото силикатных блоков</h1>
-        <span>12 фото</span>
-      </div>
-      <div class="columns mb-60">
-        <div class="columns__col columns__col--4">
-          <a class="gallery-detail" href="#" >
-            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/article-gallery-img-1.jpg">
-              <img src="./assets/images/article-gallery-img-1.jpg" alt="">
-            </picture>
-          </a>
-        </div>
-        <div class="columns__col columns__col--4">
-          <a class="gallery-detail" href="#" >
-            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/gallery-detail-2.jpg">
-              <img src="./assets/images/gallery-detail-2.jpg" alt="">
-            </picture>
-          </a>
-        </div>
-        <div class="columns__col columns__col--4">
-          <a class="gallery-detail" href="#" >
-            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/gallery-detail-1.jpg">
-              <img src="./assets/images/gallery-detail-1.jpg" alt="">
-            </picture>
-          </a>
-        </div>
-        <div class="columns__col columns__col--4">
-          <a class="gallery-detail" href="#" >
-            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/gallery-detail-1.jpg">
-              <img src="./assets/images/gallery-detail-1.jpg" alt="">
-            </picture>
-          </a>
-        </div>
-        <div class="columns__col columns__col--4">
-          <a class="gallery-detail" href="#" >
-            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/article-gallery-img-1.jpg">
-              <img src="./assets/images/article-gallery-img-1.jpg" alt="">
-            </picture>
-          </a>
-        </div>
-        <div class="columns__col columns__col--4">
-          <a class="gallery-detail" href="#" >
-            <picture class="gallery-detail__picture" data-fancybox data-src="./assets/images/gallery-detail-2.jpg">
-              <img src="./assets/images/gallery-detail-2.jpg" alt="">
-            </picture>
-          </a>
-        </div>
-      </div>
-      
-    </div>
-  </section>
+    </section>
 </main>
 <footer class="footer revert">
-	<div class="container">
-		<div class="columns">
-			<div class="columns__col columns__col--3">
-				<picture class="logo">
-					<img src="./assets/images/footer-logo.svg" alt="Лого Белый куб">
-				</picture>
-				<div class="footer__privacy">
-					<a class="footer__privacy-link" href="#">Политика конфиденциальности</a>
-				</div>
-				<div class="footer__sign">&copy; Белый Куб. Все права защищены 2022</div>
-			</div>
-			<div class="columns__col columns__col--3">
-				<ul class="menu-footer">
-					<li class="menu-footer__item">
-						<a href="#" class="menu-footer__link">Главная</a>
-					</li>
-					<li class="menu-footer__item">
-						<a href="#" class="menu-footer__link">О заводе</a>
-					</li>
-					<li class="menu-footer__item">
-						<a href="#" class="menu-footer__link">Вакансии</a>
-					</li>
-					<li class="menu-footer__item">
-						<a href="#" class="menu-footer__link">Секртификаты</a>
-					</li>
-					<li class="menu-footer__item">
-						<a href="#" class="menu-footer__link">Новости</a>
-					</li>
-					<li class="menu-footer__item">
-						<a href="#" class="menu-footer__link">Видео</a>
-					</li>
-					<li class="menu-footer__item">
-						<a href="#" class="menu-footer__link">Доставка</a>
-					</li>
-					<li class="menu-footer__item">
-						<a href="#" class="menu-footer__link">Галерея</a>
-					</li>
-					<li class="menu-footer__item">
-						<a href="#" class="menu-footer__link">Отзывы</a>
-					</li>
-					<li class="menu-footer__item">
-						<a href="#" class="menu-footer__link">Где купить</a>
-					</li>
-					<li class="menu-footer__item">
-						<a href="#" class="menu-footer__link">Техническая документация</a>
-					</li>
-				</ul>
-			</div>
-			<div class="columns__col columns__col--3">
-				<div class="footer-contact">
-					<div class="footer-contact__title">контакты</div>
-					<div class="footer-contact__info">
-						<address class="footer-contact__address">
-							<a class="footer-contact__address-link" rel="nofollow" href="https://yandex.ru/maps/-/CCUZB0aaLC"
-								target="_blank">г. Калининград, ул Комсомольская
-								40</a>
-						</address>
-						<a class="footer-contact__mail" rel="nofollow" href="mailto:email@mail.ru">email@mail.ru</a>
-					</div>
-					<a class="diez-sign">
-						<span class="diez-sign__name">Разработано</span>
-						<picture class="diez-sign__logo">
-							<img src="./assets/images/diez.svg" alt="logo dieztech">
-						</picture>
-					</a>
-				</div>
-			</div>
-			<div class="columns__col columns__col--3">
-				<div class="footer-callback">
-					<div class="footer-callback__tel">
-						<a class="footer-callback__tel-link" rel="nofollow" href="tel:+74012304175">8 (4012) 30-41-75</a>
-					</div>
-					<button class="button button--orange">
-						<span class="button__text">Заказать звонок</span></button>
-					<div class="footer-callback__social">
-						<p class="footer-callback__social-text">Мы в соц. сетях</p>
-						<a href="#">
-							<svg class="footer-callback__social-icon">
-								<use xlink:href="./assets/sprite/sprite.svg#icon-vk"></use>
-							</svg>
-						</a>
-						<a href="#">
-							<svg class="footer-callback__social-icon">
-								<use xlink:href="./assets/sprite/sprite.svg#icon-yt"></use>
-							</svg>
-						</a>
-						</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="columns">
+            <div class="columns__col columns__col--3">
+                <picture class="logo">
+                    <img src="./assets/images/footer-logo.svg" alt="Лого Белый куб">
+                </picture>
+                <div class="footer__privacy mob-hidden">
+                    <a class="footer__privacy-link" href="#">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__sign mob-hidden">&copy; Белый Куб. Все права защищены 2022</div>
+            </div>
+            <div class="columns__col columns__col--3">
+                <ul class="menu-footer">
+                    <li class="menu-footer__item">
+                        <a href="./" class="menu-footer__link">Главная</a>
+                    </li>
+                    <li class="menu-footer__item">
+                        <a href="about.html" class="menu-footer__link">О заводе</a>
+                    </li>
+                    <li class="menu-footer__item">
+                        <a href="vacancy.html" class="menu-footer__link">Вакансии</a>
+                    </li>
+                    <li class="menu-footer__item">
+                        <a href="garanty.html" class="menu-footer__link">Секртификаты</a>
+                    </li>
+                    <li class="menu-footer__item">
+                        <a href="news.html" class="menu-footer__link">Новости</a>
+                    </li>
+                    <li class="menu-footer__item">
+                        <a href="video.html" class="menu-footer__link">Видео</a>
+                    </li>
+                    <li class="menu-footer__item">
+                        <a href="delivery.html" class="menu-footer__link">Доставка</a>
+                    </li>
+                    <li class="menu-footer__item">
+                        <a href="gallery-page.html" class="menu-footer__link">Галерея</a>
+                    </li>
+                    <li class="menu-footer__item">
+                        <a href="review-detail.html" class="menu-footer__link">Отзывы</a>
+                    </li>
+                    <li class="menu-footer__item">
+                        <a href="map-detail.html" class="menu-footer__link">Где купить</a>
+                    </li>
+                    <li class="menu-footer__item">
+                        <a href="documentation.html" class="menu-footer__link">Техническая документация</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="columns__col columns__col--3">
+                <div class="footer-contact mb-45 mbm-20">
+                    <div class="footer-contact__title">контакты</div>
+                    <div class="footer-contact__info">
+                        <address class="footer-contact__link">
+                            <svg class="footer-contact__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-location"></use>
+                            </svg>
+                            <a class="footer-contact__address-link" rel="nofollow"
+                               href="https://yandex.ru/maps/-/CCUZB0aaLC"
+                               target="_blank">г. Калининград, ул Комсомольская
+                                40</a>
+                        </address>
+                        <a class="footer-contact__link" rel="nofollow" href="mailto:email@mail.ru">
+                            <svg class="footer-contact__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-mail"></use>
+                            </svg>
+                            <span>email@mail.ru</span>
+                        </a>
+                        <a class="footer-contact__link desktop-hidden" rel="nofollow" href="+74012304175">
+                            <svg class="footer-contact__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-tel"></use>
+                            </svg>
+                            <span>8 (4012) 30-41-75</span>
+                        </a>
+                    </div>
+                    <a class="diez-sign mob-hidden mt-45" href="https://diez.io/">
+                        <span class="diez-sign__name">Разработано</span>
+                        <picture class="diez-sign__logo">
+                            <img src="./assets/images/diez.svg" alt="logo dieztech">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <div class="columns__col columns__col--3">
+                <div class="footer-callback">
+                    <div class="footer-callback__tel mob-hidden">
+                        <a class="footer-callback__tel-link" rel="nofollow" href="tel:+74012304175">8 (4012)
+                            30-41-75</a>
+                    </div>
+                    <button class="button button--orange order-m-2 margm-0" data-fancybox data-src="#modal-callback">
+                        <span class="button__text">Заказать звонок</span>
+                    </button>
+                    <div class="footer-callback__social order-m-1">
+                        <p class="footer-callback__social-text">Мы в соц. сетях</p>
+                        <a href="#">
+                            <svg class="footer-callback__social-icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-vk"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="footer-callback__social-icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-yt"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="columns__col columns__col--12 desktop-hidden">
+                <div class="footer__sign desktop-hidden">&copy; Белый Куб. Все права защищены 2022</div>
+                <div class="footer__privacy desktop-hidden">
+                    <a class="footer__privacy-link mb-30" href="#">Политика конфиденциальности</a>
+                </div>
+                <a class="diez-sign mt-30 desktop-hidden" href="https://diez.io/">
+                    <span class="diez-sign__name">Разработано</span>
+                    <picture class="diez-sign__logo">
+                        <img src="./assets/images/diez.svg" alt="logo dieztech">
+                    </picture>
+                </a>
+            </div>
+        </div>
+    </div>
 </footer>
 <!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
 <section class="section">
@@ -523,12 +684,12 @@
         </div>
         <div class="temp">
             <h1>MODALS</h1>
-            <a href="">Заказать рассчет</a>
-            <a href="">Откликнуться</a>
-            <a href="">Заказать звонок</a>
-            <a href="">Оставить отзыв</a>
-            <a href="">Отправка заказа</a>
-            <a href="">Заявка отправлена!</a>
+            <a data-fancybox data-src="#modal-calculation">Заказать расчет</a>
+            <a data-fancybox data-src="#modal-vacancy-reply">Откликнуться</a>
+            <a data-fancybox data-src="#modal-callback">Заказать звонок</a>
+            <a data-fancybox data-src="#modal-feedback">Оставить отзыв</a>
+            <a data-fancybox data-src="#modal-order">Отправка заказа</a>
+            <a data-fancybox data-src="#modal-success">Заявка отправлена!</a>
         </div>
     </div>
 </section>

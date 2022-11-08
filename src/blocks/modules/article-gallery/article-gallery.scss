@@ -21,19 +21,37 @@
     justify-content: flex-end;
     color: #FFFFFF;
     padding: rem(40);
-    background: linear-gradient(180deg, rgba(38,39,61,0), rgba(38,39,61,.6));
+    background: linear-gradient(180deg, rgba(38, 39, 61, 0), rgba(38, 39, 61, .6));
+
+    @include r(576) {
+      padding: rem(7) rem(12);
+    }
   }
+
   &__category {
     font-weight: 400;
     font-size: rem(14);
     line-height: 1.6;
     margin-bottom: rem(10);
+
+    @include r(576) {
+     font-size: rem(8);
+      margin-bottom: rem(4);
+    }
   }
 
   &__title {
     font-weight: 600;
     font-size: rem(20);
     line-height: 1.2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+
+    @include r(576) {
+      font-size: rem(10);
+    }
   }
 
   &__count {
@@ -51,5 +69,9 @@
     line-height: 1.6;
     background-color: $blue;
     border-bottom-right-radius: 10px;
+
+    @include r(576) {
+      font-size: rem(10);
+    }
   }
 }

@@ -6,6 +6,11 @@
   height: fit-content;
   width: fit-content;
 
+  @include r(1200) {
+    display: none;
+    visibility: hidden;
+  }
+
   &::before {
     content: "";
     position: absolute;

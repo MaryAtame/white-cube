@@ -5,11 +5,19 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="body">
+<div class="modals" hidden>
+    <%= htmlWebpackPlugin.options.success %>
+    <%= htmlWebpackPlugin.options.success %>
+    <%= htmlWebpackPlugin.options.callback %>
+    <%= htmlWebpackPlugin.options.feedback %>
+    <%= htmlWebpackPlugin.options.order %>
+    <%= htmlWebpackPlugin.options.vacancyReply %>
+</div>
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main bg-page">
     <section class="section pt-30">
         <div class="container">
-            <div class="mb-50">
+            <div class="mb-50 hidden-980">
                 <div class="breadcrumbs">
                     <a class="breadcrumbs__link" href="./">Главная</a>
                     <svg class="breadcrumbs__icon">
@@ -22,9 +30,9 @@
                     <span>Новости</span>
                 </div>
             </div>
-            <h1 class="title-page">Новости</h1>
-            <nav class="toolbar-page mb-70">
-                <label class="toolbar-page__item toolbar-page__item--active">
+            <h1 class="title-page mb-50 mbm-20">Новости</h1>
+            <nav class="toolbar-page mb-70 mob-hidden">
+                <label class="toolbar-page__item active">
                     <input class="toolbar-page__input" type="radio">
                     <span class="toolbar-page__category">За все время</span>
                 </label>
@@ -40,6 +48,12 @@
                     <input class="toolbar-page__input" type="radio">
                     <span class="toolbar-page__category">2020</span>
                 </label>
+            </nav>
+            <nav class="toolbar-dropdown desktop-hidden mb-20" data-dropdown>
+                <a class="toolbar-dropdown__link" href="#" data-content>За все время</a>
+                <a class="toolbar-dropdown__link" href="#" data-content hidden>2022</a>
+                <a class="toolbar-dropdown__link" href="#" data-content hidden>2021</a>
+                <a class="toolbar-dropdown__link" href="#" data-content hidden>2020</a>
             </nav>
             <div class="columns mb-60">
                 <div class="columns__col columns__col--6">

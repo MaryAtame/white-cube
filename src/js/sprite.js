@@ -27,6 +27,10 @@ import iconEmail from '../assets/sprite/icon-email.svg';
 import iconDirection from '../assets/sprite/icon-direction.svg';
 import iconDialogPlate from '../assets/sprite/icon-dialog-plate.svg';
 import iconUser from '../assets/sprite/icon-user.svg';
+import iconSuccess from '../assets/sprite/icon-success.svg';
+import iconDone from '../assets/sprite/icon-done.svg';
+import iconClip from '../assets/sprite/icon-clip.svg';
+import iconCalendar from '../assets/sprite/icon-calendar.svg';
 
 export default {
     iconCatalog,
@@ -57,5 +61,9 @@ export default {
     iconEmail,
     iconDirection,
     iconDialogPlate,
-    iconUser
+    iconUser,
+    iconSuccess,
+    iconDone,
+    iconClip,
+    iconCalendar
 };

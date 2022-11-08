@@ -1,0 +1,39 @@
+<section class="modal content-left" id="modal-vacancy-reply">
+    <h1 class="modal__title">Откликнуться</h1>
+    <div class="editor editor--16 mb-20">
+        <p>Заполните свои данные и прикрепите резюме</p>
+    </div>
+    <form class="form  mb-40" action="/#" method="post" role="form">
+        <div class="form__item">
+            <label class="form__label" for="name">Ваше полное имя<span>&#42;</span></label>
+            <input class="form__input" id="name" placeholder="Введите ваше имя"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="userPhone">Телефон<span>&#42;</span></label>
+            <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
+                   placeholder="+7 (___) ___-___-__-__"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="userEmail">Email<span>&#42;</span></label>
+            <input class="form__input" inputmode="email" id="userEmail" placeholder="info@mail.ru"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="userBD">Дата рождения<span>&#42;</span></label>
+            <input class="form__input form__input-bd" inputmode="email" id="userBD"
+                   placeholder="Выберите дату рождения"/>
+        </div>
+        <div class="form__radio mt-25">
+            <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree"/>
+            <label for="setAgree"></label>
+            <p class="form__checkbox-btn-label">Нажимая кнопку, я даю свое согласие на обработку моих персональных
+                данных в соответствии с законом № 152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия <a href="#">Пользовательского соглашения.</a>
+            </p>
+        </div>
+    </form>
+    <div class="modal__nav">
+        <input id="file" type="file">
+        <label class="form__label" for="file"></label>
+        <p>Прикрепить резюме</p>
+        <button class="button button--orange">Отправить</button>
+    </div>
+</section>

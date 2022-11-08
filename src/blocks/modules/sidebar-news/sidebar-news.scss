@@ -1,11 +1,17 @@
 .sidebar-news {
   display: flex;
   flex-direction: column;
-  gap: rem(35.5);
-  padding: rem(30);
+  padding: rem(30) rem(10);
   background-color: $light;
   border-radius: 5px;
   box-shadow: 5px 10px 40px rgba(43, 70, 82, 0.15);
+
+  transition: all .3s ease-in-out;
+
+  a:hover {
+    background-color: rgba(49, 110, 232, 0.05);
+    border-radius: rem(5);
+  }
 
 &__title {
   font-size: rem(18);
@@ -14,6 +20,7 @@
   text-transform: uppercase;
   position: relative;
   margin-bottom: rem(15);
+  padding: 0 rem(10);
 
   &::after {
     content: '';
@@ -26,8 +33,9 @@
     background-color: #C8D0E1;
     }
   }
-  &__articles {
 
+  &__article {
+    padding: rem(17) rem(10);
   }
 
   &__article-title {
@@ -45,6 +53,7 @@
 
   &__article-link {
     color: $blue;
+    font-size: rem(14);
     text-decoration: underline;
   }
 }

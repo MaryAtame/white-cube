@@ -6,10 +6,22 @@ document.addEventListener('DOMContentLoaded', () => {
         modules: [Pagination],
         direction: 'horizontal',
         loop: true,
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 1.5,
+        spaceBetween: 20,
         pagination: {
             el: '.swiper-pagination',
         },
+        breakpoints: {
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 30
+            },
+        }
     });
 });

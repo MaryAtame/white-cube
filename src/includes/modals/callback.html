@@ -1,0 +1,24 @@
+<section class="modal content-left" id="modal-callback">
+    <h1 class="modal__title mb-20">Заказать звонок</h1>
+    <div class="editor editor--16  mb-20">
+        <p>Есть вопросы? Закажите звонок! Мы Вам перезвоним в ближайшее время</p>
+    </div>
+    <form class="form  mb-40" action="/#" method="post" role="form">
+        <div class="form__item">
+            <label class="form__label" for="name">Ваше полное имя<span>&#42;</span></label>
+            <input class="form__input" id="name" placeholder="Введите ваше имя"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="userPhone">Телефон<span>&#42;</span></label>
+            <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
+                   placeholder="+7 (___) ___-___-__-__"/>
+        </div>
+        <div class="form__radio mt-25">
+            <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree"/>
+            <label for="setAgree"></label>
+            <p class="form__checkbox-btn-label">Я согласен на
+                <span>обработку персональных данных</span></p>
+        </div>
+    </form>
+    <button class="button button--orange">Отправить</button>
+</section>

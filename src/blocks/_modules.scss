@@ -8,8 +8,10 @@
 @import "modules/input/input";
 @import "modules/main/main";
 @import "modules/title/title";
+@import "modules/logo/logo";
 @import "modules/title-page/title-page";
 @import "modules/section-page/section-page";
+@import "modules/section/section";
 
 @import "modules/header/header";
 @import "modules/header-toolbar/header-toolbar";
@@ -44,7 +46,7 @@
 @import "modules/article-video/article-video";
 @import "modules/pagination-page/pagination-page";
 @import "modules/toolbar-page/toolbar-page";
-@import "modules/news-detail/news-detail";
+@import "modules/article-detail/article-detail";
 @import "modules/sidebar-news/sidebar-news";
 @import "modules/table-delivery/table-delivery";
 @import "modules/article-gallery/article-gallery";
@@ -61,12 +63,14 @@
 @import "modules/select-sort/select-sort";
 @import "modules/sidebar-catalog/sidebar-catalog";
 @import "modules/article/article";
-@import "modules/modal/modal";
+@import "modules/modal-review/modal-review";
 @import "modules/range/range";
 @import "modules/menu-icon/menu-icon";
 @import "modules/menu-mobile/menu-mobile";
 @import "modules/table-mobile/table-mobile";
 @import "modules/not-found/not-found";
+@import "modules/modal/modal";
+@import "modules/form/form";
 
 
 @include r(1200) {}

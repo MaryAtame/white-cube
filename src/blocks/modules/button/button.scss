@@ -11,6 +11,7 @@
   line-height: 1.2;
   font-weight: 600;
   color: $light;
+  max-width: 100%;
 
   transition: all .3s ease-in-out;
 
@@ -100,6 +101,7 @@
     svg {
       transform: rotate(180deg);
       fill: #000000;
+      color: #000000;
     }
   }
 

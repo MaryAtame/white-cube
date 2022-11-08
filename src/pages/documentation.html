@@ -5,11 +5,19 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="body">
+<div class="modals" hidden>
+    <%= htmlWebpackPlugin.options.success %>
+    <%= htmlWebpackPlugin.options.calculation %>
+    <%= htmlWebpackPlugin.options.callback %>
+    <%= htmlWebpackPlugin.options.feedback %>
+    <%= htmlWebpackPlugin.options.order %>
+    <%= htmlWebpackPlugin.options.vacancyReply %>
+</div>
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main bg-page">
-    <section class="section-page">
+    <section class="section-page pb-100">
         <div class="container">
-            <div class="mb-50">
+            <div class="mb-50 hidden-980">
                 <div class="breadcrumbs">
                     <a class="breadcrumbs__link" href="./">Главная</a>
                     <svg class="breadcrumbs__icon">
@@ -18,11 +26,7 @@
                     <span>Техническая информация</span>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="section mb-100">
-        <div class="container">
-            <h1 class="title-page">Техническая информация</h1>
+            <h1 class="title-page mb-50 mbm-20">Техническая информация</h1>
             <div class="editor editor--16 mb-60">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus orci sit sed aenean mauris risus,
                     sed diam. Aliquet ornare consectetur mollis congue morbi commodo purus massa. Velit vitae, habitant
@@ -43,185 +47,40 @@
                     quis ut libero adipiscing accumsan eget ante pretium enim. Aliquam porttitor amet, vel duis nunc
                     dictum et tempor nunc. Dui varius massa consectetur enim risus faucibus.</p>
             </div>
+            <h2 class="article-doc__title mb-30 mbm-20">Заголовок</h2>
             <div class="columns mb-60">
-                <div class="columns__col columns__col--12">
-                    <h2 class="article-doc__title">Заголовок</h2>
+                <div class="columns__col columns__col--6">
+                    <%= htmlWebpackPlugin.options.articleDoc %>
                 </div>
                 <div class="columns__col columns__col--6">
-                    <a class="article-doc" href="#">
-                        <div class="svg-wrapper">
-                            <svg class="article-doc__icon article-doc__icon--folder">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-folder"></use>
-                            </svg>
-                        </div>
-                        <div class="editor editor--14">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar cursus et eu tincidunt
-                                nulla risus id nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar
-                                cursus et eu tincidunt nulla risus id nunc</p>
-                        </div>
-                        <svg class="article-doc__icon article-doc__icon--download">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-download"></use>
-                        </svg>
-                    </a>
+                    <%= htmlWebpackPlugin.options.articleDoc %>
                 </div>
                 <div class="columns__col columns__col--6">
-                    <a class="article-doc" href="#">
-                        <div class="svg-wrapper">
-                            <svg class="article-doc__icon article-doc__icon--folder">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-folder"></use>
-                            </svg>
-                        </div>
-                        <div class="editor editor--14">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar cursus et eu tincidunt
-                                nulla risus id nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar
-                                cursus et eu tincidunt nulla risus id nunc</p>
-                        </div>
-                        <svg class="article-doc__icon article-doc__icon--download">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-download"></use>
-                        </svg>
-                    </a>
+                    <%= htmlWebpackPlugin.options.articleDoc %>
                 </div>
                 <div class="columns__col columns__col--6">
-                    <a class="article-doc" href="#">
-                        <div class="svg-wrapper">
-                            <svg class="article-doc__icon article-doc__icon--folder">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-folder"></use>
-                            </svg>
-                        </div>
-                        <div class="editor editor--14">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar cursus et eu tincidunt
-                                nulla risus id nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar
-                                cursus et eu tincidunt nulla risus id nunc</p>
-                        </div>
-                        <svg class="article-doc__icon article-doc__icon--download">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-download"></use>
-                        </svg>
-                    </a>
+                    <%= htmlWebpackPlugin.options.articleDoc %>
                 </div>
                 <div class="columns__col columns__col--6">
-                    <a class="article-doc" href="#">
-                        <div class="svg-wrapper">
-                            <svg class="article-doc__icon article-doc__icon--folder">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-folder"></use>
-                            </svg>
-                        </div>
-                        <div class="editor editor--14">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar cursus et eu tincidunt
-                                nulla risus id nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar
-                                cursus et eu tincidunt nulla risus id nunc</p>
-                        </div>
-                        <svg class="article-doc__icon article-doc__icon--download">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-download"></use>
-                        </svg>
-                    </a>
+                    <%= htmlWebpackPlugin.options.articleDoc %>
                 </div>
                 <div class="columns__col columns__col--6">
-                    <a class="article-doc" href="#">
-                        <div class="svg-wrapper">
-                            <svg class="article-doc__icon article-doc__icon--folder">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-folder"></use>
-                            </svg>
-                        </div>
-                        <div class="editor editor--14">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar cursus et eu tincidunt
-                                nulla risus id nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar
-                                cursus et eu tincidunt nulla risus id nunc</p>
-                        </div>
-                        <svg class="article-doc__icon article-doc__icon--download">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-download"></use>
-                        </svg>
-                    </a>
-                </div>
-                <div class="columns__col columns__col--6">
-                    <a class="article-doc" href="#">
-                        <div class="svg-wrapper">
-                            <svg class="article-doc__icon article-doc__icon--folder">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-folder"></use>
-                            </svg>
-                        </div>
-                        <div class="editor editor--14">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar cursus et eu tincidunt
-                                nulla risus id nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar
-                                cursus et eu tincidunt nulla risus id nunc</p>
-                        </div>
-                        <svg class="article-doc__icon article-doc__icon--download">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-download"></use>
-                        </svg>
-                    </a>
+                    <%= htmlWebpackPlugin.options.articleDoc %>
                 </div>
             </div>
-
+            <h2 class="article-doc__title mb-30 mbm-20">Заголовок</h2>
             <div class="columns mb-100">
-                <div class="columns__col columns__col--12">
-                    <h2 class="article-doc__title">Заголовок</h2>
+                <div class="columns__col columns__col--6">
+                    <%= htmlWebpackPlugin.options.articleDoc %>
                 </div>
                 <div class="columns__col columns__col--6">
-                    <a class="article-doc" href="#">
-                        <div class="svg-wrapper">
-                            <svg class="article-doc__icon article-doc__icon--folder">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-folder"></use>
-                            </svg>
-                        </div>
-                        <div class="editor editor--14">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar cursus et eu tincidunt
-                                nulla risus id nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar
-                                cursus et eu tincidunt nulla risus id nunc</p>
-                        </div>
-                        <svg class="article-doc__icon article-doc__icon--download">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-download"></use>
-                        </svg>
-                    </a>
+                    <%= htmlWebpackPlugin.options.articleDoc %>
                 </div>
                 <div class="columns__col columns__col--6">
-                    <a class="article-doc" href="#">
-                        <div class="svg-wrapper">
-                            <svg class="article-doc__icon article-doc__icon--folder">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-folder"></use>
-                            </svg>
-                        </div>
-                        <div class="editor editor--14">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar cursus et eu tincidunt
-                                nulla risus id nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar
-                                cursus et eu tincidunt nulla risus id nunc</p>
-                        </div>
-                        <svg class="article-doc__icon article-doc__icon--download">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-download"></use>
-                        </svg>
-                    </a>
+                    <%= htmlWebpackPlugin.options.articleDoc %>
                 </div>
                 <div class="columns__col columns__col--6">
-                    <a class="article-doc" href="#">
-                        <div class="svg-wrapper">
-                            <svg class="article-doc__icon article-doc__icon--folder">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-folder"></use>
-                            </svg>
-                        </div>
-                        <div class="editor editor--14">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar cursus et eu tincidunt
-                                nulla risus id nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar
-                                cursus et eu tincidunt nulla risus id nunc</p>
-                        </div>
-                        <svg class="article-doc__icon article-doc__icon--download">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-download"></use>
-                        </svg>
-                    </a>
-                </div>
-                <div class="columns__col columns__col--6">
-                    <a class="article-doc" href="#">
-                        <div class="svg-wrapper">
-                            <svg class="article-doc__icon article-doc__icon--folder">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-folder"></use>
-                            </svg>
-                        </div>
-                        <div class="editor editor--14">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar cursus et eu tincidunt
-                                nulla risus id nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar
-                                cursus et eu tincidunt nulla risus id nunc</p>
-                        </div>
-                        <svg class="article-doc__icon article-doc__icon--download">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-download"></use>
-                        </svg>
-                    </a>
+                    <%= htmlWebpackPlugin.options.articleDoc %>
                 </div>
             </div>
         </div>

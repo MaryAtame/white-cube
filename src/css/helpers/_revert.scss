@@ -1,4 +1,9 @@
 .revert {
   color: $light !important;
   fill: $light !important;
+  a,
+  p,
+  span {
+    color: $light;
+  }
 }
