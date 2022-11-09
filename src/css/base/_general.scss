@@ -134,6 +134,13 @@ b {
 .left {
     justify-items: start;
 }
+
+.mob-center {
+    @include r(1200) {
+        justify-items: center;
+    }
+}
+
 .content-left {
     justify-content: flex-start !important;
 }
