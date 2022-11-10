@@ -3380,7 +3380,7 @@ b {
 .article-order {
   display: flex;
   flex-direction: column;
-  padding: 3.125rem 0;
+  padding: 3.125rem 0 0;
 }
 @media only screen and (max-width: 1200px) {
   .article-order {
