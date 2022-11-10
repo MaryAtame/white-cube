@@ -6,8 +6,13 @@
   max-width: rem(800);
   width: 95%;
   height: fit-content;
+  &--sm {
+    max-width: rem(570);
+  }
 
-  cursor: auto !important;
+  &--lg {
+    max-width: rem(800);
+  }
 
   &__wrapper {
     display: flex;
@@ -46,6 +51,13 @@
   &__nav {
     display: flex;
     gap: rem(60);
+  }
+
+  &__attach {
+    display: flex;
+    gap: rem(15);
+    align-items: center;
+    cursor: pointer;
   }
 }
 

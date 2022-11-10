@@ -1,4 +1,4 @@
-<section class="modal content-left" id="modal-feedback">
+<section class="modal modal--sm content-left" id="modal-feedback">
     <h1 class="modal__title">Оставить отзыв</h1>
     <form class="form  mb-40" action="/#" method="post" role="form">
         <div class="form__item">
@@ -13,7 +13,14 @@
             <label class="form__label" for="content"></label>
             <input class="form__input" id="content" placeholder="Ваши впечатления"/>
         </div>
-        <a class="form__item-link" href="">Прикрепить вашу фотографию </a>
+        <div class="modal__attach">
+            <input id="file" type="file">
+            <label class="form__label modal__attach" for="file">
+                <div class="text-blue editor--16">
+                    <strong> Прикрепить вашу фотографию</strong>
+                </div>
+            </label>
+        </div>
         <div class="form__radio">
             <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree-feedback"/>
             <label for="setAgree-feedback"></label>
@@ -21,5 +28,5 @@
                 <span>политикой конфидециальности</span></p>
         </div>
     </form>
-    <button class="button button--orange">Отправить</button>
+    <button class="button button--orange marg-right">Отправить</button>
 </section>

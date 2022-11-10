@@ -1,4 +1,4 @@
-<section class="modal content-left" id="modal-vacancy-reply">
+<section class="modal modal--sm content-left" id="modal-vacancy-reply">
     <h1 class="modal__title">Откликнуться</h1>
     <div class="editor editor--16 mb-20">
         <p>Заполните свои данные и прикрепите резюме</p>
@@ -22,18 +22,25 @@
             <input class="form__input form__input-bd" inputmode="email" id="userBD"
                    placeholder="Выберите дату рождения"/>
         </div>
-        <div class="form__radio mt-25">
-            <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree"/>
-            <label for="setAgree"></label>
-            <p class="form__checkbox-btn-label">Нажимая кнопку, я даю свое согласие на обработку моих персональных
-                данных в соответствии с законом № 152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия <a href="#">Пользовательского соглашения.</a>
-            </p>
-        </div>
     </form>
-    <div class="modal__nav">
-        <input id="file" type="file">
-        <label class="form__label" for="file"></label>
-        <p>Прикрепить резюме</p>
-        <button class="button button--orange">Отправить</button>
+    <div class="form__item-wrapper justify mb-20">
+        <div class="modal__attach">
+            <input id="file" type="file">
+            <label class="form__label modal__attach" for="file">
+                <svg class="form__label-icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-clip"></use>
+                </svg>
+                <p>Прикрепить резюме</p>
+            </label>
+        </div>
+        <button class="button button--orange lowercase">Отправить</button>
+    </div>
+
+    <div class="form_agreement">
+        <div class="form__agreement-text">
+            Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом №
+            152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия
+            <a class="form__agreement-link" href="#">Пользовательского соглашения.</a>
+        </div>
     </div>
 </section>

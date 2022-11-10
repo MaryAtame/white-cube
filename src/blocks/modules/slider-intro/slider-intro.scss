@@ -30,7 +30,7 @@
       width: auto;
       height: 100%;
       display: block;
-      object-fit: none;
+      object-fit: contain;
       margin-left: auto;
       margin-right: auto;
 
@@ -43,7 +43,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    bottom: rem(50);
+    bottom: rem(70);
     z-index: 10;
     @include r(1500) {
       padding: 0 rem(15);

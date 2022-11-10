@@ -6,7 +6,20 @@
   &__item {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: rem(10);
+  }
+
+  &__item-wrapper {
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+  }
+
+  &__item-title {
+    font-size: rem(19);
+    color: #000000;
+    font-weight: 600;
   }
 
   &__item-link {
@@ -22,6 +35,14 @@
       color: $orange;
     }
   }
+
+  &__checkbox-btn-label--blue {
+    font-size: rem(16);
+    color: $blue;
+    font-weight: 500;
+    margin-bottom: rem(20);
+  }
+
   &__input{
     padding: rem(18) rem(20);
     border-radius: 5px;
@@ -45,6 +66,11 @@
   }
 }
 
+  &__label-icon {
+    width: rem(13);
+    height: rem(14);
+  }
+
   &__radio {
     display: flex;
     gap: rem(15);
@@ -64,6 +90,47 @@
       position: relative;
       transition: all .3s linear;
     }
+
+  &__btn-increase {
+    display: flex;
+    align-items: center;
+    gap: rem(9);
+    svg {
+      color: $blue;
+      width: rem(13);
+      height: rem(13);
+    }
+    span {
+      color: $blue;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: rem(14);
+    }
+  }
+
+  &__agreement {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+
+    @include r(1200) {
+      flex-direction: column;
+      gap: rem(30);
+    }
+  }
+
+  &__agreement-text {
+    display: block;
+    flex: 55%;
+    font-size: rem(14);
+    font-weight: 300;
+    color: #8E98A6;
+
+    a {
+      color: $orange;
+      text-decoration: underline;
+    }
+  }
   }
 
 .form__checkbox-btn:checked + label {
@@ -72,4 +139,10 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: $orange;
+}
+
+
+input[type="file"] {
+  display: none;
+  visibility: hidden;
 }

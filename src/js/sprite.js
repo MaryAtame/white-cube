@@ -4,6 +4,7 @@ import iconSmallArrow from '../assets/sprite/icon-small-arrow.svg';
 import iconLocation from '../assets/sprite/icon-location.svg';
 import iconMail from '../assets/sprite/icon-mail.svg';
 import iconPlus from '../assets/sprite/icon-plus.svg';
+import iconMinus from '../assets/sprite/icon-minus.svg';
 import iconLgArrow from '../assets/sprite/icon-lg-arrow.svg';
 import iconSearch from '../assets/sprite/icon-search.svg';
 import iconTel from '../assets/sprite/icon-tel.svg';
@@ -41,6 +42,7 @@ export default {
     iconLocation,
     iconMail,
     iconPlus,
+    iconMinus,
     iconLgArrow,
     iconSearch,
     iconTel,
@@ -69,6 +71,7 @@ export default {
     iconClip,
     iconCalendar,
     youtubeBG,
-    vkBG
+    vkBG,
+
 
 };

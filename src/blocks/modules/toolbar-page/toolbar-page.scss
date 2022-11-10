@@ -14,7 +14,7 @@
     cursor: pointer;
   }
 
-  &__item.active {
+  &__item>input:checked {
     font-weight: 700;
     color: $orange;
     position: relative;
@@ -31,3 +31,5 @@
     }
   }
 }
+
+

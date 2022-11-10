@@ -22,4 +22,11 @@
     height: rem(36);
     border-radius: 36px;
   }
+
+  &--visible {
+    @include r(1200) {
+      display: flex;
+      visibility: visible;
+    }
+  }
 }

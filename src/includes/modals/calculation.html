@@ -1,11 +1,63 @@
-<section class="modal content-left" id="modal-calculation">
+<section class="modal modal--lg content-left" id="modal-calculation">
     <h1 class="modal__title mb-15">Заказать расчет</h1>
-    <div class="editor editor--16">
+    <div class="editor editor--16 mb-40">
         <p>В компании “Белый Куб”</p>
     </div>
 
-    <form class="modal__form" action="/#" method="post" role="form">
-
+    <form class="form" action="/#" method="post" role="form">
+        <div class="form__item">
+            <label class="form__label" for="name">ФИО</label>
+            <input class="form__input" id="name" placeholder="Полное имя получателя"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="userPhone">Телефон</label>
+            <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
+                   placeholder="+7 (___) ___-___-__-__"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="address">Адрес доставки</label>
+            <input class="form__input" id="address" placeholder="Укажите адрес доставки"/>
+        </div>
+        <div class="form__radio mt-25">
+            <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree"/>
+            <label for="setAgree"></label>
+            <p class="form__checkbox-btn-label form__checkbox-btn-label--blue">Заберу со склада</p>
+        </div>
+        <hr class="hr">
+        <p class="form__item-title">Интересующие товары</p>
+        <div class="form__item-wrapper">
+            <div class="form__item">
+                <input class="form__input" id="goods" placeholder="Название товара"/>
+            </div>
+            <div class="counter-btn">
+                <button class="counter-btn--min">
+                    <svg class="counter-btn__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+                    </svg>
+                </button>
+                <span>1</span>
+                <button class="counter-btn--max">
+                    <svg class="counter-btn__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <button class="form__btn-increase">
+            <svg class="counter-btn__icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+            </svg>
+            <span>Добавить поле</span>
+        </button>
+        <hr class="hr">
+        <div class="form__agreement">
+            <div class="form__agreement-text">
+                Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом №
+                152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия
+                <a class="form__agreement-link" href="#">Пользовательского соглашения.</a>
+            </div>
+            <button class="button button--orange lowercase">Заказать расчет</button>
+        </div>
     </form>
 
 </section>

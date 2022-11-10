@@ -5,18 +5,39 @@
     border: 1px solid #C8D0E1;
     background-color: $light;
     border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    @include r(1350) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: rem(20);
+      gap: rem(15);
+    }
   }
 
   &__body {
     padding: rem(45) rem(50);
     background-color: $light;
     border-radius: 5px;
+
+    @include r(1200){
+      padding: rem(20);
+    }
   }
 
   &__body--response {
     background-color: #E8F3E8;
     padding: rem(38) rem(50);
     border-radius: 5px;
+
+
+    @include r(1200){
+      padding: rem(20);
+    }
   }
 
   &__info {
@@ -24,6 +45,11 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: rem(50);
+
+    @include r(1200) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__info-user {
@@ -32,6 +58,10 @@
     gap: rem(60);
     position: relative;
 
+    @include r(1200) {
+      margin-bottom: rem(10);
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -39,6 +69,25 @@
       height: rem(60);
       background-color: #F8F8F8;
       border-radius: rem(60);
+    }
+  }
+
+  &__date {
+    font-size: rem(14);
+    font-weight: 500;
+    color: #B1AFAF;
+
+    @include r(1200) {
+      font-size: rem(12);
+    }
+  }
+
+  &__user-name {
+    font-size: rem(20);
+    font-weight: 600;
+
+    @include r(1200){
+      font-size: rem(16);
     }
   }
 
@@ -71,6 +120,11 @@
   &__photos {
     display: flex;
     gap: rem(20);
+    margin-top: rem(35);
+
+    @include r(678){
+      flex-direction: column;
+    }
   }
 
   &__picture {

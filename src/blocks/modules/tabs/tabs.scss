@@ -6,6 +6,7 @@
     margin-top: rem(20);
     margin-bottom: rem(10);
   }
+
   &__body {
     background-color: $light;
     padding: rem(50);
@@ -22,6 +23,7 @@
     font-size: rem(14);
     color: #000000;
   }
+
   &__btn.active {
     border-top: 1px solid $blue;
 
@@ -35,21 +37,37 @@
       background-color: $light;
     }
   }
+
   &__article {
     display: none;
   }
+
   &__article.active {
     display: flex;
+  }
+
+  &__article-specs {
+    width: 100%;
   }
 
   &__article-option {
     display: flex;
     justify-content: space-between;
+    font-size: rem(14);
     gap: rem(40);
+    margin-bottom: rem(10);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__article-type {
-    }
+    width: 45%;
+    color: $gray;
+  }
 
-
+  &__article-set {
+    width: 55%;
+  }
 }

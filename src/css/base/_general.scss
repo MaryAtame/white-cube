@@ -1,200 +1,229 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 a,
 svg,
 button {
-    transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 
 picture {
-    display: block;
+  display: block;
 }
 
 input,
 textarea,
 button {
-    font-family: inherit;
+  font-family: inherit;
 }
 
 img {
-    display: block;
+  display: block;
 }
 
 sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-    top: -0.5em;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
 }
 
 
 b {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .z-index {
-    &-1 {
-        z-index: 1;
-    }
-    &-2 {
-        z-index: 2;
-    }
-    &-3 {
-        z-index: 3;
-    }
+  &-1 {
+    z-index: 1;
+  }
+
+  &-2 {
+    z-index: 2;
+  }
+
+  &-3 {
+    z-index: 3;
+  }
 }
 
 .mob-hidden {
-    @include r(1200) {
-        visibility: hidden !important;
-        display: none !important;
-    }
+  @include r(1200) {
+    visibility: hidden !important;
+    display: none !important;
+  }
 }
 
 .hidden-980 {
-    @include r(980) {
-        visibility: hidden !important;
-        display: none !important;
-    }
+  @include r(980) {
+    visibility: hidden !important;
+    display: none !important;
+  }
 }
 
- .desktop-hidden {
-     display: none;
-     visibility: hidden;
-     @include r(1200) {
-         display: block;
-         visibility: visible;
-     }
- }
+.show-mob-980 {
+  @include rmin(981) {
+    visibility: hidden !important;
+    display: none !important;
+  }
+}
+
+.desktop-hidden {
+  display: none;
+  visibility: hidden;
+  @include r(1200) {
+    display: block;
+    visibility: visible;
+  }
+}
 
 
 .order-m {
-    &-1 {
-        @include r(1200) {
-            order: 1;
-        }
+  &-1 {
+    @include r(1200) {
+      order: 1;
     }
-    &-2 {
-        @include r(1200) {
-            order: 2;
-        }
+  }
+
+  &-2 {
+    @include r(1200) {
+      order: 2;
     }
-    &-3 {
-        @include r(1200) {
-            order: 3;
-        }
+  }
+
+  &-3 {
+    @include r(1200) {
+      order: 3;
     }
-    &-4 {
-        @include r(1200) {
-            order: 4;
-        }
+  }
+
+  &-4 {
+    @include r(1200) {
+      order: 4;
     }
-    &-5 {
-        @include r(1200) {
-            order: 5;
-        }
+  }
+
+  &-5 {
+    @include r(1200) {
+      order: 5;
     }
-    &-6 {
-        @include r(1200) {
-            order: 6;
-        }
+  }
+
+  &-6 {
+    @include r(1200) {
+      order: 6;
     }
-    &-7 {
-        @include r(1200) {
-            order: 7;
-        }
+  }
+
+  &-7 {
+    @include r(1200) {
+      order: 7;
     }
-    &-8 {
-        @include r(1200) {
-            order: 8;
-        }
+  }
+
+  &-8 {
+    @include r(1200) {
+      order: 8;
     }
-    &-9 {
-        @include r(1200) {
-            order: 9;
-        }
+  }
+
+  &-9 {
+    @include r(1200) {
+      order: 9;
     }
+  }
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-left {
-    text-align: start;
+  text-align: start;
 }
 
 .align-center {
-    align-items: center;
+  align-items: center;
 }
+
 .left {
-    justify-items: start;
+  justify-items: start;
 }
 
 .mob-center {
-    @include r(1200) {
-        justify-items: center;
-    }
+  @include r(1200) {
+    justify-items: center;
+  }
 }
 
 .content-left {
-    justify-content: flex-start !important;
+  justify-content: flex-start !important;
 }
 
 .content-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .justify {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    span {
-        display: block;
-        color: $blue;
-        font-size: rem(20);
-        line-height: 1.2;
-        font-weight: 600;
-    }
+  span {
+    display: block;
+    color: $blue;
+    font-size: rem(20);
+    line-height: 1.2;
+    font-weight: 600;
+  }
 
-    @include r(867){
-        flex-direction: column;
+  &--column {
+    @include r(867) {
+      flex-direction: column;
     }
+  }
 }
 
 .right-self {
-    justify-self: end;
+  justify-self: end;
 }
 
 .self-end {
-    align-self: end;
+  align-self: end;
 }
 
 
 .centered {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .marg-left {
-    margin-left: auto;
+  margin-left: auto;
 }
+
+.marg-right{
+  margin-right: auto;
+}
+
 .margm-0 {
-    @include r(1200){
-        margin: 0 !important;
-    }
+  @include r(1200) {
+    margin: 0 !important;
+  }
 }
 
 .relative {
-    position: relative;
+  position: relative;
 }
 
 .uppercase {
-    text-transform: uppercase;
-    font-weight: 600;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.lowercase {
+  text-transform: inherit;
 }

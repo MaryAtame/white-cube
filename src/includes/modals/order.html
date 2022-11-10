@@ -1,3 +1,68 @@
-<section class="modal content-left" id="modal-order">
-    <h1 class="modal__title">Заказать рассчет</h1>
+<section class="modal modal--sm modal-order content-left" id="modal-order">
+    <h1 class="modal__title">Отправка заказа</h1>
+    <div class="editor editor--16 mb-20">
+        <p>В компанию “Белый Куб”</p>
+    </div>
+    <div class="modal-order__item mb-20">
+        <div class="modal-order__item-descr">
+            <div class="editor editor--14">
+                <p>Плита перегородочная СППу М125-М150/1,6 498х115х249</p>
+            </div>
+            <picture class="modal-order__item-picture">
+                <img src="" alt="Плита перегородочная СППу М125-М150/1,6 498х115х249">
+            </picture>
+        </div>
+        <div class="modal-order__item-price">
+            <div class="editor editor--16">
+                <p>87.17 ₽ / шт</p>
+            </div>
+            <div class="counter-btn">
+                <button class="counter-btn--min">
+                    <svg class="counter-btn__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+                    </svg>
+                </button>
+                <span>1</span>
+                <button class="counter-btn--max">
+                    <svg class="counter-btn__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-order__comment">
+        <p>Ваше сообщение</p>
+        <textarea placeholder="Оставьте комментарий к заказу или задайте интересующий вопрос"></textarea>
+    </div>
+    <hr class="hr">
+    <div class="modal-order__price"></div>
+    <form class="form form-order" action="/#" method="post" role="form">
+        <div class="form__item">
+            <label class="form__label" for="name">ФИО</label>
+            <input class="form__input" id="name" placeholder="Полное имя получателя"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="address">Адрес доставки</label>
+            <input class="form__input" id="address" placeholder="Укажите адрес доставки"/>
+        </div>
+        <p>Заберу со склада</p>
+        <div class="dropdown">Калининград, ул. Согласия...</div>
+
+        <div class="form__item">
+            <label class="form__label" for="userPhone">Телефон</label>
+            <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
+                   placeholder="+7 (___) ___-___-__-__"/>
+        </div>
+
+        <hr class="hr">
+        <div class="form__agreement">
+            <div class="form__agreement-text">
+                Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом №
+                152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия
+                <a class="form__agreement-link" href="#">Пользовательского соглашения.</a>
+            </div>
+            <button class="button button--orange lowercase">Заказать расчет</button>
+        </div>
+    </form>
 </section>

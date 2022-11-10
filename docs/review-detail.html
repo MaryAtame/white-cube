@@ -18,7 +18,7 @@
 <link href="./css/main.css" rel="stylesheet"></head>
 <body class="body">
 <div class="modals" hidden>
-    <section class="modal align-center" id="modal-success">
+    <section class="modal modal--sm align-center" id="modal-success">
     <div class="modal__wrapper">
         <div class="modal__icon-round">
             <svg class="modal__icon">
@@ -30,18 +30,70 @@
         <a class="button button--white" href="./">На главную</a>
     </div>
 </section>
-    <section class="modal content-left" id="modal-calculation">
+    <section class="modal modal--lg content-left" id="modal-calculation">
     <h1 class="modal__title mb-15">Заказать расчет</h1>
-    <div class="editor editor--16">
+    <div class="editor editor--16 mb-40">
         <p>В компании “Белый Куб”</p>
     </div>
 
-    <form class="modal__form" action="/#" method="post" role="form">
-
+    <form class="form" action="/#" method="post" role="form">
+        <div class="form__item">
+            <label class="form__label" for="name">ФИО</label>
+            <input class="form__input" id="name" placeholder="Полное имя получателя"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="userPhone">Телефон</label>
+            <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
+                   placeholder="+7 (___) ___-___-__-__"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="address">Адрес доставки</label>
+            <input class="form__input" id="address" placeholder="Укажите адрес доставки"/>
+        </div>
+        <div class="form__radio mt-25">
+            <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree"/>
+            <label for="setAgree"></label>
+            <p class="form__checkbox-btn-label form__checkbox-btn-label--blue">Заберу со склада</p>
+        </div>
+        <hr class="hr">
+        <p class="form__item-title">Интересующие товары</p>
+        <div class="form__item-wrapper">
+            <div class="form__item">
+                <input class="form__input" id="goods" placeholder="Название товара"/>
+            </div>
+            <div class="counter-btn">
+                <button class="counter-btn--min">
+                    <svg class="counter-btn__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+                    </svg>
+                </button>
+                <span>1</span>
+                <button class="counter-btn--max">
+                    <svg class="counter-btn__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <button class="form__btn-increase">
+            <svg class="counter-btn__icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+            </svg>
+            <span>Добавить поле</span>
+        </button>
+        <hr class="hr">
+        <div class="form__agreement">
+            <div class="form__agreement-text">
+                Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом №
+                152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия
+                <a class="form__agreement-link" href="#">Пользовательского соглашения.</a>
+            </div>
+            <button class="button button--orange lowercase">Заказать расчет</button>
+        </div>
     </form>
 
 </section>
-    <section class="modal content-left" id="modal-callback">
+    <section class="modal modal--sm content-left" id="modal-callback">
     <h1 class="modal__title mb-20">Заказать звонок</h1>
     <div class="editor editor--16  mb-20">
         <p>Есть вопросы? Закажите звонок! Мы Вам перезвоним в ближайшее время</p>
@@ -63,9 +115,9 @@
                 <span>обработку персональных данных</span></p>
         </div>
     </form>
-    <button class="button button--orange">Отправить</button>
+    <button class="button button--orange marg-right">Отправить</button>
 </section>
-    <section class="modal content-left" id="modal-feedback">
+    <section class="modal modal--sm content-left" id="modal-feedback">
     <h1 class="modal__title">Оставить отзыв</h1>
     <form class="form  mb-40" action="/#" method="post" role="form">
         <div class="form__item">
@@ -80,7 +132,14 @@
             <label class="form__label" for="content"></label>
             <input class="form__input" id="content" placeholder="Ваши впечатления"/>
         </div>
-        <a class="form__item-link" href="">Прикрепить вашу фотографию </a>
+        <div class="modal__attach">
+            <input id="file" type="file">
+            <label class="form__label modal__attach" for="file">
+                <div class="text-blue editor--16">
+                    <strong> Прикрепить вашу фотографию</strong>
+                </div>
+            </label>
+        </div>
         <div class="form__radio">
             <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree-feedback"/>
             <label for="setAgree-feedback"></label>
@@ -88,12 +147,77 @@
                 <span>политикой конфидециальности</span></p>
         </div>
     </form>
-    <button class="button button--orange">Отправить</button>
+    <button class="button button--orange marg-right">Отправить</button>
 </section>
-    <section class="modal content-left" id="modal-order">
-    <h1 class="modal__title">Заказать рассчет</h1>
+    <section class="modal modal--sm modal-order content-left" id="modal-order">
+    <h1 class="modal__title">Отправка заказа</h1>
+    <div class="editor editor--16 mb-20">
+        <p>В компанию “Белый Куб”</p>
+    </div>
+    <div class="modal-order__item mb-20">
+        <div class="modal-order__item-descr">
+            <div class="editor editor--14">
+                <p>Плита перегородочная СППу М125-М150/1,6 498х115х249</p>
+            </div>
+            <picture class="modal-order__item-picture">
+                <img src="" alt="Плита перегородочная СППу М125-М150/1,6 498х115х249">
+            </picture>
+        </div>
+        <div class="modal-order__item-price">
+            <div class="editor editor--16">
+                <p>87.17 ₽ / шт</p>
+            </div>
+            <div class="counter-btn">
+                <button class="counter-btn--min">
+                    <svg class="counter-btn__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+                    </svg>
+                </button>
+                <span>1</span>
+                <button class="counter-btn--max">
+                    <svg class="counter-btn__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-order__comment">
+        <p>Ваше сообщение</p>
+        <textarea placeholder="Оставьте комментарий к заказу или задайте интересующий вопрос"></textarea>
+    </div>
+    <hr class="hr">
+    <div class="modal-order__price"></div>
+    <form class="form form-order" action="/#" method="post" role="form">
+        <div class="form__item">
+            <label class="form__label" for="name">ФИО</label>
+            <input class="form__input" id="name" placeholder="Полное имя получателя"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="address">Адрес доставки</label>
+            <input class="form__input" id="address" placeholder="Укажите адрес доставки"/>
+        </div>
+        <p>Заберу со склада</p>
+        <div class="dropdown">Калининград, ул. Согласия...</div>
+
+        <div class="form__item">
+            <label class="form__label" for="userPhone">Телефон</label>
+            <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
+                   placeholder="+7 (___) ___-___-__-__"/>
+        </div>
+
+        <hr class="hr">
+        <div class="form__agreement">
+            <div class="form__agreement-text">
+                Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом №
+                152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия
+                <a class="form__agreement-link" href="#">Пользовательского соглашения.</a>
+            </div>
+            <button class="button button--orange lowercase">Заказать расчет</button>
+        </div>
+    </form>
 </section>
-    <section class="modal content-left" id="modal-vacancy-reply">
+    <section class="modal modal--sm content-left" id="modal-vacancy-reply">
     <h1 class="modal__title">Откликнуться</h1>
     <div class="editor editor--16 mb-20">
         <p>Заполните свои данные и прикрепите резюме</p>
@@ -117,19 +241,26 @@
             <input class="form__input form__input-bd" inputmode="email" id="userBD"
                    placeholder="Выберите дату рождения"/>
         </div>
-        <div class="form__radio mt-25">
-            <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree"/>
-            <label for="setAgree"></label>
-            <p class="form__checkbox-btn-label">Нажимая кнопку, я даю свое согласие на обработку моих персональных
-                данных в соответствии с законом № 152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия <a href="#">Пользовательского соглашения.</a>
-            </p>
-        </div>
     </form>
-    <div class="modal__nav">
-        <input id="file" type="file">
-        <label class="form__label" for="file"></label>
-        <p>Прикрепить резюме</p>
-        <button class="button button--orange">Отправить</button>
+    <div class="form__item-wrapper justify mb-20">
+        <div class="modal__attach">
+            <input id="file" type="file">
+            <label class="form__label modal__attach" for="file">
+                <svg class="form__label-icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-clip"></use>
+                </svg>
+                <p>Прикрепить резюме</p>
+            </label>
+        </div>
+        <button class="button button--orange lowercase">Отправить</button>
+    </div>
+
+    <div class="form_agreement">
+        <div class="form__agreement-text">
+            Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом №
+            152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия
+            <a class="form__agreement-link" href="#">Пользовательского соглашения.</a>
+        </div>
     </div>
 </section>
 </div>
@@ -422,7 +553,7 @@
     </div>
 </header>
 <main class="main bg-page">
-    <section class="section pt-30">
+    <section class="section pt-30 pb-100 pbm-20">
         <div class="container">
             <div class="mb-50 hidden-980">
                 <div class="breadcrumbs">
@@ -433,141 +564,90 @@
                     <span>Отзывы</span>
                 </div>
             </div>
-            <h1 class="title-page">Отзывы</h1>
-            <div class="article-review-detail">
-                <div class="article-review-detail__header mb-50">
-                    <div class="columns align-center">
-                        <div class="columns__col columns__col--1">
-                            <div class="svg-group">
-                                <svg class="article-review-detail__icon article-review-detail__icon--dialog">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-dialog"></use>
-                                </svg>
-                                <svg class="article-review-detail__icon article-review-detail__icon--plate">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-dialog-plate"></use>
-                                </svg>
-                            </div>
+            <h1 class="title-page mb-50 mbm-30">Отзывы</h1>
+            <div class="article-review-detail mb-60 mbm-20">
+                <div class="article-review-detail__header mb-50 mbm-20">
+                    <div class="svg-wrapper svg-wrapper--visible">
+                        <svg class="article-review-detail__icon article-review-detail__icon--dialog">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-dialog"></use>
+                        </svg>
+                        <svg class="article-review-detail__icon article-review-detail__icon--plate">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-dialog-plate"></use>
+                        </svg>
+                    </div>
+                    <div class="editor editor--16 editor--width">
+                        <p>Благодарим за оказанное доверие и выбор нашего завода в качестве поставщика
+                            строительных материалов. На этой странице Вы можете оставить свои отзывы и
+                            пожелания.</p>
+                    </div>
+                    <button class="button button--orange" data-fancybox data-src="#modal-feedback">Оставить отзыв
+                    </button>
+                </div>
+
+            <div class="article-review-detail__body mb-30">
+                <div class="article-review-detail__info">
+                    <div class="article-review-detail__info-user">
+                        <svg class="article-review-detail__info-icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
+                        </svg>
+                        <div class="mobile-flex">
+                            <time class="article-review-detail__date order-m-2" datetime="2021-10-14">14.10.21</time>
+                            <div class="article-review-detail__user-name order-m-1">Александр Пирожков</div>
                         </div>
-                        <div class="columns__col columns__col--8">
-                            <div class="editor editor--16">
-                                <p>Благодарим за оказанное доверие и выбор нашего завода в качестве поставщика
-                                    строительных материалов. На этой странице Вы можете оставить свои отзывы и
-                                    пожелания.</p>
-                            </div>
-                        </div>
-                        <div class="columns__col columns__col--3 right-self">
-                            <button class="button button--orange" data-fancybox data-src="#modal-feedback">Оставить отзыв</button>
-                        </div>
+                    </div>
+                    <div class="review-range">
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
                     </div>
                 </div>
-                <div class="article-review-detail__body mb-30">
-                    <div class="article-review-detail__info">
-                        <div class="article-review-detail__info-user">
-                            <svg class="article-review-detail__info-icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
-                            </svg>
-                            <div class="">
-                                <time datetime="2021-10-14">14.10.21</time>
-                                <div class="article-review-detail__user-name">Александр Пирожков</div>
-                            </div>
-                        </div>
-                        <div class="review-range">
-                            <svg class="review-range__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="review-range__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="review-range__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="review-range__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="review-range__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="editor editor--14 mb-35">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus. Pretium.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium.</p>
-                    </div>
-                    <div class="article-review-detail__photos">
-                        <picture class="article-review-detail__picture" data-fancybox
-                                 data-src="./assets/images/about-img.jpg">
-                            <img src="./assets/images/about-img.jpg" alt="">
-                        </picture>
-                        <picture class="article-review-detail__picture" data-fancybox
-                                 data-src="./assets/images/about-img.jpg">
-                            <img src="./assets/images/about-img.jpg" alt="">
-                        </picture>
-                        <picture class="article-review-detail__picture" data-fancybox
-                                 data-src="./assets/images/about-img.jpg">
-                            <img src="./assets/images/about-img.jpg" alt="">
-                        </picture>
-                    </div>
+                <div class="editor editor--14">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus. Pretium.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium.</p>
                 </div>
-                <div class="article-review-detail__response mb-30">
-                    <div class="article-review-detail__body">
-                        <div class="article-review-detail__info">
-                            <div class="article-review-detail__info-user">
-                                <svg class="article-review-detail__info-icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
-                                </svg>
-                                <div class="">
-                                    <time datetime="2021-10-14">14.10.21</time>
-                                    <div class="article-review-detail__user-name">Александр Пирожков</div>
-                                </div>
-                            </div>
-                            <div class="review-range">
-                                <svg class="review-range__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                                </svg>
-                                <svg class="review-range__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                                </svg>
-                                <svg class="review-range__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                                </svg>
-                                <svg class="review-range__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                                </svg>
-                                <svg class="review-range__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="editor editor--14 mb-35">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus. Pretium.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                                Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                                Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non
-                                lacus. Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non
-                                lacus. Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu
-                                non lacus. Pretium.</p>
-                        </div>
-                    </div>
-                    <div class="article-review-detail__body--response">
-                        <div class="editor editor--14">
-                            <p>Александр, благодарим за отзыв!</p>
-                            <p>Рады, что Вам комфортно в Вашем новом доме!</p>
-                        </div>
-                    </div>
+                <div class="article-review-detail__photos">
+                    <picture class="article-review-detail__picture" data-fancybox
+                             data-src="./assets/images/about-img.jpg">
+                        <img src="./assets/images/about-img.jpg" alt="">
+                    </picture>
+                    <picture class="article-review-detail__picture" data-fancybox
+                             data-src="./assets/images/about-img.jpg">
+                        <img src="./assets/images/about-img.jpg" alt="">
+                    </picture>
+                    <picture class="article-review-detail__picture" data-fancybox
+                             data-src="./assets/images/about-img.jpg">
+                        <img src="./assets/images/about-img.jpg" alt="">
+                    </picture>
                 </div>
+            </div>
+            <div class="article-review-detail__response mb-30">
                 <div class="article-review-detail__body">
                     <div class="article-review-detail__info">
                         <div class="article-review-detail__info-user">
                             <svg class="article-review-detail__info-icon">
                                 <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
                             </svg>
-                            <div class="">
-                                <time datetime="2021-10-14">14.10.21</time>
-                                <div class="article-review-detail__user-name">Александр Пирожков</div>
+                            <div class="mobile-flex">
+                                <time class="article-review-detail__date order-m-2" datetime="2021-10-14">14.10.21
+                                </time>
+                                <div class="article-review-detail__user-name order-m-1">Александр Пирожков</div>
                             </div>
                         </div>
                         <div class="review-range">
@@ -588,18 +668,80 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="editor editor--14 mb-35">
+                    <div class="editor editor--14">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus. Pretium.
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
                             Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium.</p>
+                            Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non
+                            lacus. Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non
+                            lacus. Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu
+                            non lacus. Pretium.</p>
                     </div>
                 </div>
-                
+                <div class="article-review-detail__body--response">
+                    <div class="editor editor--14">
+                        <p>Александр, благодарим за отзыв!</p>
+                        <p>Рады, что Вам комфортно в Вашем новом доме!</p>
+                    </div>
+                </div>
             </div>
+            <div class="article-review-detail__body">
+                <div class="article-review-detail__info">
+                    <div class="article-review-detail__info-user">
+                        <svg class="article-review-detail__info-icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
+                        </svg>
+                        <div class="mobile-flex">
+                            <time class="article-review-detail__date order-m-2" datetime="2021-10-14">14.10.21</time>
+                            <div class="article-review-detail__user-name order-m-1">Александр Пирожков</div>
+                        </div>
+                    </div>
+                    <div class="review-range">
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="editor editor--14">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus. Pretium.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium.</p>
+                </div>
+            </div>
+            </div>
+            <nav class="pagination-page hidden-980">
+    <a class="pagination-page__link" href="#">1</a>
+    <span class="pagination-page__link">...</span>
+    <a class="pagination-page__link" href="#">11</a>
+    <a class="pagination-page__link" href="#">10</a>
+    <a class="pagination-page__link active" href="#">12</a>
+    <a class="pagination-page__link" href="#">13</a>
+    <a class="pagination-page__link" href="#">14</a>
+    <span class="pagination-page__link">...</span>
+    <a class="pagination-page__link" href="#">26</a>
+</nav>
+            <button class="button button--orange mb-100 mbm-20 centered show-mob-980">
+                <span class="button__text">Загрузить еще </span>
+                <svg class="button__icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-reload"></use>
+                </svg>
+            </button>
         </div>
     </section>
 </main>

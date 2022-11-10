@@ -15,7 +15,7 @@
 </div>
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main bg-page">
-    <section class="section pt-30">
+    <section class="section pt-30 pb-100 pbm-20">
         <div class="container">
             <div class="mb-50 hidden-980">
                 <div class="breadcrumbs">
@@ -26,141 +26,90 @@
                     <span>Отзывы</span>
                 </div>
             </div>
-            <h1 class="title-page">Отзывы</h1>
-            <div class="article-review-detail">
-                <div class="article-review-detail__header mb-50">
-                    <div class="columns align-center">
-                        <div class="columns__col columns__col--1">
-                            <div class="svg-group">
-                                <svg class="article-review-detail__icon article-review-detail__icon--dialog">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-dialog"></use>
-                                </svg>
-                                <svg class="article-review-detail__icon article-review-detail__icon--plate">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-dialog-plate"></use>
-                                </svg>
-                            </div>
+            <h1 class="title-page mb-50 mbm-30">Отзывы</h1>
+            <div class="article-review-detail mb-60 mbm-20">
+                <div class="article-review-detail__header mb-50 mbm-20">
+                    <div class="svg-wrapper svg-wrapper--visible">
+                        <svg class="article-review-detail__icon article-review-detail__icon--dialog">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-dialog"></use>
+                        </svg>
+                        <svg class="article-review-detail__icon article-review-detail__icon--plate">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-dialog-plate"></use>
+                        </svg>
+                    </div>
+                    <div class="editor editor--16 editor--width">
+                        <p>Благодарим за оказанное доверие и выбор нашего завода в качестве поставщика
+                            строительных материалов. На этой странице Вы можете оставить свои отзывы и
+                            пожелания.</p>
+                    </div>
+                    <button class="button button--orange" data-fancybox data-src="#modal-feedback">Оставить отзыв
+                    </button>
+                </div>
+
+            <div class="article-review-detail__body mb-30">
+                <div class="article-review-detail__info">
+                    <div class="article-review-detail__info-user">
+                        <svg class="article-review-detail__info-icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
+                        </svg>
+                        <div class="mobile-flex">
+                            <time class="article-review-detail__date order-m-2" datetime="2021-10-14">14.10.21</time>
+                            <div class="article-review-detail__user-name order-m-1">Александр Пирожков</div>
                         </div>
-                        <div class="columns__col columns__col--8">
-                            <div class="editor editor--16">
-                                <p>Благодарим за оказанное доверие и выбор нашего завода в качестве поставщика
-                                    строительных материалов. На этой странице Вы можете оставить свои отзывы и
-                                    пожелания.</p>
-                            </div>
-                        </div>
-                        <div class="columns__col columns__col--3 right-self">
-                            <button class="button button--orange" data-fancybox data-src="#modal-feedback">Оставить отзыв</button>
-                        </div>
+                    </div>
+                    <div class="review-range">
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
                     </div>
                 </div>
-                <div class="article-review-detail__body mb-30">
-                    <div class="article-review-detail__info">
-                        <div class="article-review-detail__info-user">
-                            <svg class="article-review-detail__info-icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
-                            </svg>
-                            <div class="">
-                                <time datetime="2021-10-14">14.10.21</time>
-                                <div class="article-review-detail__user-name">Александр Пирожков</div>
-                            </div>
-                        </div>
-                        <div class="review-range">
-                            <svg class="review-range__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="review-range__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="review-range__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="review-range__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="review-range__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="editor editor--14 mb-35">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus. Pretium.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium.</p>
-                    </div>
-                    <div class="article-review-detail__photos">
-                        <picture class="article-review-detail__picture" data-fancybox
-                                 data-src="./assets/images/about-img.jpg">
-                            <img src="./assets/images/about-img.jpg" alt="">
-                        </picture>
-                        <picture class="article-review-detail__picture" data-fancybox
-                                 data-src="./assets/images/about-img.jpg">
-                            <img src="./assets/images/about-img.jpg" alt="">
-                        </picture>
-                        <picture class="article-review-detail__picture" data-fancybox
-                                 data-src="./assets/images/about-img.jpg">
-                            <img src="./assets/images/about-img.jpg" alt="">
-                        </picture>
-                    </div>
+                <div class="editor editor--14">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus. Pretium.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium.</p>
                 </div>
-                <div class="article-review-detail__response mb-30">
-                    <div class="article-review-detail__body">
-                        <div class="article-review-detail__info">
-                            <div class="article-review-detail__info-user">
-                                <svg class="article-review-detail__info-icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
-                                </svg>
-                                <div class="">
-                                    <time datetime="2021-10-14">14.10.21</time>
-                                    <div class="article-review-detail__user-name">Александр Пирожков</div>
-                                </div>
-                            </div>
-                            <div class="review-range">
-                                <svg class="review-range__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                                </svg>
-                                <svg class="review-range__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                                </svg>
-                                <svg class="review-range__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                                </svg>
-                                <svg class="review-range__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                                </svg>
-                                <svg class="review-range__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="editor editor--14 mb-35">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus. Pretium.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                                Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                                Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non
-                                lacus. Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non
-                                lacus. Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu
-                                non lacus. Pretium.</p>
-                        </div>
-                    </div>
-                    <div class="article-review-detail__body--response">
-                        <div class="editor editor--14">
-                            <p>Александр, благодарим за отзыв!</p>
-                            <p>Рады, что Вам комфортно в Вашем новом доме!</p>
-                        </div>
-                    </div>
+                <div class="article-review-detail__photos">
+                    <picture class="article-review-detail__picture" data-fancybox
+                             data-src="./assets/images/about-img.jpg">
+                        <img src="./assets/images/about-img.jpg" alt="">
+                    </picture>
+                    <picture class="article-review-detail__picture" data-fancybox
+                             data-src="./assets/images/about-img.jpg">
+                        <img src="./assets/images/about-img.jpg" alt="">
+                    </picture>
+                    <picture class="article-review-detail__picture" data-fancybox
+                             data-src="./assets/images/about-img.jpg">
+                        <img src="./assets/images/about-img.jpg" alt="">
+                    </picture>
                 </div>
+            </div>
+            <div class="article-review-detail__response mb-30">
                 <div class="article-review-detail__body">
                     <div class="article-review-detail__info">
                         <div class="article-review-detail__info-user">
                             <svg class="article-review-detail__info-icon">
                                 <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
                             </svg>
-                            <div class="">
-                                <time datetime="2021-10-14">14.10.21</time>
-                                <div class="article-review-detail__user-name">Александр Пирожков</div>
+                            <div class="mobile-flex">
+                                <time class="article-review-detail__date order-m-2" datetime="2021-10-14">14.10.21
+                                </time>
+                                <div class="article-review-detail__user-name order-m-1">Александр Пирожков</div>
                             </div>
                         </div>
                         <div class="review-range">
@@ -181,18 +130,70 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="editor editor--14 mb-35">
+                    <div class="editor editor--14">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus. Pretium.
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
                             Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
-                            Pretium.</p>
+                            Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non
+                            lacus. Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non
+                            lacus. Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu
+                            non lacus. Pretium.</p>
                     </div>
                 </div>
-                <%= htmlWebpackPlugin.options.paginationPage %>
+                <div class="article-review-detail__body--response">
+                    <div class="editor editor--14">
+                        <p>Александр, благодарим за отзыв!</p>
+                        <p>Рады, что Вам комфортно в Вашем новом доме!</p>
+                    </div>
+                </div>
             </div>
+            <div class="article-review-detail__body">
+                <div class="article-review-detail__info">
+                    <div class="article-review-detail__info-user">
+                        <svg class="article-review-detail__info-icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-user"></use>
+                        </svg>
+                        <div class="mobile-flex">
+                            <time class="article-review-detail__date order-m-2" datetime="2021-10-14">14.10.21</time>
+                            <div class="article-review-detail__user-name order-m-1">Александр Пирожков</div>
+                        </div>
+                    </div>
+                    <div class="review-range">
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="review-range__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="editor editor--14">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus. Pretium.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum eu non lacus.
+                        Pretium.</p>
+                </div>
+            </div>
+            </div>
+            <%= htmlWebpackPlugin.options.paginationPage %>
+            <button class="button button--orange mb-100 mbm-20 centered show-mob-980">
+                <span class="button__text">Загрузить еще </span>
+                <svg class="button__icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-reload"></use>
+                </svg>
+            </button>
         </div>
     </section>
 </main>

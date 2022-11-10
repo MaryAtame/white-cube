@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 1.5,
         spaceBetween: 20,
         pagination: {
-            el: '.swiper-pagination',
+            el: '.slider-pagination',
         },
         breakpoints: {
             // when window width is >= 480px
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
 
             768: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 30
             },
         }

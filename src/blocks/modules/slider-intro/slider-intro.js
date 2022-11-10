@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const swiperIntro = new Swiper('.slider-intro', {
         modules: [Navigation, Pagination, Autoplay],
+        slidesPerView: 1,
         direction: 'horizontal',
         loop: true,
         centeredSlides: true,
