@@ -1,0 +1,7 @@
+.translateY {
+  transform: translateY(rem(-160));
+
+  @include r(980) {
+    transform: none;
+  }
+}

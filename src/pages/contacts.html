@@ -14,8 +14,8 @@
   <%= htmlWebpackPlugin.options.vacancyReply %>
 </div>
 <%= htmlWebpackPlugin.options.sectionHeader %>
-<main class="main bg-page">
-  <section class="section-page">
+<main class="main">
+  <section class="section pt-30 pbm-0 pb-100">
     <div class="container">
       <div class="mb-50 hidden-980">
         <div class="breadcrumbs">
@@ -26,8 +26,8 @@
           <span>Контакты</span>
         </div>
       </div>
-      <h1 class="title-page">Контакты</h1>
-     <div class="columns mb-60">
+      <h1 class="title-page mb-50 mbm-20">Контакты</h1>
+     <div class="columns mb-60 mbm-0">
         <div class="columns__col columns__col--4">
           <div class="article-contacts">
             <h2 class="article-contacts__title">ООО “Белый куб”</h2>
@@ -40,8 +40,8 @@
             </div>
           </div>
         </div>
-        <div class="columns__col columns__col--2">
-          <div class="article-contacts mt-50">
+        <div class="columns__col columns__col--3">
+          <div class="article-contacts mt-50 mtm-0">
             <a class="article-contacts__link" href="tel:+79990000">
               <svg class="article-contacts__icon">
                 <use xlink:href="./assets/sprite/sprite.svg#icon-tel"></use>
@@ -62,9 +62,8 @@
             </a>
           </div>
         </div>
-        <div class="columns__col columns__col--1 mob-hidden"></div>
         <div class="columns__col columns__col--5">
-          <a class="article-contacts__callback revert" href="#" >
+          <a class="article-contacts__callback revert mob-hidden" href="#" >
               <svg class="article-contacts__callback-icon">
                 <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
               </svg>
@@ -76,6 +75,15 @@
         </div>
      </div>
     </div>
+    <a class="article-contacts__callback revert desktop-hidden" href="#" >
+      <svg class="article-contacts__callback-icon">
+        <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+      </svg>
+      <h2 class="article-contacts__callback-title">Заказать звонок</h2>
+      <div class="editor editor--16">
+        <p><b>Перезвоним в течение 15 минут.</b> Обсудим задачи, найдем оптимальное решение и запланируем работы. <b>Ответим на вопросы</b> и расскажем подробнее о действующих акциях. Будем на связи!</p>
+      </div>
+    </a>
   </section>
   <map class="article-contacts__map">
    <iframe src="https://yandex.ru/map-widget/v1/-/CCUZbErUGD" allowfullscreen="true">

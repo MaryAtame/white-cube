@@ -19,9 +19,9 @@
 
   &__link {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    text-align: end;
+    text-align: start;
 
     font-size: rem(16);
     color: #000000;
@@ -34,10 +34,8 @@
   }
 
   &__icon {
-    rotate: 180deg;
     max-width: rem(9);
     height: rem(14);
     position: relative;
-    margin-right: auto;
   }
 }

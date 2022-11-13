@@ -1,0 +1,54 @@
+.select-wrapper {
+  display: flex;
+  align-items: center;
+  gap: rem(25);
+  @include r(866){
+    width: 100%;
+  }
+
+  &__caption {
+    white-space: nowrap;
+  }
+}
+
+.select {
+  border-radius: rem(5);
+  font-size: rem(14);
+  color: #191919;
+  display: block;
+  max-width: 100%;
+  box-sizing: border-box;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url('../assets/images/select-arrow.svg');
+  background-position: right rem(10) top 52%, 0 0;
+  background-size: rem(15) auto, 100%;
+  background-repeat: no-repeat;
+
+  @include r(1200) {
+    width: 100%;
+  }
+
+  &--border {
+    padding: rem(18) rem(20);
+    border: 1px solid #D9E1F3;
+  }
+
+  &--news {
+    padding: rem(13) rem(80) rem(13) rem(15);
+    border: 1px solid #C8D0E1;
+    font-weight: 600;
+  }
+  &--catalog {
+    padding: rem(13) rem(30) rem(13) rem(15);
+  }
+
+  .select:focus,
+  .select:hover {
+    border-color: $orange;
+    color: $orange;
+    outline: none;
+  }
+}

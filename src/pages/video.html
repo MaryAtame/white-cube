@@ -14,8 +14,8 @@
     <%= htmlWebpackPlugin.options.vacancyReply %>
 </div>
 <%= htmlWebpackPlugin.options.sectionHeader %>
-<main class="main bg-page">
-    <section class="section section--accent-line pt-30 pb-100">
+<main class="main">
+    <section class="section section--accent-line pt-30 pb-100 pbm-20">
         <div class="container relative z-index-1">
             <div class="mb-50 revert hidden-980">
                 <div class="breadcrumbs">
@@ -30,8 +30,8 @@
                     <span class="revert">Видео</span>
                 </div>
             </div>
-            <h1 class="title-page revert mb-50 mbm-20">Видео</h1>
-            <div class="columns mb-60">
+            <h1 class="title-page revert revert--mobile mb-50 mbm-20">Видео</h1>
+            <div class="columns mb-60 mbm-0">
                 <div class="columns__col columns__col--6">
                     <a class="article-video" data-fancybox data-type="iframe"
                        href="https://www.youtube.com/watch?v=Na6imlcnBmc">
@@ -193,6 +193,12 @@
                     </a>
                 </div>
             </div>
+            <button class="button button--orange centered show-mob-980">
+                <span class="button__text">Загрузить еще </span>
+                <svg class="button__icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-reload"></use>
+                </svg>
+            </button>
             <%= htmlWebpackPlugin.options.paginationPage %>
         </div>
     </section>

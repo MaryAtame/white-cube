@@ -1,4 +1,14 @@
 .tabs {
+
+  &--mobile {
+    display: none;
+    @include r(1200) {
+      display: flex;
+      flex-direction: column;
+      gap: rem(10);
+    }
+  }
+
   &__nav {
     display: flex;
     align-items: center;
@@ -22,6 +32,27 @@
     text-transform: uppercase;
     font-size: rem(14);
     color: #000000;
+
+    &:hover {
+      background-color: rgba(49, 110, 232, 0.05);
+      border-radius: rem(5);
+    }
+
+    svg {
+      width: rem(30);
+      height: rem(16);
+      rotate: 90deg;
+    }
+  }
+
+
+  &--mobile__btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(20);
+    padding: rem(13) rem(15);
   }
 
   &__btn.active {
@@ -30,11 +61,21 @@
     &::before {
       content: "";
       position: absolute;
-      top: 70%;
+      top: 98%;
       left: 0;
       width: 100%;
       height: 100%;
       background-color: $light;
+    }
+  }
+
+  &--mobile__btn.active {
+    border-top: none;
+    border-bottom: 1px solid #DADFEC;
+
+    &::before {
+      display: none;
+      visibility: hidden;
     }
   }
 
@@ -44,6 +85,12 @@
 
   &__article.active {
     display: flex;
+  }
+
+  &--mobile__article.active {
+    background-color: #FFFFFF;
+    border-radius: rem(5);
+    padding: rem(15);
   }
 
   &__article-specs {
@@ -57,6 +104,12 @@
     gap: rem(40);
     margin-bottom: rem(10);
 
+    @include r(1200) {
+      flex-direction: column;
+      gap: rem(5);
+      margin-bottom: rem(15);
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -65,9 +118,15 @@
   &__article-type {
     width: 45%;
     color: $gray;
+    @include r(1200) {
+      width: 100%;
+    }
   }
 
   &__article-set {
     width: 55%;
+    @include r(1200) {
+      width: 100%;
+    }
   }
 }

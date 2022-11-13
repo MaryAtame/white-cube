@@ -61,21 +61,21 @@
             <div class="form__item">
                 <input class="form__input" id="goods" placeholder="Название товара"/>
             </div>
-            <div class="counter-btn">
-                <button class="counter-btn--min">
-                    <svg class="counter-btn__icon">
+            <div class="counter">
+                <button type="button" class="counter__btn">
+                    <svg class="counter__icon">
                         <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
                     </svg>
                 </button>
                 <span>1</span>
-                <button class="counter-btn--max">
-                    <svg class="counter-btn__icon">
+                <button type="button" class="counter__btn">
+                    <svg class="counter__icon">
                         <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
                     </svg>
                 </button>
             </div>
         </div>
-        <button class="form__btn-increase">
+        <button class="form__btn-increase" type="button">
             <svg class="counter-btn__icon">
                 <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
             </svg>
@@ -98,7 +98,7 @@
     <div class="editor editor--16  mb-20">
         <p>Есть вопросы? Закажите звонок! Мы Вам перезвоним в ближайшее время</p>
     </div>
-    <form class="form  mb-40" action="/#" method="post" role="form">
+    <form class="form mb-40 mbm-20" action="/#" method="post" role="form">
         <div class="form__item">
             <label class="form__label" for="name">Ваше полное имя<span>&#42;</span></label>
             <input class="form__input" id="name" placeholder="Введите ваше имя"/>
@@ -119,7 +119,7 @@
 </section>
     <section class="modal modal--sm content-left" id="modal-feedback">
     <h1 class="modal__title">Оставить отзыв</h1>
-    <form class="form  mb-40" action="/#" method="post" role="form">
+    <form class="form mb-40 mbm-20" action="/#" method="post" role="form">
         <div class="form__item">
             <label class="form__label" for="name"></label>
             <input class="form__input" id="name" placeholder="Ваше имя"/>
@@ -129,8 +129,8 @@
             <input class="form__input" inputmode="numeric" id="date" placeholder="Дата покупки"/>
         </div>
         <div class="form__item">
-            <label class="form__label" for="content"></label>
-            <input class="form__input" id="content" placeholder="Ваши впечатления"/>
+            <label class="form__label"></label>
+            <textarea placeholder="Ваши впечатления"></textarea>
         </div>
         <div class="modal__attach">
             <input id="file" type="file">
@@ -160,22 +160,22 @@
                 <p>Плита перегородочная СППу М125-М150/1,6 498х115х249</p>
             </div>
             <picture class="modal-order__item-picture">
-                <img src="" alt="Плита перегородочная СППу М125-М150/1,6 498х115х249">
+                <img src="./assets/images/catalog-item.jpg" alt="Плита перегородочная СППу М125-М150/1,6 498х115х249">
             </picture>
         </div>
         <div class="modal-order__item-price">
             <div class="editor editor--16">
                 <p>87.17 ₽ / шт</p>
             </div>
-            <div class="counter-btn">
-                <button class="counter-btn--min">
-                    <svg class="counter-btn__icon">
+            <div class="counter">
+                <button class="counter__btn">
+                    <svg class="counter__icon">
                         <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
                     </svg>
                 </button>
                 <span>1</span>
-                <button class="counter-btn--max">
-                    <svg class="counter-btn__icon">
+                <button class="counter__btn">
+                    <svg class="counter__icon">
                         <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
                     </svg>
                 </button>
@@ -186,7 +186,16 @@
         <p>Ваше сообщение</p>
         <textarea placeholder="Оставьте комментарий к заказу или задайте интересующий вопрос"></textarea>
     </div>
-    <hr class="hr">
+    <div class="modal__attach">
+        <input id="file" type="file">
+        <label class="form__label modal__attach" for="file">
+            <svg class="form__label-icon form__label-icon--blue">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-clip"></use>
+            </svg>
+            <p class="text-blue">Прикрепить файл</p>
+        </label>
+    </div>
+    <hr class="hr mb-20 mt-20">
     <div class="modal-order__price"></div>
     <form class="form form-order" action="/#" method="post" role="form">
         <div class="form__item">
@@ -197,16 +206,31 @@
             <label class="form__label" for="address">Адрес доставки</label>
             <input class="form__input" id="address" placeholder="Укажите адрес доставки"/>
         </div>
-        <p>Заберу со склада</p>
-        <div class="dropdown">Калининград, ул. Согласия...</div>
+        <p class="text-blue">Заберу со склада</p>
+        <hr class="hr mb-20 mt20">
 
-        <div class="form__item">
-            <label class="form__label" for="userPhone">Телефон</label>
-            <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
-                   placeholder="+7 (___) ___-___-__-__"/>
+        <div class="form__select">
+            <p>Адрес склада</p>
+            <select class="select select--border">
+                <option value="addr-1">Калининград, ул. Согласия-1...</option>
+                <option value="addr-2">Калининград, ул. Согласия-2...</option>
+                <option value="addr-3">Калининград, ул. Согласия-3...</option>
+                <option value="addr-4">Калининград, ул. Согласия-4...</option>
+            </select>
         </div>
+        <div class="form__item-wrapper">
+            <div class="form__item">
+                <label class="form__label" for="userEmail">Email</label>
+                <input class="form__input" inputmode="email" id="userEmail" placeholder="info@mail.ru"/>
+            </div>
 
-        <hr class="hr">
+            <div class="form__item">
+                <label class="form__label" for="userPhone">Телефон</label>
+                <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
+                       placeholder="+7 (___) ___-___-__-__"/>
+            </div>
+        </div>
+        <hr class="hr mb-20 mt20">
         <div class="form__agreement">
             <div class="form__agreement-text">
                 Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом №
@@ -238,8 +262,12 @@
         </div>
         <div class="form__item">
             <label class="form__label" for="userBD">Дата рождения<span>&#42;</span></label>
-            <input class="form__input form__input-bd" inputmode="email" id="userBD"
+            <input class="form__input form__input-bd" type="date" id="userBD"
                    placeholder="Выберите дату рождения"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label">Сообщение</label>
+            <textarea placeholder="Сопроводительное письмо"></textarea>
         </div>
     </form>
     <div class="form__item-wrapper justify mb-20">
@@ -252,7 +280,7 @@
                 <p>Прикрепить резюме</p>
             </label>
         </div>
-        <button class="button button--orange lowercase">Отправить</button>
+        <button class="button button--orange lowercase mob-width-100">Отправить</button>
     </div>
 
     <div class="form_agreement">
@@ -456,10 +484,10 @@
             <ul class="menu-mobile__list">
                 <li class="menu-mobile__item" data-dropdown>
                     <a class="menu-mobile__link" href="#">
+                        <span>Каталог</span>
                         <svg class="menu-mobile__icon">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-small-arrow"></use>
                         </svg>
-                        <span>Каталог</span>
                     </a>
                     <ul class="menu-mobile__sublist" data-content hidden>
                         <li class="menu-mobile__subitem">
@@ -507,11 +535,11 @@
                     <a class="menu-mobile__link" href="./">Главная</a>
                 </li>
                 <li class="menu-mobile__item" data-dropdown>
-                    <a class="menu-mobile__link" href="about.html">
+                    <a class="menu-mobile__link" href="#">
+                        <span>О заводе</span>
                         <svg class="menu-mobile__icon">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-small-arrow"></use>
                         </svg>
-                        <span>О заводе</span>
                     </a>
                     <ul class="menu-mobile__sublist" data-content hidden>
                         <li class="menu-mobile__subitem">
@@ -552,8 +580,8 @@
         </nav>
     </div>
 </header>
-<main class="main bg-page">
-    <section class="section pt-30">
+<main class="main">
+    <section class="section pt-30 pb-100 pbm-20">
         <div class="container">
             <div class="mb-50 hidden-980">
                 <div class="breadcrumbs">
@@ -589,8 +617,8 @@
                 </div>
             </div>
         </div>
-        <div class="bg-gray-fullscreen mb-60 mbm-10">
-            <div class="container pb-50 pt-50 pbm-20 ptm-20">
+        <div class="bg-gray-fullscreen mb-60 mbm-10  pb-50 pt-50 pbm-20 ptm-20">
+            <div class="container">
                 <h2 class="subtitle-page mb-50 mbm-20">Описание вакансии:</h2>
                 <div class="columns mb-30 mbm-20 border-bottom pb-30 pbm-20">
                     <div class="columns__col columns__col--3">
@@ -649,7 +677,7 @@
             </div>
         </div>
         <div class="container">
-            <nav class="vacancy-full__nav mb-100 mbm-30">
+            <nav class="vacancy-full__nav">
                 <button class="button button--outline">
                     <svg class="button__icon">
                         <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>

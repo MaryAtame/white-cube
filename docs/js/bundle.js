@@ -919,16 +919,6 @@ class Dropdown {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/form-sort/form-sort.js":
-/*!***************************************************!*\
-  !*** ./src/blocks/modules/form-sort/form-sort.js ***!
-  \***************************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
 /***/ "./src/blocks/modules/menu-mobile/menu-mobile.js":
 /*!*******************************************************!*\
   !*** ./src/blocks/modules/menu-mobile/menu-mobile.js ***!
@@ -950,51 +940,6 @@ function burgerhandler(e) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/modal/form-tel.js":
-/*!**********************************************!*\
-  !*** ./src/blocks/modules/modal/form-tel.js ***!
-  \**********************************************/
-/***/ (() => {
-
-window.addEventListener("DOMContentLoaded", function () {
-    [].forEach.call(document.querySelectorAll('[data-tel]'), function (input) {
-        let keyCode;
-        function mask(event) {
-            event.keyCode && (keyCode = event.keyCode);
-            let pos = this.selectionStart;
-            if (pos < 3) event.preventDefault();
-            let matrix = "+7 (___) ___ ____",
-                i = 0,
-                def = matrix.replace(/\D/g, ""),
-                val = this.value.replace(/\D/g, ""),
-                new_value = matrix.replace(/[_\d]/g, function (a) {
-                    return i < val.length ? val.charAt(i++) || def.charAt(i) : a
-                });
-            i = new_value.indexOf("_");
-            if (i != -1) {
-                i < 5 && (i = 3);
-                new_value = new_value.slice(0, i)
-            }
-            let reg = matrix.substr(0, this.value.length).replace(/_+/g,
-                function (a) {
-                    return "\\d{1," + a.length + "}"
-                }).replace(/[+()]/g, "\\$&");
-            reg = new RegExp("^" + reg + "$");
-            if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
-            if (event.type == "blur" && this.value.length < 5) this.value = ""
-        }
-
-        input.addEventListener("input", mask, false);
-        input.addEventListener("focus", mask, false);
-        input.addEventListener("blur", mask, false);
-        input.addEventListener("keydown", mask, false)
-
-    });
-
-});
-
-/***/ }),
-
 /***/ "./src/blocks/modules/slider-garanty/slider-garanty.js":
 /*!*************************************************************!*\
   !*** ./src/blocks/modules/slider-garanty/slider-garanty.js ***!
@@ -1007,30 +952,46 @@ __webpack_require__.r(__webpack_exports__);
 
 
 document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('[data-slider]');
 
-    const swiperGaranty = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.slider-garanty', {
-        modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
-        direction: 'horizontal',
-        loop: true,
-        slidesPerView: 1.5,
-        spaceBetween: 20,
-        pagination: {
-            el: '.slider-pagination',
-        },
-        breakpoints: {
-            // when window width is >= 480px
-            480: {
-                slidesPerView: 2,
-                spaceBetween: 30
-            },
-
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 30
-            },
-        }
+    elements.forEach((item) => {
+        createSlider(item);
     });
 });
+
+function createSlider(item) {
+    function callSlider() {
+        return new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](item.querySelector('.swiper'), {
+            modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+            watchSlidesProgress: true,
+            slideVisibleClass: 'slider__slide--visible',
+            pagination: {
+                el: '.slider__pagination',
+                clickable: true,
+                type: 'bullets',
+                bulletClass: 'bullet',
+                bulletActiveClass: 'bullet--active'
+            },
+            breakpoints: {
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+            }
+        });
+    };
+    callSlider();
+}
 
 
 /***/ }),
@@ -1179,6 +1140,51 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+/***/ }),
+
+/***/ "./src/js/helpers/form-tel.js":
+/*!************************************!*\
+  !*** ./src/js/helpers/form-tel.js ***!
+  \************************************/
+/***/ (() => {
+
+window.addEventListener("DOMContentLoaded", function () {
+    [].forEach.call(document.querySelectorAll('[data-tel]'), function (input) {
+        let keyCode;
+        function mask(event) {
+            event.keyCode && (keyCode = event.keyCode);
+            let pos = this.selectionStart;
+            if (pos < 3) event.preventDefault();
+            let matrix = "+7 (___) ___ ____",
+                i = 0,
+                def = matrix.replace(/\D/g, ""),
+                val = this.value.replace(/\D/g, ""),
+                new_value = matrix.replace(/[_\d]/g, function (a) {
+                    return i < val.length ? val.charAt(i++) || def.charAt(i) : a
+                });
+            i = new_value.indexOf("_");
+            if (i != -1) {
+                i < 5 && (i = 3);
+                new_value = new_value.slice(0, i)
+            }
+            let reg = matrix.substr(0, this.value.length).replace(/_+/g,
+                function (a) {
+                    return "\\d{1," + a.length + "}"
+                }).replace(/[+()]/g, "\\$&");
+            reg = new RegExp("^" + reg + "$");
+            if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
+            if (event.type == "blur" && this.value.length < 5) this.value = ""
+        }
+
+        input.addEventListener("input", mask, false);
+        input.addEventListener("focus", mask, false);
+        input.addEventListener("blur", mask, false);
+        input.addEventListener("keydown", mask, false)
+
+    });
+
+});
 
 /***/ }),
 
@@ -14353,10 +14359,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_modules_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_blocks_modules_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _blocks_modules_menu_mobile_menu_mobile__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../blocks/modules/menu-mobile/menu-mobile */ "./src/blocks/modules/menu-mobile/menu-mobile.js");
 /* harmony import */ var _blocks_modules_menu_mobile_menu_mobile__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_blocks_modules_menu_mobile_menu_mobile__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _blocks_modules_modal_form_tel__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../blocks/modules/modal/form-tel */ "./src/blocks/modules/modal/form-tel.js");
-/* harmony import */ var _blocks_modules_modal_form_tel__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_blocks_modules_modal_form_tel__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _blocks_modules_form_sort_form_sort__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../blocks/modules/form-sort/form-sort */ "./src/blocks/modules/form-sort/form-sort.js");
-/* harmony import */ var _blocks_modules_form_sort_form_sort__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_blocks_modules_form_sort_form_sort__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _helpers_form_tel__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./helpers/form-tel */ "./src/js/helpers/form-tel.js");
+/* harmony import */ var _helpers_form_tel__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_helpers_form_tel__WEBPACK_IMPORTED_MODULE_13__);
 
 
 
@@ -14367,7 +14371,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
+// import '../blocks/modules/slider/slider';
 
 
 

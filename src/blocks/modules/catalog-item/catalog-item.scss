@@ -3,11 +3,17 @@
   &__picture {
     background-color: $light;
     border-radius: 5px;
-    max-height: rem(350);
+    height: rem(350);
     overflow: hidden;
+
+    @include r(768) {
+      height: rem(150);
+    }
 
     img {
       max-height: inherit;
+      object-position: center;
+      object-fit: contain;
     }
   }
 
@@ -20,6 +26,13 @@
     background-color: $light;
     border-radius: 5px;
     padding: rem(50) rem(70);
+    overflow: hidden;
+
+    @include  r(1200) {
+      flex-direction: column;
+      padding: rem(20) rem(15);
+      gap: rem(60);
+    }
   }
 
   &__specs {
@@ -29,10 +42,27 @@
       display: block;
       position: absolute;
       width: rem(1);
-      height: 100%;
-      top: 0;
-      right: rem(-55);
+      height: rem(350);
+      top: rem(-61);
+      right: rem(-40);
       background-color: #DADFEC;
+    }
+
+      @include r(1200) {
+        &::after {
+          display: none;
+          visibility: hidden;
+        }
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: rem(1);
+          bottom: rem(-20);
+          right: rem(-0);
+          background-color: #DADFEC;
+      }
     }
   }
 
@@ -52,6 +82,7 @@
 
   &__option {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     gap: rem(20);
 
@@ -61,11 +92,13 @@
 
   &__option-type {
     color: $gray;
+    width: 45%;
   }
 
   &__set {
     color: #000000;
-    text-align: end;
+    text-align: start;
+    width: 50%;
   }
 
   &__link {
@@ -78,6 +111,10 @@
   &__order {
     display: flex;
     flex-direction: column;
+
+    @include r(350) {
+      width: 100%;
+    }
   }
 
   &__price {
@@ -85,6 +122,10 @@
     font-size: rem(32);
     color: #000000;
     margin-bottom: rem(14);
+
+    @include r(1200) {
+      font-size: rem(24);
+    }
   }
 
   &__btn-icon {

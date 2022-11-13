@@ -22,6 +22,12 @@
     margin-right: auto;
   }
 
+  &--mini {
+    @include r(1200) {
+      width: 100%;
+      margin: 0;
+    }
+  }
 
   &--disabled {
     background-color: $gray;
@@ -90,6 +96,24 @@
     }
   }
 
+  &--clear {
+    background-color: transparent;
+    border: none;
+    color: $blue;
+    min-width: rem(200);
+
+    &:hover,
+    &:active,
+    &:focus {
+      outline: rem(1) solid $blue;
+      background-color: rgba(49, 110, 232, 0.1);
+    }
+
+    @include r(1200) {
+      width: 100%;
+    }
+  }
+
   &--outline {
     background-color: transparent;
     border: rem(1) solid #0B1321;
@@ -124,8 +148,11 @@
     text-transform: uppercase;
     transition: all .3s linear;
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
       border: 1px solid $blue;
+      background-color: rgba(49, 110, 232, 0.1);
     }
 
     span {

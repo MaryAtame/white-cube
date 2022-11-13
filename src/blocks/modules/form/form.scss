@@ -8,18 +8,32 @@
     flex-direction: column;
     width: 100%;
     gap: rem(10);
+
+    textarea {
+      resize: vertical;
+    }
   }
 
   &__item-wrapper {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: rem(20);
+
+    @include r(600) {
+      flex-direction: column;
+      align-items: start;
+      width: 100%;
+    }
   }
 
   &__item-title {
     font-size: rem(19);
     color: #000000;
     font-weight: 600;
+
+    @include r(1200) {
+      font-size: rem(16);
+    }
   }
 
   &__item-link {
@@ -27,9 +41,13 @@
     font-size: rem(16);
     font-weight: 600;
   }
-  &__checkbox-btn-label{
+&__label {
+  font-size: rem(14);
+}
+  &__checkbox-btn-label {
     font-size: rem(14);
     color: #000000;
+
     span,
     a {
       color: $orange;
@@ -43,32 +61,49 @@
     margin-bottom: rem(20);
   }
 
-  &__input{
+  &__input,
+  textarea {
     padding: rem(18) rem(20);
     border-radius: 5px;
     border: 1px solid #D9E1F3;
+    cursor: pointer;
+
+    @include r(1200) {
+      padding: rem(10) rem(15);
+    }
 
     &::placeholder {
       color: #B1AFAF;
       font-size: rem(14);
       font-weight: 500;
+
+      @include r(1200) {
+        font-size: rem(12);
+      }
     }
   }
-  &__input-bd{
+
+  &__input-bd {
     background-image: url("../assets/sprite/sprite.svg#icon-calendar");
     background-position: right;
     background-repeat: no-repeat;
     background-size: 100%;
   }
-&__label {
-  span {
-    color: $orange;
+
+  &__label {
+    color: #000;
+    span {
+      color: $orange;
+    }
   }
-}
 
   &__label-icon {
     width: rem(13);
     height: rem(14);
+  }
+
+  &__label-icon--blue {
+    color: $blue;
   }
 
   &__radio {
@@ -82,24 +117,27 @@
   }
 
   &__checkbox-btn + label {
-      width: rem(20);
-      height: rem(20);
-      border-radius: rem(3);
-      border: 1px solid #D9E1F3;
-      background-color: $light;
-      position: relative;
-      transition: all .3s linear;
-    }
+    width: rem(20);
+    height: rem(20);
+    border-radius: rem(3);
+    border: 1px solid #D9E1F3;
+    background-color: $light;
+    position: relative;
+    transition: all .3s linear;
+  }
 
   &__btn-increase {
     display: flex;
     align-items: center;
     gap: rem(9);
+    cursor: pointer;
+
     svg {
       color: $blue;
       width: rem(13);
       height: rem(13);
     }
+
     span {
       color: $blue;
       text-transform: uppercase;
@@ -131,7 +169,13 @@
       text-decoration: underline;
     }
   }
+
+  &__select {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
   }
+}
 
 .form__checkbox-btn:checked + label {
   background-image: url("../assets/sprite/sprite.svg#icon-done");

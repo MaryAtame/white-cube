@@ -5,76 +5,84 @@
     grid-template-rows: minmax(0, 1fr);
     grid-template-columns:  minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     @include r(1200) {
-        //gap: 0;
+        gap: rem(15);
+        grid-template-columns:  minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     }
+
     &__col {
         position: relative;
         &--1 {
             grid-column: span 1;
+            @include r(1200) {
+                grid-column: span 2;
+            }
         }
         &--2 {
             grid-column: span 2;
+            @include r(1200) {
+                grid-column: span 4;
+            }
         }
         &--3 {
             grid-column: span 3;
-            @include r(1200) {
+            @include r(768) {
                 grid-column: span 6;
             }
-
-            @include r(768){
-                grid-column: span 12;
-            }
         }
+
         &--4 {
             grid-column: span 4;
             @include r(1200) {
-                grid-column: span 12;
+                grid-column: span 6;
             }
         }
         &--5 {
             grid-column: span 5;
             @include r(1200) {
-                grid-column: span 12;
+                grid-column: span 6;
             }
         }
         &--6 {
             grid-column: span 6;
             @include r(1200) {
-                grid-column: span 12;
+                grid-column: span 6;
             }
         }
         &--7 {
             grid-column: span 7;
             @include r(1200) {
-                grid-column: span 12;
+                grid-column: span 6;
             }
         }
         &--8 {
             grid-column: span 8;
             @include r(1200) {
-                grid-column: span 12;
+                grid-column: span 6;
             }
         }
         &--9 {
             grid-column: span 9;
             @include r(1200) {
-                grid-column: span 12;
+                grid-column: span 6;
             }
         }
         &--10 {
             grid-column: span 10;
             @include r(1200) {
-                grid-column: span 12;
+                grid-column: span 6;
             }
         }
         &--11 {
             grid-column: span 11;
             @include r(1200) {
-                grid-column: span 12;
+                grid-column: span 6;
             }
         }
         &--12 {
             grid-column: span 12;
+            @include r(1200) {
+                grid-column: span 6;
+            }
         }
     }
 }

@@ -14,8 +14,8 @@
     <%= htmlWebpackPlugin.options.vacancyReply %>
 </div>
 <%= htmlWebpackPlugin.options.sectionHeader %>
-<main class="main bg-page">
-    <section class="section-page">
+<main class="main">
+    <section class="section pt-30 pbm-20 pb-100 bg-page">
         <div class="container">
             <div class="mb-50 hidden-980">
                 <div class="breadcrumbs">
@@ -26,31 +26,19 @@
                     <span>Каталог</span>
                 </div>
             </div>
-            <div class="justify justify--column mb-50">
+            <div class="justify justify--column mb-50 mbm-20">
                 <h1 class="title-page">Каталог</h1>
-                <form class="form-sort">
-                    <div class="form-sort__select">
-                        <div class="form-sort__title">Сортировать по:</div>
-                        <button class="form-sort__btn">
-                            <span>Наименованию</span>
-                            <svg class="form-sort__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-small-arrow"></use>
-                            </svg>
-                        </button>
-                            <div class="form-sort__content">
-                                <input id="sort-1" class="form-sort__input" type="radio" name="sort" checked/>
-                                <label for="sort-1" class="form-sort__label">Option 0</label>
-                                <input id="sort-2" class="form-sort__input" type="radio" name="sort"/>
-                                <label for="sort-2" class="form-sort__label">Option 1</label>
-                                <input id="sort-3" class="form-sort__input" type="radio" name="sort"/>
-                                <label for="sort-3" class="form-sort__label">Option 2</label>
-                                <input id="sort-4" class="form-sort__input" type="radio" name="sort"/>
-                                <label for="sort-4" class="form-sort__label">Option 3</label>
-                            </div>
-                    </div>
-                </form>
+                <div class="select-wrapper">
+                    <p class="select-wrapper__caption hidden-980">Сортировать по:</p>
+                    <select class="select select--catalog" name="select-catalog">
+                        <option class="select__item" value="catalog-1" selected>Наименованию</option>
+                        <option class="select__item" value="catalog-2">Цене</option>
+                        <option class="select__item" value="catalog-3">Популярности</option>
+                        <option class="select__item" value="catalog-4">Размеру скидки</option>
+                    </select>
+                </div>
             </div>
-            <div class="columns mb-60">
+            <div class="columns mb-60 mbm-0">
                 <div class="columns__col columns__col--3">
                     <%= htmlWebpackPlugin.options.sidebarCatalog %>
                 </div>

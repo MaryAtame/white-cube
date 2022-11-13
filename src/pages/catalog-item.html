@@ -14,8 +14,8 @@
     <%= htmlWebpackPlugin.options.vacancyReply %>
 </div>
 <%= htmlWebpackPlugin.options.sectionHeader %>
-<main class="main bg-page">
-    <section class="section-page">
+<main class="main">
+    <section class="section bg-page pt-30 pbm-20 pb-100">
         <div class="container">
             <div class="mb-50 hidden-980">
                 <div class="breadcrumbs">
@@ -35,7 +35,7 @@
                 <div class="columns">
                     <div class="columns__col columns__col--4">
                         <picture class="catalog-item__picture">
-                            <img class="centered" src="./assets/images/catalog-item.jpg" alt="">
+                            <img class="centered" src="https://placeholder.pics/svg/1600x900" alt="">
                         </picture>
                     </div>
                     <div class="columns__col columns__col--8">
@@ -64,10 +64,9 @@
                             </div>
                             <div class="catalog-item__order">
                                 <p class="catalog-item__price">87.17 &#8381;</p>
-                                <form class="article-radio justify align-center mb-25 gap-20">
+                                <form class="article-catalog__option justify align-center mb-25 gap-20">
                                     <p class="article-radio__title editor--gray-14">Цена за:</p>
                                     <div class="article-radio__inputs justify editor--gray-14">
-
                                         <input class="article-radio__input" type="radio" name="catalog-cat" value="pcs"
                                                id="cat-1" checked>
                                         <label class="article-radio__cat" for="cat-1">шт</label>
@@ -93,7 +92,7 @@
                     </div>
                 </div>
                 <%= htmlWebpackPlugin.options.tabs %>
-                <div class="catalog-footer">
+
                     <h1 class="editor editor--24 mb-50">Другие товары в этой категории</h1>
                     <div class="columns">
                         <div class="columns__col columns__col--3">
@@ -109,7 +108,6 @@
                             <%= htmlWebpackPlugin.options.articleCatalog %>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </section>

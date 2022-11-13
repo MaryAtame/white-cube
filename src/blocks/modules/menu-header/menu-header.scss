@@ -7,12 +7,12 @@
     line-height: rem(22);
     white-space: nowrap;
   }
-  &__link {
+
+  &__list > li {
     position: relative;
     padding: rem(15) 0;
 
-    &:hover,
-    &:active {
+    &:hover {
       color: $blue;
     }
   }
@@ -24,24 +24,18 @@
     gap: rem(20);
     padding: rem(35) rem(260) rem(35) rem(40);
     position: absolute;
-    top: rem(35);
-    left: rem(-40);
+    top: rem(40);
+    left: rem(-20);
     width: 100%;
     z-index: 10;
+    color: $dark;
 
     background-color: $light;
   }
 
-  &__dropdown__link {
-    a {
-      color: $dark;
-    }
-    &:hover,
-    &:active {
-      a {
-        color: $blue;
-      }
-    }
+  &__dropdown-link >a:hover {
+      color: $blue;
+
   }
 }
 

@@ -29,6 +29,7 @@
     max-height:  rem(24);
     color: $blue;
     fill: $blue;
+
   }
 
   &__callback {
@@ -39,13 +40,23 @@
     background-image: url("../../assets/images/article-contacts-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
+
+    @include  r(1200) {
+      background-image: none;
+      background-color: $blue;
+      padding: rem(35) rem(14);
+    }
   }
 
   &__callback-icon {
     max-width: rem(21.5);
     max-height:  rem(21.5);
     color: $light;
+    @include r(700) {
+      max-width: rem(12);
+      max-height:  rem(12);
+    }
   }
 
   &__callback-title {
@@ -53,6 +64,10 @@
     font-size: rem(24);
     line-height: 1.25;
     font-weight: 700;
+
+    @include r(1200) {
+      font-size: rem(16);
+    }
   }
 
   &__map {

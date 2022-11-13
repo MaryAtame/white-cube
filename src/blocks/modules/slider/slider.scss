@@ -1,37 +1,59 @@
 .slider {
 
-	&__main {
-		overflow: visible;
+  &__main {
+    overflow: visible !important;
+    clip-path: inset(0 -500px -100px 0);
 
-		&--overflow {
-			overflow: visible;
+    &--overflow {
+      overflow: visible;
 
-			.slider__slide {
-				opacity: 1;
-			}
-		}
-	}
+      .slider__slide {
+        opacity: 1;
+      }
+    }
+  }
 
-	&__slide {
-		opacity: 0;
-		transition: 0.3s opacity;
+  &__slide {
+    opacity: 0;
+    transition: 0.3s opacity;
 
-		&--visible {
-			opacity: 1;
-			visibility: visible;
-		}
+    &--visible {
+      opacity: 1;
+      visibility: visible;
+    }
 
 
-		&--mob-width-190 {
-			@media(max-width:1200px) {
-				width: rem(190);
-			}
-		}
+    &--mob-width-190 {
+     @include r(1200){
+        width: rem(190);
+        max-width: rem(190);
+      }
+    }
 
-		&--mob-width-240 {
-			@media(max-width:1200px) {
-				width: rem(240);
-			}
-		}
-	}
+    &--mob-width-240 {
+      @include r(1200){
+        width: rem(240);
+      }
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    margin: rem(50) 0 0 0;
+    bottom: rem(-50) !important;
+  }
+}
+
+.bullet {
+  width: rem(40);
+  height: rem(2);
+  background-color: #8CAEF3;
+  margin: 0 rem(5);
+  cursor: pointer;
+  transition: background-color .3s linear;
+
+  &--active {
+    background-color: $light;
+  }
 }

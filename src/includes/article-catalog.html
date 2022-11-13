@@ -1,4 +1,4 @@
-<article class="article-catalog">
+<article class="article-catalog mob-hidden">
     <span class="article-catalog__articul">Код: 16631</span>
     <picture class="article-catalog__picture">
         <img src="./assets/images/catalog-item.jpg" alt="">
@@ -7,27 +7,76 @@
         <h2 class="article-catalog__title">Плита перегородочная СППу М125-М150/1,6 498х115х249</h2>
         <p class="article-catalog__price">87.17 &#8381;</p>
         <form class="article-radio justify align-center">
-            <p class="article-radio__title editor--gray-14">Цена за:</p>
-            <div class="article-radio__inputs justify editor--gray-14 gap-10">
+            <div class="article-catalog__option editor--gray-14 mb-20">
+                <p>Цена за:</p>
+                <div class="article-radio__inputs justify editor--gray-14">
+                    <input class="article-radio__input" type="radio" name="catalog-cat" value="pcs" id="cat-1" checked>
+                    <label class="article-radio__cat" for="cat-1">
+                        <span>шт</span>
+                    </label>
 
+                    <input class="article-radio__input" type="radio" name="catalog-cat" value="m2" id="cat-2">
+                    <label class="article-radio__cat" for="cat-2">
+                        <span>м<sup>2</sup></span>
+                    </label>
+
+                    <input class="article-radio__input" type="radio" name="catalog-cat" value="m3" id="cat-3">
+                    <label class="article-radio__cat" for="cat-3">
+                        <span>м<sup>3</sup></span>
+                    </label>
+                </div>
+            </div>
+            <div class="article-catalog__option editor--gray-14 mb-10">
+                <p>Размер, мм:</p>
+                <p>250х120х88</p>
+            </div>
+            <div class="article-catalog__option editor--gray-14">
+                <p>На поддоне:</p>
+                <p>48 шт</p>
+            </div>
+            <button class="button button--orange content-center mt-30" type="button" data-fancybox
+                    data-src="#modal-order">Заказать
+            </button>
+        </form>
+    </div>
+</article>
+
+<article class="article-catalog article-catalog--mobile">
+    <div class="article-catalog__mobile-row">
+        <picture class="article-catalog__picture article-catalog__picture--mobile">
+            <img src="./assets/images/catalog-item.jpg" alt="">
+        </picture>
+        <div class="article-catalog__mobile-column">
+            <span class="article-catalog__articul">Код: 16631</span>
+            <h2 class="article-catalog__title">Плита перегородочная СППу М125-М150/1,6 498х115х249</h2>
+        </div>
+    </div>
+
+    <form class="article-radio justify align-center">
+        <div class="article-catalog__option editor--gray-14">
+            <p>Цена за:</p>
+            <div class="article-radio__inputs justify editor--gray-14">
                 <input class="article-radio__input" type="radio" name="catalog-cat" value="pcs" id="cat-1" checked>
-                <label class="article-radio__cat" for="cat-1">шт</label>
+                <label class="article-radio__cat" for="cat-1">
+                    <span>шт</span>
+                </label>
 
                 <input class="article-radio__input" type="radio" name="catalog-cat" value="m2" id="cat-2">
-                <label class="article-radio__cat" for="cat-2">м<sup>2</sup></label>
+                <label class="article-radio__cat" for="cat-2">
+                    <span>м<sup>2</sup></span>
+                </label>
 
                 <input class="article-radio__input" type="radio" name="catalog-cat" value="m3" id="cat-3">
-                <label class="article-radio__cat" for="cat-3">м<sup>3</sup></label>
+                <label class="article-radio__cat" for="cat-3">
+                    <span>м<sup>3</sup></span>
+                </label>
             </div>
-        </form>
-        <div class="article-catalog__size justify editor--gray-14">
-            <p>Размер, мм:</p>
-            <p>250х120х88</p>
         </div>
-        <div class="article-catalog__count justify editor--gray-14">
-            <p>На поддоне:</p>
-            <p>48 шт</p>
-        </div>
-        <button class="button button--orange content-center" data-fancybox data-src="#modal-order">Заказать</button>
+    </form>
+    <div class="article-catalog__mobile-row">
+        <p class="article-catalog__price">87.17 &#8381;</p>
+        <button class="button button--orange button--mini ptm-5 pbm-5" type="button" data-fancybox
+                data-src="#modal-order">Заказать
+        </button>
     </div>
 </article>

@@ -7,15 +7,15 @@
 <body class="body">
 <div class="modals" hidden>
     <%= htmlWebpackPlugin.options.success %>
-    <%= htmlWebpackPlugin.options.success %>
+    <%= htmlWebpackPlugin.options.calculation %>
     <%= htmlWebpackPlugin.options.callback %>
     <%= htmlWebpackPlugin.options.feedback %>
     <%= htmlWebpackPlugin.options.order %>
     <%= htmlWebpackPlugin.options.vacancyReply %>
 </div>
 <%= htmlWebpackPlugin.options.sectionHeader %>
-<main class="main bg-page">
-    <section class="section pt-30 pb-100">
+<main class="main">
+    <section class="section pt-30 pb-100 pbm-20">
         <div class="container">
             <div class="mb-50 hidden-980">
                 <div class="breadcrumbs">
@@ -32,29 +32,31 @@
             </div>
             <h1 class="title-page mb-50 mbm-20">Новости</h1>
             <nav class="toolbar-page mb-70 mob-hidden">
-                <label class="toolbar-page__item" for="all">
-                    <input class="toolbar-page__input" type="radio" id="all">
+                <label class="toolbar-page__item">
+                    <input class="toolbar-page__input" type="radio" value="all" name="news-radio" checked>
                     <span class="toolbar-page__category">За все время</span>
                 </label>
-                <label class="toolbar-page__item" for="2022">
-                    <input class="toolbar-page__input" type="radio" id="2022">
+                <label class="toolbar-page__item">
+                    <input class="toolbar-page__input" type="radio" value="2022" name="news-radio">
                     <span class="toolbar-page__category">2022</span>
                 </label>
-                <label class="toolbar-page__item" for="2021">
-                    <input class="toolbar-page__input" type="radio" id="2021">
+                <label class="toolbar-page__item">
+                    <input class="toolbar-page__input" type="radio" value="2021" name="news-radio">
                     <span class="toolbar-page__category">2021</span>
                 </label>
-                <label class="toolbar-page__item" for="2020">
-                    <input class="toolbar-page__input" type="radio" id="2020">
+                <label class="toolbar-page__item">
+                    <input class="toolbar-page__input" type="radio" value="2020" name="news-radio">
                     <span class="toolbar-page__category">2020</span>
                 </label>
             </nav>
-            <nav class="toolbar-dropdown desktop-hidden mb-20" data-dropdown>
-                <a class="toolbar-dropdown__link" href="#" data-content>За все время</a>
-                <a class="toolbar-dropdown__link" href="#" data-content hidden>2022</a>
-                <a class="toolbar-dropdown__link" href="#" data-content hidden>2021</a>
-                <a class="toolbar-dropdown__link" href="#" data-content hidden>2020</a>
-            </nav>
+
+                <select class="select select--news desktop-hidden mb-20" name="select-news">
+                    <option class="select__item" value="value-1" selected>За все время</option>
+                    <option class="select__item" value="value-2">2022</option>
+                    <option class="select__item" value="value-3">2021</option>
+                    <option class="select__item" value="value-4">2020</option>
+                </select>
+
             <div class="columns mb-60">
                 <div class="columns__col columns__col--6">
                     <a class="article-post article-post--large" href="#">

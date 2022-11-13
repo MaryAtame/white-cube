@@ -31,23 +31,4 @@
       font-size: rem(14);
     }
   }
-
-  &__link {
-    color: $blue;
-    font-size: rem(16);
-    font-weight: 600;
-    padding: rem(15) rem(40);
-    border-radius: 5px;
-    min-width: rem(246);
-    text-align: center;
-
-    @include r(1200) {
-      width: 100%;
-    }
-  }
-
-  &__link--blue {
-    color: $light;
-    background-color: $blue;
-  }
 }

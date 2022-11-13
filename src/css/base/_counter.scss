@@ -1,0 +1,39 @@
+.counter {
+  display: flex;
+  max-width: rem(100);
+  gap: rem(23);
+  align-items: center;
+
+  padding: rem(15) rem(11);
+  border-radius: 5px;
+  border: 1px solid #D9E1F3;
+  background-color: transparent;
+  @include r(1200) {
+    padding: rem(8) rem(11);
+  }
+  span {
+    font-size: rem(16);
+    font-weight: 500;
+
+    @include r(1200) {
+      font-size: rem(14);
+    }
+  }
+
+  &__icon {
+    width: rem(9.5);
+    height: rem(9.5);
+  }
+
+  &__btn {
+    display: block;
+    width: rem(20);
+    height: rem(30);
+    cursor: pointer;
+  }
+}
+
+.counter > input {
+  display: block;
+  width: 1%;
+}

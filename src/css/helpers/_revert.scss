@@ -6,4 +6,10 @@
   span {
     color: $light;
   }
+
+  &--mobile {
+    @include r(980) {
+      color: #000 !important;
+    }
+  }
 }

@@ -19,6 +19,10 @@
     strong {
       font-weight: 500;
     }
+
+    @include r(1200) {
+      font-size: rem(14);
+    }
   }
 
   &--24 {

@@ -8,6 +8,7 @@ import "@fancyapps/ui/dist/fancybox.css";
 import 'swiper/swiper-bundle.min.css';
 
 
+// import '../blocks/modules/slider/slider';
 import '../blocks/modules/slider-intro/slider-intro';
 import '../blocks/modules/slider-garanty/slider-garanty';
 import '../blocks/modules/slider-review/slider-review';
@@ -15,5 +16,4 @@ import '../blocks/modules/slider-news/slider-news';
 import '../blocks/modules/tabs/tabs';
 import '../blocks/modules/dropdown/dropdown';
 import '../blocks/modules/menu-mobile/menu-mobile';
-import '../blocks/modules/modal/form-tel';
-import '../blocks/modules/form-sort/form-sort';
+import './helpers/form-tel';

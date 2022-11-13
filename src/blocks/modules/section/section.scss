@@ -1,13 +1,16 @@
 .section {
   position: relative;
+
   &--accent-line::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: rem(350);
-    background-color: $blue;
+    @include rmin(981) {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: rem(350);
+      background-color: $blue;
+    }
   }
 }

@@ -9,22 +9,22 @@
                 <p>Плита перегородочная СППу М125-М150/1,6 498х115х249</p>
             </div>
             <picture class="modal-order__item-picture">
-                <img src="" alt="Плита перегородочная СППу М125-М150/1,6 498х115х249">
+                <img src="./assets/images/catalog-item.jpg" alt="Плита перегородочная СППу М125-М150/1,6 498х115х249">
             </picture>
         </div>
         <div class="modal-order__item-price">
             <div class="editor editor--16">
                 <p>87.17 ₽ / шт</p>
             </div>
-            <div class="counter-btn">
-                <button class="counter-btn--min">
-                    <svg class="counter-btn__icon">
+            <div class="counter">
+                <button class="counter__btn">
+                    <svg class="counter__icon">
                         <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
                     </svg>
                 </button>
                 <span>1</span>
-                <button class="counter-btn--max">
-                    <svg class="counter-btn__icon">
+                <button class="counter__btn">
+                    <svg class="counter__icon">
                         <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
                     </svg>
                 </button>
@@ -35,7 +35,16 @@
         <p>Ваше сообщение</p>
         <textarea placeholder="Оставьте комментарий к заказу или задайте интересующий вопрос"></textarea>
     </div>
-    <hr class="hr">
+    <div class="modal__attach">
+        <input id="file" type="file">
+        <label class="form__label modal__attach" for="file">
+            <svg class="form__label-icon form__label-icon--blue">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-clip"></use>
+            </svg>
+            <p class="text-blue">Прикрепить файл</p>
+        </label>
+    </div>
+    <hr class="hr mb-20 mt-20">
     <div class="modal-order__price"></div>
     <form class="form form-order" action="/#" method="post" role="form">
         <div class="form__item">
@@ -46,16 +55,31 @@
             <label class="form__label" for="address">Адрес доставки</label>
             <input class="form__input" id="address" placeholder="Укажите адрес доставки"/>
         </div>
-        <p>Заберу со склада</p>
-        <div class="dropdown">Калининград, ул. Согласия...</div>
+        <p class="text-blue">Заберу со склада</p>
+        <hr class="hr mb-20 mt20">
 
-        <div class="form__item">
-            <label class="form__label" for="userPhone">Телефон</label>
-            <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
-                   placeholder="+7 (___) ___-___-__-__"/>
+        <div class="form__select">
+            <p>Адрес склада</p>
+            <select class="select select--border">
+                <option value="addr-1">Калининград, ул. Согласия-1...</option>
+                <option value="addr-2">Калининград, ул. Согласия-2...</option>
+                <option value="addr-3">Калининград, ул. Согласия-3...</option>
+                <option value="addr-4">Калининград, ул. Согласия-4...</option>
+            </select>
         </div>
+        <div class="form__item-wrapper">
+            <div class="form__item">
+                <label class="form__label" for="userEmail">Email</label>
+                <input class="form__input" inputmode="email" id="userEmail" placeholder="info@mail.ru"/>
+            </div>
 
-        <hr class="hr">
+            <div class="form__item">
+                <label class="form__label" for="userPhone">Телефон</label>
+                <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
+                       placeholder="+7 (___) ___-___-__-__"/>
+            </div>
+        </div>
+        <hr class="hr mb-20 mt20">
         <div class="form__agreement">
             <div class="form__agreement-text">
                 Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом №

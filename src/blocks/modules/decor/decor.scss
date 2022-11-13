@@ -1,50 +1,11 @@
 .decor {
-  position: relative;
-  &::before{
-    content: "";
-    position: absolute;
-    top: calc(55% + 50px);
-    left: 50%;
-    transform: translate(-50%, -55%);
-    width: 100%;
-    height: 100%;
-    max-height: rem(426);
-    max-width: rem(426);
-    background-color: #F3F6FD;
-    border-radius: rem(426);
+  background-image: url("../assets/images/benefits.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 
-    @include r(1200) {
-      top: calc(20% + 50px);
-      max-height: rem(200);
-      max-width: rem(200);
-    }
-
-    @include r(768) {
-      top: calc(20% - 10px);
-    }
-  }
-  &::after{
-    content: "";
-    position: absolute;
-    top: calc(55% + 50px);
-    left: 50%;
-    transform: translate(-50%, -55%);
-    width: 100%;
-    height: 100%;
-    max-height: rem(616);
-    max-width: rem(616);
-    background-color: #F9FBFF;
-    border-radius: rem(616);
-    z-index: -1;
-
-    @include r(1200) {
-      top: calc(20% + 50px);
-      max-height: rem(291);
-      max-width: rem(291);
-    }
-
-    @include r(768) {
-      top: calc(20% - 10px);
-    }
+  @include r(1200) {
+    background-image: none;
   }
 }
+

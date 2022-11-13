@@ -25,6 +25,7 @@ const tableDelivery = fs.readFileSync('src/includes/table-delivery.html');
 const article = fs.readFileSync('src/includes/article.html');
 const articleDoc = fs.readFileSync('src/includes/article-doc.html');
 const articleVacancy = fs.readFileSync('src/includes/article-vacancy.html');
+const sidebarNews = fs.readFileSync('src/includes/sidebar-news.html');
 
 const calculation = fs.readFileSync('src/includes/modals/calculation.html');
 const callback = fs.readFileSync('src/includes/modals/callback.html');
@@ -174,6 +175,7 @@ module.exports = [
         title: "Изменение стоимости смеси для укладки блоков и плит",
         head,
         sectionHeader,
+        sidebarNews,
         sectionFooter,
         success,
         calculation,

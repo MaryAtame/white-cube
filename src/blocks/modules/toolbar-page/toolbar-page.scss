@@ -14,7 +14,14 @@
     cursor: pointer;
   }
 
-  &__item>input:checked {
+  &__category {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item>input:checked + span {
+
     font-weight: 700;
     color: $orange;
     position: relative;

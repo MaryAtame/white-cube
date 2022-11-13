@@ -2,6 +2,7 @@
 @import "helpers/mixins";
 @import "helpers/functions";
 @import "helpers/revert";
+@import "helpers/translateY";
 @import "base/picture-mobile";
 @import "base/fonts";
 @import "base/general";
@@ -14,7 +15,6 @@
 @import "base/card-gray";
 @import "base/text-colors";
 @import "base/mobile-flex";
-@import "base/slider-pagination";
 @import "base/hr";
-@import "base/counter-btn";
+@import "base/counter";
 @import "../blocks/modules";

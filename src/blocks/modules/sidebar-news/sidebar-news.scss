@@ -1,7 +1,7 @@
 .sidebar-news {
   display: flex;
   flex-direction: column;
-  padding: rem(30) rem(10);
+  padding: rem(40) rem(30);
   background-color: $light;
   border-radius: 5px;
   box-shadow: 5px 10px 40px rgba(43, 70, 82, 0.15);
@@ -21,6 +21,10 @@
   position: relative;
   margin-bottom: rem(15);
   padding: 0 rem(10);
+
+  @include r(1200) {
+    font-size: rem(14);
+  }
 
   &::after {
     content: '';
@@ -43,12 +47,20 @@
     line-height: 1.25;
     font-weight: 600;
     margin-bottom: rem(10);
+
+    @include r(1200) {
+      font-size: rem(14);
+    }
   }
 
   &__article-text {
     font-size: rem(14);
     line-height: 1.4;
     margin-bottom: rem(25);
+
+    @include r(1200) {
+      font-size: rem(12);
+    }
   }
 
   &__article-link {

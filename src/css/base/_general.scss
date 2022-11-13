@@ -74,9 +74,11 @@ b {
 .desktop-hidden {
   display: none;
   visibility: hidden;
+  position: absolute;
   @include r(1200) {
     display: block;
     visibility: visible;
+    position: relative;
   }
 }
 
@@ -145,6 +147,10 @@ b {
   text-align: start;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .align-center {
   align-items: center;
 }
@@ -172,7 +178,7 @@ b {
   justify-content: space-between;
   align-items: center;
 
-  span {
+  > span {
     display: block;
     color: $blue;
     font-size: rem(20);
@@ -225,5 +231,12 @@ b {
 }
 
 .lowercase {
-  text-transform: inherit;
+  text-transform: inherit !important;
+}
+
+
+.mob-width-100 {
+  @include r(600) {
+    width: 100% !important;
+  }
 }
