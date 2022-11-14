@@ -6,7 +6,7 @@
 
   transition: all .3s linear;
 
-  &:hover::before {
+  &::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -17,10 +17,16 @@
     height: rem(40);
     border-radius: 40px;
 
-    background-image: url("../assets/sprite/sprite.svg#icon-zoom");
+    background-image: url("../assets/images/icon-zoom.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+  }
+
+  &:hover::before {
+    opacity: 1;
   }
 
   &__picture {

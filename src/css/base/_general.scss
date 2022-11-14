@@ -149,6 +149,9 @@ b {
 
 .text-right {
   text-align: right;
+  @include r(1200) {
+    text-align: start;
+  }
 }
 
 .align-center {

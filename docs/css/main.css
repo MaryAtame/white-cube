@@ -1050,6 +1050,11 @@ b {
 .text-right {
   text-align: right;
 }
+@media only screen and (max-width: 1200px) {
+  .text-right {
+    text-align: start;
+  }
+}
 
 .align-center {
   align-items: center;
@@ -2547,7 +2552,7 @@ b {
     font-weight: 400;
     font-size: 1.25rem;
     margin: 1.875rem auto;
-    padding: 0 0 0 2.5rem;
+    padding: 0 0 0 1.25rem;
   }
 }
 .editor blockquote:before {
@@ -2562,9 +2567,7 @@ b {
 }
 @media only screen and (max-width: 1200px) {
   .editor blockquote:before {
-    left: 1.875rem;
-    top: 1.875rem;
-    bottom: 1.875rem;
+    left: 0rem;
   }
 }
 .editor figure {
@@ -4099,7 +4102,7 @@ b {
   position: relative;
   transition: all 0.3s linear;
 }
-.gallery-detail:hover::before {
+.gallery-detail::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -4109,10 +4112,15 @@ b {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 40px;
-  background-image: url("../assets/sprite/sprite.svg#icon-zoom");
+  background-image: url("../assets/images/icon-zoom.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 20px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.gallery-detail:hover::before {
+  opacity: 1;
 }
 .gallery-detail__picture img {
   width: 100%;
