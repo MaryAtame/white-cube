@@ -5,6 +5,10 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="body">
+
+<!-- 1. Скрытые блоки перенеси в самый низ страницы, не нужно, чтобы в начале страницы была левая разметка -->
+<!-- 2. Сделай modals.html и положи туда все модалки без импортов и обращайся к нему. Незачем плодить сущности -->
+
 <div class="modals" hidden>
     <%= htmlWebpackPlugin.options.success %>
     <%= htmlWebpackPlugin.options.calculation %>
@@ -30,6 +34,7 @@
 <%= htmlWebpackPlugin.options.temp %>
 </body>
 
+<!-- ? -->
 <head>
     <%= htmlWebpackPlugin.options.head %>
     <title><%= htmlWebpackPlugin.options.title %></title>

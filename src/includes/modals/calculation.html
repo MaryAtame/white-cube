@@ -29,13 +29,19 @@
             <div class="form__item">
                 <input class="form__input" id="goods" placeholder="Название товара"/>
             </div>
-            <div class="counter">
+
+            <!-- 
+                Напиши код, который будет по клику на кнопку увеличивать или уменьшать
+                значение input на единицу в рамках указанного диапазона. Если значений min и max нет, то значение может быть сколь угодно большим, но не меньше нуля
+                При вводе с клавиатуры аналогично, при потере фокуса на input (событие blur), если там значение ниже нуля, оно должно становиться нулем. Стилизуй
+             -->
+            <div class="counter" data-counter data-counter-min="0" data-counter-max="100">
                 <button type="button" class="counter__btn">
                     <svg class="counter__icon">
                         <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
                     </svg>
                 </button>
-                <span>1</span>
+                <input type="number" value="1">
                 <button type="button" class="counter__btn">
                     <svg class="counter__icon">
                         <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
