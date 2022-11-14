@@ -20,6 +20,10 @@
 		width: calc(1380px + (100% - 1380px) / 2 - 20px);
 	}
 
+	@include r(1200) {
+		transform: translate(0, rem(-200));
+	}
+
 
 }
 

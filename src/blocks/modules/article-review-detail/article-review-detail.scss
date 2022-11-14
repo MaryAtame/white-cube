@@ -123,7 +123,8 @@
     margin-top: rem(35);
 
     @include r(678){
-      flex-direction: column;
+      gap: rem(12);
+      margin-top: rem(20);
     }
   }
 
@@ -133,6 +134,11 @@
     border-radius: 3px;
     overflow: hidden;
     cursor: pointer;
+
+    @include r(980) {
+      width: rem(74);
+      height: rem(58);
+    }
 
     img {
       width: 100%;

@@ -7,5 +7,5 @@ function burgerhandler(e) {
     e.preventDefault();
     burgerIcon.classList.toggle('active');
     navbody.classList.toggle('active');
-}
 
+}

@@ -8,6 +8,11 @@
   flex-direction: column;
   gap: rem(20);
 
+  @include r(768) {
+    padding: rem(18) rem(12);
+    gap: rem(10);
+  }
+
   &:hover,
   &:focus,
   &:active {
@@ -79,7 +84,7 @@
     color: $gray;
     margin-bottom: rem(20);
     @include r(1200) {
-      margin-bottom: rem(10);
+      margin-bottom: rem(0);
       font-size: rem(12);
     }
   }
@@ -93,6 +98,9 @@
 
     @include r(1200) {
       font-size: rem(16);
+      span {
+        display: block;
+      }
     }
   }
 

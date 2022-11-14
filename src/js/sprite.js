@@ -32,6 +32,8 @@ import iconSuccess from '../assets/sprite/icon-success.svg';
 import iconDone from '../assets/sprite/icon-done.svg';
 import iconClip from '../assets/sprite/icon-clip.svg';
 import iconCalendar from '../assets/sprite/icon-calendar.svg';
+import ytWhite from '../assets/sprite/yt-white.svg';
+import vkWhite from '../assets/sprite/vk-white.svg';
 
 
 export default {
@@ -69,4 +71,6 @@ export default {
     iconDone,
     iconClip,
     iconCalendar,
+    ytWhite,
+    vkWhite,
 };

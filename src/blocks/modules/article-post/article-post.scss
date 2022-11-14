@@ -5,23 +5,28 @@
   flex-direction: column;
   border-radius: rem(10);
   align-items: flex-start;
-
-  border-radius: rem(10);
   overflow: hidden;
+
+  @include r(578) {
+    max-height: rem(195);
+  }
 
   &--large {
     height: rem(455);
+
+    @include r(578) {
+      max-height: rem(195);
+    }
   }
 
-
-  &__picture{
+  &__picture {
     border-radius: rem(10);
     max-width: 100%;
     width: 100%;
     overflow: hidden;
     min-height: rem(280);
 
-    img{
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -32,11 +37,6 @@
     height: 100%;
   }
 
-
-  &__picture--mobile {
-    min-height: rem(125);
-  }
-
   &__content {
     display: flex;
     flex-direction: column;
@@ -44,29 +44,34 @@
   }
 
   &__content--large,
-  &__content--mobile
-  {
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      position: absolute;
-      justify-content: flex-end;
-      color: #FFFFFF;
-      padding: rem(45);
-      background: linear-gradient(180deg, rgba(38,39,61,0), rgba(38,39,61,.6));
-    }
+  &__content--mobile {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    padding: rem(45);
+    background: linear-gradient(180deg, rgba(38, 39, 61, 0), rgba(38, 39, 61, .6));
+  }
 
   &__content--mobile {
-    padding: rem(12);
+    padding: rem(18);
+  }
+
+  &__content--large {
+    @include r(1200) {
+      padding: rem(18);
+    }
   }
 
   &__content--regular {
-      flex-grow: 1;
-      padding-top: rem(15);
-    }
+    flex-grow: 1;
+    padding-top: rem(15);
+  }
 
-  &__date{
+  &__date {
     font-size: rem(14);
     line-height: 1.7;
     font-weight: 500;
@@ -74,28 +79,34 @@
     background-color: $orange;
     padding: rem(3) rem(9);
     margin-bottom: rem(15);
+
+    @include r(1200) {
+      font-size: rem(12);
+      padding: rem(3) rem(20);
+      margin-bottom: rem(9);
+    }
   }
 
-  &__date--mobile {
-    font-size: rem(12);
-    padding: rem(3);
-    margin-bottom: rem(2);
-  }
-
-  &__title{
+  &__title {
     font-size: rem(20);
     line-height: 1.2;
     font-weight: 600;
     margin-bottom: rem(10);
     text-overflow: ellipsis;
-  }
-  &__title--mobile {
-    font-size: rem(14);
-    color: $light;
+
+    @include r(1200) {
+      font-size: rem(14);
+      color: $light;
+    }
   }
 
-  &__text{
+  &__text {
     overflow: hidden;
+
+    @include r(768) {
+      display: none;
+      visibility: hidden;
+    }
   }
 
   &__link {
