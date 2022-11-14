@@ -10,6 +10,12 @@
     margin-bottom: rem(30);
   }
 
+  &__sublist {
+    padding: 0 0 0 rem(20);
+    border-radius: 10px;
+    background-color: #F3F6FD;
+  }
+
   &__item,
   &__subitem {
     border-bottom: 1px solid #E6E6E6;
