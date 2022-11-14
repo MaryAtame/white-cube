@@ -35,6 +35,7 @@
                 <div class="columns">
                     <div class="columns__col columns__col--4">
                         <picture class="catalog-item__picture">
+                            <!-- Не оставляй alt пустым, пусть хотя бы будет равен title -->
                             <img class="centered" src="https://placeholder.pics/svg/1600x900" alt="">
                         </picture>
                     </div>
@@ -93,6 +94,7 @@
                 </div>
                 <%= htmlWebpackPlugin.options.tabs %>
 
+                    <!-- h1 может быть только один -->
                     <h1 class="editor editor--24 mb-50">Другие товары в этой категории</h1>
                     <div class="columns">
                         <div class="columns__col columns__col--3">

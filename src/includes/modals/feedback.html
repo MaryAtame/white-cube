@@ -2,6 +2,8 @@
     <h1 class="modal__title">Оставить отзыв</h1>
     <form class="form mb-40 mbm-20" action="/#" method="post" role="form">
         <div class="form__item">
+            <!--  Зачем тебе невидимый label в котором ничего нет? input клади внутрь label, если есть p - тоже. id никаких не надо, потом с этим головняк начнется, когда будут добавлять каике-то поля и путаться -->
+            <!-- Input вынеси в отдельно блок .input -->
             <label class="form__label" for="name"></label>
             <input class="form__input" id="name" placeholder="Ваше имя"/>
         </div>
@@ -14,12 +16,19 @@
             <textarea placeholder="Ваши впечатления"></textarea>
         </div>
         <div class="modal__attach">
-            <input id="file" type="file">
-            <label class="form__label modal__attach" for="file">
-                <div class="text-blue editor--16">
-                    <strong> Прикрепить вашу фотографию</strong>
-                </div>
+<!--            Никаких id не нужно. Напиши JS, который при добавлении файла будет брать его имя и заменять им содрежимое data-file-text-->
+            <label class="file" data-file>
+                <input type="file" class="file__field" data-file-input>
+                <span class="file__message" data-file-text>
+                    Прикрепить вашу фотографию
+                </span>
             </label>
+<!--            <input id="file" type="file">-->
+<!--            <label class="form__label modal__attach" for="file">-->
+<!--                <div class="text-blue editor&#45;&#45;16">-->
+<!--                    <strong> Прикрепить вашу фотографию</strong>-->
+<!--                </div>-->
+<!--            </label>-->
         </div>
         <div class="form__radio">
             <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree-feedback"/>
