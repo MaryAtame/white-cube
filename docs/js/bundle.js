@@ -820,50 +820,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/assets/sprite/vk-bg.svg":
-/*!*************************************!*\
-  !*** ./src/assets/sprite/vk-bg.svg ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-      id: "vk-bg-usage",
-      viewBox: "0 0 360 163",
-      url: "/assets/sprite/" + "sprite.svg#vk-bg-usage",
-      toString: function () {
-        return this.url;
-      }
-    });
-
-/***/ }),
-
-/***/ "./src/assets/sprite/youtube-bg.svg":
-/*!******************************************!*\
-  !*** ./src/assets/sprite/youtube-bg.svg ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-      id: "youtube-bg-usage",
-      viewBox: "0 0 360 163",
-      url: "/assets/sprite/" + "sprite.svg#youtube-bg-usage",
-      toString: function () {
-        return this.url;
-      }
-    });
-
-/***/ }),
-
 /***/ "./src/blocks/modules/dropdown/dropdown.js":
 /*!*************************************************!*\
   !*** ./src/blocks/modules/dropdown/dropdown.js ***!
@@ -1234,9 +1190,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_sprite_icon_done_svg__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../assets/sprite/icon-done.svg */ "./src/assets/sprite/icon-done.svg");
 /* harmony import */ var _assets_sprite_icon_clip_svg__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../assets/sprite/icon-clip.svg */ "./src/assets/sprite/icon-clip.svg");
 /* harmony import */ var _assets_sprite_icon_calendar_svg__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../assets/sprite/icon-calendar.svg */ "./src/assets/sprite/icon-calendar.svg");
-/* harmony import */ var _assets_sprite_youtube_bg_svg__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../assets/sprite/youtube-bg.svg */ "./src/assets/sprite/youtube-bg.svg");
-/* harmony import */ var _assets_sprite_vk_bg_svg__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../assets/sprite/vk-bg.svg */ "./src/assets/sprite/vk-bg.svg");
-
 
 
 
@@ -1308,10 +1261,6 @@ __webpack_require__.r(__webpack_exports__);
     iconDone: _assets_sprite_icon_done_svg__WEBPACK_IMPORTED_MODULE_31__["default"],
     iconClip: _assets_sprite_icon_clip_svg__WEBPACK_IMPORTED_MODULE_32__["default"],
     iconCalendar: _assets_sprite_icon_calendar_svg__WEBPACK_IMPORTED_MODULE_33__["default"],
-    youtubeBG: _assets_sprite_youtube_bg_svg__WEBPACK_IMPORTED_MODULE_34__["default"],
-    vkBG: _assets_sprite_vk_bg_svg__WEBPACK_IMPORTED_MODULE_35__["default"],
-
-
 });
 
 

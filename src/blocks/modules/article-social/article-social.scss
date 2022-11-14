@@ -59,18 +59,23 @@
   }
 }
 
-.article-social--red:hover {
-  background-color: #EA0C00;
-  background-image: url("../assets/sprite/sprite.svg#icon-yt-bg");
+.article-social--red {
+  background-image: url("../assets/images/youtube-bg.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 0;
+  transition: all .5s ease-in-out;
 }
 
-.article-social--blue:hover {
-  background-color: #316EE8;
-  background-image: url("../assets/sprite/sprite.svg#icon-vk-bg");
+.article-social--blue {
+  background-image: url("../assets/images/vk-bg.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 0;
+  transition: all .5s ease-in-out;
+}
+
+.article-social--blue:hover,
+.article-social--red:hover {
   background-size: 100%;
 }
