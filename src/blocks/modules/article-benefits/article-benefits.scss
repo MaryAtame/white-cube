@@ -26,6 +26,11 @@
     line-height: rem(24);
     letter-spacing: .1em;
     color: $blue;
+      margin-bottom: rem(25);
+
+      @include r(1200) {
+        margin-bottom: rem(20);
+      }
   }
   &__title{
     font-size: rem(16);
@@ -33,28 +38,18 @@
     font-weight: 700;
     color: $darkBlue;
     text-transform: uppercase;
+    margin-bottom: rem(10);
   }
 
   &__picture {
     max-width: rem(380);
     margin: rem(60) auto 0;
+
+    @include r(1200) {
+      margin: 0 auto;
+    }
     img{
       width: 100%;
     }
   }
 }
-//
-//.decor-line-1 {
-//  position: relative;
-//  &::before {
-//    position: absolute;
-//    content: "";
-//    display: block;
-//    top: 0;
-//    right: 0;
-//    width: 100%;
-//    background-image: url("../assets/images/benefits-decor-angle.svg");
-//    background-repeat: no-repeat;
-//    background-position: left;
-//  }
-//}

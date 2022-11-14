@@ -2674,6 +2674,11 @@ b {
   font-weight: 700;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 1200px) {
+  .title {
+    font-size: 1.75rem;
+  }
+}
 .title strong {
   color: #316EE8;
 }
@@ -3234,6 +3239,12 @@ b {
   line-height: 1.5rem;
   letter-spacing: 0.1em;
   color: #316EE8;
+  margin-bottom: 1.5625rem;
+}
+@media only screen and (max-width: 1200px) {
+  .article-benefits__num {
+    margin-bottom: 1.25rem;
+  }
 }
 .article-benefits__title {
   font-size: 1rem;
@@ -3241,10 +3252,16 @@ b {
   font-weight: 700;
   color: #021C3C;
   text-transform: uppercase;
+  margin-bottom: 0.625rem;
 }
 .article-benefits__picture {
   max-width: 23.75rem;
   margin: 3.75rem auto 0;
+}
+@media only screen and (max-width: 1200px) {
+  .article-benefits__picture {
+    margin: 0 auto;
+  }
 }
 .article-benefits__picture img {
   width: 100%;
@@ -3300,7 +3317,7 @@ b {
 }
 
 .decor {
-  background-image: url("../assets/images/benefits.jpg");
+  background-image: url("../assets/images/benefits.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -5522,6 +5539,36 @@ input[type=file] {
   to {
     stroke-dashoffset: 0;
   }
+}
+.decore-line {
+  position: relative;
+}
+.decore-line--t-l {
+  left: 5.625rem;
+  top: 2.8125rem;
+}
+.decore-line--t-r {
+  top: 2.8125rem;
+  right: 5.625rem;
+  transform: scale(-1, 1);
+}
+.decore-line--b-l {
+  left: 5.625rem;
+  transform: scale(1, -1);
+  top: 1.25rem;
+}
+.decore-line--b-r {
+  top: 1.25rem;
+  right: 5.625rem;
+  transform: scale(-1);
+}
+.decore-line--center-r {
+  top: 1.25rem;
+  left: 5.625rem;
+}
+.decore-line--center-l {
+  left: 5.625rem;
+  top: 1.25rem;
 }
 /*!*******************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/@fancyapps/ui/dist/fancybox.css ***!

@@ -1,0 +1,38 @@
+.decore-line {
+  position: relative;
+
+
+  &--t-l {
+    left: rem(90);
+    top: rem(45);
+
+  }
+
+  &--t-r {
+    top: rem(45);
+    right: rem(90);
+    transform: scale(-1, 1)
+  }
+
+  &--b-l {
+    left: rem(90);
+    transform: scale(1, -1);
+    top: rem(20);
+  }
+
+  &--b-r {
+    top: rem(20);
+    right: rem(90);
+    transform: scale(-1)
+  }
+
+  &--center-r {
+    top: rem(20);
+    left: rem(90);
+  }
+
+  &--center-l {
+    left: rem(90);
+    top: rem(20);
+  }
+}

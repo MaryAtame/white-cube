@@ -5,6 +5,10 @@
 	font-weight: 700;
 	text-transform: uppercase;
 
+	@include r(1200) {
+		font-size: rem(28);
+	}
+
 	strong {
 		color: $blue;
 	}
