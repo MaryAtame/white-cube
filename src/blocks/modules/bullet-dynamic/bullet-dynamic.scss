@@ -1,0 +1,71 @@
+.bullet-dynamic {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: block;
+  cursor: pointer;
+  background: none;
+  position: relative;
+  outline-color: $blue;
+  border-radius: rem(50);
+  
+  &--active {
+    .bullet-dynamic {
+      &__svg {
+        fill: rgba(226, 234, 251, 0);
+      }
+      &__circle {
+        &--path {
+          fill: rgba(49, 110, 232, 1);
+        }
+        &--progress {
+          stroke: rgba(49, 110, 232, 1);
+          animation: drawPath 5s linear forwards;
+        }
+      }
+    }
+  }
+  &__svg {
+    display: block;
+    width: rem(20);
+    height: rem(20);
+    position: relative;
+    transform: rotate(-90deg);
+    fill: rgba(228, 228, 228, 1);
+  }
+  &__circle {
+    width: 100%;
+    height: 100%;
+    stroke: #E4E4E4;
+    stroke-linecap: round;
+    &--path {
+      stroke-width: 0;
+      fill: rgba(228, 228, 228, 1);
+    }
+    &--progress {
+      stroke-width: 1;
+      stroke-dasharray: 63;
+      stroke-dashoffset: 63;
+      stroke: rgba(228, 228, 228, 1);
+    }
+  }
+}
+
+@keyframes slideCircle {
+  from {
+    stroke-dasharray: 63px;
+  }
+  to {
+    stroke-dasharray: 0;
+  }
+}
+
+@function strokeDashoffset($num) {
+  @return calc(63 - (63 * $num) / 63);
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: strokeDashoffset(63);
+  }
+}

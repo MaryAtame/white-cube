@@ -37,6 +37,18 @@
     @include r(1500) {
       padding: 0 rem(15);
     }
+  }
 
+  &__pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(15);
+    bottom: rem(70);
+
+    @include r(1200) {
+      bottom: rem(20);
+    }
   }
 }

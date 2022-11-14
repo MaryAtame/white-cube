@@ -964,6 +964,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 document.addEventListener('DOMContentLoaded', () => {
+    const bulletMarkup = `
+        <button class="bullet-dynamic">
+            <svg class="bullet-dynamic__svg">
+                <circle class="bullet-dynamic__circle bullet-dynamic__circle--path" cx="10" cy="10" r="5"></circle>
+                <circle class="bullet-dynamic__circle bullet-dynamic__circle--progress" cx="10" cy="10" r="9"></circle>
+            </svg>
+        </button>`;
+
 
     const swiperIntro = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.slider-intro', {
         modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay],
@@ -975,8 +983,14 @@ document.addEventListener('DOMContentLoaded', () => {
             delay: 5000,
             disableOnInteraction: false,
         },
-        pagination: {
-            el: '.swiper-pagination',
+            pagination: {
+                type: 'bullets',
+                clickable: true,
+                el: '.slider-intro__pagination',
+                bulletClass: 'bullet-dynamic',
+                modifierClass: '',
+                bulletActiveClass: 'bullet-dynamic--active',
+                renderBullet: () => bulletMarkup,
         },
          navigation: {
             nextEl: '.button-slider--next',
