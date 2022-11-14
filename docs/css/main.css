@@ -3218,8 +3218,12 @@ b {
   flex-direction: column;
   justify-content: flex-start;
   min-height: 10rem;
+  margin-bottom: 3.125rem;
 }
 @media only screen and (max-width: 1200px) {
+  .article-benefits {
+    margin-bottom: 0rem;
+  }
   .article-benefits::before {
     content: "";
     position: absolute;
@@ -3232,6 +3236,9 @@ b {
     background-repeat: repeat-x;
     background-position: center;
   }
+}
+.article-benefits:last-child {
+  margin-bottom: 0;
 }
 .article-benefits__num {
   font-weight: 700;
@@ -5544,31 +5551,37 @@ input[type=file] {
   position: relative;
 }
 .decore-line--t-l {
-  left: 5.625rem;
+  left: 3.75rem;
   top: 2.8125rem;
+  max-width: 23.75rem;
 }
 .decore-line--t-r {
   top: 2.8125rem;
-  right: 5.625rem;
+  right: 1.875rem;
   transform: scale(-1, 1);
+  max-width: 23.75rem;
 }
 .decore-line--b-l {
-  left: 5.625rem;
+  left: 3.75rem;
   transform: scale(1, -1);
   top: 1.25rem;
+  max-width: 23.75rem;
 }
 .decore-line--b-r {
   top: 1.25rem;
-  right: 5.625rem;
+  right: 1.875rem;
   transform: scale(-1);
+  max-width: 23.75rem;
 }
 .decore-line--center-r {
   top: 1.25rem;
-  left: 5.625rem;
+  right: -5rem;
+  max-width: 16.875rem;
 }
 .decore-line--center-l {
-  left: 5.625rem;
+  left: 3.75rem;
   top: 1.25rem;
+  max-width: 16.875rem;
 }
 /*!*******************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/@fancyapps/ui/dist/fancybox.css ***!
