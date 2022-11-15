@@ -12,7 +12,8 @@
     position: relative;
     padding: rem(15) 0;
 
-    &:hover {
+    &:hover,
+    &:active{
       color: $blue;
     }
   }

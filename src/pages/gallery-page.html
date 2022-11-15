@@ -5,14 +5,6 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="body">
-<div class="modals" hidden>
-    <%= htmlWebpackPlugin.options.success %>
-    <%= htmlWebpackPlugin.options.calculation %>
-    <%= htmlWebpackPlugin.options.callback %>
-    <%= htmlWebpackPlugin.options.feedback %>
-    <%= htmlWebpackPlugin.options.order %>
-    <%= htmlWebpackPlugin.options.vacancyReply %>
-</div>
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main">
     <section class="section pt-30 pbm-20 pb-100">
@@ -50,8 +42,8 @@
                 </label>
             </nav>
             <div class="columns mb-60 mbm-20">
-                <div class="columns__col columns__col--4">
-                    <a class="article-gallery" href="#">
+                <div class="columns__col columns__col--4-nowrap">
+                    <a class="article-gallery" href="gallery-detail.html">
                         <picture class="article-gallery__picture">
                             <img src="./assets/images/article-gallery-img-1.jpg" alt="">
                         </picture>
@@ -65,8 +57,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="columns__col columns__col--4">
-                    <a class="article-gallery" href="#">
+                <div class="columns__col columns__col--4-nowrap">
+                    <a class="article-gallery" href="gallery-detail.html">
                         <picture class="article-gallery__picture">
                             <img src="./assets/images/article-gallery-img-1.jpg" alt="">
                         </picture>
@@ -80,8 +72,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="columns__col columns__col--4">
-                    <a class="article-gallery" href="#">
+                <div class="columns__col columns__col--4-nowrap">
+                    <a class="article-gallery" href="gallery-detail.html">
                         <picture class="article-gallery__picture">
                             <img src="./assets/images/article-gallery-img-2.jpg" alt="">
                            </picture>
@@ -95,8 +87,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="columns__col columns__col--4">
-                    <a class="article-gallery" href="#">
+                <div class="columns__col columns__col--4-nowrap">
+                    <a class="article-gallery" href="gallery-detail.html">
                         <picture class="article-gallery__picture">
                             <img src="./assets/images/article-gallery-img-2.jpg" alt="">
                         </picture>
@@ -110,8 +102,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="columns__col columns__col--4">
-                    <a class="article-gallery" href="#">
+                <div class="columns__col columns__col--4-nowrap">
+                    <a class="article-gallery" href="gallery-detail.html">
                         <picture class="article-gallery__picture">
                             <img src="./assets/images/article-gallery-img-1.jpg" alt="">
                         </picture>
@@ -125,8 +117,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="columns__col columns__col--4">
-                    <a class="article-gallery" href="#">
+                <div class="columns__col columns__col--4-nowrap">
+                    <a class="article-gallery" href="gallery-detail.html">
                         <picture class="article-gallery__picture">
                             <img src="./assets/images/article-gallery-img-2.jpg" alt="">
                         </picture>
@@ -154,6 +146,15 @@
     </section>
 </main>
 <%= htmlWebpackPlugin.options.sectionFooter %>
+
+<div class="modals" hidden>
+    <%= htmlWebpackPlugin.options.success %>
+    <%= htmlWebpackPlugin.options.calculation %>
+    <%= htmlWebpackPlugin.options.callback %>
+    <%= htmlWebpackPlugin.options.feedback %>
+    <%= htmlWebpackPlugin.options.order %>
+    <%= htmlWebpackPlugin.options.vacancyReply %>
+</div>
 <%= htmlWebpackPlugin.options.temp %>
 </body>
 </html>

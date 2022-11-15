@@ -17,569 +17,315 @@
     <title>Вакансии</title>
 <link href="./css/main.css" rel="stylesheet"></head>
 <body class="body">
-<div class="modals" hidden>
-    <section class="modal modal--sm align-center" id="modal-success">
-    <div class="modal__wrapper">
-        <div class="modal__icon-round">
-            <svg class="modal__icon">
-                <use xlink:href="./assets/sprite/sprite.svg#icon-success"></use>
-            </svg>
-        </div>
-        <h1 class="modal__title mb-30">Заявка отправлена!</h1>
-        <a class="button button--blue mb-25" href="catalog.html">Перейти в каталог</a>
-        <a class="button button--white" href="./">На главную</a>
-    </div>
-</section>
-    <section class="modal modal--lg content-left" id="modal-calculation">
-    <h1 class="modal__title mb-15">Заказать расчет</h1>
-    <div class="editor editor--16 mb-40">
-        <p>В компании “Белый Куб”</p>
-    </div>
-
-    <form class="form" action="/#" method="post" role="form">
-        <div class="form__item">
-            <label class="form__label" for="name">ФИО</label>
-            <input class="form__input" id="name" placeholder="Полное имя получателя"/>
-        </div>
-        <div class="form__item">
-            <label class="form__label" for="userPhone">Телефон</label>
-            <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
-                   placeholder="+7 (___) ___-___-__-__"/>
-        </div>
-        <div class="form__item">
-            <label class="form__label" for="address">Адрес доставки</label>
-            <input class="form__input" id="address" placeholder="Укажите адрес доставки"/>
-        </div>
-        <div class="form__radio mt-25">
-            <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree"/>
-            <label for="setAgree"></label>
-            <p class="form__checkbox-btn-label form__checkbox-btn-label--blue">Заберу со склада</p>
-        </div>
-        <hr class="hr">
-        <p class="form__item-title">Интересующие товары</p>
-        <div class="form__item-wrapper">
-            <div class="form__item">
-                <input class="form__input" id="goods" placeholder="Название товара"/>
-            </div>
-            <div class="counter">
-                <button type="button" class="counter__btn">
-                    <svg class="counter__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
-                    </svg>
-                </button>
-                <span>1</span>
-                <button type="button" class="counter__btn">
-                    <svg class="counter__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <button class="form__btn-increase" type="button">
-            <svg class="counter-btn__icon">
-                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
-            </svg>
-            <span>Добавить поле</span>
-        </button>
-        <hr class="hr">
-        <div class="form__agreement">
-            <div class="form__agreement-text">
-                Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом №
-                152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия
-                <a class="form__agreement-link" href="#">Пользовательского соглашения.</a>
-            </div>
-            <button class="button button--orange lowercase">Заказать расчет</button>
-        </div>
-    </form>
-
-</section>
-    <section class="modal modal--sm content-left" id="modal-callback">
-    <h1 class="modal__title mb-20">Заказать звонок</h1>
-    <div class="editor editor--16  mb-20">
-        <p>Есть вопросы? Закажите звонок! Мы Вам перезвоним в ближайшее время</p>
-    </div>
-    <form class="form mb-40 mbm-20" action="/#" method="post" role="form">
-        <div class="form__item">
-            <label class="form__label" for="name">Ваше полное имя<span>&#42;</span></label>
-            <input class="form__input" id="name" placeholder="Введите ваше имя"/>
-        </div>
-        <div class="form__item">
-            <label class="form__label" for="userPhone">Телефон<span>&#42;</span></label>
-            <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
-                   placeholder="+7 (___) ___-___-__-__"/>
-        </div>
-        <div class="form__radio mt-25">
-            <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree"/>
-            <label for="setAgree"></label>
-            <p class="form__checkbox-btn-label">Я согласен на
-                <span>обработку персональных данных</span></p>
-        </div>
-    </form>
-    <button class="button button--orange marg-right">Отправить</button>
-</section>
-    <section class="modal modal--sm content-left" id="modal-feedback">
-    <h1 class="modal__title">Оставить отзыв</h1>
-    <form class="form mb-40 mbm-20" action="/#" method="post" role="form">
-        <div class="form__item">
-            <label class="form__label" for="name"></label>
-            <input class="form__input" id="name" placeholder="Ваше имя"/>
-        </div>
-        <div class="form__item">
-            <label class="form__label" for="date"></label>
-            <input class="form__input" inputmode="numeric" id="date" placeholder="Дата покупки"/>
-        </div>
-        <div class="form__item">
-            <label class="form__label"></label>
-            <textarea placeholder="Ваши впечатления"></textarea>
-        </div>
-        <div class="modal__attach">
-            <input id="file" type="file">
-            <label class="form__label modal__attach" for="file">
-                <div class="text-blue editor--16">
-                    <strong> Прикрепить вашу фотографию</strong>
-                </div>
-            </label>
-        </div>
-        <div class="form__radio">
-            <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree-feedback"/>
-            <label for="setAgree-feedback"></label>
-            <p class="form__checkbox-btn-label">Я согласен с
-                <span>политикой конфидециальности</span></p>
-        </div>
-    </form>
-    <button class="button button--orange marg-right">Отправить</button>
-</section>
-    <section class="modal modal--sm modal-order content-left" id="modal-order">
-    <h1 class="modal__title">Отправка заказа</h1>
-    <div class="editor editor--16 mb-20">
-        <p>В компанию “Белый Куб”</p>
-    </div>
-    <div class="modal-order__item mb-20">
-        <div class="modal-order__item-descr">
-            <div class="editor editor--14">
-                <p>Плита перегородочная СППу М125-М150/1,6 498х115х249</p>
-            </div>
-            <picture class="modal-order__item-picture">
-                <img src="./assets/images/catalog-item.jpg" alt="Плита перегородочная СППу М125-М150/1,6 498х115х249">
-            </picture>
-        </div>
-        <div class="modal-order__item-price">
-            <div class="editor editor--16">
-                <p>87.17 ₽ / шт</p>
-            </div>
-            <div class="counter">
-                <button class="counter__btn">
-                    <svg class="counter__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
-                    </svg>
-                </button>
-                <span>1</span>
-                <button class="counter__btn">
-                    <svg class="counter__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="modal-order__comment">
-        <p>Ваше сообщение</p>
-        <textarea placeholder="Оставьте комментарий к заказу или задайте интересующий вопрос"></textarea>
-    </div>
-    <div class="modal__attach">
-        <input id="file" type="file">
-        <label class="form__label modal__attach" for="file">
-            <svg class="form__label-icon form__label-icon--blue">
-                <use xlink:href="./assets/sprite/sprite.svg#icon-clip"></use>
-            </svg>
-            <p class="text-blue">Прикрепить файл</p>
-        </label>
-    </div>
-    <hr class="hr mb-20 mt-20">
-    <div class="modal-order__price"></div>
-    <form class="form form-order" action="/#" method="post" role="form">
-        <div class="form__item">
-            <label class="form__label" for="name">ФИО</label>
-            <input class="form__input" id="name" placeholder="Полное имя получателя"/>
-        </div>
-        <div class="form__item">
-            <label class="form__label" for="address">Адрес доставки</label>
-            <input class="form__input" id="address" placeholder="Укажите адрес доставки"/>
-        </div>
-        <p class="text-blue">Заберу со склада</p>
-        <hr class="hr mb-20 mt20">
-
-        <div class="form__select">
-            <p>Адрес склада</p>
-            <select class="select select--border">
-                <option value="addr-1">Калининград, ул. Согласия-1...</option>
-                <option value="addr-2">Калининград, ул. Согласия-2...</option>
-                <option value="addr-3">Калининград, ул. Согласия-3...</option>
-                <option value="addr-4">Калининград, ул. Согласия-4...</option>
-            </select>
-        </div>
-        <div class="form__item-wrapper">
-            <div class="form__item">
-                <label class="form__label" for="userEmail">Email</label>
-                <input class="form__input" inputmode="email" id="userEmail" placeholder="info@mail.ru"/>
-            </div>
-
-            <div class="form__item">
-                <label class="form__label" for="userPhone">Телефон</label>
-                <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
-                       placeholder="+7 (___) ___-___-__-__"/>
-            </div>
-        </div>
-        <hr class="hr mb-20 mt20">
-        <div class="form__agreement">
-            <div class="form__agreement-text">
-                Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом №
-                152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия
-                <a class="form__agreement-link" href="#">Пользовательского соглашения.</a>
-            </div>
-            <button class="button button--orange lowercase">Заказать расчет</button>
-        </div>
-    </form>
-</section>
-    <section class="modal modal--sm content-left" id="modal-vacancy-reply">
-    <h1 class="modal__title">Откликнуться</h1>
-    <div class="editor editor--16 mb-20">
-        <p>Заполните свои данные и прикрепите резюме</p>
-    </div>
-    <form class="form  mb-40" action="/#" method="post" role="form">
-        <div class="form__item">
-            <label class="form__label" for="name">Ваше полное имя<span>&#42;</span></label>
-            <input class="form__input" id="name" placeholder="Введите ваше имя"/>
-        </div>
-        <div class="form__item">
-            <label class="form__label" for="userPhone">Телефон<span>&#42;</span></label>
-            <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
-                   placeholder="+7 (___) ___-___-__-__"/>
-        </div>
-        <div class="form__item">
-            <label class="form__label" for="userEmail">Email<span>&#42;</span></label>
-            <input class="form__input" inputmode="email" id="userEmail" placeholder="info@mail.ru"/>
-        </div>
-        <div class="form__item">
-            <label class="form__label" for="userBD">Дата рождения<span>&#42;</span></label>
-            <input class="form__input form__input-bd" type="date" id="userBD"
-                   placeholder="Выберите дату рождения"/>
-        </div>
-        <div class="form__item">
-            <label class="form__label">Сообщение</label>
-            <textarea placeholder="Сопроводительное письмо"></textarea>
-        </div>
-    </form>
-    <div class="form__item-wrapper justify mb-20">
-        <div class="modal__attach">
-            <input id="file" type="file">
-            <label class="form__label modal__attach" for="file">
-                <svg class="form__label-icon">
-                    <use xlink:href="./assets/sprite/sprite.svg#icon-clip"></use>
-                </svg>
-                <p>Прикрепить резюме</p>
-            </label>
-        </div>
-        <button class="button button--orange lowercase mob-width-100">Отправить</button>
-    </div>
-
-    <div class="form_agreement">
-        <div class="form__agreement-text">
-            Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом №
-            152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия
-            <a class="form__agreement-link" href="#">Пользовательского соглашения.</a>
-        </div>
-    </div>
-</section>
-</div>
-<header class="header pt-20 pb-15">
-    <div class="container">
-        <div class="header-toolbar">
-            <a href="./">
-                <picture class="logo">
-                    <img src="./assets/images/logo.svg" alt="Лого Белый куб">
-                </picture>
-            </a>
-            <div class="header-toolbar__contacts mob-hidden">
-                <address class="address">
-                    <a class="address__link" rel="nofollow" href="https://yandex.ru/maps/-/CCUZB0aaLC" target="_blank">
-                        <strong>ул Комсомольская 40</strong><br>г. Калинининград
+    <header class="header pt-20 pb-15">
+        <div class="container">
+            <div class="header-toolbar">
+                <a href="./">
+                    <picture class="logo">
+                        <img src="./assets/images/logo.svg" alt="Лого Белый куб">
+                    </picture>
+                </a>
+                <div class="header-toolbar__contacts mob-hidden">
+                    <address class="address">
+                        <a class="address__link" rel="nofollow" href="https://yandex.ru/maps/-/CCUZB0aaLC" target="_blank">
+                            <strong>ул Комсомольская 40</strong><br>г. Калинининград
+                        </a>
+                    </address>
+                    <a class="link-mail" rel="nofollow" href="mailto:email@mail.ru">
+                        <strong>email@mail.ru</strong><br>по все вопросам
                     </a>
-                </address>
-                <a class="link-mail" rel="nofollow" href="mailto:email@mail.ru">
-                    <strong>email@mail.ru</strong><br>по все вопросам
-                </a>
-            </div>
-            <form class="form-search mob-hidden" action="/search" method="get">
-                <input class="form-search__input" type="text" placeholder="Поиск по сайту...">
-                <button class="form-search__btn">
-                    <svg class="form-search__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
-                    </svg>
-                </button>
-            </form>
-            <div class="header-toolbar__callback mob-hidden">
-                <a class="link-callback" rel="nofollow" href="tel:+74012304175">8 (4012) 30-41-75
-                    <span>заказать звонок</span>
-                </a>
-            </div>
-            <nav class="menu-icon desktop-hidden">
-                <div class="menu-icon__wrapper">
-                    <form class="form-search" action="/search" method="get">
-                        <input class="form-search__input" type="text" placeholder="Поиск по сайту...">
-                        <button class="form-search__btn">
-                            <svg class="form-search__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                </div>
+                <form class="form-search mob-hidden" action="/search" method="get">
+                    <input class="form-search__input" type="text" placeholder="Поиск по сайту...">
+                    <button class="form-search__btn" type="button">
+                        <svg class="form-search__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </form>
+                <div class="header-toolbar__callback mob-hidden">
+                    <a class="link-callback" rel="nofollow" href="tel:+74012304175">8 (4012) 30-41-75
+                        <span>заказать звонок</span>
+                    </a>
+                </div>
+                <nav class="menu-icon desktop-hidden">
+                    <div class="menu-icon__wrapper">
+                        <form class="form-search" action="/search" method="get">
+                            <input class="form-search__input" type="text" placeholder="Поиск по сайту...">
+                            <button class="form-search__btn" type="button">
+                                <svg class="form-search__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <div class="menu-burger">
+                            <svg class="menu-burger__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#menu-burger"></use>
                             </svg>
-                        </button>
-                    </form>
-                    <div class="menu-icon__icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="header-row mob-hidden">
+                <div class="header-row__buttons">
+                    <button class="button button--orange" data-fancybox data-src="#modal-calculation">
+                        <span class="button__text">Заказать расчет</span>
+                    </button>
+                    <a class="button button--blue" href="catalog-category.html" data-hover-catalog>
+                        <svg class="button__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-catalog"></use>
+                        </svg>
+                        <span class="button__text">каталог</span>
+                    </a>
+                    <div class="dropdown-catalog" data-catalog-content>
+                        <div class="container">
+                            <div class="columns">
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </div>
-        <div class="header-row mob-hidden">
-            <div class="header-row__buttons">
-                <button class="button button--orange" data-fancybox data-src="#modal-calculation">
-                    <span class="button__text">Заказать расчет</span>
-                </button>
-                <a class="button button--blue" href="catalog.html">
-                    <svg class="button__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-catalog"></use>
-                    </svg>
-                    <span class="button__text">каталог</span>
-                </a>
+                <div class="menu-header">
+                    <ul class="menu-header__list">
+                        <li class="menu-header__link">
+                            <a href="about.html">О заводе</a>
+                            <ul class="menu-header__dropdown">
+                                <li class="menu-header__dropdown-link">
+                                    <a href="vacancy.html">Вакансии</a>
+                                </li>
+                                <li class="menu-header__dropdown-link">
+                                    <a href="garanty.html">Сертификаты</a>
+                                </li>
+                                <li class="menu-header__dropdown-link">
+                                    <a href="news.html">Новости</a>
+                                </li>
+                                <li class="menu-header__dropdown-link">
+                                    <a href="video.html">Видео</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-header__link">
+                            <a href="delivery.html">Доставка</a>
+                        </li>
+                        <li class="menu-header__link">
+                            <a href="gallery-page.html">Галерея</a>
+                        </li>
+                        <li class="menu-header__link">
+                            <a href="review-detail.html">Отзывы</a>
+                        </li>
+                        <li class="menu-header__link">
+                            <a href="contacts.html">Контакты</a>
+                        </li>
+                        <li class="menu-header__link">
+                            <a href="map-detail.html">Где купить</a>
+                        </li>
+                        <li class="menu-header__link">
+                            <a href="documentation.html">Техническая информация</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="menu-header">
-                <ul class="menu-header__list">
-                    <li class="menu-header__link">
-                        <a href="about.html">О заводе</a>
-                        <ul class="menu-header__dropdown">
-                            <li class="menu-header__dropdown-link">
-                                <a href="vacancy.html">Вакансии</a>
+            <nav class="menu-mobile desktop-hidden" id="menu">
+                <ul class="menu-mobile__list">
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="#">
+                            <span>Каталог</span>
+                            <svg class="menu-mobile__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-small-arrow"></use>
+                            </svg>
+                        </a>
+                        <ul class="menu-mobile__sublist">
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Силикатные пазогребневые блоки</a>
                             </li>
-                            <li class="menu-header__dropdown-link">
-                                <a href="garanty.html">Сертификаты</a>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Плиты силикатные</a>
                             </li>
-                            <li class="menu-header__dropdown-link">
-                                <a href="news.html">Новости</a>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">ЕВРО-кирпич</a>
                             </li>
-                            <li class="menu-header__dropdown-link">
-                                <a href="video.html">Видео</a>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Рустированный кирпич</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Силикатные блоки </a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Силикатные кирпичи</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Кладочные смеси </a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Клей</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Газоблоки</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Твинблоки</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Керамические блоки</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Аксессуары</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="menu-header__link">
-                        <a href="delivery.html">Доставка</a>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="#">Плиты силикатные</a>
                     </li>
-                    <li class="menu-header__link">
-                        <a href="gallery-page.html">Галерея</a>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="./">Главная</a>
                     </li>
-                    <li class="menu-header__link">
-                        <a href="review-detail.html">Отзывы</a>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="#">
+                            <span>О заводе</span>
+                            <svg class="menu-mobile__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-small-arrow"></use>
+                            </svg>
+                        </a>
+                        <ul class="menu-mobile__sublist">
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="./vacancy.html">Вакансии</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="./garanty.html">Сертификаты</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="./news.html">Новости</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="./video.html">Видео</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="menu-header__link">
-                        <a href="contacts.html">Контакты</a>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="delivery.html">Доставка</a>
                     </li>
-                    <li class="menu-header__link">
-                        <a href="map-detail.html">Где купить</a>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="gallery-page.html">Галерея</a>
                     </li>
-                    <li class="menu-header__link">
-                        <a href="documentation.html">Техническая информация</a>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="review-detail.html">Отзывы</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="map-detail.html">Где купить</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="documentation.html">Техническая информация</a>
                     </li>
                 </ul>
-            </div>
+                <button class="button button--orange centered" data-fancybox data-src="#modal-calculation">Заказать расчет
+                </button>
+            </nav>
         </div>
-        <div class="dropdown-catalog">
-            <div class="container">
-                <ul class="dropdown-catalog__list">
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    >
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <nav class="menu-mobile desktop-hidden">
-            <ul class="menu-mobile__list">
-                <li class="menu-mobile__item" data-dropdown>
-                    <a class="menu-mobile__link" href="#">
-                        <span>Каталог</span>
-                        <svg class="menu-mobile__icon">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-small-arrow"></use>
-                        </svg>
-                    </a>
-                    <ul class="menu-mobile__sublist" data-content hidden>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Силикатные пазогребневые блоки</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Плиты силикатные</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">ЕВРО-кирпич</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Рустированный кирпич</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Силикатные блоки </a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Силикатные кирпичи</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Кладочные смеси </a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Клей</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Газоблоки</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Твинблоки</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Керамические блоки</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Аксессуары</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="#">Плиты силикатные</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="./">Главная</a>
-                </li>
-                <li class="menu-mobile__item" data-dropdown>
-                    <a class="menu-mobile__link" href="#">
-                        <span>О заводе</span>
-                        <svg class="menu-mobile__icon">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-small-arrow"></use>
-                        </svg>
-                    </a>
-                    <ul class="menu-mobile__sublist" data-content hidden>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="./vacancy.html">Вакансии</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="./garanty.html">Сертификаты</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="./news.html">Новости</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="./video.html">Видео</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="delivery.html">Доставка</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="gallery-page.html">Галерея</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="review-detail.html">Отзывы</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="contacts.html">Контакты</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="map-detail.html">Где купить</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="documentation.html">Техническая информация</a>
-                </li>
-            </ul>
-            <button class="button button--orange centered" data-fancybox data-src="#modal-calculation">Заказать расчет
-            </button>
-        </nav>
-    </div>
-</header>
+    </header>
+
+
 <main class="main">
     <section class="section pt-30 pb-100 pbm-20">
         <div class="container">
@@ -865,6 +611,296 @@
         </div>
     </div>
 </footer>
+
+
+<div class="modals" hidden>
+    <section class="modal modal--sm align-center" id="modal-success">
+    <div class="modal__wrapper">
+        <div class="modal__icon-round">
+            <svg class="modal__icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-success"></use>
+            </svg>
+        </div>
+        <h1 class="modal__title mb-50 mbm-30">Заявка отправлена!</h1>
+
+        <a class="button button--blue lowercase mb-25 mbm-10" href="catalog.html">Перейти в каталог</a>
+        <a class="button button--clear lowercase" href="./">На главную</a>
+
+    </div>
+</section>
+    <section class="modal modal--lg content-left" id="modal-calculation">
+    <h1 class="modal__title mb-15 mbm-5">Заказать расчет</h1>
+    <div class="editor editor--16 mb-40">
+        <p>В компании “Белый Куб”</p>
+    </div>
+
+    <form class="form" action="/#" method="post" role="form">
+        <div class="form__item">
+            <label class="form__label" for="name">ФИО</label>
+            <input class="form__input" id="name" placeholder="Полное имя получателя"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="userPhone">Телефон</label>
+            <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
+                   placeholder="+7 (___) ___-___-__-__"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="address">Адрес доставки</label>
+            <input class="form__input" id="address" placeholder="Укажите адрес доставки"/>
+        </div>
+
+            <label class="checkbox checkbox--modal mb-15">
+                <input class="checkbox__input" type="checkbox" name="agreement" value="yes"/>
+                <p class="checkbox__text checkbox__text--blue">Заберу со склада</p>
+            </label>
+
+        <hr class="hr">
+        <p class="form__item-title">Интересующие товары</p>
+        <div class="form__item-wrapper">
+            <div class="form__item">
+                <input class="form__input" id="goods" placeholder="Название товара"/>
+            </div>
+            <div class="counter">
+                <button type="button" class="counter__btn">
+                    <svg class="counter__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+                    </svg>
+                </button>
+                <input type="number" value="1">
+                <button type="button" class="counter__btn">
+                    <svg class="counter__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <button class="form__btn-increase" type="button">
+            <svg class="counter-btn__icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+            </svg>
+            <span>Добавить поле</span>
+        </button>
+        <hr class="hr">
+        <div class="form__agreement">
+            <div class="form__agreement-text">
+                Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом №
+                152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия
+                <a class="form__agreement-link" href="#">Пользовательского соглашения.</a>
+            </div>
+            <button class="button button--orange lowercase" disabled>Заказать расчет</button>
+        </div>
+    </form>
+
+</section>
+    <section class="modal modal--sm content-left" id="modal-callback">
+    <h1 class="modal__title mb-15 mbm-5">Заказать звонок</h1>
+    <div class="editor editor--16  mb-20">
+        <p>Есть вопросы? Закажите звонок! Мы Вам перезвоним в ближайшее время</p>
+    </div>
+    <form class="form mb-40 mbm-20" action="/#" method="post" role="form">
+        <div class="form__item">
+            <label class="form__label" for="name">Ваше полное имя<span>&#42;</span></label>
+            <input class="form__input" id="name" placeholder="Введите ваше имя"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="userPhone">Телефон<span>&#42;</span></label>
+            <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
+                   placeholder="+7 (___) ___-___-__-__"/>
+        </div>
+        <div class="form__radio mt-25">
+            <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree"/>
+            <label for="setAgree"></label>
+            <p class="form__checkbox-btn-label">Я согласен на
+                <span>обработку персональных данных</span></p>
+        </div>
+    </form>
+    <button class="button button--orange marg-right">Отправить</button>
+</section>
+    <section class="modal modal--sm content-left" id="modal-feedback">
+    <h1 class="modal__title mb-15 mbm-5">Оставить отзыв</h1>
+    <form class="form mb-40 mbm-20" action="/#" method="post" role="form">
+
+            <label class="form__label">
+                <input class="form__input" placeholder="Ваше имя"/>
+            </label>
+
+            <label class="form__label">
+                <input class="form__input" inputmode="numeric" placeholder="Дата покупки"/>
+            </label>
+
+            <label class="form__label">
+                <textarea placeholder="Ваши впечатления"></textarea>
+            </label>
+
+
+            <label class="file" data-file>
+                <input class="file__field" type="file" data-file-input>
+                <span class="file__message" data-file-text>
+                    Прикрепить вашу фотографию
+                </span>
+            </label>
+
+        <div class="form__radio">
+            <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree-feedback"/>
+            <label for="setAgree-feedback"></label>
+            <p class="form__checkbox-btn-label">Я согласен с
+                <span>политикой конфидециальности</span></p>
+        </div>
+    </form>
+    <button class="button button--orange marg-right">Отправить</button>
+</section>
+    <section class="modal modal--lg modal-order content-left" id="modal-order">
+    <h1 class="modal__title mb-15 mbm-5">Отправка заказа</h1>
+    <div class="editor editor--16 mb-20">
+        <p>В компанию “Белый Куб”</p>
+    </div>
+    <div class="modal-order__item mb-20">
+        <div class="modal-order__item-descr">
+            <div class="editor editor--14">
+                <p>Плита перегородочная СППу М125-М150/1,6 498х115х249</p>
+            </div>
+            <picture class="modal-order__item-picture">
+                <img src="./assets/images/catalog-item.jpg" alt="Плита перегородочная СППу М125-М150/1,6 498х115х249">
+            </picture>
+        </div>
+        <div class="modal-order__item-price">
+            <div class="editor editor--16">
+                <p>87.17 ₽ / шт</p>
+            </div>
+            <div class="counter">
+                <button class="counter__btn">
+                    <svg class="counter__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+                    </svg>
+                </button>
+                <span>1</span>
+                <button class="counter__btn">
+                    <svg class="counter__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-order__comment mb-20 mbm-15">
+        <p class="mb-10">Ваше сообщение</p>
+        <textarea placeholder="Оставьте комментарий к заказу или задайте интересующий вопрос"></textarea>
+    </div>
+    <div class="modal__attach">
+        <div class="modal__attach-wrapper">
+            <input id="file" type="file">
+            <label class="form__label form__label--attach" for="file">
+                <svg class="form__label-icon form__label-icon--blue">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-clip"></use>
+                </svg>
+                <p class="text-blue editor--mob-12">Прикрепить файл</p>
+            </label>
+        </div>
+        <p class="modal__attach-text">Размер файла не должен превышать 5 Мб. Вы можете прикрепить не более 10 файлов.</p>
+    </div>
+    <hr class="hr mb-20 mt-20">
+    <div class="modal-order__price">
+
+    </div>
+    <form class="form form-order" action="/#" method="post" role="form">
+        <div class="form__item">
+            <label class="form__label" for="name">ФИО</label>
+            <input class="form__input" id="name" placeholder="Полное имя получателя"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="address">Адрес доставки</label>
+            <input class="form__input" id="address" placeholder="Укажите адрес доставки"/>
+        </div>
+        <label class="checkbox checkbox--modal mb-30 mbm-15">
+            <input class="checkbox__input" type="checkbox" name="agreement" value="yes"/>
+            <p class="checkbox__text checkbox__text--blue">Заберу со склада</p>
+        </label>
+        <hr class="hr mb-20">
+
+        <div class="form__select">
+            <p>Адрес склада</p>
+            <select class="select select--border">
+                <option value="addr-1">Калининград, ул. Согласия-1...</option>
+                <option value="addr-2">Калининград, ул. Согласия-2...</option>
+                <option value="addr-3">Калининград, ул. Согласия-3...</option>
+                <option value="addr-4">Калининград, ул. Согласия-4...</option>
+            </select>
+        </div>
+        <div class="form__item-wrapper">
+            <div class="form__item">
+                <label class="form__label" for="userEmail">Email</label>
+                <input class="form__input" inputmode="email" id="userEmail" placeholder="info@mail.ru"/>
+            </div>
+
+            <div class="form__item">
+                <label class="form__label" for="userPhone">Телефон</label>
+                <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
+                       placeholder="+7 (___) ___-___-__-__"/>
+            </div>
+        </div>
+        <hr class="hr mb-20 mt20">
+        <div class="form__agreement">
+            <div class="form__agreement-text">
+                Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом №
+                152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия
+                <a class="form__agreement-link" href="#">Пользовательского соглашения.</a>
+            </div>
+            <button class="button button--orange lowercase">Заказать расчет</button>
+        </div>
+    </form>
+</section>
+    <section class="modal modal--sm content-left" id="modal-vacancy-reply">
+    <h1 class="modal__title mb-15 mbm-5">Откликнуться</h1>
+    <div class="editor editor--16 mb-20">
+        <p>Заполните свои данные и прикрепите резюме</p>
+    </div>
+    <form class="form  mb-40" action="/#" method="post" role="form">
+        <div class="form__item">
+            <label class="form__label" for="name">Ваше полное имя<span>&#42;</span></label>
+            <input class="form__input" id="name" placeholder="Введите ваше имя"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="userPhone">Телефон<span>&#42;</span></label>
+            <input class="form__input" inputmode="tel" name="feedback-phone" id="userPhone" data-tel
+                   placeholder="+7 (___) ___-___-__-__"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="userEmail">Email<span>&#42;</span></label>
+            <input class="form__input" inputmode="email" id="userEmail" placeholder="info@mail.ru"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label" for="userBD">Дата рождения<span>&#42;</span></label>
+            <input class="form__input form__input-bd" type="date" id="userBD"
+                   placeholder="Выберите дату рождения"/>
+        </div>
+        <div class="form__item">
+            <label class="form__label">Сообщение</label>
+            <textarea placeholder="Сопроводительное письмо"></textarea>
+        </div>
+    </form>
+    <div class="form__item-wrapper justify mb-20">
+        <label class="file" data-file>
+            <input class="file__field" type="file" data-file-input>
+            <svg class="form__label-icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-clip"></use>
+            </svg>
+            <span class="file__message file__message--black" data-file-text>
+                   Прикрепить резюме
+                </span>
+        </label>
+
+        <button class="button button--orange lowercase mob-width-100">Отправить</button>
+    </div>
+
+    <div class="form__agreement">
+        <div class="form__agreement-text">
+            Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом №
+            152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия
+            <a class="form__agreement-link" href="#">Пользовательского соглашения.</a>
+        </div>
+    </div>
+</section>
+</div>
 <!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
 <section class="section">
     <div class="container">

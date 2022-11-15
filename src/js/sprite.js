@@ -34,6 +34,7 @@ import iconClip from '../assets/sprite/icon-clip.svg';
 import iconCalendar from '../assets/sprite/icon-calendar.svg';
 import ytWhite from '../assets/sprite/yt-white.svg';
 import vkWhite from '../assets/sprite/vk-white.svg';
+import menuBurger from '../assets/sprite/menu-burger.svg';
 
 
 export default {
@@ -73,4 +74,5 @@ export default {
     iconCalendar,
     ytWhite,
     vkWhite,
+    menuBurger,
 };

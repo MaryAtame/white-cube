@@ -5,14 +5,6 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="body">
-<div class="modals" hidden>
-    <%= htmlWebpackPlugin.options.success %>
-    <%= htmlWebpackPlugin.options.calculation %>
-    <%= htmlWebpackPlugin.options.callback %>
-    <%= htmlWebpackPlugin.options.feedback %>
-    <%= htmlWebpackPlugin.options.order %>
-    <%= htmlWebpackPlugin.options.vacancyReply %>
-</div>
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main">
     <section class="section pt-30 pbm-20 pb-100">
@@ -40,7 +32,7 @@
             </div>
             <div class="columns">
                 <div class="columns__col columns__col--3">
-                    <div class="article-garanty" data-fancybox data-src="./assets/images/page-garanty.jpg">
+                    <div class="article-garanty" data-fancybox="garanty" data-caption="Сертификат соответствия ГOCT Р ISO 14001-2O16" data-src="./assets/images/page-garanty.jpg">
                         <svg class="article-garanty__icon">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-zoom"></use>
                         </svg>
@@ -54,7 +46,7 @@
                     </div>
                 </div>
                 <div class="columns__col columns__col--3">
-                    <div class="article-garanty" data-fancybox data-src="./assets/images/page-garanty.jpg">
+                    <div class="article-garanty" data-fancybox="garanty" data-caption="Сертификат соответствия ГOCT Р ISO 14001-2O16" data-src="./assets/images/page-garanty.jpg">
                         <svg class="article-garanty__icon">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-zoom"></use>
                         </svg>
@@ -68,7 +60,7 @@
                     </div>
                 </div>
                 <div class="columns__col columns__col--3">
-                    <div class="article-garanty" data-fancybox data-src="./assets/images/page-garanty.jpg">
+                    <div class="article-garanty" data-fancybox="garanty" data-caption="Сертификат соответствия ГOCT Р ISO 14001-2O16" data-src="./assets/images/page-garanty.jpg">
                         <svg class="article-garanty__icon">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-zoom"></use>
                         </svg>
@@ -82,7 +74,7 @@
                     </div>
                 </div>
                 <div class="columns__col columns__col--3">
-                    <div class="article-garanty" data-fancybox data-src="./assets/images/page-garanty.jpg">
+                    <div class="article-garanty" data-fancybox="garanty" data-caption="Сертификат соответствия ГOCT Р ISO 14001-2O16" data-src="./assets/images/page-garanty.jpg">
                         <svg class="article-garanty__icon">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-zoom"></use>
                         </svg>
@@ -96,7 +88,7 @@
                     </div>
                 </div>
                 <div class="columns__col columns__col--3">
-                    <div class="article-garanty" data-fancybox data-src="./assets/images/page-garanty.jpg">
+                    <div class="article-garanty" data-fancybox="garanty" data-caption="Сертификат соответствия ГOCT Р ISO 14001-2O16" data-src="./assets/images/page-garanty.jpg">
                         <svg class="article-garanty__icon">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-zoom"></use>
                         </svg>
@@ -110,7 +102,7 @@
                     </div>
                 </div>
                 <div class="columns__col columns__col--3">
-                    <div class="article-garanty" data-fancybox data-src="./assets/images/page-garanty.jpg">
+                    <div class="article-garanty" data-fancybox="garanty" data-caption="Сертификат соответствия ГOCT Р ISO 14001-2O16" data-src="./assets/images/page-garanty.jpg">
                         <svg class="article-garanty__icon">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-zoom"></use>
                         </svg>
@@ -124,7 +116,7 @@
                     </div>
                 </div>
                 <div class="columns__col columns__col--3">
-                    <div class="article-garanty" data-fancybox data-src="./assets/images/page-garanty.jpg">
+                    <div class="article-garanty" data-fancybox="garanty" data-caption="Сертификат соответствия ГOCT Р ISO 14001-2O16" data-src="./assets/images/page-garanty.jpg">
                         <svg class="article-garanty__icon">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-zoom"></use>
                         </svg>
@@ -138,7 +130,7 @@
                     </div>
                 </div>
                 <div class="columns__col columns__col--3">
-                    <div class="article-garanty" data-fancybox data-src="./assets/images/page-garanty.jpg">
+                    <div class="article-garanty" data-fancybox="garanty" data-caption="Сертификат соответствия ГOCT Р ISO 14001-2O16" data-src="./assets/images/page-garanty.jpg">
                         <svg class="article-garanty__icon">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-zoom"></use>
                         </svg>
@@ -156,6 +148,15 @@
     </section>
 </main>
 <%= htmlWebpackPlugin.options.sectionFooter %>
+
+<div class="modals" hidden>
+    <%= htmlWebpackPlugin.options.success %>
+    <%= htmlWebpackPlugin.options.calculation %>
+    <%= htmlWebpackPlugin.options.callback %>
+    <%= htmlWebpackPlugin.options.feedback %>
+    <%= htmlWebpackPlugin.options.order %>
+    <%= htmlWebpackPlugin.options.vacancyReply %>
+</div>
 <%= htmlWebpackPlugin.options.temp %>
 </body>
 </html>

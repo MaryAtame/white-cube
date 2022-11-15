@@ -1,0 +1,22 @@
+.file {
+  &__field {
+  }
+
+  &__message {
+    font-size: rem(16);
+    font-weight: 500;
+    color: #316EE8;
+
+    @include r(1200) {
+      font-size: rem(14);
+    }
+  }
+
+  &__message--black {
+    color: #0B1321;
+    font-size: rem(14);
+    @include r(1200) {
+      font-size: rem(12);
+    }
+  }
+}

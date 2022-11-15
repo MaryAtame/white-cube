@@ -43,6 +43,11 @@
 		width: rem(50);
 		height: 100%;
 
+		&:hover {
+			background-color: #F3F6FD;
+			border-radius: rem(50);
+		}
+
 		@include r(1200) {
 			left: 0;
 			right: auto;

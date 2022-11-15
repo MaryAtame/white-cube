@@ -2,34 +2,38 @@
   display: none;
   position: absolute;
   padding: rem(35) 0 rem(75);
-  top: 0;
+  top: rem(150);
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 20;
   background-color: $light;
 
-  &--active {
+  &.active {
     display: block;
   }
 
-  &__list{
+  &__item {
     display: flex;
-    flex-wrap: wrap;
-    gap: rem(33);
+    gap: rem(19);
     align-items: center;
     align-content: center;
-    justify-content: space-around;
   }
-  &__link{
+
+  &__link {
     display: flex;
     gap: rem(20);
     align-items: center;
     align-content: center;
   }
-  &__icon{
-    max-width: rem(50);
-    max-height: rem(47);
+
+  &__picture {
+    width: rem(50);
+    height: rem(47);
     display: block;
-    color: $blue;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }

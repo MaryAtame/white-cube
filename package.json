@@ -31,8 +31,9 @@
     "eslint": "^8.25.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
-        "json-server": "^0.17.0",
+    "json-server": "^0.17.0",
     "mini-css-extract-plugin": "^2.6.1",
+    "mmenu-js": "^9.2.0",
     "sass": "^1.55.0",
     "sass-loader": "^13.1.0",
     "svg-sprite-loader": "^6.0.11",
@@ -43,10 +44,10 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.31",
     "axios": "^0.27.2",
-        "swiper": "^8.4.4",
     "html-webpack-plugin": "^5.5.0",
-    "the-new-css-reset": "^1.7.3",
-    "@fancyapps/ui": "^4.0.31"
+    "swiper": "^8.4.4",
+    "the-new-css-reset": "^1.7.3"
   }
 }

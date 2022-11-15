@@ -65,6 +65,7 @@
 @import "modules/article/article";
 @import "modules/modal-review/modal-review";
 @import "modules/range/range";
+@import "modules/menu-burger/menu-burger";
 @import "modules/menu-icon/menu-icon";
 @import "modules/menu-mobile/menu-mobile";
 @import "modules/table-mobile/table-mobile";
@@ -75,6 +76,8 @@
 @import "modules/select/select";
 @import "modules/bullet-dynamic/bullet-dynamic";
 @import "modules/decore-line/decore-line";
+@import "modules/checkbox/checkbox";
+@import "modules/file/file";
 
 
 @include r(1200) {}

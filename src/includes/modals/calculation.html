@@ -1,5 +1,5 @@
 <section class="modal modal--lg content-left" id="modal-calculation">
-    <h1 class="modal__title mb-15">Заказать расчет</h1>
+    <h1 class="modal__title mb-15 mbm-5">Заказать расчет</h1>
     <div class="editor editor--16 mb-40">
         <p>В компании “Белый Куб”</p>
     </div>
@@ -18,11 +18,12 @@
             <label class="form__label" for="address">Адрес доставки</label>
             <input class="form__input" id="address" placeholder="Укажите адрес доставки"/>
         </div>
-        <div class="form__radio mt-25">
-            <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree"/>
-            <label for="setAgree"></label>
-            <p class="form__checkbox-btn-label form__checkbox-btn-label--blue">Заберу со склада</p>
-        </div>
+
+            <label class="checkbox checkbox--modal mb-15">
+                <input class="checkbox__input" type="checkbox" name="agreement" value="yes"/>
+                <p class="checkbox__text checkbox__text--blue">Заберу со склада</p>
+            </label>
+
         <hr class="hr">
         <p class="form__item-title">Интересующие товары</p>
         <div class="form__item-wrapper">
@@ -35,7 +36,7 @@
                         <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
                     </svg>
                 </button>
-                <span>1</span>
+                <input type="number" value="1">
                 <button type="button" class="counter__btn">
                     <svg class="counter__icon">
                         <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
@@ -56,7 +57,7 @@
                 152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия
                 <a class="form__agreement-link" href="#">Пользовательского соглашения.</a>
             </div>
-            <button class="button button--orange lowercase">Заказать расчет</button>
+            <button class="button button--orange lowercase" disabled>Заказать расчет</button>
         </div>
     </form>
 

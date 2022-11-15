@@ -16,7 +16,7 @@
 
   &__item-wrapper {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     gap: rem(20);
 
     @include r(600) {
@@ -44,6 +44,11 @@
 &__label {
   font-size: rem(14);
 }
+
+  &__label--attach {
+   display: flex;
+    gap: rem(10);
+  }
   &__checkbox-btn-label {
     font-size: rem(14);
     color: #000000;
@@ -63,6 +68,7 @@
 
   &__input,
   textarea {
+    width: 100%;
     padding: rem(18) rem(20);
     border-radius: 5px;
     border: 1px solid #D9E1F3;
@@ -178,10 +184,10 @@
 }
 
 .form__checkbox-btn:checked + label {
-  background-image: url("../assets/sprite/sprite.svg#icon-done");
+  background-image: url("../assets/images/select.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 12px 10px;
   background-color: $orange;
 }
 

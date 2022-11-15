@@ -3,4 +3,11 @@
     display: flex;
     flex-direction: column;
   }
+
+  &--row {
+    @include r(1200){
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }

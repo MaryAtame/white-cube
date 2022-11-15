@@ -5,14 +5,7 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="body">
-<div class="modals" hidden>
-    <%= htmlWebpackPlugin.options.success %>
-    <%= htmlWebpackPlugin.options.calculation %>
-    <%= htmlWebpackPlugin.options.callback %>
-    <%= htmlWebpackPlugin.options.feedback %>
-    <%= htmlWebpackPlugin.options.order %>
-    <%= htmlWebpackPlugin.options.vacancyReply %>
-</div>
+
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main">
     <section class="section pt-30 pbm-20 pb-100 bg-page">
@@ -23,7 +16,7 @@
                     <svg class="breadcrumbs__icon">
                         <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
                     </svg>
-                    <span>Каталог</span>
+                    <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
                 </div>
             </div>
             <div class="justify justify--column mb-50 mbm-20">
@@ -38,7 +31,7 @@
                     </select>
                 </div>
             </div>
-            <div class="columns mb-60 mbm-0">
+            <div class="columns mb-60 mbm-20">
                 <div class="columns__col columns__col--3">
                     <%= htmlWebpackPlugin.options.sidebarCatalog %>
                 </div>
@@ -78,10 +71,25 @@
                 </div>
             </div>
             <%= htmlWebpackPlugin.options.paginationPage %>
+            <button class="button button--orange centered show-mob-980">
+                <span class="button__text">Загрузить еще </span>
+                <svg class="button__icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-reload"></use>
+                </svg>
+            </button>
         </div>
     </section>
 </main>
 <%= htmlWebpackPlugin.options.sectionFooter %>
+
+<div class="modals" hidden>
+    <%= htmlWebpackPlugin.options.success %>
+    <%= htmlWebpackPlugin.options.calculation %>
+    <%= htmlWebpackPlugin.options.callback %>
+    <%= htmlWebpackPlugin.options.feedback %>
+    <%= htmlWebpackPlugin.options.order %>
+    <%= htmlWebpackPlugin.options.vacancyReply %>
+</div>
 <%= htmlWebpackPlugin.options.temp %>
 </body>
 </html>

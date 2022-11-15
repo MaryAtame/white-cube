@@ -1,5 +1,5 @@
 <section class="modal modal--sm content-left" id="modal-vacancy-reply">
-    <h1 class="modal__title">Откликнуться</h1>
+    <h1 class="modal__title mb-15 mbm-5">Откликнуться</h1>
     <div class="editor editor--16 mb-20">
         <p>Заполните свои данные и прикрепите резюме</p>
     </div>
@@ -28,19 +28,20 @@
         </div>
     </form>
     <div class="form__item-wrapper justify mb-20">
-        <div class="modal__attach">
-            <input id="file" type="file">
-            <label class="form__label modal__attach" for="file">
-                <svg class="form__label-icon">
-                    <use xlink:href="./assets/sprite/sprite.svg#icon-clip"></use>
-                </svg>
-                <p>Прикрепить резюме</p>
-            </label>
-        </div>
+        <label class="file" data-file>
+            <input class="file__field" type="file" data-file-input>
+            <svg class="form__label-icon">
+                <use xlink:href="./assets/sprite/sprite.svg#icon-clip"></use>
+            </svg>
+            <span class="file__message file__message--black" data-file-text>
+                   Прикрепить резюме
+                </span>
+        </label>
+
         <button class="button button--orange lowercase mob-width-100">Отправить</button>
     </div>
 
-    <div class="form_agreement">
+    <div class="form__agreement">
         <div class="form__agreement-text">
             Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом №
             152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия

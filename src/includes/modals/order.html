@@ -1,5 +1,5 @@
-<section class="modal modal--sm modal-order content-left" id="modal-order">
-    <h1 class="modal__title">Отправка заказа</h1>
+<section class="modal modal--lg modal-order content-left" id="modal-order">
+    <h1 class="modal__title mb-15 mbm-5">Отправка заказа</h1>
     <div class="editor editor--16 mb-20">
         <p>В компанию “Белый Куб”</p>
     </div>
@@ -31,21 +31,26 @@
             </div>
         </div>
     </div>
-    <div class="modal-order__comment">
-        <p>Ваше сообщение</p>
+    <div class="modal-order__comment mb-20 mbm-15">
+        <p class="mb-10">Ваше сообщение</p>
         <textarea placeholder="Оставьте комментарий к заказу или задайте интересующий вопрос"></textarea>
     </div>
     <div class="modal__attach">
-        <input id="file" type="file">
-        <label class="form__label modal__attach" for="file">
-            <svg class="form__label-icon form__label-icon--blue">
-                <use xlink:href="./assets/sprite/sprite.svg#icon-clip"></use>
-            </svg>
-            <p class="text-blue">Прикрепить файл</p>
-        </label>
+        <div class="modal__attach-wrapper">
+            <input id="file" type="file">
+            <label class="form__label form__label--attach" for="file">
+                <svg class="form__label-icon form__label-icon--blue">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-clip"></use>
+                </svg>
+                <p class="text-blue editor--mob-12">Прикрепить файл</p>
+            </label>
+        </div>
+        <p class="modal__attach-text">Размер файла не должен превышать 5 Мб. Вы можете прикрепить не более 10 файлов.</p>
     </div>
     <hr class="hr mb-20 mt-20">
-    <div class="modal-order__price"></div>
+    <div class="modal-order__price">
+
+    </div>
     <form class="form form-order" action="/#" method="post" role="form">
         <div class="form__item">
             <label class="form__label" for="name">ФИО</label>
@@ -55,8 +60,11 @@
             <label class="form__label" for="address">Адрес доставки</label>
             <input class="form__input" id="address" placeholder="Укажите адрес доставки"/>
         </div>
-        <p class="text-blue">Заберу со склада</p>
-        <hr class="hr mb-20 mt20">
+        <label class="checkbox checkbox--modal mb-30 mbm-15">
+            <input class="checkbox__input" type="checkbox" name="agreement" value="yes"/>
+            <p class="checkbox__text checkbox__text--blue">Заберу со склада</p>
+        </label>
+        <hr class="hr mb-20">
 
         <div class="form__select">
             <p>Адрес склада</p>

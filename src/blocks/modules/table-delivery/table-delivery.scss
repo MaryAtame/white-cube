@@ -9,15 +9,25 @@
     font-size: rem(20);
   }
 }
+  &__grid--mobile {
+    display: none;
+    @include r(1200) {
+      display: table;
+    }
+  }
+
+  &__grid--desktop {
+    display: table;
+  }
+
   &__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     width: 100%;
     margin-bottom: rem(50);
-    border: 1px solid #E6E6E6;
+
     color: #000000;
     box-shadow: 5px 10px 40px rgba(43, 70, 82, 0.15);
+    border-radius: rem(10);
+    overflow: hidden;
 
     thead,
     tbody {
@@ -28,7 +38,11 @@
       font-weight: 600;
       font-size: rem(16);
       line-height: 1.2;
-      padding: rem(20) rem(50) rem(20) 7%;
+      padding: rem(20) rem(20) rem(20) 5%;
+
+      @include rmin(1201) {
+        border: 1px solid #E6E6E6;
+      }
 
       @include r(768) {
         padding: rem(20) rem(20) rem(20) 5%;
@@ -39,8 +53,14 @@
       }
     }
 
+    td {
+      border: 1px solid #E6E6E6;
+      @include r(1200) {
+        width: 50%;
+      }
+    }
+
     tr {
-      display: flex;
       align-items: center;
       border: 1px solid #E6E6E6;
       align-content: center;
@@ -50,7 +70,7 @@
       }
     }
 
-    tr td:first-child,
+    tr td,
     tr th:first-child {
       padding: rem(30) rem(40) rem(30) rem(70);
 

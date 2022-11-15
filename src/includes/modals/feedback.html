@@ -1,26 +1,27 @@
 <section class="modal modal--sm content-left" id="modal-feedback">
-    <h1 class="modal__title">Оставить отзыв</h1>
+    <h1 class="modal__title mb-15 mbm-5">Оставить отзыв</h1>
     <form class="form mb-40 mbm-20" action="/#" method="post" role="form">
-        <div class="form__item">
-            <label class="form__label" for="name"></label>
-            <input class="form__input" id="name" placeholder="Ваше имя"/>
-        </div>
-        <div class="form__item">
-            <label class="form__label" for="date"></label>
-            <input class="form__input" inputmode="numeric" id="date" placeholder="Дата покупки"/>
-        </div>
-        <div class="form__item">
-            <label class="form__label"></label>
-            <textarea placeholder="Ваши впечатления"></textarea>
-        </div>
-        <div class="modal__attach">
-            <input id="file" type="file">
-            <label class="form__label modal__attach" for="file">
-                <div class="text-blue editor--16">
-                    <strong> Прикрепить вашу фотографию</strong>
-                </div>
+
+            <label class="form__label">
+                <input class="form__input" placeholder="Ваше имя"/>
             </label>
-        </div>
+
+            <label class="form__label">
+                <input class="form__input" inputmode="numeric" placeholder="Дата покупки"/>
+            </label>
+
+            <label class="form__label">
+                <textarea placeholder="Ваши впечатления"></textarea>
+            </label>
+
+
+            <label class="file" data-file>
+                <input class="file__field" type="file" data-file-input>
+                <span class="file__message" data-file-text>
+                    Прикрепить вашу фотографию
+                </span>
+            </label>
+
         <div class="form__radio">
             <input class="form__checkbox-btn" type="checkbox" name="agreement" value="" id="setAgree-feedback"/>
             <label for="setAgree-feedback"></label>

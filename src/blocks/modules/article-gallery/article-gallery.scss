@@ -24,14 +24,14 @@
     background: linear-gradient(180deg, rgba(38, 39, 61, 0), rgba(38, 39, 61, .6));
 
     @include r(576) {
-      padding: rem(7) rem(12);
+      padding: rem(7);
     }
   }
 
   &__category {
     font-weight: 400;
     font-size: rem(14);
-    line-height: 1.6;
+    line-height: 1.2;
     margin-bottom: rem(10);
 
     @include r(576) {
@@ -51,6 +51,7 @@
 
     @include r(576) {
       font-size: rem(10);
+      line-height: 1;
     }
   }
 
@@ -66,12 +67,13 @@
     color: $light;
     font-weight: 600;
     font-size: rem(14);
-    line-height: 1.6;
+    line-height: 1.2;
     background-color: $blue;
     border-bottom-right-radius: 10px;
 
     @include r(576) {
       font-size: rem(10);
+      padding: rem(9) rem(10);
     }
   }
 }

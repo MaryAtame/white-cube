@@ -204,6 +204,11 @@ b {
   align-self: end;
 }
 
+.mob-left {
+  @include r(1200) {
+    align-items: flex-start;
+  }
+}
 
 .centered {
   margin-left: auto;

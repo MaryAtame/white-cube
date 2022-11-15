@@ -6,15 +6,20 @@
   padding: rem(20) rem(30) rem(30);
 
   &--mobile {
-    display: none;
-    visibility: hidden;
-    @include r(1200) {
-      display: flex;
-      visibility: visible;
-      flex-direction: column;
-      padding: rem(15);
+    @include rmin(1201) {
+      display: none;
+      visibility: hidden;
+      align-items: stretch;
     }
   }
+
+  //@include r(1200) {
+  //  display: flex;
+  //  visibility: visible;
+  //  flex-direction: column;
+  //  padding: rem(15);
+  //}
+
 
   &__mobile-column {
     display: flex;
@@ -28,7 +33,7 @@
     gap: rem(20);
   }
 
-  &__articul {
+  &__code {
     font-weight: 500;
     font-size: rem(16);
     line-height: 1.5;
@@ -46,16 +51,18 @@
     align-self: center;
 
     img {
-      width: 100%;
-      height: auto;
+      width: auto;
+      height: 100%;
       object-fit: contain;
       object-position: center;
+      margin: 0 auto;
     }
   }
 
   &__picture--mobile {
     width: rem(96);
     height: rem(77);
+    flex-shrink: 0;
   }
 
   &__info {
@@ -96,5 +103,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
   }
 }

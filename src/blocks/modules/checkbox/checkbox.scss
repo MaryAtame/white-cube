@@ -1,0 +1,20 @@
+.checkbox {
+  display: block;
+
+  & > input:checked + p {
+    color: darken(#316EE8, 20%);
+    font-weight: 700;
+  }
+&__input {
+  opacity: 0;
+}
+  &__text {
+    font-weight: 500;
+    font-size: rem(16);
+  }
+
+  &__text--blue {
+    display: flex;
+    color: #316EE8;
+  }
+}

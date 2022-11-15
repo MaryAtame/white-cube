@@ -5,14 +5,6 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="body">
-<div class="modals" hidden>
-    <%= htmlWebpackPlugin.options.success %>
-    <%= htmlWebpackPlugin.options.calculation %>
-    <%= htmlWebpackPlugin.options.callback %>
-    <%= htmlWebpackPlugin.options.feedback %>
-    <%= htmlWebpackPlugin.options.order %>
-    <%= htmlWebpackPlugin.options.vacancyReply %>
-</div>
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main">
     <section class="section pt-30 pbm-20 pb-100">
@@ -87,6 +79,15 @@
     </section>
 </main>
 <%= htmlWebpackPlugin.options.sectionFooter %>
+
+<div class="modals" hidden>
+    <%= htmlWebpackPlugin.options.success %>
+    <%= htmlWebpackPlugin.options.calculation %>
+    <%= htmlWebpackPlugin.options.callback %>
+    <%= htmlWebpackPlugin.options.feedback %>
+    <%= htmlWebpackPlugin.options.order %>
+    <%= htmlWebpackPlugin.options.vacancyReply %>
+</div>
 <%= htmlWebpackPlugin.options.temp %>
 </body>
 </html>

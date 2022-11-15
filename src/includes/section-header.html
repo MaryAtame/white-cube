@@ -1,288 +1,308 @@
-<header class="header pt-20 pb-15">
-    <div class="container">
-        <div class="header-toolbar">
-            <a href="./">
-                <picture class="logo">
-                    <img src="./assets/images/logo.svg" alt="Лого Белый куб">
-                </picture>
-            </a>
-            <div class="header-toolbar__contacts mob-hidden">
-                <address class="address">
-                    <a class="address__link" rel="nofollow" href="https://yandex.ru/maps/-/CCUZB0aaLC" target="_blank">
-                        <strong>ул Комсомольская 40</strong><br>г. Калинининград
+    <header class="header pt-20 pb-15">
+        <div class="container">
+            <div class="header-toolbar">
+                <a href="./">
+                    <picture class="logo">
+                        <img src="./assets/images/logo.svg" alt="Лого Белый куб">
+                    </picture>
+                </a>
+                <div class="header-toolbar__contacts mob-hidden">
+                    <address class="address">
+                        <a class="address__link" rel="nofollow" href="https://yandex.ru/maps/-/CCUZB0aaLC" target="_blank">
+                            <strong>ул Комсомольская 40</strong><br>г. Калинининград
+                        </a>
+                    </address>
+                    <a class="link-mail" rel="nofollow" href="mailto:email@mail.ru">
+                        <strong>email@mail.ru</strong><br>по все вопросам
                     </a>
-                </address>
-                <a class="link-mail" rel="nofollow" href="mailto:email@mail.ru">
-                    <strong>email@mail.ru</strong><br>по все вопросам
-                </a>
-            </div>
-            <form class="form-search mob-hidden" action="/search" method="get">
-                <input class="form-search__input" type="text" placeholder="Поиск по сайту...">
-                <button class="form-search__btn">
-                    <svg class="form-search__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
-                    </svg>
-                </button>
-            </form>
-            <div class="header-toolbar__callback mob-hidden">
-                <a class="link-callback" rel="nofollow" href="tel:+74012304175">8 (4012) 30-41-75
-                    <span>заказать звонок</span>
-                </a>
-            </div>
-            <nav class="menu-icon desktop-hidden">
-                <div class="menu-icon__wrapper">
-                    <form class="form-search" action="/search" method="get">
-                        <input class="form-search__input" type="text" placeholder="Поиск по сайту...">
-                        <button class="form-search__btn">
-                            <svg class="form-search__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                </div>
+                <form class="form-search mob-hidden" action="/search" method="get">
+                    <input class="form-search__input" type="text" placeholder="Поиск по сайту...">
+                    <button class="form-search__btn" type="button">
+                        <svg class="form-search__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </form>
+                <div class="header-toolbar__callback mob-hidden">
+                    <a class="link-callback" rel="nofollow" href="tel:+74012304175">8 (4012) 30-41-75
+                        <span>заказать звонок</span>
+                    </a>
+                </div>
+                <nav class="menu-icon desktop-hidden">
+                    <div class="menu-icon__wrapper">
+                        <form class="form-search" action="/search" method="get">
+                            <input class="form-search__input" type="text" placeholder="Поиск по сайту...">
+                            <button class="form-search__btn" type="button">
+                                <svg class="form-search__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <div class="menu-burger">
+                            <svg class="menu-burger__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#menu-burger"></use>
                             </svg>
-                        </button>
-                    </form>
-                    <div class="menu-icon__icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="header-row mob-hidden">
+                <div class="header-row__buttons">
+                    <button class="button button--orange" data-fancybox data-src="#modal-calculation">
+                        <span class="button__text">Заказать расчет</span>
+                    </button>
+                    <a class="button button--blue" href="catalog-category.html" data-hover-catalog>
+                        <svg class="button__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-catalog"></use>
+                        </svg>
+                        <span class="button__text">каталог</span>
+                    </a>
+                    <div class="dropdown-catalog" data-catalog-content>
+                        <div class="container">
+                            <div class="columns">
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="columns__col columns__col--3">
+                                    <a class="dropdown-catalog__item" href="#">
+                                        <picture class="dropdown-catalog__picture">
+                                            <img src="./assets/images/item-catalog-1.svg" alt="Силикатные пазогребневые блоки">
+                                        </picture>
+                                        <div class="editor editor--16">
+                                            <p>Силикатные пазогребневые блоки</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </div>
-        <div class="header-row mob-hidden">
-            <div class="header-row__buttons">
-                <button class="button button--orange" data-fancybox data-src="#modal-calculation">
-                    <span class="button__text">Заказать расчет</span>
-                </button>
-                <a class="button button--blue" href="catalog.html">
-                    <svg class="button__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-catalog"></use>
-                    </svg>
-                    <span class="button__text">каталог</span>
-                </a>
+                <div class="menu-header">
+                    <ul class="menu-header__list">
+                        <li class="menu-header__link">
+                            <a href="about.html">О заводе</a>
+                            <ul class="menu-header__dropdown">
+                                <li class="menu-header__dropdown-link">
+                                    <a href="vacancy.html">Вакансии</a>
+                                </li>
+                                <li class="menu-header__dropdown-link">
+                                    <a href="garanty.html">Сертификаты</a>
+                                </li>
+                                <li class="menu-header__dropdown-link">
+                                    <a href="news.html">Новости</a>
+                                </li>
+                                <li class="menu-header__dropdown-link">
+                                    <a href="video.html">Видео</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-header__link">
+                            <a href="delivery.html">Доставка</a>
+                        </li>
+                        <li class="menu-header__link">
+                            <a href="gallery-page.html">Галерея</a>
+                        </li>
+                        <li class="menu-header__link">
+                            <a href="review-detail.html">Отзывы</a>
+                        </li>
+                        <li class="menu-header__link">
+                            <a href="contacts.html">Контакты</a>
+                        </li>
+                        <li class="menu-header__link">
+                            <a href="map-detail.html">Где купить</a>
+                        </li>
+                        <li class="menu-header__link">
+                            <a href="documentation.html">Техническая информация</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="menu-header">
-                <ul class="menu-header__list">
-                    <li class="menu-header__link">
-                        <a href="about.html">О заводе</a>
-                        <ul class="menu-header__dropdown">
-                            <li class="menu-header__dropdown-link">
-                                <a href="vacancy.html">Вакансии</a>
+            <nav class="menu-mobile desktop-hidden" id="menu">
+                <ul class="menu-mobile__list">
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="#">
+                            <span>Каталог</span>
+                            <svg class="menu-mobile__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-small-arrow"></use>
+                            </svg>
+                        </a>
+                        <ul class="menu-mobile__sublist">
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Силикатные пазогребневые блоки</a>
                             </li>
-                            <li class="menu-header__dropdown-link">
-                                <a href="garanty.html">Сертификаты</a>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Плиты силикатные</a>
                             </li>
-                            <li class="menu-header__dropdown-link">
-                                <a href="news.html">Новости</a>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">ЕВРО-кирпич</a>
                             </li>
-                            <li class="menu-header__dropdown-link">
-                                <a href="video.html">Видео</a>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Рустированный кирпич</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Силикатные блоки </a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Силикатные кирпичи</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Кладочные смеси </a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Клей</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Газоблоки</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Твинблоки</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Керамические блоки</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="#">Аксессуары</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="menu-header__link">
-                        <a href="delivery.html">Доставка</a>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="#">Плиты силикатные</a>
                     </li>
-                    <li class="menu-header__link">
-                        <a href="gallery-page.html">Галерея</a>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="./">Главная</a>
                     </li>
-                    <li class="menu-header__link">
-                        <a href="review-detail.html">Отзывы</a>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="#">
+                            <span>О заводе</span>
+                            <svg class="menu-mobile__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-small-arrow"></use>
+                            </svg>
+                        </a>
+                        <ul class="menu-mobile__sublist">
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="./vacancy.html">Вакансии</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="./garanty.html">Сертификаты</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="./news.html">Новости</a>
+                            </li>
+                            <li class="menu-mobile__subitem">
+                                <a class="menu-mobile__link" href="./video.html">Видео</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="menu-header__link">
-                        <a href="contacts.html">Контакты</a>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="delivery.html">Доставка</a>
                     </li>
-                    <li class="menu-header__link">
-                        <a href="map-detail.html">Где купить</a>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="gallery-page.html">Галерея</a>
                     </li>
-                    <li class="menu-header__link">
-                        <a href="documentation.html">Техническая информация</a>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="review-detail.html">Отзывы</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="map-detail.html">Где купить</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a class="menu-mobile__link" href="documentation.html">Техническая информация</a>
                     </li>
                 </ul>
-            </div>
+                <button class="button button--orange centered" data-fancybox data-src="#modal-calculation">Заказать расчет
+                </button>
+            </nav>
         </div>
-        <div class="dropdown-catalog">
-            <div class="container">
-                <ul class="dropdown-catalog__list">
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                    >
-                    <li class="dropdown-catalog__item">
-                        <a class="dropdown-catalog__link" href="#">
-                            <svg class="dropdown-catalog__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#item-catalog-1"></use>
-                            </svg>
-                            <span class="editor editor--16">Силикатные пазогребневые блоки</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <nav class="menu-mobile desktop-hidden">
-            <ul class="menu-mobile__list">
-                <li class="menu-mobile__item" data-dropdown>
-                    <a class="menu-mobile__link" href="#">
-                        <span>Каталог</span>
-                        <svg class="menu-mobile__icon">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-small-arrow"></use>
-                        </svg>
-                    </a>
-                    <ul class="menu-mobile__sublist" data-content hidden>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Силикатные пазогребневые блоки</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Плиты силикатные</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">ЕВРО-кирпич</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Рустированный кирпич</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Силикатные блоки </a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Силикатные кирпичи</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Кладочные смеси </a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Клей</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Газоблоки</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Твинблоки</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Керамические блоки</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="#">Аксессуары</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="#">Плиты силикатные</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="./">Главная</a>
-                </li>
-                <li class="menu-mobile__item" data-dropdown>
-                    <a class="menu-mobile__link" href="#">
-                        <span>О заводе</span>
-                        <svg class="menu-mobile__icon">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-small-arrow"></use>
-                        </svg>
-                    </a>
-                    <ul class="menu-mobile__sublist" data-content hidden>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="./vacancy.html">Вакансии</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="./garanty.html">Сертификаты</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="./news.html">Новости</a>
-                        </li>
-                        <li class="menu-mobile__subitem">
-                            <a class="menu-mobile__link" href="./video.html">Видео</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="delivery.html">Доставка</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="gallery-page.html">Галерея</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="review-detail.html">Отзывы</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="contacts.html">Контакты</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="map-detail.html">Где купить</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="documentation.html">Техническая информация</a>
-                </li>
-            </ul>
-            <button class="button button--orange centered" data-fancybox data-src="#modal-calculation">Заказать расчет
-            </button>
-        </nav>
-    </div>
-</header>
+    </header>
+

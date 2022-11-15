@@ -45,13 +45,13 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: rem(35);
+    gap: rem(20);
 
     list-style: disc;
     list-style-position: inside;
 
     @include r(1200) {
-      gap: rem(20);
+      gap: rem(15);
     }
   }
 

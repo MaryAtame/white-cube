@@ -12,6 +12,7 @@
   @include r(1200) {
     padding: rem(20) rem(15);
   }
+
   &--sm {
     max-width: rem(570);
   }
@@ -48,13 +49,12 @@
     font-size: rem(36);
     color: #000000;
     font-weight: 700;
-    margin-bottom: rem(15);
 
     @include r(1200) {
       font-size: rem(20);
-      margin-bottom: rem(5);
     }
   }
+
 
   &__nav {
     display: flex;
@@ -63,9 +63,30 @@
 
   &__attach {
     display: flex;
-    gap: rem(15);
+    gap: rem(60);
     align-items: center;
     cursor: pointer;
+    @include r(1200) {
+      flex-direction: column;
+      align-items: start;
+      gap: rem(15);
+    }
+  }
+
+  &__attach-wrapper {
+    display: flex;
+    gap: rem(10);
+    align-items: center;
+    flex-shrink: 0;
+
+  }
+
+  &__attach-text {
+    color: #78797D;
+    font-size: rem(14);
+    @include r(1200) {
+      font-size: rem(10);
+    }
   }
 }
 

@@ -87,11 +87,21 @@
     display: flex;
   }
 
+  &--mobile__article {
+    scale: 0;
+    display: none;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+  }
+
   &--mobile__article.active {
+    display: flex;
+    visibility: visible;
     background-color: #FFFFFF;
     border-radius: rem(5);
     padding: rem(15);
     margin-top: rem(10);
+    scale: 1;
   }
 
   &__article-specs {
