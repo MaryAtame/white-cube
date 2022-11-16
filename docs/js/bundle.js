@@ -4914,17 +4914,17 @@ class Dropdown {
   \*******************************************************/
 /***/ (() => {
 
-const burgerIcon = document.querySelector('.menu-burger');
-const navbody = document.querySelector('.menu-mobile');
-
-burgerIcon.addEventListener("click", burgerhandler);
-
-function burgerhandler(e) {
-    e.preventDefault();
-    burgerIcon.classList.toggle('active');
-    navbody.classList.toggle('active');
-
-}
+// const burgerIcon = document.querySelector('.menu-burger');
+// const navbody = document.querySelector('.menu-mobile');
+//
+// burgerIcon.addEventListener("click", burgerhandler);
+//
+// function burgerhandler(e) {
+//     e.preventDefault();
+//     burgerIcon.classList.toggle('active');
+//     navbody.classList.toggle('active');
+//
+// }
 
 /***/ }),
 
@@ -5207,11 +5207,7 @@ const catalogContent = document.querySelectorAll('[data-catalog-content]');
 
         catalogBtn.addEventListener("mousedown", function(event) {
 
-            if (event.which == 1) {
-                catalogContent.classList.remove("active");
-            } else {
-                catalogContent.classList.add("active");
-            }
+
         });
     });
 
@@ -5240,7 +5236,6 @@ document.addEventListener(
                 {
                     "position": "top",
                     "content": [
-
                     ]
                 }
             ]

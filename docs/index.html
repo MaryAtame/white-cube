@@ -17,8 +17,9 @@
     <title>Белый куб</title>
 <link href="./css/main.css" rel="stylesheet"></head>
 <body class="body">
-<div class="modals" hidden>
-    <section class="modal modal--sm align-center" id="modal-success">
+<div class="page" id="page">
+    <div class="modals" hidden>
+        <section class="modal modal--sm align-center" id="modal-success">
     <div class="modal__wrapper">
         <div class="modal__icon-round">
             <svg class="modal__icon">
@@ -32,7 +33,7 @@
 
     </div>
 </section>
-    <section class="modal modal--lg content-left" id="modal-calculation">
+        <section class="modal modal--lg content-left" id="modal-calculation">
     <h1 class="modal__title mb-15 mbm-5">Заказать расчет</h1>
     <div class="editor editor--16 mb-40">
         <p>В компании “Белый Куб”</p>
@@ -96,7 +97,7 @@
     </form>
 
 </section>
-    <section class="modal modal--sm content-left" id="modal-callback">
+        <section class="modal modal--sm content-left" id="modal-callback">
     <h1 class="modal__title mb-15 mbm-5">Заказать звонок</h1>
     <div class="editor editor--16  mb-20">
         <p>Есть вопросы? Закажите звонок! Мы Вам перезвоним в ближайшее время</p>
@@ -120,7 +121,7 @@
     </form>
     <button class="button button--orange marg-right">Отправить</button>
 </section>
-    <section class="modal modal--sm content-left" id="modal-feedback">
+        <section class="modal modal--sm content-left" id="modal-feedback">
     <h1 class="modal__title mb-15 mbm-5">Оставить отзыв</h1>
     <form class="form mb-40 mbm-20" action="/#" method="post" role="form">
 
@@ -153,36 +154,38 @@
     </form>
     <button class="button button--orange marg-right">Отправить</button>
 </section>
-    <section class="modal modal--lg modal-order content-left" id="modal-order">
+        <section class="modal modal--lg modal-order content-left" id="modal-order">
     <h1 class="modal__title mb-15 mbm-5">Отправка заказа</h1>
     <div class="editor editor--16 mb-20">
         <p>В компанию “Белый Куб”</p>
     </div>
     <div class="modal-order__item mb-20">
         <div class="modal-order__item-descr">
-            <div class="editor editor--14">
-                <p>Плита перегородочная СППу М125-М150/1,6 498х115х249</p>
-            </div>
             <picture class="modal-order__item-picture">
                 <img src="./assets/images/catalog-item.jpg" alt="Плита перегородочная СППу М125-М150/1,6 498х115х249">
             </picture>
-        </div>
-        <div class="modal-order__item-price">
-            <div class="editor editor--16">
-                <p>87.17 ₽ / шт</p>
-            </div>
-            <div class="counter">
-                <button class="counter__btn">
-                    <svg class="counter__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
-                    </svg>
-                </button>
-                <span>1</span>
-                <button class="counter__btn">
-                    <svg class="counter__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
-                    </svg>
-                </button>
+            <div class="modal-order__info">
+                <div class="editor editor--14">
+                    <p>Плита перегородочная СППу М125-М150/1,6 498х115х249</p>
+                </div>
+                <div class="modal-order__info-price">
+                    <div class="counter">
+                        <button class="counter__btn">
+                            <svg class="counter__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+                            </svg>
+                        </button>
+                        <input value="1">
+                        <button class="counter__btn">
+                            <svg class="counter__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="editor editor--16">
+                        <p>87.17 ₽ / шт</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -200,7 +203,8 @@
                 <p class="text-blue editor--mob-12">Прикрепить файл</p>
             </label>
         </div>
-        <p class="modal__attach-text">Размер файла не должен превышать 5 Мб. Вы можете прикрепить не более 10 файлов.</p>
+        <p class="modal__attach-text">Размер файла не должен превышать 5 Мб. Вы можете прикрепить не более 10
+            файлов.</p>
     </div>
     <hr class="hr mb-20 mt-20">
     <div class="modal-order__price">
@@ -253,7 +257,7 @@
         </div>
     </form>
 </section>
-    <section class="modal modal--sm content-left" id="modal-vacancy-reply">
+        <section class="modal modal--sm content-left" id="modal-vacancy-reply">
     <h1 class="modal__title mb-15 mbm-5">Откликнуться</h1>
     <div class="editor editor--16 mb-20">
         <p>Заполните свои данные и прикрепите резюме</p>
@@ -304,8 +308,8 @@
         </div>
     </div>
 </section>
-</div>
-    <header class="header pt-20 pb-15">
+    </div>
+        <header class="header pt-20 pb-15" id="header">
         <div class="container">
             <div class="header-toolbar">
                 <a href="./">
@@ -346,11 +350,11 @@
                                 </svg>
                             </button>
                         </form>
-                        <div class="menu-burger">
+                        <a href="#menu" class="menu-burger">
                             <svg class="menu-burger__icon">
                                 <use xlink:href="./assets/sprite/sprite.svg#menu-burger"></use>
                             </svg>
-                        </div>
+                        </a>
                     </div>
                 </nav>
             </div>
@@ -512,110 +516,106 @@
                     </ul>
                 </div>
             </div>
-            <nav class="menu-mobile desktop-hidden" id="menu">
-                <ul class="menu-mobile__list">
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="#">
-                            <span>Каталог</span>
-                            <svg class="menu-mobile__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-small-arrow"></use>
-                            </svg>
-                        </a>
-                        <ul class="menu-mobile__sublist">
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Силикатные пазогребневые блоки</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Плиты силикатные</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">ЕВРО-кирпич</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Рустированный кирпич</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Силикатные блоки </a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Силикатные кирпичи</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Кладочные смеси </a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Клей</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Газоблоки</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Твинблоки</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Керамические блоки</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Аксессуары</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="#">Плиты силикатные</a>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="./">Главная</a>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="#">
-                            <span>О заводе</span>
-                            <svg class="menu-mobile__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-small-arrow"></use>
-                            </svg>
-                        </a>
-                        <ul class="menu-mobile__sublist">
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="./vacancy.html">Вакансии</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="./garanty.html">Сертификаты</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="./news.html">Новости</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="./video.html">Видео</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="delivery.html">Доставка</a>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="gallery-page.html">Галерея</a>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="review-detail.html">Отзывы</a>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="contacts.html">Контакты</a>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="map-detail.html">Где купить</a>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="documentation.html">Техническая информация</a>
-                    </li>
-                </ul>
-                <button class="button button--orange centered" data-fancybox data-src="#modal-calculation">Заказать расчет
-                </button>
-            </nav>
         </div>
     </header>
 
 
-<main class="main">
-    <section class="section mb-75">
+    <nav  id="menu">
+  <ul >
+    <li >
+        <span>Каталог</span>
+
+      <ul >
+        <li >
+          <a  href="#">Силикатные пазогребневые блоки</a>
+        </li>
+        <li >
+          <a  href="#">Плиты силикатные</a>
+        </li>
+        <li >
+          <a  href="#">ЕВРО-кирпич</a>
+        </li>
+        <li >
+          <a  href="#">Рустированный кирпич</a>
+        </li>
+        <li >
+          <a  href="#">Силикатные блоки </a>
+        </li>
+        <li >
+          <a  href="#">Силикатные кирпичи</a>
+        </li>
+        <li >
+          <a  href="#">Кладочные смеси </a>
+        </li>
+        <li >
+          <a  href="#">Клей</a>
+        </li>
+        <li >
+          <a  href="#">Газоблоки</a>
+        </li>
+        <li >
+          <a  href="#">Твинблоки</a>
+        </li>
+        <li >
+          <a  href="#">Керамические блоки</a>
+        </li>
+        <li >
+          <a  href="#">Аксессуары</a>
+        </li>
+      </ul>
+    </li>
+    <li >
+      <a  href="#">Плиты силикатные</a>
+    </li>
+    <li >
+      <a  href="./">Главная</a>
+    </li>
+    <li >
+        <span>О заводе</span>
+
+      <ul >
+        <li >
+          <a  href="./vacancy.html">Вакансии</a>
+        </li>
+        <li >
+          <a  href="./garanty.html">Сертификаты</a>
+        </li>
+        <li >
+          <a  href="./news.html">Новости</a>
+        </li>
+        <li >
+          <a  href="./video.html">Видео</a>
+        </li>
+      </ul>
+    </li>
+    <li >
+      <a  href="delivery.html">Доставка</a>
+    </li>
+    <li >
+      <a  href="gallery-page.html">Галерея</a>
+    </li>
+    <li >
+      <a  href="review-detail.html">Отзывы</a>
+    </li>
+    <li >
+      <a  href="contacts.html">Контакты</a>
+    </li>
+    <li >
+      <a  href="map-detail.html">Где купить</a>
+    </li>
+    <li >
+      <a  href="documentation.html">Техническая информация</a>
+    </li>
+    <li>
+      <a class="button button--orange centered" data-fancybox data-src="#modal-calculation">Заказать расчет
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+    <main class="main">
+        <section class="section mb-75">
   <div class="swiper slider-intro" data-slider data-slider-slides="1">
     <div class="swiper-wrapper slider-intro__wrapper">
       <div class="swiper-slide">
@@ -682,7 +682,7 @@
     </div>
   </div>
 </section>
-    <section class="section mb-75">
+        <section class="section mb-75">
   <div class="container">
     <div class="columns gap-30">
       <div class="columns__col columns__col--4">
@@ -727,7 +727,7 @@
     </div>
   </div>
 </section>
-    <section class="section bg-dark-blue">
+        <section class="section bg-dark-blue">
     <div class="container">
         <div class="columns pt-100 ptm-30 pb-290">
             <div class="columns__col columns__col--6">
@@ -798,7 +798,7 @@
         </div>
     </div>
 </section>
-    <section class="section bg-gray pt-120 pb-120 ptm-30 pbm-20">
+        <section class="section bg-gray pt-120 pb-120 ptm-30 pbm-20">
   <div class="container">
     <div class="columns">
       <div class="columns__col columns__col--1 mob-hidden"></div>
@@ -829,7 +829,7 @@
     </div>
   </div>
 </section>
-    <section class="section mb-120 mt--140 mbm-30" xmlns="http://www.w3.org/1999/html">
+        <section class="section mb-120 mt--140 mbm-30" xmlns="http://www.w3.org/1999/html">
     <div class="container">
         <div class="toolbar mb-50">
             <h3 class="title title--small">новости</h3>
@@ -1001,7 +1001,7 @@
         </div>
     </div>
 </section>
-    <section class="section bg-blue mb-180 mbm-30">
+        <section class="section bg-blue mb-180 mbm-30">
     <div class="container">
         <div class="columns pt-100 pb-100 ptm-30 pbm-20 align-center">
             <div class="columns__col columns__col--12">
@@ -1094,7 +1094,7 @@
         </div>
     </div>
 </section>
-    <section class="section mb-100 mbm-40">
+        <section class="section mb-100 mbm-40">
     <div class="container">
         <div class="columns mb-55 mbm-20">
             <div class="columns__col columns__col--4">
@@ -1518,7 +1518,7 @@
         </button>
     </div>
 </section>
-    <section class="section mb-120 mbm-30">
+        <section class="section mb-120 mbm-30">
   <div class="container">
     <h2 class="title editor editor--center mb-50 mbm-30">преимущества блоков<br>
       <strong>«белый куб»</strong>
@@ -1599,7 +1599,7 @@
     </div>
   </div>
 </section>
-    <section class="section bg-fullscreen mb-120">
+        <section class="section bg-fullscreen mb-120">
     <div class="container">
         <div class="columns">
             <div class="columns__col columns__col--4 mob-hidden">
@@ -1634,7 +1634,7 @@
         </div>
     </div>
 </section>
-    <section class="section mb-100">
+        <section class="section mb-100">
 	<div class="container">
 		<h2 class="title title--small title--gray mb-30 desktop-hidden">мы в социальных сетях</h2>
 		<div class="columns mob-center">
@@ -1673,8 +1673,8 @@
 		</div>
 	</div>
 </section>
-</main>
-<footer class="footer revert">
+    </main>
+    <footer class="footer revert">
     <div class="container">
         <div class="columns">
             <div class="columns__col columns__col--2 mbm-40 desktop-hidden">
@@ -1801,7 +1801,7 @@
         </div>
     </div>
 </footer>
-<!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
+    <!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
 <section class="section">
     <div class="container">
         <style>
@@ -1855,5 +1855,7 @@
         </div>
     </div>
 </section>
+</div>
+
 <script defer src="js/bundle.js"></script></body>
 </html>

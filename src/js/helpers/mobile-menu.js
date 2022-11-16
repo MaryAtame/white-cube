@@ -12,7 +12,6 @@ document.addEventListener(
                 {
                     "position": "top",
                     "content": [
-
                     ]
                 }
             ]

@@ -1,4 +1,16 @@
 .modal-order {
+
+ &__info {
+  display: flex;
+   flex-direction: column;
+   gap: rem(25);
+  }
+
+  &__info-price {
+    display: flex;
+    gap: rem(30);
+  }
+
 &__item {
   display: flex;
   flex-direction: column;
@@ -7,16 +19,21 @@
   &__item-descr {
     display: flex;
     align-items: center;
-    gap: rem(15);
+    gap: rem(50);
   }
 
   &__item-picture {
+    max-width: rem(140);
+    max-height: rem(140);
     border: 1px solid #D9E1F3;
     border-radius: 5px;
     overflow: hidden;
 
     img {
       object-fit: contain;
+      width: 100%;
+      height: 100%;
+      object-position: center;
     }
     @include r(1200) {
       max-width: rem(140);

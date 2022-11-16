@@ -1,5 +1,6 @@
 .counter {
   display: flex;
+  justify-content: center;
   max-width: rem(100);
   gap: rem(23);
   align-items: center;
@@ -35,5 +36,5 @@
 
 .counter > input {
   display: block;
-  width: 1%;
+  width: rem(20);
 }

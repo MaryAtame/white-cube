@@ -17,7 +17,7 @@
   <title>Каталог</title>
 <link href="./css/main.css" rel="stylesheet"></head>
 <body class="body">
-    <header class="header pt-20 pb-15">
+    <header class="header pt-20 pb-15" id="header">
         <div class="container">
             <div class="header-toolbar">
                 <a href="./">
@@ -58,11 +58,11 @@
                                 </svg>
                             </button>
                         </form>
-                        <div class="menu-burger">
+                        <a href="#menu" class="menu-burger">
                             <svg class="menu-burger__icon">
                                 <use xlink:href="./assets/sprite/sprite.svg#menu-burger"></use>
                             </svg>
-                        </div>
+                        </a>
                     </div>
                 </nav>
             </div>
@@ -224,106 +224,102 @@
                     </ul>
                 </div>
             </div>
-            <nav class="menu-mobile desktop-hidden" id="menu">
-                <ul class="menu-mobile__list">
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="#">
-                            <span>Каталог</span>
-                            <svg class="menu-mobile__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-small-arrow"></use>
-                            </svg>
-                        </a>
-                        <ul class="menu-mobile__sublist">
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Силикатные пазогребневые блоки</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Плиты силикатные</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">ЕВРО-кирпич</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Рустированный кирпич</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Силикатные блоки </a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Силикатные кирпичи</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Кладочные смеси </a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Клей</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Газоблоки</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Твинблоки</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Керамические блоки</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="#">Аксессуары</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="#">Плиты силикатные</a>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="./">Главная</a>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="#">
-                            <span>О заводе</span>
-                            <svg class="menu-mobile__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-small-arrow"></use>
-                            </svg>
-                        </a>
-                        <ul class="menu-mobile__sublist">
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="./vacancy.html">Вакансии</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="./garanty.html">Сертификаты</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="./news.html">Новости</a>
-                            </li>
-                            <li class="menu-mobile__subitem">
-                                <a class="menu-mobile__link" href="./video.html">Видео</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="delivery.html">Доставка</a>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="gallery-page.html">Галерея</a>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="review-detail.html">Отзывы</a>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="contacts.html">Контакты</a>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="map-detail.html">Где купить</a>
-                    </li>
-                    <li class="menu-mobile__item">
-                        <a class="menu-mobile__link" href="documentation.html">Техническая информация</a>
-                    </li>
-                </ul>
-                <button class="button button--orange centered" data-fancybox data-src="#modal-calculation">Заказать расчет
-                </button>
-            </nav>
         </div>
     </header>
+
+
+<nav  id="menu">
+  <ul >
+    <li >
+        <span>Каталог</span>
+
+      <ul >
+        <li >
+          <a  href="#">Силикатные пазогребневые блоки</a>
+        </li>
+        <li >
+          <a  href="#">Плиты силикатные</a>
+        </li>
+        <li >
+          <a  href="#">ЕВРО-кирпич</a>
+        </li>
+        <li >
+          <a  href="#">Рустированный кирпич</a>
+        </li>
+        <li >
+          <a  href="#">Силикатные блоки </a>
+        </li>
+        <li >
+          <a  href="#">Силикатные кирпичи</a>
+        </li>
+        <li >
+          <a  href="#">Кладочные смеси </a>
+        </li>
+        <li >
+          <a  href="#">Клей</a>
+        </li>
+        <li >
+          <a  href="#">Газоблоки</a>
+        </li>
+        <li >
+          <a  href="#">Твинблоки</a>
+        </li>
+        <li >
+          <a  href="#">Керамические блоки</a>
+        </li>
+        <li >
+          <a  href="#">Аксессуары</a>
+        </li>
+      </ul>
+    </li>
+    <li >
+      <a  href="#">Плиты силикатные</a>
+    </li>
+    <li >
+      <a  href="./">Главная</a>
+    </li>
+    <li >
+        <span>О заводе</span>
+
+      <ul >
+        <li >
+          <a  href="./vacancy.html">Вакансии</a>
+        </li>
+        <li >
+          <a  href="./garanty.html">Сертификаты</a>
+        </li>
+        <li >
+          <a  href="./news.html">Новости</a>
+        </li>
+        <li >
+          <a  href="./video.html">Видео</a>
+        </li>
+      </ul>
+    </li>
+    <li >
+      <a  href="delivery.html">Доставка</a>
+    </li>
+    <li >
+      <a  href="gallery-page.html">Галерея</a>
+    </li>
+    <li >
+      <a  href="review-detail.html">Отзывы</a>
+    </li>
+    <li >
+      <a  href="contacts.html">Контакты</a>
+    </li>
+    <li >
+      <a  href="map-detail.html">Где купить</a>
+    </li>
+    <li >
+      <a  href="documentation.html">Техническая информация</a>
+    </li>
+    <li>
+      <a class="button button--orange centered" data-fancybox data-src="#modal-calculation">Заказать расчет
+      </a>
+    </li>
+  </ul>
+</nav>
 
 
 <main class="main">
@@ -970,29 +966,31 @@
     </div>
     <div class="modal-order__item mb-20">
         <div class="modal-order__item-descr">
-            <div class="editor editor--14">
-                <p>Плита перегородочная СППу М125-М150/1,6 498х115х249</p>
-            </div>
             <picture class="modal-order__item-picture">
                 <img src="./assets/images/catalog-item.jpg" alt="Плита перегородочная СППу М125-М150/1,6 498х115х249">
             </picture>
-        </div>
-        <div class="modal-order__item-price">
-            <div class="editor editor--16">
-                <p>87.17 ₽ / шт</p>
-            </div>
-            <div class="counter">
-                <button class="counter__btn">
-                    <svg class="counter__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
-                    </svg>
-                </button>
-                <span>1</span>
-                <button class="counter__btn">
-                    <svg class="counter__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
-                    </svg>
-                </button>
+            <div class="modal-order__info">
+                <div class="editor editor--14">
+                    <p>Плита перегородочная СППу М125-М150/1,6 498х115х249</p>
+                </div>
+                <div class="modal-order__info-price">
+                    <div class="counter">
+                        <button class="counter__btn">
+                            <svg class="counter__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+                            </svg>
+                        </button>
+                        <input value="1">
+                        <button class="counter__btn">
+                            <svg class="counter__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="editor editor--16">
+                        <p>87.17 ₽ / шт</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1010,7 +1008,8 @@
                 <p class="text-blue editor--mob-12">Прикрепить файл</p>
             </label>
         </div>
-        <p class="modal__attach-text">Размер файла не должен превышать 5 Мб. Вы можете прикрепить не более 10 файлов.</p>
+        <p class="modal__attach-text">Размер файла не должен превышать 5 Мб. Вы можете прикрепить не более 10
+            файлов.</p>
     </div>
     <hr class="hr mb-20 mt-20">
     <div class="modal-order__price">

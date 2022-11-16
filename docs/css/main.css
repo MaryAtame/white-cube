@@ -2166,6 +2166,7 @@ b {
 
 .counter {
   display: flex;
+  justify-content: center;
   max-width: 6.25rem;
   gap: 1.4375rem;
   align-items: center;
@@ -2201,7 +2202,7 @@ b {
 
 .counter > input {
   display: block;
-  width: 1%;
+  width: 1.25rem;
 }
 
 .body {
@@ -5658,6 +5659,15 @@ input[type=file] {
   visibility: hidden;
 }
 
+.modal-order__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+}
+.modal-order__info-price {
+  display: flex;
+  gap: 1.875rem;
+}
 .modal-order__item {
   display: flex;
   flex-direction: column;
@@ -5666,15 +5676,20 @@ input[type=file] {
 .modal-order__item-descr {
   display: flex;
   align-items: center;
-  gap: 0.9375rem;
+  gap: 3.125rem;
 }
 .modal-order__item-picture {
+  max-width: 8.75rem;
+  max-height: 8.75rem;
   border: 1px solid #D9E1F3;
   border-radius: 5px;
   overflow: hidden;
 }
 .modal-order__item-picture img {
   object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-position: center;
 }
 @media only screen and (max-width: 1200px) {
   .modal-order__item-picture {
